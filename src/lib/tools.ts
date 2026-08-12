@@ -648,7 +648,7 @@ export const categories: Category[] = [
           "free chatgpt alternatives",
           "ai tools list",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
     ],
   },
