@@ -51,17 +51,6 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "bmPXHsHy6C5LgUU38FFAS05LSiCamLz-AKj6_5aY9AY",
-    // Como obter:
-    //   1. Acesse https://search.google.com/search-console
-    //   2. Adicione seu site (URL do Vercel ou domínio final)
-    //   3. Escolha "HTML tag" como método de verificação
-    //   4. Copie APENAS o valor do content="..." (o código longo)
-    //   5. Cole abaixo, dentro das aspas
-    // google: "SEU-CODIGO-AQUI",
-    //
-    // Outros buscadores (opcional):
-    // yandex: "seu-codigo-yandex",
-    // yahoo: "seu-codigo-yahoo",
   },
 };
 
@@ -70,7 +59,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Schema Organization — identifica o site como uma organização para o Google
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -80,7 +68,6 @@ export default function RootLayout({
     email: SITE_CONFIG.email,
   };
 
-  // Schema WebSite — habilita a "sitelinks search box" no Google
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -111,7 +98,6 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col bg-paper text-ink font-sans">
-        {/* Skip to content — acessibilidade (leitores de tela + teclado) */}
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-accent focus:text-paper focus:px-4 focus:py-2 focus:rounded-full focus:font-mono focus:text-xs focus:tracking-widest"
@@ -119,18 +105,16 @@ export default function RootLayout({
           Skip to main content
         </a>
 
-        {/* HEADER */}
         <header className="bg-deep sticky top-0 z-50" role="banner">
-          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+          <div className="relative max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
             <Link
               href="/"
               aria-label={`${SITE_CONFIG.name} — Home`}
-              className="font-display text-xl font-bold text-paper tracking-tight focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-deep rounded-md"
+              className="font-display text-xl font-bold text-paper tracking-tight focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-deep rounded-md shrink-0"
             >
               Multi<span className="text-accent">Tool</span>
             </Link>
 
-            {/* Busca */}
             <form
               action="/search"
               role="search"
@@ -150,7 +134,6 @@ export default function RootLayout({
               />
             </form>
 
-            {/* Nav de categorias */}
             <nav
               aria-label="Main navigation"
               className="hidden lg:flex items-center gap-3 text-xs font-medium"
@@ -165,28 +148,58 @@ export default function RootLayout({
                 </Link>
               ))}
             </nav>
+
+            <input id="mobile-nav" type="checkbox" className="peer sr-only" />
+            <label
+              htmlFor="mobile-nav"
+              className="lg:hidden flex flex-col items-center justify-center gap-[5px] w-11 h-11 rounded-md border border-paper/20 cursor-pointer shrink-0"
+              aria-label="Open menu"
+            >
+              <span className="block w-5 h-0.5 bg-paper" />
+              <span className="block w-5 h-0.5 bg-paper" />
+              <span className="block w-5 h-0.5 bg-paper" />
+            </label>
+
+            <nav
+              aria-label="Mobile navigation"
+              className="hidden peer-checked:flex lg:hidden absolute top-full left-0 right-0 bg-deep border-t border-paper/10 flex-col px-4 py-3 shadow-lg"
+            >
+              <form
+                action="/search"
+                role="search"
+                className="mb-3 md:hidden"
+              >
+                <label htmlFor="mobile-search" className="sr-only">
+                  Search tools
+                </label>
+                <input
+                  id="mobile-search"
+                  type="text"
+                  name="q"
+                  placeholder="Search tools..."
+                  className="w-full bg-paper rounded-full px-4 py-2.5 text-sm text-ink placeholder:text-ink/40 focus:outline-none focus:ring-2 focus:ring-accent"
+                />
+              </form>
+              {categories.map((cat) => (
+                <Link
+                  key={cat.slug}
+                  href={`/tools/${cat.slug}`}
+                  className="py-2.5 text-paper/85 hover:text-accent border-b border-paper/10 last:border-0"
+                >
+                  {cat.name}
+                </Link>
+              ))}
+            </nav>
           </div>
-          {/* faixa de régua */}
-          <div
-            className="h-1.5 w-full"
-            aria-hidden="true"
-            style={{
-              backgroundImage:
-                "repeating-linear-gradient(90deg, #ff5f1f 0 2px, transparent 2px 14px)",
-            }}
-          />
         </header>
 
-        {/* CONTEÚDO DA PÁGINA */}
         <main id="main-content" className="flex-1" role="main">
           {children}
         </main>
 
-        {/* FOOTER */}
         <footer className="bg-deep mt-16" role="contentinfo">
           <div className="max-w-6xl mx-auto px-4 py-12">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {/* Coluna 1: Sobre */}
               <div>
                 <Link
                   href="/"
@@ -200,7 +213,6 @@ export default function RootLayout({
                 </p>
               </div>
 
-              {/* Coluna 2: Categorias (parte 1) */}
               <nav aria-label="Categories">
                 <h2 className="font-mono text-xs tracking-widest text-accent mb-4">
                   CATEGORIES
@@ -219,7 +231,6 @@ export default function RootLayout({
                 </ul>
               </nav>
 
-              {/* Coluna 3: Categorias (parte 2) */}
               <nav aria-label="More tools">
                 <h2 className="font-mono text-xs tracking-widest text-accent mb-4">
                   MORE TOOLS
@@ -238,7 +249,6 @@ export default function RootLayout({
                 </ul>
               </nav>
 
-              {/* Coluna 4: Legal */}
               <nav aria-label="Company and legal">
                 <h2 className="font-mono text-xs tracking-widest text-accent mb-4">
                   COMPANY

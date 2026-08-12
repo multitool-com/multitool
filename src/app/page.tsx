@@ -42,7 +42,6 @@ export default function Home() {
 
   return (
     <div>
-      {/* HERO */}
       <section className="relative overflow-hidden min-h-[520px]">
         <div className="absolute inset-0" aria-hidden="true">
           <img
@@ -53,8 +52,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-deep/50" />
         </div>
 
-        {/* 7 tool bullets — desktop only */}
-        <div className="hidden lg:block" aria-hidden="false">
+        <div className="hidden lg:block">
           {heroTools.map((tool) => (
             <Link
               key={tool.href}
@@ -100,19 +98,8 @@ export default function Home() {
             />
           </form>
         </div>
-
-        {/* faixa de régua */}
-        <div
-          className="relative h-1.5 w-full"
-          aria-hidden="true"
-          style={{
-            backgroundImage:
-              "repeating-linear-gradient(90deg, #ff5f1f 0 2px, transparent 2px 14px)",
-          }}
-        />
       </section>
 
-      {/* GRID DE CATEGORIAS */}
       <section className="max-w-6xl mx-auto px-4 py-16">
         <div className="flex items-end justify-between mb-8 flex-wrap gap-2">
           <h2 className="font-display text-2xl font-bold">
@@ -142,7 +129,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SEÇÃO DE VALOR */}
       <section className="bg-white border-y border-ink/5">
         <div className="max-w-6xl mx-auto px-4 py-16">
           <div className="grid md:grid-cols-3 gap-8 text-center">
@@ -180,7 +166,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA FINAL */}
       <section className="max-w-4xl mx-auto px-4 py-16 text-center">
         <p className="font-mono text-xs tracking-widest text-accent mb-3">
           NEW TOOLS EVERY WEEK
