@@ -620,7 +620,7 @@ export const categories: Category[] = [
           "gpt cost",
           "ai api cost",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "ai-coding-tools",
