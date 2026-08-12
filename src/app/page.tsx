@@ -26,6 +26,16 @@ export const metadata: Metadata = {
   },
 };
 
+const heroTools = [
+  { name: "Percentage Calculator", href: "/tools/finance/percentage-calculator", pos: "left-6 top-20" },
+  { name: "Word Counter", href: "/tools/text-tools/word-counter", pos: "left-10 top-1/2 -translate-y-1/2" },
+  { name: "Password Generator", href: "/tools/generators/password-generator", pos: "left-8 bottom-24" },
+  { name: "AI Prompt Generator", href: "/tools/ai-tools/prompt-generator", pos: "right-6 top-20" },
+  { name: "JSON Formatter", href: "/tools/developer-tools/json-formatter", pos: "right-10 top-1/2 -translate-y-1/2" },
+  { name: "Token Counter", href: "/tools/ai-tools/token-counter", pos: "right-8 bottom-28" },
+  { name: "Temperature Converter", href: "/tools/converters/temperature-converter", pos: "left-1/2 -translate-x-1/2 bottom-16" },
+];
+
 export default function Home() {
   const totalTools = getAllTools().length;
   const totalCategories = categories.length;
@@ -33,8 +43,30 @@ export default function Home() {
   return (
     <div>
       {/* HERO */}
-      <section className="bg-deep relative overflow-hidden">
-        <div className="max-w-6xl mx-auto px-4 py-20 text-center">
+      <section className="relative overflow-hidden min-h-[520px]">
+        <div className="absolute inset-0" aria-hidden="true">
+          <img
+            src="/hero.jpg"
+            alt=""
+            className="h-full w-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-deep/50" />
+        </div>
+
+        {/* 7 tool bullets — desktop only */}
+        <div className="hidden lg:block" aria-hidden="false">
+          {heroTools.map((tool) => (
+            <Link
+              key={tool.href}
+              href={tool.href}
+              className={`absolute ${tool.pos} z-10 font-mono text-[10px] tracking-widest bg-deep/70 text-paper border border-paper/25 rounded-full px-4 py-2 backdrop-blur-sm hover:border-accent hover:text-accent focus:outline-none focus:border-accent focus:text-accent transition-colors`}
+            >
+              {tool.name.toUpperCase()}
+            </Link>
+          ))}
+        </div>
+
+        <div className="relative max-w-6xl mx-auto px-4 py-24 text-center">
           <p className="font-mono text-xs tracking-widest text-accent mb-4">
             FREE · NO SIGN-UP · INSTANT RESULTS
           </p>
@@ -71,7 +103,7 @@ export default function Home() {
 
         {/* faixa de régua */}
         <div
-          className="h-1.5 w-full"
+          className="relative h-1.5 w-full"
           aria-hidden="true"
           style={{
             backgroundImage:
@@ -110,7 +142,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SEÇÃO DE VALOR — importante pro SEO (conteúdo textual) */}
+      {/* SEÇÃO DE VALOR */}
       <section className="bg-white border-y border-ink/5">
         <div className="max-w-6xl mx-auto px-4 py-16">
           <div className="grid md:grid-cols-3 gap-8 text-center">
