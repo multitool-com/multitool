@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Roll virtual dice of any size — D4, D6, D8, D10, D12, D20 and more.",
   keywords: ["dice roller", "virtual dice", "d20 roller"],
   alternates: {
-    canonical: "https://multitool.online/tools/generators/dice-roller",
+    canonical: "https://multitoolbox.online/tools/generators/dice-roller",
   },
   openGraph: {
     title: "Dice Roller | MultiTool",
     description: "Roll virtual dice of any size — D4, D6, D8, D10, D12, D20 and more.",
-    url: "https://multitool.online/tools/generators/dice-roller",
+    url: "https://multitoolbox.online/tools/generators/dice-roller",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

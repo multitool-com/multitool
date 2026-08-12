@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Calculate the percentage change between two numbers (increase or decrease).",
   keywords: ["percentage change", "percent increase", "percent decrease"],
   alternates: {
-    canonical: "https://multitool.online/tools/math/percentage-change",
+    canonical: "https://multitoolbox.online/tools/math/percentage-change",
   },
   openGraph: {
     title: "Percentage Increase / Decrease | MultiTool",
     description: "Calculate the percentage change between two numbers (increase or decrease).",
-    url: "https://multitool.online/tools/math/percentage-change",
+    url: "https://multitoolbox.online/tools/math/percentage-change",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

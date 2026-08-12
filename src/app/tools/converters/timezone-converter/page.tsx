@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Convert times between different time zones around the world.",
   keywords: ["time zone converter", "world clock", "utc converter"],
   alternates: {
-    canonical: "https://multitool.online/tools/converters/timezone-converter",
+    canonical: "https://multitoolbox.online/tools/converters/timezone-converter",
   },
   openGraph: {
     title: "Time Zone Converter | MultiTool",
     description: "Convert times between different time zones around the world.",
-    url: "https://multitool.online/tools/converters/timezone-converter",
+    url: "https://multitoolbox.online/tools/converters/timezone-converter",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

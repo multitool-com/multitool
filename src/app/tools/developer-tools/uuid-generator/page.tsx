@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Generate random UUIDs (v4) — one or bulk. Copy with one click.",
   keywords: ["uuid generator", "guid generator", "uuid v4"],
   alternates: {
-    canonical: "https://multitool.online/tools/developer-tools/uuid-generator",
+    canonical: "https://multitoolbox.online/tools/developer-tools/uuid-generator",
   },
   openGraph: {
     title: "UUID Generator | MultiTool",
     description: "Generate random UUIDs (v4) — one or bulk. Copy with one click.",
-    url: "https://multitool.online/tools/developer-tools/uuid-generator",
+    url: "https://multitoolbox.online/tools/developer-tools/uuid-generator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

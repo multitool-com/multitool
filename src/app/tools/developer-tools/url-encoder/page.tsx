@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Encode or decode URLs and query strings (percent-encoding).",
   keywords: ["url encoder", "url decoder", "percent encoding"],
   alternates: {
-    canonical: "https://multitool.online/tools/developer-tools/url-encoder",
+    canonical: "https://multitoolbox.online/tools/developer-tools/url-encoder",
   },
   openGraph: {
     title: "URL Encoder / Decoder | MultiTool",
     description: "Encode or decode URLs and query strings (percent-encoding).",
-    url: "https://multitool.online/tools/developer-tools/url-encoder",
+    url: "https://multitoolbox.online/tools/developer-tools/url-encoder",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

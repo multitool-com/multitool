@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Find your ideal body weight range based on height, age and gender.",
   keywords: ["ideal weight", "healthy weight calculator", "target weight"],
   alternates: {
-    canonical: "https://multitool.online/tools/health/ideal-weight",
+    canonical: "https://multitoolbox.online/tools/health/ideal-weight",
   },
   openGraph: {
     title: "Ideal Weight Calculator | MultiTool",
     description: "Find your ideal body weight range based on height, age and gender.",
-    url: "https://multitool.online/tools/health/ideal-weight",
+    url: "https://multitoolbox.online/tools/health/ideal-weight",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

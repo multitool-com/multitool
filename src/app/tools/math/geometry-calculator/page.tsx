@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Calculate area, perimeter and volume for common geometric shapes.",
   keywords: ["geometry calculator", "area calculator", "perimeter", "volume"],
   alternates: {
-    canonical: "https://multitool.online/tools/math/geometry-calculator",
+    canonical: "https://multitoolbox.online/tools/math/geometry-calculator",
   },
   openGraph: {
     title: "Geometry Calculator | MultiTool",
     description: "Calculate area, perimeter and volume for common geometric shapes.",
-    url: "https://multitool.online/tools/math/geometry-calculator",
+    url: "https://multitoolbox.online/tools/math/geometry-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

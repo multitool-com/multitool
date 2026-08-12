@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Calculate your daily calorie needs (TDEE) and basal metabolic rate (BMR).",
   keywords: ["calorie calculator", "bmr calculator", "tdee", "daily calories"],
   alternates: {
-    canonical: "https://multitool.online/tools/health/calorie-calculator",
+    canonical: "https://multitoolbox.online/tools/health/calorie-calculator",
   },
   openGraph: {
     title: "Calorie / BMR Calculator | MultiTool",
     description: "Calculate your daily calorie needs (TDEE) and basal metabolic rate (BMR).",
-    url: "https://multitool.online/tools/health/calorie-calculator",
+    url: "https://multitoolbox.online/tools/health/calorie-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

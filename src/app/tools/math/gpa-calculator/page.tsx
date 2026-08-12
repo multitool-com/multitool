@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Calculate your Grade Point Average (GPA) from grades and credit hours.",
   keywords: ["gpa calculator", "grade point average", "college gpa"],
   alternates: {
-    canonical: "https://multitool.online/tools/math/gpa-calculator",
+    canonical: "https://multitoolbox.online/tools/math/gpa-calculator",
   },
   openGraph: {
     title: "GPA Calculator | MultiTool",
     description: "Calculate your Grade Point Average (GPA) from grades and credit hours.",
-    url: "https://multitool.online/tools/math/gpa-calculator",
+    url: "https://multitoolbox.online/tools/math/gpa-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

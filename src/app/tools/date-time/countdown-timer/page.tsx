@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Create a live countdown to any date or event of your choice.",
   keywords: ["countdown timer", "countdown to date", "event countdown"],
   alternates: {
-    canonical: "https://multitool.online/tools/date-time/countdown-timer",
+    canonical: "https://multitoolbox.online/tools/date-time/countdown-timer",
   },
   openGraph: {
     title: "Countdown Timer | MultiTool",
     description: "Create a live countdown to any date or event of your choice.",
-    url: "https://multitool.online/tools/date-time/countdown-timer",
+    url: "https://multitoolbox.online/tools/date-time/countdown-timer",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

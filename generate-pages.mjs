@@ -21,7 +21,7 @@ const __dirname = path.dirname(__filename);
 
 const TOOLS_DIR = path.join(__dirname, "src", "app", "tools");
 
-const SITE_URL = "https://multitool.online";
+const SITE_URL = "https://multitoolbox.online";
 
 // ============================================================================
 // DADOS — copiados do src/lib/tools.ts (mantém sincronizado manualmente)

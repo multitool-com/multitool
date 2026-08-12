@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Count how many days remain until a specific future date.",
   keywords: ["days until", "countdown days", "days remaining"],
   alternates: {
-    canonical: "https://multitool.online/tools/date-time/days-until-date",
+    canonical: "https://multitoolbox.online/tools/date-time/days-until-date",
   },
   openGraph: {
     title: "Days Until Date | MultiTool",
     description: "Count how many days remain until a specific future date.",
-    url: "https://multitool.online/tools/date-time/days-until-date",
+    url: "https://multitoolbox.online/tools/date-time/days-until-date",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

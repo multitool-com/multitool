@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Simplify ratios, compare and solve proportions instantly.",
   keywords: ["ratio calculator", "proportion", "simplify ratio"],
   alternates: {
-    canonical: "https://multitool.online/tools/math/ratio-calculator",
+    canonical: "https://multitoolbox.online/tools/math/ratio-calculator",
   },
   openGraph: {
     title: "Ratio Calculator | MultiTool",
     description: "Simplify ratios, compare and solve proportions instantly.",
-    url: "https://multitool.online/tools/math/ratio-calculator",
+    url: "https://multitoolbox.online/tools/math/ratio-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

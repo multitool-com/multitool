@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Calculate the number of business days between two dates.",
   keywords: ["work days calculator", "business days", "working days between dates"],
   alternates: {
-    canonical: "https://multitool.online/tools/date-time/work-days-calculator",
+    canonical: "https://multitoolbox.online/tools/date-time/work-days-calculator",
   },
   openGraph: {
     title: "Work Days Calculator | MultiTool",
     description: "Calculate the number of business days between two dates.",
-    url: "https://multitool.online/tools/date-time/work-days-calculator",
+    url: "https://multitoolbox.online/tools/date-time/work-days-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Convert numbers between binary, decimal, hexadecimal and octal.",
   keywords: ["binary converter", "hex converter", "decimal to binary"],
   alternates: {
-    canonical: "https://multitool.online/tools/converters/number-base-converter",
+    canonical: "https://multitoolbox.online/tools/converters/number-base-converter",
   },
   openGraph: {
     title: "Number Base Converter | MultiTool",
     description: "Convert numbers between binary, decimal, hexadecimal and octal.",
-    url: "https://multitool.online/tools/converters/number-base-converter",
+    url: "https://multitoolbox.online/tools/converters/number-base-converter",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

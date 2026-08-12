@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Generate random numbers within any range you specify.",
   keywords: ["random number generator", "rng", "random integer"],
   alternates: {
-    canonical: "https://multitool.online/tools/generators/random-number-generator",
+    canonical: "https://multitoolbox.online/tools/generators/random-number-generator",
   },
   openGraph: {
     title: "Random Number Generator | MultiTool",
     description: "Generate random numbers within any range you specify.",
-    url: "https://multitool.online/tools/generators/random-number-generator",
+    url: "https://multitoolbox.online/tools/generators/random-number-generator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

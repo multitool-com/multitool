@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Convert colors between HEX, RGB, HSL and generate palettes.",
   keywords: ["color converter", "hex to rgb", "color palette generator"],
   alternates: {
-    canonical: "https://multitool.online/tools/generators/color-palette",
+    canonical: "https://multitoolbox.online/tools/generators/color-palette",
   },
   openGraph: {
     title: "Color Palette / HEX-RGB | MultiTool",
     description: "Convert colors between HEX, RGB, HSL and generate palettes.",
-    url: "https://multitool.online/tools/generators/color-palette",
+    url: "https://multitoolbox.online/tools/generators/color-palette",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

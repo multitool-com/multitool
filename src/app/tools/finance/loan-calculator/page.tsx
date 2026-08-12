@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     "home loan",
   ],
   alternates: {
-    canonical: "https://multitool.online/tools/finance/loan-calculator",
+    canonical: "https://multitoolbox.online/tools/finance/loan-calculator",
   },
   openGraph: {
     title: "Loan Calculator - EMI & Amortization | MultiTool",
     description:
       "Calculate your monthly loan payments (EMI), total interest and see full amortization schedule. Free & instant.",
-    url: "https://multitool.online/tools/finance/loan-calculator",
+    url: "https://multitoolbox.online/tools/finance/loan-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

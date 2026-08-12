@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Generate MD5, SHA-1, SHA-256 and SHA-512 hashes from any text.",
   keywords: ["hash generator", "md5", "sha256", "hash converter"],
   alternates: {
-    canonical: "https://multitool.online/tools/developer-tools/hash-generator",
+    canonical: "https://multitoolbox.online/tools/developer-tools/hash-generator",
   },
   openGraph: {
     title: "Hash Generator | MultiTool",
     description: "Generate MD5, SHA-1, SHA-256 and SHA-512 hashes from any text.",
-    url: "https://multitool.online/tools/developer-tools/hash-generator",
+    url: "https://multitoolbox.online/tools/developer-tools/hash-generator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

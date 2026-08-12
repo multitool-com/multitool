@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Add, subtract, multiply and divide fractions with step-by-step results.",
   keywords: ["fraction calculator", "add fractions", "simplify fraction"],
   alternates: {
-    canonical: "https://multitool.online/tools/math/fraction-calculator",
+    canonical: "https://multitoolbox.online/tools/math/fraction-calculator",
   },
   openGraph: {
     title: "Fraction Calculator | MultiTool",
     description: "Add, subtract, multiply and divide fractions with step-by-step results.",
-    url: "https://multitool.online/tools/math/fraction-calculator",
+    url: "https://multitoolbox.online/tools/math/fraction-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

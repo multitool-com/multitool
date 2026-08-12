@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Encode text to Base64 or decode Base64 back to plain text.",
   keywords: ["base64 encoder", "base64 decoder", "base64 converter"],
   alternates: {
-    canonical: "https://multitool.online/tools/developer-tools/base64-encoder",
+    canonical: "https://multitoolbox.online/tools/developer-tools/base64-encoder",
   },
   openGraph: {
     title: "Base64 Encoder / Decoder | MultiTool",
     description: "Encode text to Base64 or decode Base64 back to plain text.",
-    url: "https://multitool.online/tools/developer-tools/base64-encoder",
+    url: "https://multitoolbox.online/tools/developer-tools/base64-encoder",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

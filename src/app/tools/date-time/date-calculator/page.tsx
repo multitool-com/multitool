@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Add or subtract days, weeks, months or years from any date.",
   keywords: ["date calculator", "date difference", "add days to date"],
   alternates: {
-    canonical: "https://multitool.online/tools/date-time/date-calculator",
+    canonical: "https://multitoolbox.online/tools/date-time/date-calculator",
   },
   openGraph: {
     title: "Date Calculator | MultiTool",
     description: "Add or subtract days, weeks, months or years from any date.",
-    url: "https://multitool.online/tools/date-time/date-calculator",
+    url: "https://multitoolbox.online/tools/date-time/date-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

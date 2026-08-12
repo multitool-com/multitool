@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Estimate your baby\'s due date based on your last menstrual period.",
   keywords: ["pregnancy calculator", "due date", "baby due date", "gestational age"],
   alternates: {
-    canonical: "https://multitool.online/tools/health/pregnancy-due-date",
+    canonical: "https://multitoolbox.online/tools/health/pregnancy-due-date",
   },
   openGraph: {
     title: "Pregnancy Due Date Calculator | MultiTool",
     description: "Estimate your baby\'s due date based on your last menstrual period.",
-    url: "https://multitool.online/tools/health/pregnancy-due-date",
+    url: "https://multitoolbox.online/tools/health/pregnancy-due-date",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

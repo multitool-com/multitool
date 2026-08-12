@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Convert Unix timestamps to human-readable dates and vice versa.",
   keywords: ["unix timestamp", "epoch converter", "timestamp to date"],
   alternates: {
-    canonical: "https://multitool.online/tools/date-time/unix-timestamp",
+    canonical: "https://multitoolbox.online/tools/date-time/unix-timestamp",
   },
   openGraph: {
     title: "Unix Timestamp Converter | MultiTool",
     description: "Convert Unix timestamps to human-readable dates and vice versa.",
-    url: "https://multitool.online/tools/date-time/unix-timestamp",
+    url: "https://multitoolbox.online/tools/date-time/unix-timestamp",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Convert between hourly, weekly, monthly and annual salary quickly.",
   keywords: ["salary calculator", "hourly wage", "annual salary", "pay converter"],
   alternates: {
-    canonical: "https://multitool.online/tools/finance/salary-calculator",
+    canonical: "https://multitoolbox.online/tools/finance/salary-calculator",
   },
   openGraph: {
     title: "Salary / Hourly Wage Calculator | MultiTool",
     description: "Convert between hourly, weekly, monthly and annual salary quickly.",
-    url: "https://multitool.online/tools/finance/salary-calculator",
+    url: "https://multitoolbox.online/tools/finance/salary-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

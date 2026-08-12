@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Generate clean, URL-friendly slugs from any text or title.",
   keywords: ["slug generator", "url slug", "seo slug"],
   alternates: {
-    canonical: "https://multitool.online/tools/text-tools/slug-generator",
+    canonical: "https://multitoolbox.online/tools/text-tools/slug-generator",
   },
   openGraph: {
     title: "Slug Generator | MultiTool",
     description: "Generate clean, URL-friendly slugs from any text or title.",
-    url: "https://multitool.online/tools/text-tools/slug-generator",
+    url: "https://multitoolbox.online/tools/text-tools/slug-generator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

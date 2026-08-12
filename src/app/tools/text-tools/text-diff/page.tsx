@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Compare two texts side by side and highlight the differences.",
   keywords: ["text diff", "compare text", "diff checker"],
   alternates: {
-    canonical: "https://multitool.online/tools/text-tools/text-diff",
+    canonical: "https://multitoolbox.online/tools/text-tools/text-diff",
   },
   openGraph: {
     title: "Text Diff Checker | MultiTool",
     description: "Compare two texts side by side and highlight the differences.",
-    url: "https://multitool.online/tools/text-tools/text-diff",
+    url: "https://multitoolbox.online/tools/text-tools/text-diff",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

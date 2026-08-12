@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Convert between length, weight, volume and other common units.",
   keywords: ["unit converter", "metric converter", "imperial converter"],
   alternates: {
-    canonical: "https://multitool.online/tools/converters/unit-converter",
+    canonical: "https://multitoolbox.online/tools/converters/unit-converter",
   },
   openGraph: {
     title: "Unit Converter | MultiTool",
     description: "Convert between length, weight, volume and other common units.",
-    url: "https://multitool.online/tools/converters/unit-converter",
+    url: "https://multitoolbox.online/tools/converters/unit-converter",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

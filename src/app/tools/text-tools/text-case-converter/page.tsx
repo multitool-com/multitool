@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Convert text to UPPERCASE, lowercase, Title Case, camelCase and more.",
   keywords: ["case converter", "uppercase", "lowercase", "title case"],
   alternates: {
-    canonical: "https://multitool.online/tools/text-tools/text-case-converter",
+    canonical: "https://multitoolbox.online/tools/text-tools/text-case-converter",
   },
   openGraph: {
     title: "Text Case Converter | MultiTool",
     description: "Convert text to UPPERCASE, lowercase, Title Case, camelCase and more.",
-    url: "https://multitool.online/tools/text-tools/text-case-converter",
+    url: "https://multitoolbox.online/tools/text-tools/text-case-converter",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

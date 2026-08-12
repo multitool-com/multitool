@@ -16,13 +16,13 @@ export const metadata: Metadata = {
     "birthday calculator",
   ],
   alternates: {
-    canonical: "https://multitool.online/tools/health/age-calculator",
+    canonical: "https://multitoolbox.online/tools/health/age-calculator",
   },
   openGraph: {
     title: "Age Calculator - How Old Am I? | MultiTool",
     description:
       "Calculate your exact age in years, months, weeks, days, hours and minutes. Instant results.",
-    url: "https://multitool.online/tools/health/age-calculator",
+    url: "https://multitoolbox.online/tools/health/age-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

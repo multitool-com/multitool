@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: "Convert Roman numerals to numbers and numbers to Roman numerals.",
   keywords: ["roman numeral converter", "roman numerals", "roman to number"],
   alternates: {
-    canonical: "https://multitool.online/tools/converters/roman-numeral-converter",
+    canonical: "https://multitoolbox.online/tools/converters/roman-numeral-converter",
   },
   openGraph: {
     title: "Roman Numeral Converter | MultiTool",
     description: "Convert Roman numerals to numbers and numbers to Roman numerals.",
-    url: "https://multitool.online/tools/converters/roman-numeral-converter",
+    url: "https://multitoolbox.online/tools/converters/roman-numeral-converter",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",
