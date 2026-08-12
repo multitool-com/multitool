@@ -634,7 +634,7 @@ export const categories: Category[] = [
           "best ai for coding",
           "ai code assistant",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "free-ai-directory",
