@@ -1,0 +1,22 @@
+Listagem de caminhos de pasta para o volume OS
+O número de série do volume é 00000287 5A79:DDA6
+C:\MULTITOOL\SRC
+\---app
+    |   globals.css
+    |   layout.tsx
+    |   page.tsx
+    |   
+    \---tools
+        +---converters
+        +---date-time
+        +---developer-tools
+        +---finance
+        |   \---percentage-calculator
+        |           oldpage.tsx
+        |           page.tsx
+        |           
+        +---generators
+        +---health
+        |   \---bmi-calculator
+        +---math
+        \---text-tools
