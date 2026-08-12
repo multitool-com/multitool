@@ -572,8 +572,87 @@ export const categories: Category[] = [
       },
     ],
   },
+{
+    slug: "ai-tools",
+    name: "AI Tools",
+    shortName: "AI Tools",
+    description: "Prompts, token counters, AI directories and cost calculators.",
+    seoDescription:
+      "Free AI tools and utilities: prompt generator, token counter for GPT/Claude/Gemini, curated directory of free AI tools and cost calculators for AI APIs.",
+    tools: [
+      {
+        slug: "prompt-generator",
+        name: "AI Prompt Generator",
+        description:
+          "Generate professional AI prompts for marketing, coding, writing, design and education. Ready-to-use templates with customizable variables.",
+        keywords: [
+          "prompt generator",
+          "ai prompt",
+          "chatgpt prompt",
+          "prompt templates",
+          "ai prompt generator",
+        ],
+        status: "ready",
+      },
+      {
+        slug: "token-counter",
+        name: "AI Token Counter",
+        description:
+          "Count tokens for GPT-4, Claude, Gemini and other AI models. Estimate API costs before sending your prompt.",
+        keywords: [
+          "token counter",
+          "gpt token counter",
+          "claude token counter",
+          "openai tokenizer",
+          "ai tokens",
+        ],
+        status: "coming-soon",
+      },
+      {
+        slug: "ai-cost-calculator",
+        name: "AI API Cost Calculator",
+        description:
+          "Calculate monthly cost of using AI APIs like GPT-4, Claude and Gemini based on your usage volume.",
+        keywords: [
+          "ai cost calculator",
+          "openai pricing",
+          "claude pricing",
+          "gpt cost",
+          "ai api cost",
+        ],
+        status: "coming-soon",
+      },
+      {
+        slug: "ai-coding-tools",
+        name: "AI Coding Tools Comparison",
+        description:
+          "Compare the best AI coding assistants: GitHub Copilot, Cursor, Codeium, Windsurf and more. Features, pricing and free plans.",
+        keywords: [
+          "ai coding tools",
+          "github copilot alternative",
+          "cursor vs copilot",
+          "best ai for coding",
+          "ai code assistant",
+        ],
+        status: "coming-soon",
+      },
+      {
+        slug: "free-ai-directory",
+        name: "Free AI Tools Directory",
+        description:
+          "Curated directory of the best free AI tools. Filter by category, no sign-up required tools, open source options.",
+        keywords: [
+          "free ai tools",
+          "ai directory",
+          "best ai tools",
+          "free chatgpt alternatives",
+          "ai tools list",
+        ],
+        status: "coming-soon",
+      },
+    ],
+  },
 ];
-
 // ============================================================================
 // HELPERS — funções auxiliares para acessar dados de forma prática
 // ============================================================================

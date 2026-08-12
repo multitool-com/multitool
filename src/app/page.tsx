@@ -26,49 +26,6 @@ export const metadata: Metadata = {
   },
 };
 
-const categoriesWithDesc = [
-  {
-    name: "Finance",
-    slug: "finance",
-    desc: "Loans, interest, discounts, tips and taxes.",
-  },
-  {
-    name: "Health & Fitness",
-    slug: "health",
-    desc: "BMI, calories, ideal weight and age.",
-  },
-  {
-    name: "Math & Education",
-    slug: "math",
-    desc: "Fractions, GPA, ratios and geometry.",
-  },
-  {
-    name: "Converters",
-    slug: "converters",
-    desc: "Units, temperature, time zones and bases.",
-  },
-  {
-    name: "Date & Time",
-    slug: "date-time",
-    desc: "Date differences, countdowns and work days.",
-  },
-  {
-    name: "Text Tools",
-    slug: "text-tools",
-    desc: "Word counts, case converters and diffs.",
-  },
-  {
-    name: "Developer Tools",
-    slug: "developer-tools",
-    desc: "JSON, Base64, URL encoding and UUIDs.",
-  },
-  {
-    name: "Generators & Fun",
-    slug: "generators",
-    desc: "Passwords, QR codes and color palettes.",
-  },
-];
-
 export default function Home() {
   const totalTools = getAllTools().length;
   const totalCategories = categories.length;
@@ -79,7 +36,7 @@ export default function Home() {
       <section className="bg-deep relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 py-20 text-center">
           <p className="font-mono text-xs tracking-widest text-accent mb-4">
-            FREE &middot; NO SIGN-UP &middot; INSTANT RESULTS
+            FREE · NO SIGN-UP · INSTANT RESULTS
           </p>
           <h1 className="font-display text-4xl md:text-5xl font-bold text-paper mb-4 leading-tight">
             Every Tool you need,
@@ -88,7 +45,7 @@ export default function Home() {
           </h1>
           <p className="text-paper/70 max-w-xl mx-auto mb-8">
             {totalTools}+ simple, fast utility tools for everyday math,
-            conversions and text &mdash; built to just work, right in your
+            conversions and text — built to just work, right in your
             browser.
           </p>
 
@@ -135,7 +92,7 @@ export default function Home() {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {categoriesWithDesc.map((cat, i) => (
+          {categories.map((cat, i) => (
             <Link
               key={cat.slug}
               href={`/tools/${cat.slug}`}
@@ -147,7 +104,7 @@ export default function Home() {
               <h3 className="font-display font-semibold text-lg mt-1 mb-1 group-hover:text-accent transition-colors">
                 {cat.name}
               </h3>
-              <p className="text-sm text-ink/60">{cat.desc}</p>
+              <p className="text-sm text-ink/60">{cat.description}</p>
             </Link>
           ))}
         </div>

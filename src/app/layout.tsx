@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     canonical: SITE_CONFIG.url,
   },
   verification: {
-       google: "bmPXHsHy6C5LgUU38FFAS05LSiCamLz-AKj6_5aY9AY",
+    google: "bmPXHsHy6C5LgUU38FFAS05LSiCamLz-AKj6_5aY9AY",
     // Como obter:
     //   1. Acesse https://search.google.com/search-console
     //   2. Adicione seu site (URL do Vercel ou domínio final)
@@ -153,13 +153,13 @@ export default function RootLayout({
             {/* Nav de categorias */}
             <nav
               aria-label="Main navigation"
-              className="hidden lg:flex gap-5 text-sm font-medium"
+              className="hidden lg:flex items-center gap-3 text-xs font-medium"
             >
-              {categories.slice(0, 5).map((cat) => (
+              {categories.map((cat) => (
                 <Link
                   key={cat.slug}
                   href={`/tools/${cat.slug}`}
-                  className="text-paper/75 hover:text-accent focus:outline-none focus:text-accent transition-colors"
+                  className="text-paper/75 hover:text-accent focus:outline-none focus:text-accent transition-colors whitespace-nowrap"
                 >
                   {cat.shortName}
                 </Link>
@@ -206,7 +206,7 @@ export default function RootLayout({
                   CATEGORIES
                 </h2>
                 <ul className="space-y-2 text-sm">
-                  {categories.slice(0, 4).map((cat) => (
+                  {categories.slice(0, 5).map((cat) => (
                     <li key={cat.slug}>
                       <Link
                         href={`/tools/${cat.slug}`}
@@ -225,7 +225,7 @@ export default function RootLayout({
                   MORE TOOLS
                 </h2>
                 <ul className="space-y-2 text-sm">
-                  {categories.slice(4).map((cat) => (
+                  {categories.slice(5).map((cat) => (
                     <li key={cat.slug}>
                       <Link
                         href={`/tools/${cat.slug}`}
@@ -310,7 +310,7 @@ export default function RootLayout({
           </div>
         </footer>
       </body>
-              <GoogleAnalytics gaId="G-M03VJPSYZZ" />
+      <GoogleAnalytics gaId="G-M03VJPSYZZ" />
     </html>
   );
 }
