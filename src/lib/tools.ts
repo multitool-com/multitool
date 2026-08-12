@@ -606,7 +606,7 @@ export const categories: Category[] = [
           "openai tokenizer",
           "ai tokens",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "ai-cost-calculator",
