@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { SITE_CONFIG, categories } from "@/lib/tools";
 
 export const metadata: Metadata = {
@@ -49,7 +50,7 @@ export const metadata: Metadata = {
     canonical: SITE_CONFIG.url,
   },
   verification: {
-    // ⚠️ IMPORTANTE: Substitua "SEU-CODIGO-AQUI" pelo código real quando cadastrar no Google Search Console
+       google: "bmPXHsHy6C5LgUU38FFAS05LSiCamLz-AKj6_5aY9AY",
     // Como obter:
     //   1. Acesse https://search.google.com/search-console
     //   2. Adicione seu site (URL do Vercel ou domínio final)
@@ -309,6 +310,7 @@ export default function RootLayout({
           </div>
         </footer>
       </body>
+              <GoogleAnalytics gaId="G-M03VJPSYZZ" />
     </html>
   );
 }
