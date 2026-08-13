@@ -215,7 +215,7 @@ export const categories: Category[] = [
           "percent increase",
           "percent decrease",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "ratio-calculator",
