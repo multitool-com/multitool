@@ -258,7 +258,7 @@ export const categories: Category[] = [
           "metric converter",
           "imperial converter",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "temperature-converter",
