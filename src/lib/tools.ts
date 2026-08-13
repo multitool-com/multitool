@@ -689,7 +689,7 @@ export const categories: Category[] = [
     shortName: "AI Tools",
     description: "Prompts, token counters, AI directories and cost calculators.",
     seoDescription:
-      "Free AI tools and utilities: prompt generator, token counter, curated directory of free AI tools and cost calculators for AI APIs.",
+      "Free AI tools and utilities: prompt generator, token counter, LLM model comparison, curated directory of free AI tools and cost calculators for AI APIs.",
     tools: [
       {
         slug: "prompt-generator",
@@ -758,6 +758,22 @@ export const categories: Category[] = [
           "best ai tools",
           "free chatgpt alternatives",
           "ai tools list",
+        ],
+        status: "ready",
+      },
+      {
+        slug: "llm-model-comparison",
+        name: "LLM Model Comparison",
+        description:
+          "Compare the top LLMs side by side: GPT, Claude, Gemini, Llama, DeepSeek — context windows, output limits and reference API prices.",
+        keywords: [
+          "llm comparison",
+          "llm model comparison",
+          "gpt vs claude",
+          "claude vs gemini",
+          "ai model comparison",
+          "compare llm models",
+          "llm pricing",
         ],
         status: "ready",
       },
