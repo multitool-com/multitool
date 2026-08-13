@@ -689,7 +689,7 @@ export const categories: Category[] = [
     shortName: "AI Tools",
     description: "Prompts, token counters, AI directories and cost calculators.",
     seoDescription:
-      "Free AI tools and utilities: prompt generator, token counter, LLM model comparison, curated directory of free AI tools and cost calculators for AI APIs.",
+      "Free AI tools and utilities: prompt generator, system prompt builder, token counter, LLM model comparison, curated directory of free AI tools and cost calculators for AI APIs.",
     tools: [
       {
         slug: "prompt-generator",
@@ -774,6 +774,22 @@ export const categories: Category[] = [
           "ai model comparison",
           "compare llm models",
           "llm pricing",
+        ],
+        status: "ready",
+      },
+      {
+        slug: "system-prompt-builder",
+        name: "System Prompt Builder",
+        description:
+          "Assemble professional system prompts from roles, tones, constraints and output formats. Copy with one click.",
+        keywords: [
+          "system prompt builder",
+          "system prompt generator",
+          "system prompt template",
+          "prompt builder",
+          "chatgpt system prompt",
+          "claude system prompt",
+          "prompt engineer",
         ],
         status: "ready",
       },
