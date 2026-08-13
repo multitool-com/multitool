@@ -467,7 +467,7 @@ export const categories: Category[] = [
     shortName: "Developer",
     description: "JSON, Base64, URL encoding and UUIDs.",
     seoDescription:
-      "Free developer tools: JSON formatter, regex tester, Base64, URL encoder, UUID and hash generators.",
+      "Free developer tools: JSON formatter, regex tester, JWT decoder, Base64, URL encoder, UUID and hash generators.",
     tools: [
       {
         slug: "json-formatter",
@@ -519,6 +519,21 @@ export const categories: Category[] = [
           "regular expression tester",
           "regexp tester",
           "test regex online",
+        ],
+        status: "ready",
+      },
+      {
+        slug: "jwt-decoder",
+        name: "JWT Decoder",
+        description:
+          "Decode JSON Web Tokens (JWT) instantly: read header, payload and claims as readable JSON. Runs in your browser.",
+        keywords: [
+          "jwt decoder",
+          "jwt decode",
+          "json web token decoder",
+          "decode jwt online",
+          "jwt parser",
+          "jwt inspector",
         ],
         status: "ready",
       },
