@@ -467,7 +467,7 @@ export const categories: Category[] = [
     shortName: "Developer",
     description: "JSON, Base64, URL encoding and UUIDs.",
     seoDescription:
-      "Free developer tools: JSON formatter, regex tester, JWT decoder, Base64, URL encoder, UUID and hash generators.",
+      "Free developer tools: JSON formatter, regex tester, JWT decoder, CSV to JSON converter, Base64, URL encoder, UUID and hash generators.",
     tools: [
       {
         slug: "json-formatter",
@@ -534,6 +534,21 @@ export const categories: Category[] = [
           "decode jwt online",
           "jwt parser",
           "jwt inspector",
+        ],
+        status: "ready",
+      },
+      {
+        slug: "csv-json-converter",
+        name: "CSV ⇄ JSON Converter",
+        description:
+          "Convert CSV to JSON and JSON to CSV instantly. Custom delimiters, header-row detection, copy or download.",
+        keywords: [
+          "csv to json",
+          "json to csv",
+          "csv converter",
+          "csv to json converter",
+          "json to csv converter",
+          "csv parser",
         ],
         status: "ready",
       },
