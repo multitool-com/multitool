@@ -40,7 +40,7 @@ export const categories: Category[] = [
     shortName: "Finance",
     description: "Loans, interest, discounts, tips and taxes.",
     seoDescription:
-      "Free online finance calculators: loan payments, discounts, tips, salary conversions and more. Instant, accurate financial calculations.",
+      "Free online finance calculators: loan payments, discounts, tips, compound interest, VAT/sales tax and salary conversions.",
     tools: [
       {
         slug: "percentage-calculator",
@@ -101,6 +101,32 @@ export const categories: Category[] = [
         ],
         status: "coming-soon",
       },
+      {
+        slug: "compound-interest",
+        name: "Compound Interest Calculator",
+        description:
+          "Calculate future value and interest earned with compound growth and optional monthly deposits.",
+        keywords: [
+          "compound interest calculator",
+          "compound interest",
+          "investment calculator",
+          "savings calculator",
+        ],
+        status: "ready",
+      },
+      {
+        slug: "vat-calculator",
+        name: "VAT / Sales Tax Calculator",
+        description:
+          "Add or remove VAT, GST or sales tax from a price. Net, tax and gross in one step.",
+        keywords: [
+          "vat calculator",
+          "sales tax calculator",
+          "gst calculator",
+          "tax calculator",
+        ],
+        status: "ready",
+      },
     ],
   },
   {
@@ -109,7 +135,7 @@ export const categories: Category[] = [
     shortName: "Health",
     description: "BMI, calories, ideal weight and age.",
     seoDescription:
-      "Free health & fitness calculators: BMI, calorie needs, ideal weight, pregnancy due date and age calculator. Instant, science-based results.",
+      "Free health & fitness calculators: BMI, calorie needs, ideal weight, pregnancy due date and age calculator.",
     tools: [
       {
         slug: "bmi-calculator",
@@ -178,7 +204,7 @@ export const categories: Category[] = [
     shortName: "Math",
     description: "Fractions, GPA, ratios and geometry.",
     seoDescription:
-      "Free math calculators: fractions, GPA, percentage change, ratios and geometry. Step-by-step, easy to use tools for students.",
+      "Free math calculators: fractions, GPA, percentage change, ratios and geometry.",
     tools: [
       {
         slug: "fraction-calculator",
@@ -376,11 +402,7 @@ export const categories: Category[] = [
         name: "Days Until Date",
         description:
           "Count how many days remain until a specific future date.",
-        keywords: [
-          "days until",
-          "countdown days",
-          "days remaining",
-        ],
+        keywords: ["days until", "countdown days", "days remaining"],
         status: "ready",
       },
     ],
@@ -398,11 +420,7 @@ export const categories: Category[] = [
         name: "Word & Character Counter",
         description:
           "Count words, characters, sentences and paragraphs in your text.",
-        keywords: [
-          "word counter",
-          "character counter",
-          "text counter",
-        ],
+        keywords: ["word counter", "character counter", "text counter"],
         status: "ready",
       },
       {
@@ -410,12 +428,7 @@ export const categories: Category[] = [
         name: "Text Case Converter",
         description:
           "Convert text to UPPERCASE, lowercase, Title Case, camelCase and more.",
-        keywords: [
-          "case converter",
-          "uppercase",
-          "lowercase",
-          "title case",
-        ],
+        keywords: ["case converter", "uppercase", "lowercase", "title case"],
         status: "coming-soon",
       },
       {
@@ -461,11 +474,7 @@ export const categories: Category[] = [
         name: "JSON Formatter",
         description:
           "Format, validate and beautify JSON data with syntax highlighting.",
-        keywords: [
-          "json formatter",
-          "json validator",
-          "json beautifier",
-        ],
+        keywords: ["json formatter", "json validator", "json beautifier"],
         status: "ready",
       },
       {
@@ -473,11 +482,7 @@ export const categories: Category[] = [
         name: "Base64 Encoder / Decoder",
         description:
           "Encode text to Base64 or decode Base64 back to plain text.",
-        keywords: [
-          "base64 encoder",
-          "base64 decoder",
-          "base64 converter",
-        ],
+        keywords: ["base64 encoder", "base64 decoder", "base64 converter"],
         status: "coming-soon",
       },
       {
@@ -485,11 +490,7 @@ export const categories: Category[] = [
         name: "URL Encoder / Decoder",
         description:
           "Encode or decode URLs and query strings (percent-encoding).",
-        keywords: [
-          "url encoder",
-          "url decoder",
-          "percent encoding",
-        ],
+        keywords: ["url encoder", "url decoder", "percent encoding"],
         status: "coming-soon",
       },
       {
@@ -505,12 +506,7 @@ export const categories: Category[] = [
         name: "Hash Generator",
         description:
           "Generate MD5, SHA-1, SHA-256 and SHA-512 hashes from any text.",
-        keywords: [
-          "hash generator",
-          "md5",
-          "sha256",
-          "hash converter",
-        ],
+        keywords: ["hash generator", "md5", "sha256", "hash converter"],
         status: "coming-soon",
       },
     ],
@@ -540,11 +536,7 @@ export const categories: Category[] = [
         name: "Random Number Generator",
         description:
           "Generate random numbers within any range you specify.",
-        keywords: [
-          "random number generator",
-          "rng",
-          "random integer",
-        ],
+        keywords: ["random number generator", "rng", "random integer"],
         status: "coming-soon",
       },
       {
@@ -552,11 +544,7 @@ export const categories: Category[] = [
         name: "QR Code Generator",
         description:
           "Create QR codes for any text, URL, phone or Wi-Fi credentials.",
-        keywords: [
-          "qr code generator",
-          "qr code maker",
-          "free qr code",
-        ],
+        keywords: ["qr code generator", "qr code maker", "free qr code"],
         status: "ready",
       },
       {
@@ -587,7 +575,7 @@ export const categories: Category[] = [
     shortName: "AI Tools",
     description: "Prompts, token counters, AI directories and cost calculators.",
     seoDescription:
-      "Free AI tools and utilities: prompt generator, token counter for GPT/Claude/Gemini, curated directory of free AI tools and cost calculators for AI APIs.",
+      "Free AI tools and utilities: prompt generator, token counter, curated directory of free AI tools and cost calculators for AI APIs.",
     tools: [
       {
         slug: "prompt-generator",
@@ -662,10 +650,6 @@ export const categories: Category[] = [
     ],
   },
 ];
-
-// ============================================================================
-// HELPERS
-// ============================================================================
 
 export function getAllTools(): Array<
   Tool & { categorySlug: string; categoryName: string }
