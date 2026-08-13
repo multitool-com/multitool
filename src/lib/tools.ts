@@ -626,6 +626,57 @@ export const categories: Category[] = [
     ],
   },
   {
+    slug: "images",
+    name: "Image Tools",
+    shortName: "Images",
+    description: "Compress, resize and convert images.",
+    seoDescription:
+      "Free image tools: compress and resize JPEG, PNG and WebP images, convert between formats and more — all in your browser.",
+    tools: [
+      {
+        slug: "image-compressor",
+        name: "Image Compressor / Resizer",
+        description:
+          "Reduce the file size of JPEG, PNG and WebP images with quality control and resize. Runs entirely in your browser.",
+        keywords: [
+          "image compressor",
+          "compress image online",
+          "resize image",
+          "reduce image size",
+          "photo compressor",
+          "jpg compressor",
+        ],
+        status: "ready",
+      },
+      {
+        slug: "jpg-png-webp-converter",
+        name: "JPG / PNG / WebP Converter",
+        description:
+          "Convert images between JPG, PNG and WebP formats instantly in your browser.",
+        keywords: [
+          "jpg to png",
+          "png to jpg",
+          "webp converter",
+          "image format converter",
+        ],
+        status: "coming-soon",
+      },
+      {
+        slug: "image-to-base64",
+        name: "Image to Base64",
+        description:
+          "Convert any image to a Base64 data URI for embedding in HTML, CSS or JSON.",
+        keywords: [
+          "image to base64",
+          "base64 image",
+          "data uri",
+          "image encoder",
+        ],
+        status: "coming-soon",
+      },
+    ],
+  },
+  {
     slug: "ai-tools",
     name: "AI Tools",
     shortName: "AI Tools",
