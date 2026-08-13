@@ -467,7 +467,7 @@ export const categories: Category[] = [
     shortName: "Developer",
     description: "JSON, Base64, URL encoding and UUIDs.",
     seoDescription:
-      "Free developer tools: JSON formatter, Base64 encoder/decoder, URL encoder, UUID generator and hash generator (MD5, SHA).",
+      "Free developer tools: JSON formatter, regex tester, Base64, URL encoder, UUID and hash generators.",
     tools: [
       {
         slug: "json-formatter",
@@ -509,6 +509,19 @@ export const categories: Category[] = [
         keywords: ["hash generator", "md5", "sha256", "hash converter"],
         status: "coming-soon",
       },
+      {
+        slug: "regex-tester",
+        name: "Regex Tester",
+        description:
+          "Test JavaScript regular expressions with live matches, capture groups and flags.",
+        keywords: [
+          "regex tester",
+          "regular expression tester",
+          "regexp tester",
+          "test regex online",
+        ],
+        status: "ready",
+      },
     ],
   },
   {
@@ -517,7 +530,7 @@ export const categories: Category[] = [
     shortName: "Generators",
     description: "Passwords, QR codes and color palettes.",
     seoDescription:
-      "Free generators: strong password generator, random numbers, QR codes, color palettes and dice roller.",
+      "Free generators: password generator, QR codes, giveaway picker / sorteador, color palettes and dice roller.",
     tools: [
       {
         slug: "password-generator",
@@ -566,6 +579,19 @@ export const categories: Category[] = [
           "Roll virtual dice of any size — D4, D6, D8, D10, D12, D20 and more.",
         keywords: ["dice roller", "virtual dice", "d20 roller"],
         status: "coming-soon",
+      },
+      {
+        slug: "giveaway-picker",
+        name: "Giveaway Picker / Sorteador",
+        description:
+          "Draw random winners from a pasted or uploaded list. Built for Instagram giveaways and raffles.",
+        keywords: [
+          "giveaway picker",
+          "sorteador instagram",
+          "sorteio aleatório",
+          "random winner",
+        ],
+        status: "ready",
       },
     ],
   },
