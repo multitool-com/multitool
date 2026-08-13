@@ -372,7 +372,7 @@ export const categories: Category[] = [
           "countdown days",
           "days remaining",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
     ],
   },
