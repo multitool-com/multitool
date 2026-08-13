@@ -1,11 +1,6 @@
 // ============================================================================
 // REGISTRO CENTRAL DE FERRAMENTAS
 // ============================================================================
-// Este é o único lugar onde você adiciona/edita ferramentas.
-// A home, menu, sitemap, páginas de categoria — tudo lê daqui.
-// Para adicionar uma nova ferramenta: adicione um objeto no array `tools`
-// da categoria correspondente e defina `status: "ready"` quando estiver pronta.
-// ============================================================================
 
 export type ToolStatus = "ready" | "coming-soon";
 
@@ -244,9 +239,9 @@ export const categories: Category[] = [
     slug: "converters",
     name: "Converters",
     shortName: "Converters",
-    description: "Units, temperature, time zones and bases.",
+    description: "Units, temperature, currency, time zones and bases.",
     seoDescription:
-      "Free online converters: units (length, weight, volume), temperature, time zones, number bases and Roman numerals.",
+      "Free online converters: units, temperature, currency, time zones, number bases and Roman numerals.",
     tools: [
       {
         slug: "unit-converter",
@@ -307,6 +302,20 @@ export const categories: Category[] = [
           "roman to number",
         ],
         status: "coming-soon",
+      },
+      {
+        slug: "currency-converter",
+        name: "Currency Converter",
+        description:
+          "Convert between USD, EUR, GBP, BRL, INR and other major currencies with live reference rates.",
+        keywords: [
+          "currency converter",
+          "exchange rate",
+          "usd to eur",
+          "usd to brl",
+          "money converter",
+        ],
+        status: "ready",
       },
     ],
   },
@@ -572,7 +581,7 @@ export const categories: Category[] = [
       },
     ],
   },
-{
+  {
     slug: "ai-tools",
     name: "AI Tools",
     shortName: "AI Tools",
@@ -653,11 +662,14 @@ export const categories: Category[] = [
     ],
   },
 ];
+
 // ============================================================================
-// HELPERS — funções auxiliares para acessar dados de forma prática
+// HELPERS
 // ============================================================================
 
-export function getAllTools(): Array<Tool & { categorySlug: string; categoryName: string }> {
+export function getAllTools(): Array<
+  Tool & { categorySlug: string; categoryName: string }
+> {
   return categories.flatMap((cat) =>
     cat.tools.map((tool) => ({
       ...tool,
