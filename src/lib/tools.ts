@@ -656,10 +656,14 @@ export const categories: Category[] = [
         keywords: [
           "jpg to png",
           "png to jpg",
-          "webp converter",
+          "jpg to webp",
+          "webp to jpg",
+          "png to webp",
+          "webp to png",
           "image format converter",
+          "image converter online",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "image-to-base64",
