@@ -428,7 +428,7 @@ export const categories: Category[] = [
     shortName: "Text",
     description: "Word counts, case converters and diffs.",
     seoDescription:
-      "Free text tools: word counter, case converter, Lorem Ipsum generator, text diff checker and URL slug generator.",
+      "Free text tools: word counter, readability checker, case converter, Lorem Ipsum generator, text diff checker and URL slug generator.",
     tools: [
       {
         slug: "word-counter",
@@ -472,6 +472,33 @@ export const categories: Category[] = [
         description:
           "Generate clean, URL-friendly slugs from any text or title.",
         keywords: ["slug generator", "url slug", "seo slug"],
+        status: "coming-soon",
+      },
+      {
+        slug: "readability-checker",
+        name: "Readability Checker",
+        description:
+          "Measure the Flesch Reading Ease score and Flesch-Kincaid grade level of any text, with word, sentence and syllable counts.",
+        keywords: [
+          "readability checker",
+          "flesch reading ease",
+          "flesch kincaid",
+          "readability score",
+          "reading level test",
+        ],
+        status: "ready",
+      },
+      {
+        slug: "keyword-density",
+        name: "Keyword Density Checker",
+        description:
+          "Check how often a keyword appears in your text as a percentage of all words.",
+        keywords: [
+          "keyword density",
+          "keyword density checker",
+          "seo keyword",
+          "keyword frequency",
+        ],
         status: "coming-soon",
       },
     ],
