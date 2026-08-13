@@ -259,6 +259,21 @@ export const categories: Category[] = [
         ],
         status: "coming-soon",
       },
+      {
+        slug: "scientific-calculator",
+        name: "Scientific Calculator",
+        description:
+          "Full scientific calculator: trigonometry, logarithms, powers, roots, π and e. Keyboard support and history.",
+        keywords: [
+          "scientific calculator",
+          "online calculator",
+          "calculator online free",
+          "trigonometry calculator",
+          "log calculator",
+          "math calculator",
+        ],
+        status: "ready",
+      },
     ],
   },
   {
