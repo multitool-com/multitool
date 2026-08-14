@@ -2,14 +2,18 @@
 
 import { useState } from "react";
 import { PDFDocument } from "pdf-lib";
-import * as pdfjsLib from "pdfjs-dist";
 
-// pdf.js worker — loaded lazily from the bundler (Next.js asset URL).
-if (typeof window !== "undefined") {
-  pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
-    "pdfjs-dist/build/pdf.worker.min.mjs",
-    import.meta.url
-  ).toString();
+// pdf.js is loaded dynamically (client-only) — it uses browser-only APIs
+// (DOMMatrix, canvas) that do not exist during the server-side prerender.
+async function getPdfJs() {
+  const pdfjsLib = await import("pdfjs-dist");
+  if (typeof window !== "undefined") {
+    pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
+      "pdfjs-dist/build/pdf.worker.min.mjs",
+      import.meta.url
+    ).toString();
+  }
+  return pdfjsLib;
 }
 
 interface PdfInfo {
@@ -77,6 +81,7 @@ export default function PdfCompressClient() {
     setResult(null);
     try {
       const bytes = await pdf.file.arrayBuffer();
+      const pdfjsLib = await getPdfJs();
       const pdfDoc = await pdfjsLib.getDocument({
         data: new Uint8Array(bytes),
       }).promise;
