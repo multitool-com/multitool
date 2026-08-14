@@ -857,12 +857,27 @@ export const categories: Category[] = [
         slug: "pdf-watermark",
         name: "PDF Watermark",
         description:
-          "Add a text or image watermark to every page of a PDF, with position and opacity controls.",
+          "Add a text or image watermark to every page of a PDF, with position, rotation and opacity controls.",
         keywords: [
           "pdf watermark",
           "add watermark to pdf",
           "watermark pdf",
           "pdf watermark online",
+          "add text to pdf",
+          "stamp pdf",
+        ],
+        status: "ready",
+      },
+      {
+        slug: "pdf-reorder",
+        name: "PDF Reorder / Remove Pages",
+        description:
+          "Reorder pages, move them with drag and drop, or remove pages you don't need.",
+        keywords: [
+          "reorder pdf pages",
+          "pdf page organizer",
+          "remove pages from pdf",
+          "delete pdf pages",
         ],
         status: "coming-soon",
       },
