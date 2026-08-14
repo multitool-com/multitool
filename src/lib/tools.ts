@@ -731,7 +731,7 @@ export const categories: Category[] = [
     shortName: "PDF",
     description: "Merge, split, convert and protect PDFs.",
     seoDescription:
-      "Free PDF tools: merge, split, convert images to PDF, protect with password, rotate and sign — all in your browser, no upload.",
+      "Free PDF tools: merge, split, compress, unlock, convert images to PDF, protect with password, rotate and sign — all in your browser, no upload.",
     tools: [
       {
         slug: "pdf-merge",
@@ -821,6 +821,35 @@ export const categories: Category[] = [
           "electronic signature",
         ],
         status: "ready",
+      },
+      {
+        slug: "pdf-unlock",
+        name: "PDF Unlock",
+        description:
+          "Remove the password from a PDF you own. Type the password once and download the unlocked file.",
+        keywords: [
+          "unlock pdf",
+          "remove password from pdf",
+          "pdf unlock",
+          "remove pdf password",
+          "decrypt pdf",
+          "unlock pdf online",
+        ],
+        status: "ready",
+      },
+      {
+        slug: "pdf-compress",
+        name: "PDF Compress",
+        description:
+          "Reduce the file size of a PDF by re-encoding pages as optimized images.",
+        keywords: [
+          "compress pdf",
+          "reduce pdf size",
+          "pdf compressor",
+          "shrink pdf",
+          "smaller pdf",
+        ],
+        status: "coming-soon",
       },
     ],
   },
