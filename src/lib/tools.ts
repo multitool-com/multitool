@@ -767,14 +767,16 @@ export const categories: Category[] = [
         slug: "images-to-pdf",
         name: "Images to PDF",
         description:
-          "Turn JPG, PNG and WebP images into a single PDF document in your browser.",
+          "Turn JPG, PNG and WebP images into a single PDF document — reorder, fit and download.",
         keywords: [
           "images to pdf",
           "jpg to pdf",
           "png to pdf",
+          "webp to pdf",
           "image to pdf converter",
+          "convert image to pdf",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "pdf-protect",
