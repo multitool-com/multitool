@@ -802,8 +802,10 @@ export const categories: Category[] = [
           "rotate pdf",
           "rotate pdf pages",
           "pdf rotate online",
+          "rotate pdf 90 degrees",
+          "fix upside down pdf",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "pdf-sign",
