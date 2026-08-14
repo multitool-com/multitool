@@ -841,13 +841,28 @@ export const categories: Category[] = [
         slug: "pdf-compress",
         name: "PDF Compress",
         description:
-          "Reduce the file size of a PDF by re-encoding pages as optimized images.",
+          "Reduce the file size of a PDF by re-encoding pages as optimized images. Quality and resolution controls.",
         keywords: [
           "compress pdf",
           "reduce pdf size",
           "pdf compressor",
           "shrink pdf",
           "smaller pdf",
+          "compress pdf online",
+          "pdf size reducer",
+        ],
+        status: "ready",
+      },
+      {
+        slug: "pdf-watermark",
+        name: "PDF Watermark",
+        description:
+          "Add a text or image watermark to every page of a PDF, with position and opacity controls.",
+        keywords: [
+          "pdf watermark",
+          "add watermark to pdf",
+          "watermark pdf",
+          "pdf watermark online",
         ],
         status: "coming-soon",
       },
