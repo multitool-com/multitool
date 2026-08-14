@@ -752,14 +752,16 @@ export const categories: Category[] = [
         slug: "pdf-split",
         name: "PDF Split / Extract Pages",
         description:
-          "Extract specific pages or ranges from a PDF and save them as a new file.",
+          "Extract specific pages or ranges from a PDF, split into single pages or chunks of N — as PDF or ZIP.",
         keywords: [
           "split pdf",
           "extract pages from pdf",
           "pdf page extractor",
           "split pdf online",
+          "pdf splitter",
+          "remove pages from pdf",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "images-to-pdf",
