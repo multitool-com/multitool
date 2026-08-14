@@ -811,14 +811,16 @@ export const categories: Category[] = [
         slug: "pdf-sign",
         name: "PDF Sign",
         description:
-          "Draw your signature and stamp it onto a PDF document in your browser.",
+          "Draw your signature with the mouse or finger and place it on any page of a PDF.",
         keywords: [
           "sign pdf",
           "pdf signature",
           "sign pdf online",
           "digital signature pdf",
+          "sign a pdf document",
+          "electronic signature",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
     ],
   },
