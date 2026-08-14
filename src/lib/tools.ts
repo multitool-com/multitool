@@ -726,6 +726,95 @@ export const categories: Category[] = [
     ],
   },
   {
+    slug: "pdf-tools",
+    name: "PDF Tools",
+    shortName: "PDF",
+    description: "Merge, split, convert and protect PDFs.",
+    seoDescription:
+      "Free PDF tools: merge, split, convert images to PDF, protect with password, rotate and sign — all in your browser, no upload.",
+    tools: [
+      {
+        slug: "pdf-merge",
+        name: "PDF Merge",
+        description:
+          "Combine multiple PDF files into one, keeping the page order you choose. Free, private, in your browser.",
+        keywords: [
+          "merge pdf",
+          "combine pdf",
+          "join pdf",
+          "pdf merger",
+          "merge pdf online",
+          "combine pdf files",
+        ],
+        status: "ready",
+      },
+      {
+        slug: "pdf-split",
+        name: "PDF Split / Extract Pages",
+        description:
+          "Extract specific pages or ranges from a PDF and save them as a new file.",
+        keywords: [
+          "split pdf",
+          "extract pages from pdf",
+          "pdf page extractor",
+          "split pdf online",
+        ],
+        status: "coming-soon",
+      },
+      {
+        slug: "images-to-pdf",
+        name: "Images to PDF",
+        description:
+          "Turn JPG, PNG and WebP images into a single PDF document in your browser.",
+        keywords: [
+          "images to pdf",
+          "jpg to pdf",
+          "png to pdf",
+          "image to pdf converter",
+        ],
+        status: "coming-soon",
+      },
+      {
+        slug: "pdf-protect",
+        name: "PDF Protect (Password)",
+        description:
+          "Encrypt a PDF with a password so only people with the password can open it.",
+        keywords: [
+          "protect pdf",
+          "password protect pdf",
+          "pdf password",
+          "encrypt pdf",
+        ],
+        status: "coming-soon",
+      },
+      {
+        slug: "pdf-rotate",
+        name: "PDF Rotate",
+        description:
+          "Rotate PDF pages 90, 180 or 270 degrees — all pages or only selected ones.",
+        keywords: [
+          "rotate pdf",
+          "rotate pdf pages",
+          "pdf rotate online",
+        ],
+        status: "coming-soon",
+      },
+      {
+        slug: "pdf-sign",
+        name: "PDF Sign",
+        description:
+          "Draw your signature and stamp it onto a PDF document in your browser.",
+        keywords: [
+          "sign pdf",
+          "pdf signature",
+          "sign pdf online",
+          "digital signature pdf",
+        ],
+        status: "coming-soon",
+      },
+    ],
+  },
+  {
     slug: "ai-tools",
     name: "AI Tools",
     shortName: "AI Tools",
