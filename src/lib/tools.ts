@@ -782,14 +782,16 @@ export const categories: Category[] = [
         slug: "pdf-protect",
         name: "PDF Protect (Password)",
         description:
-          "Encrypt a PDF with a password so only people with the password can open it.",
+          "Encrypt a PDF with a password (AES-256) and optionally restrict printing and copying.",
         keywords: [
           "protect pdf",
           "password protect pdf",
           "pdf password",
           "encrypt pdf",
+          "lock pdf",
+          "secure pdf",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "pdf-rotate",
