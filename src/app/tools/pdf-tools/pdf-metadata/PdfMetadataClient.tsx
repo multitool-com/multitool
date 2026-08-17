@@ -75,9 +75,9 @@ export default function PdfMetadataClient() {
     try {
       const bytes = await pdf.file.arrayBuffer();
       const doc = await PDFDocument.load(bytes);
-      doc.setTitle(meta.title || undefined);
-      doc.setAuthor(meta.author || undefined);
-      doc.setSubject(meta.subject || undefined);
+      doc.setTitle(meta.title || "");
+      doc.setAuthor(meta.author || "");
+      doc.setSubject(meta.subject || "");
       // pdf-lib expects keywords as an Array — split the comma-separated input.
       doc.setKeywords(
         meta.keywords
