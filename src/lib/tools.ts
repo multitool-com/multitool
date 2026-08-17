@@ -883,6 +883,33 @@ export const categories: Category[] = [
         ],
         status: "ready",
       },
+      {
+        slug: "pdf-number-pages",
+        name: "Add Page Numbers to PDF",
+        description:
+          "Add page numbers to a PDF with position, starting number, size and prefix options.",
+        keywords: [
+          "add page numbers to pdf",
+          "number pdf pages",
+          "pdf page numbers",
+          "add page numbers pdf",
+          "insert page numbers pdf",
+        ],
+        status: "ready",
+      },
+      {
+        slug: "pdf-metadata",
+        name: "PDF Metadata Editor",
+        description:
+          "View and edit PDF metadata: title, author, subject and keywords.",
+        keywords: [
+          "pdf metadata",
+          "edit pdf title",
+          "pdf properties",
+          "pdf metadata editor",
+        ],
+        status: "coming-soon",
+      },
     ],
   },
   {
