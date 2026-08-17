@@ -872,14 +872,16 @@ export const categories: Category[] = [
         slug: "pdf-reorder",
         name: "PDF Reorder / Remove Pages",
         description:
-          "Reorder pages, move them with drag and drop, or remove pages you don't need.",
+          "Reorder pages with arrows and remove pages you don't need, then download the organized PDF.",
         keywords: [
           "reorder pdf pages",
           "pdf page organizer",
           "remove pages from pdf",
           "delete pdf pages",
+          "reorder pdf",
+          "organize pdf pages",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
     ],
   },
