@@ -10,6 +10,8 @@ export interface Tool {
   description: string;
   keywords: string[];
   status: ToolStatus;
+  /** Optional cover image path (used by the Games category). */
+  image?: string;
 }
 
 export interface Category {
@@ -1051,6 +1053,123 @@ export const categories: Category[] = [
           "prompt engineer",
         ],
         status: "ready",
+      },
+    ],
+  },
+  {
+    slug: "games",
+    name: "Games",
+    shortName: "Games",
+    description: "Classic arcade games, free in your browser.",
+    seoDescription:
+      "Free browser games: Snake, 2048, memory match, block stacking, word guess and more classic arcade games — no download, no sign-up, all in your browser.",
+    tools: [
+      {
+        slug: "snake",
+        name: "Snake",
+        description:
+          "The classic snake game with neon visuals. Eat, grow and avoid the walls.",
+        keywords: ["snake game", "play snake", "snake online", "classic snake game"],
+        status: "ready",
+        image: "/games/snake.jpg",
+      },
+      {
+        slug: "2048",
+        name: "2048",
+        description:
+          "Merge tiles to reach 2048 in the addictive number puzzle game.",
+        keywords: ["2048", "2048 game", "play 2048 online", "number puzzle game"],
+        status: "ready",
+        image: "/games/2048.jpg",
+      },
+      {
+        slug: "memory-match",
+        name: "Memory Match",
+        description:
+          "Flip cards and find all the matching pairs in this classic memory game.",
+        keywords: ["memory game", "memory match", "card matching game", "concentration game"],
+        status: "ready",
+        image: "/games/memory-match.jpg",
+      },
+      {
+        slug: "snake-puzzle",
+        name: "Snake Puzzle",
+        description:
+          "Untangle the snakes: click a snake to slide it forward and clear the board. Level-based logic puzzle.",
+        keywords: ["snake puzzle", "unpuzzle", "snake logic puzzle", "untangle snakes game"],
+        status: "coming-soon",
+      },
+      {
+        slug: "noughts-crosses",
+        name: "Noughts & Crosses",
+        description:
+          "Play tic-tac-toe against the computer or a friend. Three in a row wins.",
+        keywords: ["tic tac toe", "noughts and crosses", "play tic tac toe", "x o game"],
+        status: "coming-soon",
+      },
+      {
+        slug: "sequence-memory",
+        name: "Sequence Memory",
+        description:
+          "Watch the glowing sequence and repeat it. How long a chain can you remember?",
+        keywords: ["memory game", "simon game", "sequence memory", "brain game"],
+        status: "coming-soon",
+      },
+      {
+        slug: "minesweeper",
+        name: "Minesweeper",
+        description:
+          "Clear the grid without hitting a mine. The classic logic puzzle, refreshed.",
+        keywords: ["minesweeper", "play minesweeper", "minefield game", "logic puzzle game"],
+        status: "coming-soon",
+      },
+      {
+        slug: "block-stacker",
+        name: "Block Stacker",
+        description:
+          "A falling-blocks puzzle in the tradition of the 80s classic. Stack lines and clear them.",
+        keywords: ["falling blocks game", "block puzzle", "stack blocks game", "tetris style game"],
+        status: "coming-soon",
+      },
+      {
+        slug: "dino-run",
+        name: "Dino Run",
+        description:
+          "Jump over obstacles and run as far as you can in this endless desert dash.",
+        keywords: ["dino game", "endless runner", "dino run", "jump game online"],
+        status: "coming-soon",
+      },
+      {
+        slug: "word-guess",
+        name: "Word Guess",
+        description:
+          "Guess the hidden word in six tries. A daily brain teaser for word lovers.",
+        keywords: ["word game", "guess the word", "word puzzle", "daily word game"],
+        status: "coming-soon",
+      },
+      {
+        slug: "pixel-pong",
+        name: "Pixel Pong",
+        description:
+          "The arcade paddle classic, pixel-styled. Beat the computer in retro rally.",
+        keywords: ["pong game", "pixel pong", "arcade pong", "retro pong game"],
+        status: "coming-soon",
+      },
+      {
+        slug: "brick-breaker",
+        name: "Brick Breaker",
+        description:
+          "Bounce the ball and smash every brick. The breakout-style arcade favorite.",
+        keywords: ["brick breaker", "breakout game", "ball brick game", "arcade brick game"],
+        status: "coming-soon",
+      },
+      {
+        slug: "four-in-a-row",
+        name: "Four in a Row",
+        description:
+          "Drop discs and connect four in a row. Play against the computer.",
+        keywords: ["connect four", "four in a row", "connect 4 game", "drop disc game"],
+        status: "coming-soon",
       },
     ],
   },
