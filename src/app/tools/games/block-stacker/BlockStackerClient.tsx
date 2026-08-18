@@ -336,6 +336,31 @@ export default function BlockStackerClient() {
     return a.y + d;
   };
 
+  // ---- touch swipe on the board (mobile) ----
+  const touchStart = useRef<{ x: number; y: number } | null>(null);
+  const onBoardTouchStart = (e: React.TouchEvent) => {
+    const t = e.touches[0];
+    touchStart.current = { x: t.clientX, y: t.clientY };
+  };
+  const onBoardTouchEnd = (e: React.TouchEvent) => {
+    if (!touchStart.current) return;
+    const t = e.changedTouches[0];
+    const dx = t.clientX - touchStart.current.x;
+    const dy = t.clientY - touchStart.current.y;
+    if (Math.abs(dx) < 24 && Math.abs(dy) < 24) return;
+    if (Math.abs(dx) > Math.abs(dy)) {
+      // horizontal swipe = move
+      tryMove(dx > 0 ? 1 : -1, 0);
+    } else if (dy > 0) {
+      // swipe down = hard drop
+      hardDrop();
+    } else {
+      // swipe up = rotate
+      tryRotate();
+    }
+    touchStart.current = null;
+  };
+
   // ---- keyboard ----
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -473,11 +498,13 @@ export default function BlockStackerClient() {
         </div>
 
         {/* Board */}
-        <div className="relative mx-auto">
+        <div className="relative mx-auto touch-none select-none">
           <canvas
             ref={canvasRef}
             width={COLS * CELL}
             height={ROWS * CELL}
+            onTouchStart={onBoardTouchStart}
+            onTouchEnd={onBoardTouchEnd}
             className="rounded-xl border border-white/10 shadow-lg shadow-black/40 max-w-[280px] w-full h-auto"
           />
           {over && (
@@ -508,10 +535,70 @@ export default function BlockStackerClient() {
         </div>
       </div>
 
+      {/* Touch controls (mobile only) */}
+      <div className="sm:hidden flex flex-col gap-3 mx-auto w-full max-w-[360px]">
+        <div className="grid grid-cols-3 gap-2 max-w-[220px] mx-auto">
+          <div />
+          <button
+            type="button"
+            onClick={() => tryRotate()}
+            className="bg-white/10 border border-white/15 rounded-xl py-4 font-mono text-lg text-paper active:bg-accent active:border-accent"
+            aria-label="Rotate"
+          >
+            ⟳
+          </button>
+          <div />
+          <button
+            type="button"
+            onClick={() => tryMove(-1, 0)}
+            className="bg-white/10 border border-white/15 rounded-xl py-4 font-mono text-lg text-paper active:bg-accent active:border-accent"
+            aria-label="Left"
+          >
+            ◀
+          </button>
+          <button
+            type="button"
+            onClick={() => tryMove(0, 1)}
+            className="bg-white/10 border border-white/15 rounded-xl py-4 font-mono text-lg text-paper active:bg-accent active:border-accent"
+            aria-label="Soft drop"
+          >
+            ▼
+          </button>
+          <button
+            type="button"
+            onClick={() => tryMove(1, 0)}
+            className="bg-white/10 border border-white/15 rounded-xl py-4 font-mono text-lg text-paper active:bg-accent active:border-accent"
+            aria-label="Right"
+          >
+            ▶
+          </button>
+        </div>
+        <div className="flex gap-2 justify-center">
+          <button
+            type="button"
+            onClick={hardDrop}
+            className="flex-1 bg-accent text-paper font-mono text-xs tracking-widest px-4 py-3 rounded-xl active:opacity-80"
+          >
+            ⤓ DROP
+          </button>
+          <button
+            type="button"
+            onClick={hold}
+            className="flex-1 bg-white/10 border border-white/15 text-paper font-mono text-xs tracking-widest px-4 py-3 rounded-xl active:bg-accent active:border-accent"
+          >
+            ⇄ HOLD
+          </button>
+        </div>
+        <p className="text-center font-mono text-[10px] text-paper/50">
+          OR SWIPE: ← → move · ↑ rotate · ↓ drop
+        </p>
+      </div>
+
       <div className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-sm text-paper/70">
         <strong className="text-paper">Controls:</strong> ← → move · ↑/X
-        rotate · ↓ soft drop · SPACE hard drop · C hold · P pause. Clear 10
-        lines to level up — speed keeps rising!
+        rotate · ↓ soft drop · SPACE hard drop · C hold · P pause. On
+        mobile use the buttons or swipe. Clear 10 lines to level up — speed
+        keeps rising!
       </div>
     </div>
   );
