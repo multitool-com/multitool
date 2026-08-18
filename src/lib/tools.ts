@@ -1133,7 +1133,8 @@ export const categories: Category[] = [
         description:
           "A falling-blocks puzzle in the tradition of the 80s classic. Stack lines and clear them.",
         keywords: ["falling blocks game", "block puzzle", "stack blocks game", "tetris style game"],
-        status: "coming-soon",
+        status: "ready",
+        image: "/games/block-stacker.jpg",
       },
       {
         slug: "dino-run",
@@ -1141,7 +1142,8 @@ export const categories: Category[] = [
         description:
           "Jump over obstacles and run as far as you can in this endless desert dash.",
         keywords: ["dino game", "endless runner", "dino run", "jump game online"],
-        status: "coming-soon",
+        status: "ready",
+        image: "/games/dino-run.jpg",
       },
       {
         slug: "word-guess",
@@ -1149,7 +1151,8 @@ export const categories: Category[] = [
         description:
           "Guess the hidden word in six tries. A daily brain teaser for word lovers.",
         keywords: ["word game", "guess the word", "word puzzle", "daily word game"],
-        status: "coming-soon",
+        status: "ready",
+        image: "/games/word-guess.jpg",
       },
       {
         slug: "pixel-pong",
