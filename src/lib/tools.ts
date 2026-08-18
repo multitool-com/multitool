@@ -1160,7 +1160,8 @@ export const categories: Category[] = [
         description:
           "The arcade paddle classic, pixel-styled. Beat the computer in retro rally.",
         keywords: ["pong game", "pixel pong", "arcade pong", "retro pong game"],
-        status: "coming-soon",
+        status: "ready",
+        image: "/games/pixel-pong.jpg",
       },
       {
         slug: "brick-breaker",
@@ -1168,7 +1169,8 @@ export const categories: Category[] = [
         description:
           "Bounce the ball and smash every brick. The breakout-style arcade favorite.",
         keywords: ["brick breaker", "breakout game", "ball brick game", "arcade brick game"],
-        status: "coming-soon",
+        status: "ready",
+        image: "/games/brick-breaker.jpg",
       },
       {
         slug: "four-in-a-row",
@@ -1176,7 +1178,8 @@ export const categories: Category[] = [
         description:
           "Drop discs and connect four in a row. Play against the computer.",
         keywords: ["connect four", "four in a row", "connect 4 game", "drop disc game"],
-        status: "coming-soon",
+        status: "ready",
+        image: "/games/four-in-a-row.jpg",
       },
     ],
   },
