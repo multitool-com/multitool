@@ -912,6 +912,34 @@ export const categories: Category[] = [
         ],
         status: "ready",
       },
+      {
+        slug: "pdf-to-images",
+        name: "PDF to Images",
+        description:
+          "Convert every page of a PDF to JPG or PNG images, downloaded as a ZIP.",
+        keywords: [
+          "pdf to image",
+          "pdf to jpg",
+          "pdf to png",
+          "convert pdf to image",
+          "pdf pages to jpg",
+        ],
+        status: "ready",
+      },
+      {
+        slug: "pdf-repair",
+        name: "PDF Repair",
+        description:
+          "Try to recover and repair damaged or unreadable PDF files.",
+        keywords: [
+          "pdf repair",
+          "repair pdf",
+          "fix pdf",
+          "recover pdf",
+          "corrupted pdf",
+        ],
+        status: "coming-soon",
+      },
     ],
   },
   {
