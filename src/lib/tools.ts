@@ -1097,7 +1097,8 @@ export const categories: Category[] = [
         description:
           "Untangle the snakes: click a snake to slide it forward and clear the board. Level-based logic puzzle.",
         keywords: ["snake puzzle", "unpuzzle", "snake logic puzzle", "untangle snakes game"],
-        status: "coming-soon",
+        status: "ready",
+        image: "/games/snake-puzzle.jpg",
       },
       {
         slug: "noughts-crosses",
