@@ -1106,7 +1106,8 @@ export const categories: Category[] = [
         description:
           "Play tic-tac-toe against the computer or a friend. Three in a row wins.",
         keywords: ["tic tac toe", "noughts and crosses", "play tic tac toe", "x o game"],
-        status: "coming-soon",
+        status: "ready",
+        image: "/games/noughts-crosses.jpg",
       },
       {
         slug: "sequence-memory",
@@ -1114,7 +1115,8 @@ export const categories: Category[] = [
         description:
           "Watch the glowing sequence and repeat it. How long a chain can you remember?",
         keywords: ["memory game", "simon game", "sequence memory", "brain game"],
-        status: "coming-soon",
+        status: "ready",
+        image: "/games/sequence-memory.jpg",
       },
       {
         slug: "minesweeper",
@@ -1122,7 +1124,8 @@ export const categories: Category[] = [
         description:
           "Clear the grid without hitting a mine. The classic logic puzzle, refreshed.",
         keywords: ["minesweeper", "play minesweeper", "minefield game", "logic puzzle game"],
-        status: "coming-soon",
+        status: "ready",
+        image: "/games/minesweeper.jpg",
       },
       {
         slug: "block-stacker",
