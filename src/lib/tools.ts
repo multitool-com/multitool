@@ -101,7 +101,7 @@ export const categories: Category[] = [
           "annual salary",
           "pay converter",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "compound-interest",
@@ -185,7 +185,7 @@ export const categories: Category[] = [
           "baby due date",
           "gestational age",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "calorie-calculator",
@@ -198,7 +198,7 @@ export const categories: Category[] = [
           "tdee",
           "daily calories",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "ideal-weight",
@@ -210,7 +210,7 @@ export const categories: Category[] = [
           "healthy weight calculator",
           "target weight",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
     ],
   },
@@ -232,7 +232,7 @@ export const categories: Category[] = [
           "add fractions",
           "simplify fraction",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "gpa-calculator",
@@ -240,7 +240,7 @@ export const categories: Category[] = [
         description:
           "Calculate your Grade Point Average (GPA) from grades and credit hours.",
         keywords: ["gpa calculator", "grade point average", "college gpa"],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "percentage-change",
@@ -260,7 +260,7 @@ export const categories: Category[] = [
         description:
           "Simplify ratios, compare and solve proportions instantly.",
         keywords: ["ratio calculator", "proportion", "simplify ratio"],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "geometry-calculator",
@@ -273,7 +273,7 @@ export const categories: Category[] = [
           "perimeter",
           "volume",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "scientific-calculator",
@@ -348,7 +348,7 @@ export const categories: Category[] = [
           "world clock",
           "utc converter",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "number-base-converter",
@@ -360,7 +360,7 @@ export const categories: Category[] = [
           "hex converter",
           "decimal to binary",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "roman-numeral-converter",
@@ -372,7 +372,7 @@ export const categories: Category[] = [
           "roman numerals",
           "roman to number",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "currency-converter",
@@ -415,7 +415,7 @@ export const categories: Category[] = [
           "date difference",
           "add days to date",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "countdown-timer",
@@ -423,7 +423,7 @@ export const categories: Category[] = [
         description:
           "Create a live countdown to any date or event of your choice.",
         keywords: ["countdown timer", "countdown to date", "event countdown"],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "work-days-calculator",
@@ -435,7 +435,7 @@ export const categories: Category[] = [
           "business days",
           "working days between dates",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "unix-timestamp",
@@ -447,7 +447,7 @@ export const categories: Category[] = [
           "epoch converter",
           "timestamp to date",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "days-until-date",
@@ -488,7 +488,7 @@ export const categories: Category[] = [
         description:
           "Convert text to UPPERCASE, lowercase, Title Case, camelCase and more.",
         keywords: ["case converter", "uppercase", "lowercase", "title case"],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "lorem-ipsum-generator",
@@ -500,7 +500,7 @@ export const categories: Category[] = [
           "placeholder text",
           "dummy text generator",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "text-diff",
@@ -508,7 +508,7 @@ export const categories: Category[] = [
         description:
           "Compare two texts side by side and highlight the differences.",
         keywords: ["text diff", "compare text", "diff checker"],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "slug-generator",
@@ -516,7 +516,7 @@ export const categories: Category[] = [
         description:
           "Generate clean, URL-friendly slugs from any text or title.",
         keywords: ["slug generator", "url slug", "seo slug"],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "readability-checker",
@@ -543,7 +543,7 @@ export const categories: Category[] = [
           "seo keyword",
           "keyword frequency",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "fancy-text-generator",
@@ -560,10 +560,24 @@ export const categories: Category[] = [
         status: "ready",
       },
       {
+        slug: "hashtag-generator",
+        name: "Hashtag Generator",
+        description: "Generate 3-30 relevant hashtags from any topic: phrase tags, word tags and trending variants for social media.",
+        keywords: ["hashtag generator", "hashtags for instagram", "hashtag ideas", "social media hashtags", "gerador de hashtags"],
+        status: "ready",
+      },
+      {
         slug: "morse-code",
         name: "Morse Code Translator",
         description: "Translate text to Morse code and back, with sound playback of the classic alphabet.",
         keywords: ["morse code", "morse code translator", "text to morse", "morse decoder"],
+        status: "ready",
+      },
+      {
+        slug: "text-encryptor",
+        name: "Text Encryptor",
+        description: "Encrypt any text with AES-256-GCM using a passphrase, and decrypt it back. 100% in your browser.",
+        keywords: ["text encryptor", "encrypt text", "aes encryption", "decrypt text", "criptografar texto"],
         status: "ready",
       },
       {
@@ -578,6 +592,13 @@ export const categories: Category[] = [
         name: "Text to Speech",
         description: "Turn any text into spoken audio right in your browser: choose a voice, speed and pitch. Works offline, no sign-up.",
         keywords: ["text to speech", "tts", "read aloud", "text reader", "texto em voz"],
+        status: "ready",
+      },
+      {
+        slug: "typing-test",
+        name: "Typing Test (WPM)",
+        description: "Measure your typing speed in WPM and accuracy with 15, 30 or 60 second tests and live feedback.",
+        keywords: ["typing test", "wpm test", "typing speed test", "words per minute", "teste de digitacao"],
         status: "ready",
       },
     ],
@@ -604,7 +625,7 @@ export const categories: Category[] = [
         description:
           "Encode text to Base64 or decode Base64 back to plain text.",
         keywords: ["base64 encoder", "base64 decoder", "base64 converter"],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "url-encoder",
@@ -612,7 +633,7 @@ export const categories: Category[] = [
         description:
           "Encode or decode URLs and query strings (percent-encoding).",
         keywords: ["url encoder", "url decoder", "percent encoding"],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "uuid-generator",
@@ -620,7 +641,7 @@ export const categories: Category[] = [
         description:
           "Generate random UUIDs (v4) — one or bulk. Copy with one click.",
         keywords: ["uuid generator", "guid generator", "uuid v4"],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "hash-generator",
@@ -628,7 +649,14 @@ export const categories: Category[] = [
         description:
           "Generate MD5, SHA-1, SHA-256 and SHA-512 hashes from any text.",
         keywords: ["hash generator", "md5", "sha256", "hash converter"],
-        status: "coming-soon",
+        status: "ready",
+      },
+      {
+        slug: "password-strength",
+        name: "Password Strength Checker",
+        description: "Check how strong your password is: score from very weak to strong, entropy estimate and 6 security checks, 100% local.",
+        keywords: ["password strength", "password checker", "password test", "strong password", "verificador de senha"],
+        status: "ready",
       },
       {
         slug: "regex-tester",
@@ -674,6 +702,13 @@ export const categories: Category[] = [
         status: "ready",
       },
       {
+        slug: "fake-data-generator",
+        name: "Fake Data Generator",
+        description: "Generate realistic fake data: names, emails, phones, addresses, companies, dates, UUIDs and SSNs. Export as CSV.",
+        keywords: ["fake data generator", "test data generator", "mock data", "dummy data", "fake name generator"],
+        status: "ready",
+      },
+      {
         slug: "url-shortener",
         name: "URL Shortener",
         description:
@@ -689,6 +724,13 @@ export const categories: Category[] = [
         status: "ready",
       },
       {
+        slug: "cron-generator",
+        name: "Cron Generator",
+        description: "Build 5-field cron expressions visually with presets and a human-readable description. Compatible with Linux, AWS and GitHub Actions.",
+        keywords: ["cron generator", "cron expression", "cron job", "scheduler", "crontab generator"],
+        status: "ready",
+      },
+      {
         slug: "markdown-to-html",
         name: "Markdown to HTML",
         description: "Convert Markdown to clean HTML instantly with a live preview. Headings, lists, links, code blocks and more.",
@@ -700,6 +742,13 @@ export const categories: Category[] = [
         name: "CSS Gradient Generator",
         description: "Create beautiful CSS gradients visually: pick colors, angle and type, then copy the ready-to-use code.",
         keywords: ["css gradient generator", "gradient maker", "css background gradient", "linear gradient", "color gradient generator"],
+        status: "ready",
+      },
+      {
+        slug: "px-to-rem",
+        name: "PX to REM Converter",
+        description: "Convert pixels to rem and rem to pixels with any root font size, plus a quick reference table for common sizes.",
+        keywords: ["px to rem", "rem to px", "px rem converter", "css rem", "font size converter"],
         status: "ready",
       },
       {
@@ -737,7 +786,7 @@ export const categories: Category[] = [
         description:
           "Generate random numbers within any range you specify.",
         keywords: ["random number generator", "rng", "random integer"],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "qr-code-generator",
@@ -757,7 +806,7 @@ export const categories: Category[] = [
           "hex to rgb",
           "color palette generator",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
       {
         slug: "dice-roller",
@@ -765,7 +814,14 @@ export const categories: Category[] = [
         description:
           "Roll virtual dice of any size — D4, D6, D8, D10, D12, D20 and more.",
         keywords: ["dice roller", "virtual dice", "d20 roller"],
-        status: "coming-soon",
+        status: "ready",
+      },
+      {
+        slug: "wheel-spinner",
+        name: "Wheel Spinner",
+        description: "Spin the wheel to pick a random winner from your list. Add options, spin with animation, get a fair result.",
+        keywords: ["wheel spinner", "random picker", "spin the wheel", "name picker", "roleta online"],
+        status: "ready",
       },
       {
         slug: "giveaway-picker",
@@ -878,6 +934,13 @@ export const categories: Category[] = [
         name: "Favicon Generator",
         description: "Create a favicon from text, an emoji or your own image, and download every size you need: 16, 32, 48, 180 and 512 px.",
         keywords: ["favicon generator", "favicon maker", "icon generator", "favicon from text", "site icon generator"],
+        status: "ready",
+      },
+      {
+        slug: "image-cropper",
+        name: "Image Cropper",
+        description: "Crop any image online with free, 1:1, 4:3, 16:9 and other preset ratios. Drag, zoom and download as PNG.",
+        keywords: ["image cropper", "crop photo online", "crop image", "square crop", "crop tool"],
         status: "ready",
       },
     ],
@@ -1095,7 +1158,7 @@ export const categories: Category[] = [
           "recover pdf",
           "corrupted pdf",
         ],
-        status: "coming-soon",
+        status: "ready",
       },
     ],
   },
