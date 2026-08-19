@@ -1,0 +1,1 @@
+Expand-Archive -Path "$env:USERPROFILE\Downloads\PROMPT-MASTER-V7.zip" -DestinationPath "C:\multitool" -Force

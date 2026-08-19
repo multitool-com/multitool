@@ -511,7 +511,7 @@ export const categories: Category[] = [
     shortName: "Developer",
     description: "JSON, Base64, URL encoding and UUIDs.",
     seoDescription:
-      "Free developer tools: JSON formatter, regex tester, JWT decoder, CSV to JSON converter, Base64, URL encoder, UUID and hash generators.",
+      "Free developer tools: JSON formatter, regex tester, JWT decoder, CSV to JSON converter, URL shortener, Base64, URL encoder, UUID and hash generators.",
     tools: [
       {
         slug: "json-formatter",
@@ -593,6 +593,21 @@ export const categories: Category[] = [
           "csv to json converter",
           "json to csv converter",
           "csv parser",
+        ],
+        status: "ready",
+      },
+      {
+        slug: "url-shortener",
+        name: "URL Shortener",
+        description:
+          "Turn any long link into a short, shareable URL in seconds. Copy with one click and session history.",
+        keywords: [
+          "url shortener",
+          "shorten link",
+          "short url",
+          "link shortener",
+          "shorten url online",
+          "encurtador de link",
         ],
         status: "ready",
       },
