@@ -5,11 +5,16 @@ import { useState } from "react";
 const enc = new TextEncoder();
 const dec = new TextDecoder();
 
+/** Uint8Array -> ArrayBuffer (evita erro de tipo Uint8Array<ArrayBufferLike> no TS 5.7+) */
+function toBuf(u8: Uint8Array): ArrayBuffer {
+  return u8.buffer.slice(u8.byteOffset, u8.byteOffset + u8.byteLength) as ArrayBuffer;
+}
+
 async function getKey(passphrase: string, salt: Uint8Array): Promise<CryptoKey> {
   const subtle = (globalThis as { crypto?: { subtle?: SubtleCrypto } }).crypto?.subtle!;
-  const base = await subtle.importKey("raw", enc.encode(passphrase), "PBKDF2", false, ["deriveKey"]);
+  const base = await subtle.importKey("raw", toBuf(enc.encode(passphrase)), "PBKDF2", false, ["deriveKey"]);
   return subtle.deriveKey(
-    { name: "PBKDF2", salt, iterations: 100000, hash: "SHA-256" },
+    { name: "PBKDF2", salt: toBuf(salt), iterations: 100000, hash: "SHA-256" },
     base,
     { name: "AES-GCM", length: 256 },
     false,
@@ -22,7 +27,7 @@ export async function encryptText(plain: string, passphrase: string): Promise<st
   const salt = (globalThis as { crypto?: Crypto }).crypto!.getRandomValues(new Uint8Array(12));
   const iv = (globalThis as { crypto?: Crypto }).crypto!.getRandomValues(new Uint8Array(12));
   const key = await getKey(passphrase, salt);
-  const ct = await subtle.encrypt({ name: "AES-GCM", iv }, key, enc.encode(plain));
+  const ct = await subtle.encrypt({ name: "AES-GCM", iv: toBuf(iv) }, key, toBuf(enc.encode(plain)));
   const merged = new Uint8Array(salt.length + iv.length + ct.byteLength);
   merged.set(salt, 0);
   merged.set(iv, salt.length);
@@ -38,7 +43,7 @@ export async function decryptText(payload: string, passphrase: string): Promise<
   const iv = raw.slice(12, 24);
   const ct = raw.slice(24);
   const key = await getKey(passphrase, salt);
-  const pt = await subtle.decrypt({ name: "AES-GCM", iv }, key, ct);
+  const pt = await subtle.decrypt({ name: "AES-GCM", iv: toBuf(iv) }, key, toBuf(ct));
   return dec.decode(pt);
 }
 

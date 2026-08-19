@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 export function encodeBase64(str: string): string {
-  if (typeof window === "undefined" || typeof btoa === "undefined") return Buffer.from(str, "utf8").toString("base64");
+  // btoa/atob existem no navegador E no Node 16+ (globais), sem precisar de Buffer
   const bytes = new TextEncoder().encode(str);
   let bin = "";
   bytes.forEach((b) => (bin += String.fromCharCode(b)));
@@ -12,7 +12,6 @@ export function encodeBase64(str: string): string {
 
 export function decodeBase64(str: string): string {
   const clean = str.trim();
-  if (typeof window === "undefined" || typeof atob === "undefined") return Buffer.from(clean, "base64").toString("utf8");
   const bin = atob(clean);
   const bytes = Uint8Array.from(bin, (c) => c.charCodeAt(0));
   return new TextDecoder().decode(bytes);
