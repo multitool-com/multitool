@@ -7,9 +7,7 @@ import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.url),
-  title: {
-    default: `${SITE_CONFIG.name} - Free Online Calculators & Converters`,
-  },
+  title: `${SITE_CONFIG.name} - Free Online Calculators & Converters`,
   description: SITE_CONFIG.description,
   keywords: [
     "online tools",
