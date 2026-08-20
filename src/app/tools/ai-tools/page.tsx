@@ -5,13 +5,13 @@ import { getCategoryBySlug, SITE_CONFIG } from "@/lib/tools";
 const category = getCategoryBySlug("ai-tools")!;
 
 export const metadata: Metadata = {
-  title: `${category.name} Tools - Free AI Utilities | ${SITE_CONFIG.name}`,
+  title: "Free AI Tools - Prompts, Token Counter & AI Costs | MultiTool",
   description: category.seoDescription,
   alternates: {
     canonical: `${SITE_CONFIG.url}/tools/ai-tools`,
   },
   openGraph: {
-    title: `${category.name} Tools | ${SITE_CONFIG.name}`,
+    title: "Free AI Tools - Prompts, Token Counter & AI Costs | MultiTool",
     description: category.seoDescription,
     url: `${SITE_CONFIG.url}/tools/ai-tools`,
     siteName: SITE_CONFIG.name,
@@ -35,7 +35,7 @@ export default function AiToolsPage() {
         CATEGORY
       </span>
       <h1 className="font-display text-4xl font-bold mt-1 mb-3">
-        {category.name} Tools
+        AI Tools
       </h1>
       <p className="text-ink/60 mb-10 max-w-xl">{category.seoDescription}</p>
 

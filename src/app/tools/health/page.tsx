@@ -9,13 +9,13 @@ const category = getCategoryBySlug(CATEGORY_SLUG);
 
 export const metadata: Metadata = category
   ? {
-      title: `${category.name} Tools - Free Online Calculators | MultiTool`,
+      title: "Health & Fitness Calculators - BMI, Calories & More | MultiTool",
       description: category.seoDescription,
       alternates: {
         canonical: `${SITE_CONFIG.url}/tools/${category.slug}`,
       },
       openGraph: {
-        title: `${category.name} Tools | MultiTool`,
+        title: "Health & Fitness Calculators - BMI, Calories & More | MultiTool",
         description: category.seoDescription,
         url: `${SITE_CONFIG.url}/tools/${category.slug}`,
         siteName: "MultiTool",
@@ -47,7 +47,7 @@ export default function CategoryPage() {
         CATEGORY
       </p>
       <h1 className="font-display text-4xl font-bold mb-3">
-        {category.name} Tools
+        Health & Fitness Calculators
       </h1>
       <p className="text-ink/60 mb-10 max-w-2xl text-lg">
         {category.seoDescription}
