@@ -5,14 +5,14 @@ import { SITE_CONFIG, categories, getAllTools } from "@/lib/tools";
 export const metadata: Metadata = {
   title: "MultiTool - Free Online Calculators, Converters & Utilities",
   description:
-    "40+ free online tools: calculators, converters, generators and utilities for finance, health, math, developers and more. No sign-up, instant results.",
+    "100+ free online tools: calculators, converters, generators and utilities for finance, health, math, developers and more. No sign-up, instant results.",
   alternates: {
     canonical: SITE_CONFIG.url,
   },
   openGraph: {
     title: "MultiTool - Free Online Calculators, Converters & Utilities",
     description:
-      "40+ free online tools: calculators, converters, generators and utilities. No sign-up, instant results.",
+      "100+ free online tools: calculators, converters, generators and utilities. No sign-up, instant results.",
     url: SITE_CONFIG.url,
     siteName: SITE_CONFIG.name,
     type: "website",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MultiTool - Free Online Tools",
     description:
-      "40+ free online calculators, converters and generators. Instant results, no sign-up.",
+      "100+ free online calculators, converters and generators. Instant results, no sign-up.",
   },
 };
 
@@ -145,11 +145,13 @@ export default function Home() {
             <div>
               <div className="text-3xl mb-3">🔒</div>
               <h2 className="font-display font-semibold text-lg mb-2">
-                100% Private
+                Privacy-First
               </h2>
               <p className="text-sm text-ink/60">
-                Your data never leaves your device. Everything runs locally,
-                nothing is stored.
+                Files and inputs are processed locally in your browser
+                whenever possible — nothing is stored or uploaded. A few
+                tools (URL shortening, live exchange rates) make small
+                external requests, but never send your data.
               </p>
             </div>
             <div>

@@ -83,7 +83,8 @@ export default function ToolLayout({
     },
   };
 
-  // JSON-LD: FAQ schema (aparece com destaque no Google)
+  // JSON-LD: FAQ schema (estrutura semantica; rich results de FAQ nao sao
+    // exibidos pela maioria dos sites desde a restricao de 2023 do Google)
   const faqSchema = faqs && faqs.length > 0
     ? {
         "@context": "https://schema.org",

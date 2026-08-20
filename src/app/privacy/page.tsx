@@ -226,20 +226,34 @@ export default function PrivacyPolicyPage() {
 
         <section>
           <h2 className="font-display text-2xl font-semibold mt-8 mb-3">
-            6. URL Shortener Service
+            6. External Services
           </h2>
           <p>
-            The URL Shortener tool (under Developer Tools) is the only feature
-            on this site that transmits data to a third party. When you use it,
-            the URL you provide is sent to a third-party link shortening
-            service (cleanuri.com) so it can generate a short link. The service
-            stores the mapping between the short link and your original URL in
-            order to perform the redirect.
+            Almost every tool on this site runs entirely in your browser and
+            does not send your data to any server. Two features make small
+            external requests:
           </p>
+          <ul className="list-disc pl-6 mt-3 space-y-2">
+            <li>
+              <strong>URL Shortener:</strong> the URL you provide is sent to a
+              third-party link shortening service (cleanuri.com) so it can
+              generate a short link. The service stores the mapping between
+              the short link and your original URL in order to perform the
+              redirect. Please do not submit sensitive, confidential or
+              personal URLs to this tool.
+            </li>
+            <li>
+              <strong>Currency Converter:</strong> to show live exchange
+              rates, the page requests public FX prices from an external
+              rates service (frankfurter.app). The amount you type is{" "}
+              <strong>never</strong> sent — only standard currency codes are
+              requested, and the tool also works offline with a built-in
+              rate table.
+            </li>
+          </ul>
           <p className="mt-3">
-            Please do not submit sensitive, confidential or personal URLs to
-            this tool. All other tools on this site run entirely in your
-            browser and do not send your data to any server.
+            Apart from these requests and standard analytics (see section 5),
+            your files, inputs and results stay in your browser.
           </p>
         </section>
 
