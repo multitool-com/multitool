@@ -232,20 +232,10 @@ export default function RootLayout({
           </div>
         </footer>
       </body>
-      {/* GA4: bootstrap manual com page_view automatico DESATIVADO
-          (send_page_view: false). O PageViewSanitizer envia cada page_view
-          com a URL sanitizada — em /search o parametro ?q= nunca chega ao
-          GA4, e o usuario continua vendo a URL original no navegador. */}
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-M03VJPSYZZ"
-      />
-      <script
-        dangerouslySetInnerHTML={{
-          __html:
-            "window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-M03VJPSYZZ',{send_page_view:false});",
-        }}
-      />
+      {/* GA4 100% client-side: o PageViewSanitizer faz o bootstrap do
+          gtag via DOM (sem <script> cru no SSR — React 19 safe) com
+          send_page_view: false e envia cada page_view com a URL
+          sanitizada — em /search o ?q= nunca chega ao GA4. */}
       <PageViewSanitizer />
     </html>
   );

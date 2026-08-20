@@ -47,6 +47,12 @@ export default function SiteHeader() {
           aria-label="Main navigation"
           className="hidden lg:flex items-center gap-3 text-xs font-medium"
         >
+          <Link
+            href="/tools"
+            className="text-paper/75 hover:text-accent focus:outline-none focus:text-accent transition-colors whitespace-nowrap"
+          >
+            All
+          </Link>
           {categories.map((cat) => (
             <Link
               key={cat.slug}
@@ -88,6 +94,12 @@ export default function SiteHeader() {
               className="w-full bg-paper rounded-full px-4 py-2.5 text-sm text-ink placeholder:text-ink/40 focus:outline-none focus:ring-2 focus:ring-accent"
             />
           </form>
+          <Link
+            href="/tools"
+            className="py-2.5 text-accent font-semibold border-b border-paper/10"
+          >
+            All Tools
+          </Link>
           {categories.map((cat) => (
             <Link
               key={cat.slug}
