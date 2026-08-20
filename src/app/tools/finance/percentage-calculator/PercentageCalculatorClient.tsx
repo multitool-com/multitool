@@ -15,9 +15,11 @@ export default function PercentageCalculatorClient() {
   const firedRef = useRef(false);
   useEffect(() => {
     if (firedRef.current) return;
-    firedRef.current = true;
-    trackToolUsed("percentage-calculator", "finance");
-  }, []);
+    if (percent !== "" || value !== "") {
+      firedRef.current = true;
+      trackToolUsed("percentage-calculator", "finance");
+    }
+  }, [percent, value]);
 
   return (
     <div className="bg-white border border-ink/10 rounded-xl p-6 flex flex-col gap-5 shadow-sm">

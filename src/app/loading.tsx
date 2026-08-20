@@ -1,10 +1,6 @@
 export default function Loading() {
   return (
-    <div
-      className="max-w-2xl mx-auto px-4 py-20 flex flex-col items-center justify-center min-h-[60vh]"
-      role="status"
-      aria-label="Loading"
-    >
+    <div className="max-w-2xl mx-auto px-4 py-20 flex flex-col items-center justify-center min-h-[60vh]">
       {/* Indicador visual sutil (sem texto indexável para crawlers) */}
       <div
         className="bg-deep rounded-2xl px-10 py-8 mb-6"

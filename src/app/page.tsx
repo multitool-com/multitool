@@ -148,10 +148,13 @@ export default function Home() {
                 Privacy-First
               </h2>
               <p className="text-sm text-ink/60">
-                Files and inputs are processed locally in your browser
-                whenever possible — nothing is stored or uploaded. A few
-                tools (URL shortening, live exchange rates) make small
-                external requests, but never send your data.
+                Most tools process files and inputs locally in your
+                browser. A few tools use external services when required,
+                sending only the data that feature needs.{" "}
+                <Link href="/privacy" className="text-accent hover:underline">
+                  See our Privacy Policy
+                </Link>{" "}
+                for details.
               </p>
             </div>
             <div>

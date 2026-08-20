@@ -34,12 +34,6 @@ function parsePositive(value: string): number | null {
 }
 
 export default function CompoundInterestClient() {
-  const firedRef = useRef(false);
-  useEffect(() => {
-    if (firedRef.current) return;
-    firedRef.current = true;
-    trackToolUsed("compound-interest", "finance");
-  }, []);
 
   const [currency, setCurrency] = useState<Currency>("USD");
   const [principal, setPrincipal] = useState("1000");
@@ -47,6 +41,22 @@ export default function CompoundInterestClient() {
   const [years, setYears] = useState("10");
   const [n, setN] = useState(12);
   const [monthly, setMonthly] = useState("0");
+
+  const firedRef = useRef(false);
+  useEffect(() => {
+    if (firedRef.current) return;
+    if (
+      currency !== "USD" ||
+      principal !== "1000" ||
+      rate !== "5" ||
+      years !== "10" ||
+      n !== 12 ||
+      monthly !== "0"
+    ) {
+      firedRef.current = true;
+      trackToolUsed("compound-interest", "finance");
+    }
+  }, [currency, principal, rate, years, n, monthly]);
 
   const symbol = currencySymbols[currency];
 

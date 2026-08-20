@@ -14,14 +14,17 @@ interface TextStats {
 }
 
 export default function WordCounterClient() {
+
+  const [text, setText] = useState("");
+
   const firedRef = useRef(false);
   useEffect(() => {
     if (firedRef.current) return;
-    firedRef.current = true;
-    trackToolUsed("word-counter", "text-tools");
-  }, []);
-
-  const [text, setText] = useState("");
+    if (text.length > 0) {
+      firedRef.current = true;
+      trackToolUsed("word-counter", "text-tools");
+    }
+  }, [text]);
 
   const stats = useMemo<TextStats>(() => {
     if (!text.trim()) {

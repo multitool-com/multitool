@@ -29,12 +29,6 @@ const currencySymbols: Record<Currency, string> = {
 };
 
 export default function DiscountCalculatorClient() {
-  const firedRef = useRef(false);
-  useEffect(() => {
-    if (firedRef.current) return;
-    firedRef.current = true;
-    trackToolUsed("discount-calculator", "finance");
-  }, []);
 
   const [currency, setCurrency] = useState<Currency>("USD");
   const [mode, setMode] = useState<Mode>("standard");
@@ -43,6 +37,15 @@ export default function DiscountCalculatorClient() {
   // Standard mode
   const [originalPrice, setOriginalPrice] = useState("");
   const [discount1, setDiscount1] = useState("");
+
+  const firedRef = useRef(false);
+  useEffect(() => {
+    if (firedRef.current) return;
+    if (originalPrice !== "" || discount1 !== "") {
+      firedRef.current = true;
+      trackToolUsed("discount-calculator", "finance");
+    }
+  }, [originalPrice, discount1]);
   const [discount2, setDiscount2] = useState("");
 
   // Reverse mode

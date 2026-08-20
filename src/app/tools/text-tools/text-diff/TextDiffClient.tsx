@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef} from "react";
+import { useState, useRef } from "react";
 import { trackToolUsed, trackDownload, trackCopy } from "@/lib/analytics";
 
 // Simple line-level LCS diff. Returns rows: {type: "same"|"add"|"del", a?: string, b?: string}
@@ -33,16 +33,17 @@ export function diffStats(rows: { type: "same" | "add" | "del"; a: string; b: st
 }
 
 export default function TextDiffClient() {
-  const firedRef = useRef(false);
-  useEffect(() => {
-    if (firedRef.current) return;
-    firedRef.current = true;
-    trackToolUsed("text-diff", "text-tools");
-  }, []);
 
   const [a, setA] = useState("Hello world\nThis is line two\nSame line here\nRemoved line");
   const [b, setB] = useState("Hello world\nThis is line two changed\nSame line here\nBrand new line");
   const [mode, setMode] = useState<"side" | "unified">("side");
+
+  const usedRef = useRef(false);
+  const markUsed = () => {
+    if (usedRef.current) return;
+    usedRef.current = true;
+    trackToolUsed("text-diff", "text-tools");
+  };
 
   const rows = diffLines(a, b);
   const stats = diffStats(rows);
@@ -55,11 +56,11 @@ export default function TextDiffClient() {
       <div className="grid md:grid-cols-2 gap-4">
         <div>
           <label className="font-mono text-xs tracking-widest text-ink/60 block mb-2">ORIGINAL</label>
-          <textarea value={a} onChange={(e) => setA(e.target.value)} rows={8} spellCheck={false} className="w-full border border-ink/15 rounded-lg px-3 py-3 font-mono text-xs focus:outline-none focus:ring-2 focus:ring-accent resize-y" />
+          <textarea value={a} onChange={(e) => { markUsed(); setA(e.target.value); }} rows={8} spellCheck={false} className="w-full border border-ink/15 rounded-lg px-3 py-3 font-mono text-xs focus:outline-none focus:ring-2 focus:ring-accent resize-y" />
         </div>
         <div>
           <label className="font-mono text-xs tracking-widest text-ink/60 block mb-2">COMPARED</label>
-          <textarea value={b} onChange={(e) => setB(e.target.value)} rows={8} spellCheck={false} className="w-full border border-ink/15 rounded-lg px-3 py-3 font-mono text-xs focus:outline-none focus:ring-2 focus:ring-accent resize-y" />
+          <textarea value={b} onChange={(e) => { markUsed(); setB(e.target.value); }} rows={8} spellCheck={false} className="w-full border border-ink/15 rounded-lg px-3 py-3 font-mono text-xs focus:outline-none focus:ring-2 focus:ring-accent resize-y" />
         </div>
       </div>
 

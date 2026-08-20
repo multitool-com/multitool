@@ -69,14 +69,17 @@ type Decoded =
     };
 
 export default function JwtDecoderClient() {
+
+  const [token, setToken] = useState(SAMPLE_TOKEN);
+
   const firedRef = useRef(false);
   useEffect(() => {
     if (firedRef.current) return;
-    firedRef.current = true;
-    trackToolUsed("jwt-decoder", "developer-tools");
-  }, []);
-
-  const [token, setToken] = useState(SAMPLE_TOKEN);
+    if (token !== SAMPLE_TOKEN) {
+      firedRef.current = true;
+      trackToolUsed("jwt-decoder", "developer-tools");
+    }
+  }, [token]);
   const [copied, setCopied] = useState<"header" | "payload" | null>(null);
 
   const decoded = useMemo<Decoded>(() => {

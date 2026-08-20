@@ -103,14 +103,17 @@ function formatPercent(value: number): string {
 }
 
 export default function TokenCounterClient() {
+
+  const [text, setText] = useState("");
+
   const firedRef = useRef(false);
   useEffect(() => {
     if (firedRef.current) return;
-    firedRef.current = true;
-    trackToolUsed("token-counter", "ai-tools");
-  }, []);
-
-  const [text, setText] = useState("");
+    if (text.length > 0) {
+      firedRef.current = true;
+      trackToolUsed("token-counter", "ai-tools");
+    }
+  }, [text]);
   const [modelId, setModelId] = useState<ModelId>("gpt-4o");
   const [copied, setCopied] = useState(false);
 

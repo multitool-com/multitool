@@ -60,12 +60,6 @@ function parsePositive(value: string): number | null {
 }
 
 export default function AiCostCalculatorClient() {
-  const firedRef = useRef(false);
-  useEffect(() => {
-    if (firedRef.current) return;
-    firedRef.current = true;
-    trackToolUsed("ai-cost-calculator", "ai-tools");
-  }, []);
 
   const [currency, setCurrency] = useState<Currency>("USD");
   const [modelId, setModelId] = useState<ModelId>("gpt-4o");
@@ -74,6 +68,23 @@ export default function AiCostCalculatorClient() {
   const [requestsPerDay, setRequestsPerDay] = useState("100");
   const [inputPrice, setInputPrice] = useState("2.50");
   const [outputPrice, setOutputPrice] = useState("10.00");
+
+  const firedRef = useRef(false);
+  useEffect(() => {
+    if (firedRef.current) return;
+    if (
+      currency !== "USD" ||
+      modelId !== "gpt-4o" ||
+      inputTokens !== "1500" ||
+      outputTokens !== "400" ||
+      requestsPerDay !== "100" ||
+      inputPrice !== "2.50" ||
+      outputPrice !== "10.00"
+    ) {
+      firedRef.current = true;
+      trackToolUsed("ai-cost-calculator", "ai-tools");
+    }
+  }, [currency, modelId, inputTokens, outputTokens, requestsPerDay, inputPrice, outputPrice]);
 
   const symbol = currencySymbols[currency];
 
