@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect, useRef} from "react";
+import { trackToolUsed, trackDownload, trackCopy } from "@/lib/analytics";
 
 type Currency = "USD" | "EUR" | "GBP" | "BRL";
 
@@ -33,6 +34,13 @@ function parsePositive(value: string): number | null {
 }
 
 export default function CompoundInterestClient() {
+  const firedRef = useRef(false);
+  useEffect(() => {
+    if (firedRef.current) return;
+    firedRef.current = true;
+    trackToolUsed("compound-interest", "finance");
+  }, []);
+
   const [currency, setCurrency] = useState<Currency>("USD");
   const [principal, setPrincipal] = useState("1000");
   const [rate, setRate] = useState("5");

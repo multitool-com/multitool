@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Generate Lorem Ipsum placeholder text with the exact number of words and paragraphs you need. Free, instant, copy-ready.",
   keywords: ["lorem ipsum generator", "lorem ipsum", "placeholder text", "dummy text generator", "fake text"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/text-tools/lorem-ipsum-generator",
+    canonical: "https://www.multitoolbox.online/tools/text-tools/lorem-ipsum-generator",
   },
   openGraph: {
     title: "Lorem Ipsum Generator - Words, Paragraphs | MultiTool",
     description: "Generate Lorem Ipsum placeholder text with the exact number of words and paragraphs you need. Free, instant, copy-ready.",
-    url: "https://multitoolbox.online/tools/text-tools/lorem-ipsum-generator",
+    url: "https://www.multitoolbox.online/tools/text-tools/lorem-ipsum-generator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

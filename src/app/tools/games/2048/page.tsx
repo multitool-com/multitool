@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "jogo 2048",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/games/2048",
+    canonical: "https://www.multitoolbox.online/tools/games/2048",
   },
   openGraph: {
     title: "2048 Game - Play 2048 Online | MultiTool",
     description:
       "Play the addictive 2048 number puzzle in your browser. Free.",
-    url: "https://multitoolbox.online/tools/games/2048",
+    url: "https://www.multitoolbox.online/tools/games/2048",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { trackToolUsed, trackDownload, trackCopy } from "@/lib/analytics";
 
 export function uuidV4(): string {
   if (typeof crypto !== "undefined" && crypto.randomUUID) return crypto.randomUUID();
@@ -28,8 +29,10 @@ export default function UuidGeneratorClient() {
   const [uuids, setUuids] = useState<string[]>(() => []);
   const [copied, setCopied] = useState(false);
 
-  const generate = () => setUuids(generateUuids(parseInt(count, 10) || 5, upper));
+  const generate = () => setUuids
+    trackToolUsed("uuid-generator", "developer-tools");(generateUuids(parseInt(count, 10) || 5, upper));
   const copyAll = async () => {
+    trackCopy("uuid-generator", "developer-tools");
     try {
       await navigator.clipboard.writeText(uuids.join("\n"));
       setCopied(true);

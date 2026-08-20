@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { trackToolUsed, trackDownload, trackCopy } from "@/lib/analytics";
 
 export function toCase(text: string, style: string): string {
   const s = text.trim();
@@ -55,6 +56,7 @@ export default function TextCaseConverterClient() {
 
   const result = toCase(text, style);
   const copy = async () => {
+    trackCopy("text-case-converter", "text-tools");
     try {
       await navigator.clipboard.writeText(result);
       setCopied(true);

@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "jogo de blocos",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/games/block-stacker",
+    canonical: "https://www.multitoolbox.online/tools/games/block-stacker",
   },
   openGraph: {
     title: "Block Stacker - Falling Blocks Puzzle | MultiTool",
     description:
       "Rotate, stack and clear lines in the classic falling-blocks puzzle. Free.",
-    url: "https://multitoolbox.online/tools/games/block-stacker",
+    url: "https://www.multitoolbox.online/tools/games/block-stacker",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

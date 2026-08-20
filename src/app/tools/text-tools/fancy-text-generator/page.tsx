@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Convert your text into fancy unicode styles: bold, italic, cursive, monospace, upside down and more. Copy with one click for bios and messages. Free.",
   keywords: ["fancy text generator", "fancy fonts", "cool text generator", "cursive text", "unicode text", "letras diferentes"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/text-tools/fancy-text-generator",
+    canonical: "https://www.multitoolbox.online/tools/text-tools/fancy-text-generator",
   },
   openGraph: {
     title: "Fancy Text Generator - Cool Fonts & Styles Online | MultiTool",
     description: "Convert your text into fancy unicode styles: bold, italic, cursive, monospace, upside down and more. Copy with one click for bios and messages. Free.",
-    url: "https://multitoolbox.online/tools/text-tools/fancy-text-generator",
+    url: "https://www.multitoolbox.online/tools/text-tools/fancy-text-generator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

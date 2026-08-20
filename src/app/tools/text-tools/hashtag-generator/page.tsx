@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Generate 3-30 relevant hashtags from any topic: phrase tags, per-word tags, bigrams and trending variants. One click to copy all.",
   keywords: ["hashtag generator", "hashtags for instagram", "hashtag ideas", "social media hashtags", "gerador de hashtags"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/text-tools/hashtag-generator",
+    canonical: "https://www.multitoolbox.online/tools/text-tools/hashtag-generator",
   },
   openGraph: {
     title: "Hashtag Generator - Free Hashtags for Social Media | MultiTool",
     description: "Generate 3-30 relevant hashtags from any topic: phrase tags, per-word tags, bigrams and trending variants. One click to copy all.",
-    url: "https://multitoolbox.online/tools/text-tools/hashtag-generator",
+    url: "https://www.multitoolbox.online/tools/text-tools/hashtag-generator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

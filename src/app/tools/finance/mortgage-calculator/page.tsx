@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Free mortgage calculator. Estimate your monthly payment, total interest and total cost for any home price, down payment, rate and term.",
   keywords: ["mortgage calculator", "home loan calculator", "monthly payment calculator", "mortgage payment", "house payment calculator"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/finance/mortgage-calculator",
+    canonical: "https://www.multitoolbox.online/tools/finance/mortgage-calculator",
   },
   openGraph: {
     title: "Mortgage Calculator - Monthly Payment Estimator | MultiTool",
     description: "Free mortgage calculator. Estimate your monthly payment, total interest and total cost for any home price, down payment, rate and term.",
-    url: "https://multitoolbox.online/tools/finance/mortgage-calculator",
+    url: "https://www.multitoolbox.online/tools/finance/mortgage-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",
@@ -41,6 +41,27 @@ export default function Page() {
             Free mortgage calculator. Estimate your monthly payment, total interest and total cost for any home price, down payment, rate and term.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            What the estimate includes — and what it does not
+          </h2>
+          <p className="mb-4">
+            The monthly payment shown covers <strong>principal and
+            interest</strong> only. Real mortgage payments almost always also
+            include <strong>property taxes, homeowners insurance, HOA fees and
+            (when required) PMI</strong> — often adding hundreds per month.
+            The calculation also assumes a <strong>fixed interest rate</strong>{" "}
+            for the full term; adjustable-rate mortgages can change your
+            payment over time.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Financial disclaimer
+          </h2>
+          <p className="mb-4">
+            This tool provides an educational estimate and is{" "}
+            <strong>not financial advice</strong>. Speak with a lender or
+            mortgage professional for a formal pre-approval and a complete
+            breakdown of costs.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>
@@ -55,7 +76,8 @@ export default function Page() {
         { question: "Does it include taxes and insurance?", answer: "No — it estimates principal and interest only. Property taxes, insurance and fees vary by location." },
         { question: "What is a good down payment?", answer: "20% avoids private mortgage insurance in many places, but lower down payments are common. The tool shows your down payment percentage." },
         { question: "Can I compare different terms?", answer: "Yes — change the term (15, 20, 30 years) and rate to see how monthly payments and total interest change." },
-        { question: "Is my data private?", answer: "Yes — everything runs in your browser. Nothing is sent or stored." }
+        { question: "Is my data private?", answer: "Yes — everything runs in your browser. Nothing is sent or stored." },
+        { question: "Is this financial advice?", answer: "No — it is an educational estimate. Confirm all numbers with a lender or mortgage professional." }
       ]}
       relatedTools={[
         { name: "Loan / EMI Calculator", href: "/tools/finance/loan-calculator" },

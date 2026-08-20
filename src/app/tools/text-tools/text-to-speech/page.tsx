@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Turn any text into spoken audio right in your browser: choose a voice, speed and pitch. Free, no sign-up, nothing uploaded.",
   keywords: ["text to speech", "tts", "read aloud", "text reader", "texto em voz", "texto para voz"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/text-tools/text-to-speech",
+    canonical: "https://www.multitoolbox.online/tools/text-tools/text-to-speech",
   },
   openGraph: {
     title: "Text to Speech - Read Aloud Online Free | MultiTool",
     description: "Turn any text into spoken audio right in your browser: choose a voice, speed and pitch. Free, no sign-up, nothing uploaded.",
-    url: "https://multitoolbox.online/tools/text-tools/text-to-speech",
+    url: "https://www.multitoolbox.online/tools/text-tools/text-to-speech",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

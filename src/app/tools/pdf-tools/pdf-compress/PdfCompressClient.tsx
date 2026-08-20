@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { trackToolUsed, trackDownload, trackCopy } from "@/lib/analytics";
 import { PDFDocument } from "pdf-lib";
 
 // pdf.js is loaded dynamically (client-only) — it uses browser-only APIs
@@ -75,6 +76,7 @@ export default function PdfCompressClient() {
   };
 
   const compress = async () => {
+    trackToolUsed("pdf-compress", "pdf-tools");
     if (!pdf || busy) return;
     setBusy(true);
     setError(null);

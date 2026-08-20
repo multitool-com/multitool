@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Generate realistic fake data: names, emails, phones, addresses, companies, dates, UUIDs and SSNs. Export as CSV or copy.",
   keywords: ["fake data generator", "test data generator", "mock data", "dummy data", "fake name generator"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/developer-tools/fake-data-generator",
+    canonical: "https://www.multitoolbox.online/tools/developer-tools/fake-data-generator",
   },
   openGraph: {
     title: "Fake Data Generator - Test Data for Developers | MultiTool",
     description: "Generate realistic fake data: names, emails, phones, addresses, companies, dates, UUIDs and SSNs. Export as CSV or copy.",
-    url: "https://multitoolbox.online/tools/developer-tools/fake-data-generator",
+    url: "https://www.multitoolbox.online/tools/developer-tools/fake-data-generator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

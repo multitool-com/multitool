@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Convert pixels to rem and rem to pixels with any root font size (default 16px). Includes a quick reference table for common sizes.",
   keywords: ["px to rem", "rem to px", "px rem converter", "css rem", "font size converter"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/developer-tools/px-to-rem",
+    canonical: "https://www.multitoolbox.online/tools/developer-tools/px-to-rem",
   },
   openGraph: {
     title: "PX to REM Converter - CSS Units | MultiTool",
     description: "Convert pixels to rem and rem to pixels with any root font size (default 16px). Includes a quick reference table for common sizes.",
-    url: "https://multitoolbox.online/tools/developer-tools/px-to-rem",
+    url: "https://www.multitoolbox.online/tools/developer-tools/px-to-rem",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

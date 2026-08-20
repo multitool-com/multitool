@@ -16,13 +16,13 @@ export const metadata: Metadata = {
     "campo minado",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/games/minesweeper",
+    canonical: "https://www.multitoolbox.online/tools/games/minesweeper",
   },
   openGraph: {
     title: "Minesweeper - Play Online | MultiTool",
     description:
       "Clear the board without hitting a mine. Free, no download.",
-    url: "https://multitoolbox.online/tools/games/minesweeper",
+    url: "https://www.multitoolbox.online/tools/games/minesweeper",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

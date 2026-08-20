@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Spin the wheel to pick a random winner from your list. Add options, spin with animation, and get a fair result every time.",
   keywords: ["wheel spinner", "random picker", "spin the wheel", "name picker", "roleta online"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/generators/wheel-spinner",
+    canonical: "https://www.multitoolbox.online/tools/generators/wheel-spinner",
   },
   openGraph: {
     title: "Wheel Spinner - Random Picker | MultiTool",
     description: "Spin the wheel to pick a random winner from your list. Add options, spin with animation, and get a fair result every time.",
-    url: "https://multitoolbox.online/tools/generators/wheel-spinner",
+    url: "https://www.multitoolbox.online/tools/generators/wheel-spinner",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

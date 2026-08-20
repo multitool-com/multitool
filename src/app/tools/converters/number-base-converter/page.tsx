@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Convert numbers between binary, octal, decimal and hexadecimal instantly, with support for any base from 2 to 36.",
   keywords: ["number base converter", "binary to hex", "decimal to binary", "hex converter", "base converter", "conversor de base"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/converters/number-base-converter",
+    canonical: "https://www.multitoolbox.online/tools/converters/number-base-converter",
   },
   openGraph: {
     title: "Number Base Converter - Binary, Octal, Decimal, Hex | MultiTool",
     description: "Convert numbers between binary, octal, decimal and hexadecimal instantly, with support for any base from 2 to 36.",
-    url: "https://multitoolbox.online/tools/converters/number-base-converter",
+    url: "https://www.multitoolbox.online/tools/converters/number-base-converter",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

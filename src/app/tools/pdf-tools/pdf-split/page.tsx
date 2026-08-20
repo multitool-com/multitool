@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "divide pdf",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/pdf-tools/pdf-split",
+    canonical: "https://www.multitoolbox.online/tools/pdf-tools/pdf-split",
   },
   openGraph: {
     title: "Split PDF - Extract Pages | MultiTool",
     description:
       "Extract pages or split a PDF into multiple files. Free and private.",
-    url: "https://multitoolbox.online/tools/pdf-tools/pdf-split",
+    url: "https://www.multitoolbox.online/tools/pdf-tools/pdf-split",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

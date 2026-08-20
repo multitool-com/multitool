@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { trackToolUsed, trackDownload, trackCopy } from "@/lib/analytics";
 
 export function encodeBase64(str: string): string {
   // btoa/atob existem no navegador E no Node 16+ (globais), sem precisar de Buffer
@@ -25,6 +26,7 @@ export default function Base64EncoderClient() {
   const [copied, setCopied] = useState(false);
 
   const run = () => {
+    trackToolUsed("base64-encoder", "developer-tools");
     setError("");
     try {
       setOutput(mode === "encode" ? encodeBase64(input) : decodeBase64(input));
@@ -35,6 +37,7 @@ export default function Base64EncoderClient() {
   };
 
   const copy = async () => {
+    trackCopy("base64-encoder", "developer-tools");
     try {
       await navigator.clipboard.writeText(output);
       setCopied(true);

@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { trackToolUsed, trackDownload, trackCopy } from "@/lib/analytics";
 import { PDFDocument } from "pdf-lib";
 
 interface PdfFileItem {
@@ -110,6 +111,7 @@ export default function PdfMergeClient() {
   };
 
   const merge = async () => {
+    trackToolUsed("pdf-merge", "pdf-tools");
     const valid = items.filter((i) => !i.error);
     if (valid.length === 0 || busy) return;
     setBusy(true);

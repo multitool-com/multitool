@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "encurtar url",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/developer-tools/url-shortener",
+    canonical: "https://www.multitoolbox.online/tools/developer-tools/url-shortener",
   },
   openGraph: {
     title: "URL Shortener - Shorten Links | MultiTool",
     description:
       "Turn any long link into a short, shareable URL. Free and instant.",
-    url: "https://multitoolbox.online/tools/developer-tools/url-shortener",
+    url: "https://www.multitoolbox.online/tools/developer-tools/url-shortener",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

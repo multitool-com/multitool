@@ -226,7 +226,26 @@ export default function PrivacyPolicyPage() {
 
         <section>
           <h2 className="font-display text-2xl font-semibold mt-8 mb-3">
-            6. Children&apos;s Privacy
+            6. URL Shortener Service
+          </h2>
+          <p>
+            The URL Shortener tool (under Developer Tools) is the only feature
+            on this site that transmits data to a third party. When you use it,
+            the URL you provide is sent to a third-party link shortening
+            service (cleanuri.com) so it can generate a short link. The service
+            stores the mapping between the short link and your original URL in
+            order to perform the redirect.
+          </p>
+          <p className="mt-3">
+            Please do not submit sensitive, confidential or personal URLs to
+            this tool. All other tools on this site run entirely in your
+            browser and do not send your data to any server.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="font-display text-2xl font-semibold mt-8 mb-3">
+            7. Children&apos;s Privacy
           </h2>
           <p>
             Our service is not intended for use by anyone under the age of 13.
@@ -239,7 +258,7 @@ export default function PrivacyPolicyPage() {
 
         <section>
           <h2 className="font-display text-2xl font-semibold mt-8 mb-3">
-            7. Data Security
+            8. Data Security
           </h2>
           <p>
             We take reasonable measures to protect your information from
@@ -253,7 +272,7 @@ export default function PrivacyPolicyPage() {
 
         <section>
           <h2 className="font-display text-2xl font-semibold mt-8 mb-3">
-            8. Changes to This Privacy Policy
+            9. Changes to This Privacy Policy
           </h2>
           <p>
             We may update our Privacy Policy from time to time. We will notify
@@ -265,7 +284,7 @@ export default function PrivacyPolicyPage() {
 
         <section>
           <h2 className="font-display text-2xl font-semibold mt-8 mb-3">
-            9. Contact Us
+            10. Contact Us
           </h2>
           <p>
             If you have any questions about this Privacy Policy or our data

@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "jogo da cobra puzzle",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/games/snake-puzzle",
+    canonical: "https://www.multitoolbox.online/tools/games/snake-puzzle",
   },
   openGraph: {
     title: "Snake Puzzle - Untangle the Snakes | MultiTool",
     description:
       "Click snakes to slide them off the board. Endless levels. Free, no download.",
-    url: "https://multitoolbox.online/tools/games/snake-puzzle",
+    url: "https://www.multitoolbox.online/tools/games/snake-puzzle",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

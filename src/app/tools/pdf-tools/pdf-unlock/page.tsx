@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "desbloquear pdf",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/pdf-tools/pdf-unlock",
+    canonical: "https://www.multitoolbox.online/tools/pdf-tools/pdf-unlock",
   },
   openGraph: {
     title: "Unlock PDF - Remove Password | MultiTool",
     description:
       "Remove the password from a PDF you own, in your browser. Free and private.",
-    url: "https://multitoolbox.online/tools/pdf-tools/pdf-unlock",
+    url: "https://www.multitoolbox.online/tools/pdf-tools/pdf-unlock",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

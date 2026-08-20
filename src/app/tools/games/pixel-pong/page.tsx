@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     "jogo pong",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/games/pixel-pong",
+    canonical: "https://www.multitoolbox.online/tools/games/pixel-pong",
   },
   openGraph: {
     title: "Pixel Pong - Arcade Pong | MultiTool",
     description: "The arcade paddle classic with neon pixels. Free, no download.",
-    url: "https://multitoolbox.online/tools/games/pixel-pong",
+    url: "https://www.multitoolbox.online/tools/games/pixel-pong",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

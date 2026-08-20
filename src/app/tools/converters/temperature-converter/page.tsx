@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "convert temperature online",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/converters/temperature-converter",
+    canonical: "https://www.multitoolbox.online/tools/converters/temperature-converter",
   },
   openGraph: {
     title: "Temperature Converter - Celsius, Fahrenheit, Kelvin | MultiTool",
     description:
       "Convert between Celsius, Fahrenheit, Kelvin and Rankine instantly. Free and accurate.",
-    url: "https://multitoolbox.online/tools/converters/temperature-converter",
+    url: "https://www.multitoolbox.online/tools/converters/temperature-converter",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

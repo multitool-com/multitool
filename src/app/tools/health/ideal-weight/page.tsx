@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Find your ideal body weight with the Devine, Robinson, Miller and Hamwi formulas, plus your healthy BMI range.",
   keywords: ["ideal weight calculator", "healthy weight range", "ideal body weight", "devine formula", "peso ideal"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/health/ideal-weight",
+    canonical: "https://www.multitoolbox.online/tools/health/ideal-weight",
   },
   openGraph: {
     title: "Ideal Weight Calculator - 4 Classic Formulas | MultiTool",
     description: "Find your ideal body weight with the Devine, Robinson, Miller and Hamwi formulas, plus your healthy BMI range.",
-    url: "https://multitoolbox.online/tools/health/ideal-weight",
+    url: "https://www.multitoolbox.online/tools/health/ideal-weight",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",
@@ -41,6 +41,25 @@ export default function Page() {
             Choose your gender and enter your height and weight. The tool applies the four classic ideal weight formulas and shows your healthy BMI range (18.5-24.9) with your current BMI highlighted.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Important limitations
+          </h2>
+          <p className="mb-4">
+            The Devine, Robinson, Miller and Hamwi formulas were developed for
+            clinical drug dosing, <strong>not</strong> as health targets. They
+            do not account for muscle mass, bone structure or age — a muscular
+            athlete can exceed them while being perfectly healthy. The{" "}
+            <strong>healthy BMI range (18.5–24.9)</strong> is a more useful
+            general reference than any single number.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Health disclaimer
+          </h2>
+          <p className="mb-4">
+            This tool provides general information only and is{" "}
+            <strong>not medical advice</strong>. For weight management
+            decisions, consult a qualified healthcare professional.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>
@@ -56,6 +75,7 @@ export default function Page() {
         { question: "What is the Devine formula?", answer: "Men: 50 kg + 2.3 kg per inch over 5 feet. Women: 45.5 kg + 2.3 kg per inch over 5 feet." },
         { question: "Is ideal weight the same for everyone of my height?", answer: "No — frame size, muscle and age matter. Use the range, not a single number." },
         { question: "Is it free?", answer: "Yes, completely free with no account." },
+        { question: "Is this medical advice?", answer: "No — these are classic reference estimates. Speak with a healthcare professional for personal guidance." }
       ]}
       relatedTools={[
         { name: "BMI Calculator", href: "/tools/health/bmi-calculator" },

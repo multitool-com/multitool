@@ -22,13 +22,13 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical:
-      "https://multitoolbox.online/tools/images/jpg-png-webp-converter",
+      "https://www.multitoolbox.online/tools/images/jpg-png-webp-converter",
   },
   openGraph: {
     title: "JPG / PNG / WebP Converter | MultiTool",
     description:
       "Convert images between JPG, PNG and WebP instantly. Free and private.",
-    url: "https://multitoolbox.online/tools/images/jpg-png-webp-converter",
+    url: "https://www.multitoolbox.online/tools/images/jpg-png-webp-converter",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

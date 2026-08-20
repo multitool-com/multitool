@@ -21,13 +21,13 @@ export const metadata: Metadata = {
     "free image compressor",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/images/image-compressor",
+    canonical: "https://www.multitoolbox.online/tools/images/image-compressor",
   },
   openGraph: {
     title: "Image Compressor - Resize & Compress | MultiTool",
     description:
       "Shrink JPEG, PNG and WebP images with quality control. Free and private.",
-    url: "https://multitoolbox.online/tools/images/image-compressor",
+    url: "https://www.multitoolbox.online/tools/images/image-compressor",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

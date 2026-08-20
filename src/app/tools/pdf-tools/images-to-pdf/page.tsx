@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     "imagens para pdf",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/pdf-tools/images-to-pdf",
+    canonical: "https://www.multitoolbox.online/tools/pdf-tools/images-to-pdf",
   },
   openGraph: {
     title: "Images to PDF - JPG PNG WebP to PDF | MultiTool",
     description:
       "Turn images into a single PDF in your browser. Free and private.",
-    url: "https://multitoolbox.online/tools/pdf-tools/images-to-pdf",
+    url: "https://www.multitoolbox.online/tools/pdf-tools/images-to-pdf",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

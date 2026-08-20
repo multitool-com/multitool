@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Count the exact number of days between two dates, or add and subtract days from any date. Free, instant, precise.",
   keywords: ["date calculator", "days between dates", "add days to date", "days from date", "date difference", "calculadora de datas"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/date-time/date-calculator",
+    canonical: "https://www.multitoolbox.online/tools/date-time/date-calculator",
   },
   openGraph: {
     title: "Date Calculator - Days Between Dates & Add Days | MultiTool",
     description: "Count the exact number of days between two dates, or add and subtract days from any date. Free, instant, precise.",
-    url: "https://multitoolbox.online/tools/date-time/date-calculator",
+    url: "https://www.multitoolbox.online/tools/date-time/date-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

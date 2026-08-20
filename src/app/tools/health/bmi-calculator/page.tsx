@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     "bmi imperial",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/health/bmi-calculator",
+    canonical: "https://www.multitoolbox.online/tools/health/bmi-calculator",
   },
   openGraph: {
     title: "BMI Calculator - Body Mass Index | MultiTool",
     description:
       "Calculate your BMI instantly with metric or imperial units. See your weight category and ideal weight range.",
-    url: "https://multitoolbox.online/tools/health/bmi-calculator",
+    url: "https://www.multitoolbox.online/tools/health/bmi-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

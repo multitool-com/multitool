@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Convert any title into a clean URL slug: lowercase, accents removed, spaces replaced. Perfect for blog posts and SEO.",
   keywords: ["slug generator", "url slug", "seo slug", "clean url", "gerador de slug"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/text-tools/slug-generator",
+    canonical: "https://www.multitoolbox.online/tools/text-tools/slug-generator",
   },
   openGraph: {
     title: "Slug Generator - URL-Friendly Text | MultiTool",
     description: "Convert any title into a clean URL slug: lowercase, accents removed, spaces replaced. Perfect for blog posts and SEO.",
-    url: "https://multitoolbox.online/tools/text-tools/slug-generator",
+    url: "https://www.multitoolbox.online/tools/text-tools/slug-generator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

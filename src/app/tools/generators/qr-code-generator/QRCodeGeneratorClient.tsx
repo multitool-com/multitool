@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import { trackToolUsed, trackDownload, trackCopy } from "@/lib/analytics";
 import QRCode from "qrcode";
 
 type QRType = "text" | "url" | "email" | "phone" | "sms" | "wifi";
@@ -97,6 +98,7 @@ export default function QRCodeGeneratorClient() {
   const content = buildContent(type, text, email, sms, wifi);
 
   const generateQR = useCallback(async () => {
+    trackToolUsed("qr-code-generator", "generators");
     if (!content) {
       setDataUrl("");
       setError("");
@@ -128,6 +130,7 @@ export default function QRCodeGeneratorClient() {
   }, [generateQR]);
 
   const downloadPNG = () => {
+    trackDownload("qr-code-generator", "generators");
     if (!dataUrl) return;
     const link = document.createElement("a");
     link.href = dataUrl;
@@ -138,6 +141,7 @@ export default function QRCodeGeneratorClient() {
   };
 
   const copyImage = async () => {
+    trackCopy("qr-code-generator", "generators");
     if (!dataUrl) return;
     try {
       const blob = await (await fetch(dataUrl)).blob();

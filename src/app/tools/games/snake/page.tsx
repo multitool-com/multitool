@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "cobrinha game",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/games/snake",
+    canonical: "https://www.multitoolbox.online/tools/games/snake",
   },
   openGraph: {
     title: "Snake Game - Play Classic Snake Online | MultiTool",
     description:
       "Play the classic Snake game in your browser. Free, no download.",
-    url: "https://multitoolbox.online/tools/games/snake",
+    url: "https://www.multitoolbox.online/tools/games/snake",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

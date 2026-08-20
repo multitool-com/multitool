@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Measure your typing speed in WPM and accuracy with 15, 30 or 60 second tests. Live feedback on every keystroke.",
   keywords: ["typing test", "wpm test", "typing speed test", "words per minute", "teste de digitacao"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/text-tools/typing-test",
+    canonical: "https://www.multitoolbox.online/tools/text-tools/typing-test",
   },
   openGraph: {
     title: "Typing Test - WPM Speed Test Free | MultiTool",
     description: "Measure your typing speed in WPM and accuracy with 15, 30 or 60 second tests. Live feedback on every keystroke.",
-    url: "https://multitoolbox.online/tools/text-tools/typing-test",
+    url: "https://www.multitoolbox.online/tools/text-tools/typing-test",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

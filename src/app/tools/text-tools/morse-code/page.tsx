@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Translate text to Morse code and back, with sound playback. Learn the classic alphabet and encode messages instantly. Free, no download.",
   keywords: ["morse code", "morse code translator", "text to morse", "morse decoder", "morse alphabet", "codigo morse"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/text-tools/morse-code",
+    canonical: "https://www.multitoolbox.online/tools/text-tools/morse-code",
   },
   openGraph: {
     title: "Morse Code Translator - Text to Morse Code Online | MultiTool",
     description: "Translate text to Morse code and back, with sound playback. Learn the classic alphabet and encode messages instantly. Free, no download.",
-    url: "https://multitoolbox.online/tools/text-tools/morse-code",
+    url: "https://www.multitoolbox.online/tools/text-tools/morse-code",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

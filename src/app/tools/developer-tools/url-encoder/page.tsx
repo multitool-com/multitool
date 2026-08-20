@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Percent-encode and decode URLs: encode whole URLs or just query parameters, with automatic handling of special characters.",
   keywords: ["url encoder", "url decoder", "percent encoding", "url encode", "url decode", "encodeuri"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/developer-tools/url-encoder",
+    canonical: "https://www.multitoolbox.online/tools/developer-tools/url-encoder",
   },
   openGraph: {
     title: "URL Encoder / Decoder - Percent-Encoding | MultiTool",
     description: "Percent-encode and decode URLs: encode whole URLs or just query parameters, with automatic handling of special characters.",
-    url: "https://multitoolbox.online/tools/developer-tools/url-encoder",
+    url: "https://www.multitoolbox.online/tools/developer-tools/url-encoder",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

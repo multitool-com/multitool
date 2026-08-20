@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Convert Markdown to clean HTML instantly with a live preview. Headings, lists, links, code blocks, blockquotes and more.",
   keywords: ["markdown to html", "md to html", "markdown converter", "markdown editor", "html generator", "markdown preview"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/developer-tools/markdown-to-html",
+    canonical: "https://www.multitoolbox.online/tools/developer-tools/markdown-to-html",
   },
   openGraph: {
     title: "Markdown to HTML Converter - Instant Live Preview | MultiTool",
     description: "Convert Markdown to clean HTML instantly with a live preview. Headings, lists, links, code blocks, blockquotes and more.",
-    url: "https://multitoolbox.online/tools/developer-tools/markdown-to-html",
+    url: "https://www.multitoolbox.online/tools/developer-tools/markdown-to-html",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "jogo da memoria cores",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/games/sequence-memory",
+    canonical: "https://www.multitoolbox.online/tools/games/sequence-memory",
   },
   openGraph: {
     title: "Sequence Memory - Simon Style Game | MultiTool",
     description:
       "Watch the sequence, repeat it, level up. Free, no download.",
-    url: "https://multitoolbox.online/tools/games/sequence-memory",
+    url: "https://www.multitoolbox.online/tools/games/sequence-memory",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

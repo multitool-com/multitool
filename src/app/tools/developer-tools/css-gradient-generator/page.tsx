@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Create beautiful CSS gradients visually: pick colors, angle and type, then copy the ready-to-use code. Free, no sign-up.",
   keywords: ["css gradient generator", "gradient maker", "css background gradient", "linear gradient generator", "color gradient", "gradiente css"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/developer-tools/css-gradient-generator",
+    canonical: "https://www.multitoolbox.online/tools/developer-tools/css-gradient-generator",
   },
   openGraph: {
     title: "CSS Gradient Generator - Linear & Radial | MultiTool",
     description: "Create beautiful CSS gradients visually: pick colors, angle and type, then copy the ready-to-use code. Free, no sign-up.",
-    url: "https://multitoolbox.online/tools/developer-tools/css-gradient-generator",
+    url: "https://www.multitoolbox.online/tools/developer-tools/css-gradient-generator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

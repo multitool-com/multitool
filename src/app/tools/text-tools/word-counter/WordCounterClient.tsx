@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef} from "react";
+import { trackToolUsed, trackDownload, trackCopy } from "@/lib/analytics";
 
 interface TextStats {
   words: number;
@@ -13,6 +14,13 @@ interface TextStats {
 }
 
 export default function WordCounterClient() {
+  const firedRef = useRef(false);
+  useEffect(() => {
+    if (firedRef.current) return;
+    firedRef.current = true;
+    trackToolUsed("word-counter", "text-tools");
+  }, []);
+
   const [text, setText] = useState("");
 
   const stats = useMemo<TextStats>(() => {

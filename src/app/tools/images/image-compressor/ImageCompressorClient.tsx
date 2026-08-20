@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { trackToolUsed, trackDownload, trackCopy } from "@/lib/analytics";
 
 type Format = "jpeg" | "png" | "webp";
 
@@ -76,6 +77,7 @@ export default function ImageCompressorClient() {
   }, []);
 
   const compress = async (src: SourceImage | null = source) => {
+    trackToolUsed("image-compressor", "images");
     if (!src || busy) return;
     setBusy(true);
     setError(null);
@@ -141,6 +143,7 @@ export default function ImageCompressorClient() {
   };
 
   const download = () => {
+    trackDownload("image-compressor", "images");
     if (!compressed) return;
     const meta = FORMATS.find((f) => f.id === format) ?? FORMATS[0];
     const a = document.createElement("a");

@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Convert times between 17 world time zones with automatic daylight saving handling. Perfect for meetings across countries.",
   keywords: ["time zone converter", "world clock", "time converter", "meeting time", "utc to local", "fuso horario"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/converters/timezone-converter",
+    canonical: "https://www.multitoolbox.online/tools/converters/timezone-converter",
   },
   openGraph: {
     title: "Time Zone Converter - World Clock | MultiTool",
     description: "Convert times between 17 world time zones with automatic daylight saving handling. Perfect for meetings across countries.",
-    url: "https://multitoolbox.online/tools/converters/timezone-converter",
+    url: "https://www.multitoolbox.online/tools/converters/timezone-converter",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

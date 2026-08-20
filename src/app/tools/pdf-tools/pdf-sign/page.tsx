@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "assinar pdf",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/pdf-tools/pdf-sign",
+    canonical: "https://www.multitoolbox.online/tools/pdf-tools/pdf-sign",
   },
   openGraph: {
     title: "Sign PDF - Sign PDF Online | MultiTool",
     description:
       "Draw your signature and place it on a PDF in your browser. Free and private.",
-    url: "https://multitoolbox.online/tools/pdf-tools/pdf-sign",
+    url: "https://www.multitoolbox.online/tools/pdf-tools/pdf-sign",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Simplify any ratio (12:8 to 3:2) or solve for the missing value in a proportion a:b = c:x. Free and instant.",
   keywords: ["ratio calculator", "simplify ratio", "ratio solver", "proportion calculator", "solve for x ratio"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/math/ratio-calculator",
+    canonical: "https://www.multitoolbox.online/tools/math/ratio-calculator",
   },
   openGraph: {
     title: "Ratio Calculator - Simplify & Solve for X | MultiTool",
     description: "Simplify any ratio (12:8 to 3:2) or solve for the missing value in a proportion a:b = c:x. Free and instant.",
-    url: "https://multitoolbox.online/tools/math/ratio-calculator",
+    url: "https://www.multitoolbox.online/tools/math/ratio-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

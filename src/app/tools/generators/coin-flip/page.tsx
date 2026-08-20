@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Flip a virtual coin, get a Yes/No answer or ask the Magic 8-Ball. Instant decisions with sounds, history and fair randomness. Free, no download.",
   keywords: ["coin flip", "flip a coin", "coin toss", "yes or no", "magic 8 ball", "decision maker", "cara ou coroa"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/generators/coin-flip",
+    canonical: "https://www.multitoolbox.online/tools/generators/coin-flip",
   },
   openGraph: {
     title: "Coin Flip & Magic 8-Ball - Flip a Coin Online | MultiTool",
     description: "Flip a virtual coin, get a Yes/No answer or ask the Magic 8-Ball. Instant decisions with sounds, history and fair randomness. Free, no download.",
-    url: "https://multitoolbox.online/tools/generators/coin-flip",
+    url: "https://www.multitoolbox.online/tools/generators/coin-flip",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

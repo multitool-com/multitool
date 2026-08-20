@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Free love calculator. Enter two names and discover your love compatibility percentage. Fun, instant and viral — try it with your crush!",
   keywords: ["love calculator", "love test", "compatibility test", "love percentage", "calculator de amor", "teste de amor"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/generators/love-calculator",
+    canonical: "https://www.multitoolbox.online/tools/generators/love-calculator",
   },
   openGraph: {
     title: "Love Calculator - Test Love Compatibility Online | MultiTool",
     description: "Free love calculator. Enter two names and discover your love compatibility percentage. Fun, instant and viral — try it with your crush!",
-    url: "https://multitoolbox.online/tools/generators/love-calculator",
+    url: "https://www.multitoolbox.online/tools/generators/love-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

@@ -21,13 +21,13 @@ export const metadata: Metadata = {
     "engineering calculator",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/math/scientific-calculator",
+    canonical: "https://www.multitoolbox.online/tools/math/scientific-calculator",
   },
   openGraph: {
     title: "Scientific Calculator - Free Online | MultiTool",
     description:
       "Full scientific calculator in your browser: trig, logs, powers, roots. Free and private.",
-    url: "https://multitoolbox.online/tools/math/scientific-calculator",
+    url: "https://www.multitoolbox.online/tools/math/scientific-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

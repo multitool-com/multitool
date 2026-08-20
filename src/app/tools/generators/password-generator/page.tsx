@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "wifi password generator",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/generators/password-generator",
+    canonical: "https://www.multitoolbox.online/tools/generators/password-generator",
   },
   openGraph: {
     title: "Password Generator - Free Strong Random Passwords | MultiTool",
     description:
       "Generate strong, secure passwords instantly. Customizable, private, and free.",
-    url: "https://multitoolbox.online/tools/generators/password-generator",
+    url: "https://www.multitoolbox.online/tools/generators/password-generator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Free online stopwatch with laps, countdown timer and Pomodoro timer. Precise, with sound alerts. Works on any device, no download.",
   keywords: ["stopwatch", "online timer", "countdown timer", "pomodoro timer", "stopwatch online", "cronometro"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/date-time/stopwatch",
+    canonical: "https://www.multitoolbox.online/tools/date-time/stopwatch",
   },
   openGraph: {
     title: "Stopwatch, Timer & Pomodoro - Online Time Tools | MultiTool",
     description: "Free online stopwatch with laps, countdown timer and Pomodoro timer. Precise, with sound alerts. Works on any device, no download.",
-    url: "https://multitoolbox.online/tools/date-time/stopwatch",
+    url: "https://www.multitoolbox.online/tools/date-time/stopwatch",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

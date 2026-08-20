@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Count business days (Monday-Friday) between two dates, excluding weekends and your own holidays. Free and precise.",
   keywords: ["work days calculator", "business days calculator", "working days between dates", "business days count", "dias uteis"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/date-time/work-days-calculator",
+    canonical: "https://www.multitoolbox.online/tools/date-time/work-days-calculator",
   },
   openGraph: {
     title: "Work Days Calculator - Business Days Between Dates | MultiTool",
     description: "Count business days (Monday-Friday) between two dates, excluding weekends and your own holidays. Free and precise.",
-    url: "https://multitoolbox.online/tools/date-time/work-days-calculator",
+    url: "https://www.multitoolbox.online/tools/date-time/work-days-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

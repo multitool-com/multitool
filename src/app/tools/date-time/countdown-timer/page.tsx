@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Count down to any event: days, hours, minutes and seconds, updating live. Perfect for launches, trips and deadlines.",
   keywords: ["countdown timer", "countdown to date", "event countdown", "days hours minutes seconds", "timer online"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/date-time/countdown-timer",
+    canonical: "https://www.multitoolbox.online/tools/date-time/countdown-timer",
   },
   openGraph: {
     title: "Countdown Timer - Live Days, Hours, Minutes, Seconds | MultiTool",
     description: "Count down to any event: days, hours, minutes and seconds, updating live. Perfect for launches, trips and deadlines.",
-    url: "https://multitoolbox.online/tools/date-time/countdown-timer",
+    url: "https://www.multitoolbox.online/tools/date-time/countdown-timer",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

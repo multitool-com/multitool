@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, useRef} from "react";
+import { trackToolUsed, trackDownload, trackCopy } from "@/lib/analytics";
 
 type Currency = "USD" | "EUR" | "GBP" | "BRL";
 type Mode = "standard" | "reverse";
@@ -28,6 +29,13 @@ const currencySymbols: Record<Currency, string> = {
 };
 
 export default function DiscountCalculatorClient() {
+  const firedRef = useRef(false);
+  useEffect(() => {
+    if (firedRef.current) return;
+    firedRef.current = true;
+    trackToolUsed("discount-calculator", "finance");
+  }, []);
+
   const [currency, setCurrency] = useState<Currency>("USD");
   const [mode, setMode] = useState<Mode>("standard");
   const [doubleDiscount, setDoubleDiscount] = useState(false);

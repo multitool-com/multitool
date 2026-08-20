@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Generate random words instantly for writing prompts, games, passwords and inspiration. Choose how many words you need. Free, no sign-up.",
   keywords: ["random word generator", "random words", "writing prompt generator", "word list", "inspiration words"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/generators/random-word-generator",
+    canonical: "https://www.multitoolbox.online/tools/generators/random-word-generator",
   },
   openGraph: {
     title: "Random Word Generator - Random Words Online | MultiTool",
     description: "Generate random words instantly for writing prompts, games, passwords and inspiration. Choose how many words you need. Free, no sign-up.",
-    url: "https://multitoolbox.online/tools/generators/random-word-generator",
+    url: "https://www.multitoolbox.online/tools/generators/random-word-generator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

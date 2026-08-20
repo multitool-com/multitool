@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Calculate your GPA on the 4.0 scale: add courses with letter grades and credit hours, get instant weighted GPA and total credits.",
   keywords: ["gpa calculator", "college gpa", "high school gpa", "4.0 scale", "grade point average calculator"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/math/gpa-calculator",
+    canonical: "https://www.multitoolbox.online/tools/math/gpa-calculator",
   },
   openGraph: {
     title: "GPA Calculator - 4.0 Scale, Any Credits | MultiTool",
     description: "Calculate your GPA on the 4.0 scale: add courses with letter grades and credit hours, get instant weighted GPA and total credits.",
-    url: "https://multitoolbox.online/tools/math/gpa-calculator",
+    url: "https://www.multitoolbox.online/tools/math/gpa-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

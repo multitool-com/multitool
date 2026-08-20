@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Check how often a keyword appears in your text as a percentage of all words, with a top-words frequency table. Free SEO tool.",
   keywords: ["keyword density", "keyword density checker", "seo keyword", "keyword frequency", "word frequency counter"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/text-tools/keyword-density",
+    canonical: "https://www.multitoolbox.online/tools/text-tools/keyword-density",
   },
   openGraph: {
     title: "Keyword Density Checker - SEO Keyword Frequency | MultiTool",
     description: "Check how often a keyword appears in your text as a percentage of all words, with a top-words frequency table. Free SEO tool.",
-    url: "https://multitoolbox.online/tools/text-tools/keyword-density",
+    url: "https://www.multitoolbox.online/tools/text-tools/keyword-density",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

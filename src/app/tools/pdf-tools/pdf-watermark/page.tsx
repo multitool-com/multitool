@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "marca de agua pdf",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/pdf-tools/pdf-watermark",
+    canonical: "https://www.multitoolbox.online/tools/pdf-tools/pdf-watermark",
   },
   openGraph: {
     title: "PDF Watermark - Add Watermark to PDF | MultiTool",
     description:
       "Add a text or image watermark to every page of a PDF. Free and private.",
-    url: "https://multitoolbox.online/tools/pdf-tools/pdf-watermark",
+    url: "https://www.multitoolbox.online/tools/pdf-tools/pdf-watermark",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

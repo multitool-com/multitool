@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "net and gross",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/finance/vat-calculator",
+    canonical: "https://www.multitoolbox.online/tools/finance/vat-calculator",
   },
   openGraph: {
     title: "VAT / Sales Tax Calculator | MultiTool",
     description:
       "Add or remove VAT, GST or sales tax from any price. Free and private.",
-    url: "https://multitoolbox.online/tools/finance/vat-calculator",
+    url: "https://www.multitoolbox.online/tools/finance/vat-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

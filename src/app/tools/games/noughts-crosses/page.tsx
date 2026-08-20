@@ -16,12 +16,12 @@ export const metadata: Metadata = {
     "jogo da velha",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/games/noughts-crosses",
+    canonical: "https://www.multitoolbox.online/tools/games/noughts-crosses",
   },
   openGraph: {
     title: "Noughts & Crosses - Play Tic Tac Toe | MultiTool",
     description: "Play tic-tac-toe vs the computer or a friend. Free.",
-    url: "https://multitoolbox.online/tools/games/noughts-crosses",
+    url: "https://www.multitoolbox.online/tools/games/noughts-crosses",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

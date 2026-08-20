@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "final price calculator",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/finance/discount-calculator",
+    canonical: "https://www.multitoolbox.online/tools/finance/discount-calculator",
   },
   openGraph: {
     title: "Discount Calculator - Sale Price & Savings | MultiTool",
     description:
       "Calculate discount, sale price and total savings instantly. Reverse mode and double-discount included.",
-    url: "https://multitoolbox.online/tools/finance/discount-calculator",
+    url: "https://www.multitoolbox.online/tools/finance/discount-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

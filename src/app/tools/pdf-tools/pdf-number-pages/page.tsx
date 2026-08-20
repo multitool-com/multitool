@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "numerar pdf",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/pdf-tools/pdf-number-pages",
+    canonical: "https://www.multitoolbox.online/tools/pdf-tools/pdf-number-pages",
   },
   openGraph: {
     title: "Add Page Numbers to PDF | MultiTool",
     description:
       "Add page numbers to any PDF in your browser. Free and private.",
-    url: "https://multitoolbox.online/tools/pdf-tools/pdf-number-pages",
+    url: "https://www.multitoolbox.online/tools/pdf-tools/pdf-number-pages",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

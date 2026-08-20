@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Generate SEO meta tags (title, description, Open Graph, Twitter) with a live Google search preview and social share preview.",
   keywords: ["meta tag generator", "seo meta tags", "meta description generator", "og tags generator", "title tag generator", "meta tags seo"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/developer-tools/meta-tag-generator",
+    canonical: "https://www.multitoolbox.online/tools/developer-tools/meta-tag-generator",
   },
   openGraph: {
     title: "Meta Tag Generator - SEO Title & Description | MultiTool",
     description: "Generate SEO meta tags (title, description, Open Graph, Twitter) with a live Google search preview and social share preview.",
-    url: "https://multitoolbox.online/tools/developer-tools/meta-tag-generator",
+    url: "https://www.multitoolbox.online/tools/developer-tools/meta-tag-generator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

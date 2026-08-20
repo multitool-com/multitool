@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "best free ai 2026",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/ai-tools/free-ai-directory",
+    canonical: "https://www.multitoolbox.online/tools/ai-tools/free-ai-directory",
   },
   openGraph: {
     title: "Free AI Tools Directory - No Signup & Open Source | MultiTool",
     description:
       "A curated list of free AI chat, image, video, coding and research tools. Filter by no-signup and open source.",
-    url: "https://multitoolbox.online/tools/ai-tools/free-ai-directory",
+    url: "https://www.multitoolbox.online/tools/ai-tools/free-ai-directory",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     "juntar pdf",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/pdf-tools/pdf-merge",
+    canonical: "https://www.multitoolbox.online/tools/pdf-tools/pdf-merge",
   },
   openGraph: {
     title: "Merge PDF - Combine PDF Files | MultiTool",
     description:
       "Join multiple PDFs into one file in your browser. Free and private.",
-    url: "https://multitoolbox.online/tools/pdf-tools/pdf-merge",
+    url: "https://www.multitoolbox.online/tools/pdf-tools/pdf-merge",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "jogo da memoria",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/games/memory-match",
+    canonical: "https://www.multitoolbox.online/tools/games/memory-match",
   },
   openGraph: {
     title: "Memory Match - Memory Card Game | MultiTool",
     description:
       "Play the classic memory card game in your browser. Free, no download.",
-    url: "https://multitoolbox.online/tools/games/memory-match",
+    url: "https://www.multitoolbox.online/tools/games/memory-match",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

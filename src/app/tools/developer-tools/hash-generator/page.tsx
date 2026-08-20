@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Generate cryptographic hashes of any text: SHA-1, SHA-256, SHA-384 and SHA-512. Instant, local, free.",
   keywords: ["hash generator", "sha256", "sha512", "sha1", "hash text", "checksum generator"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/developer-tools/hash-generator",
+    canonical: "https://www.multitoolbox.online/tools/developer-tools/hash-generator",
   },
   openGraph: {
     title: "Hash Generator - SHA-1, SHA-256, SHA-384, SHA-512 | MultiTool",
     description: "Generate cryptographic hashes of any text: SHA-1, SHA-256, SHA-384 and SHA-512. Instant, local, free.",
-    url: "https://multitoolbox.online/tools/developer-tools/hash-generator",
+    url: "https://www.multitoolbox.online/tools/developer-tools/hash-generator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

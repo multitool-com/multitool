@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "percentage growth",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/math/percentage-change",
+    canonical: "https://www.multitoolbox.online/tools/math/percentage-change",
   },
   openGraph: {
     title: "Percentage Increase / Decrease Calculator | MultiTool",
     description:
       "Calculate percent increase or decrease between two numbers instantly.",
-    url: "https://multitoolbox.online/tools/math/percentage-change",
+    url: "https://www.multitoolbox.online/tools/math/percentage-change",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

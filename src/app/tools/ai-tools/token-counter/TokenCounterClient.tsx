@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect, useRef} from "react";
+import { trackToolUsed, trackDownload, trackCopy } from "@/lib/analytics";
 
 type ModelId =
   | "gpt-4o"
@@ -102,6 +103,13 @@ function formatPercent(value: number): string {
 }
 
 export default function TokenCounterClient() {
+  const firedRef = useRef(false);
+  useEffect(() => {
+    if (firedRef.current) return;
+    firedRef.current = true;
+    trackToolUsed("token-counter", "ai-tools");
+  }, []);
+
   const [text, setText] = useState("");
   const [modelId, setModelId] = useState<ModelId>("gpt-4o");
   const [copied, setCopied] = useState(false);
@@ -140,6 +148,7 @@ export default function TokenCounterClient() {
   }, [text, model]);
 
   const copyCount = async () => {
+    trackCopy("token-counter", "ai-tools");
     try {
       await navigator.clipboard.writeText(String(stats.tokens));
       setCopied(true);

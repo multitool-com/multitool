@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Rebuild corrupted or broken PDF files: the tool re-creates a clean, valid PDF structure page by page. Free, private, in your browser.",
   keywords: ["pdf repair", "fix corrupted pdf", "repair pdf online", "broken pdf fixer", "corrupted pdf recovery"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/pdf-tools/pdf-repair",
+    canonical: "https://www.multitoolbox.online/tools/pdf-tools/pdf-repair",
   },
   openGraph: {
     title: "PDF Repair - Fix Corrupted PDF Files Online | MultiTool",
     description: "Rebuild corrupted or broken PDF files: the tool re-creates a clean, valid PDF structure page by page. Free, private, in your browser.",
-    url: "https://multitoolbox.online/tools/pdf-tools/pdf-repair",
+    url: "https://www.multitoolbox.online/tools/pdf-tools/pdf-repair",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

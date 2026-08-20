@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     "ligue 4",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/games/four-in-a-row",
+    canonical: "https://www.multitoolbox.online/tools/games/four-in-a-row",
   },
   openGraph: {
     title: "Four in a Row - Connect 4 Style | MultiTool",
     description: "Drop discs and connect four. Free, no download.",
-    url: "https://multitoolbox.online/tools/games/four-in-a-row",
+    url: "https://www.multitoolbox.online/tools/games/four-in-a-row",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

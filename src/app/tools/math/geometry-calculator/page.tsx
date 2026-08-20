@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Calculate the area and perimeter of squares, rectangles, triangles, circles and trapezoids in seconds. Free and precise.",
   keywords: ["geometry calculator", "area calculator", "perimeter calculator", "circle area", "triangle area", "trapezoid area"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/math/geometry-calculator",
+    canonical: "https://www.multitoolbox.online/tools/math/geometry-calculator",
   },
   openGraph: {
     title: "Geometry Calculator - Area & Perimeter | MultiTool",
     description: "Calculate the area and perimeter of squares, rectangles, triangles, circles and trapezoids in seconds. Free and precise.",
-    url: "https://multitoolbox.online/tools/math/geometry-calculator",
+    url: "https://www.multitoolbox.online/tools/math/geometry-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

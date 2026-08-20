@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     "editar metadados pdf",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/pdf-tools/pdf-metadata",
+    canonical: "https://www.multitoolbox.online/tools/pdf-tools/pdf-metadata",
   },
   openGraph: {
     title: "PDF Metadata Editor - Edit PDF Info | MultiTool",
     description:
       "View and edit PDF metadata: title, author, subject and keywords. Free and private.",
-    url: "https://multitoolbox.online/tools/pdf-tools/pdf-metadata",
+    url: "https://www.multitoolbox.online/tools/pdf-tools/pdf-metadata",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

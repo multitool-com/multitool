@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { trackToolUsed, trackDownload, trackCopy } from "@/lib/analytics";
 
 type Format = "jpeg" | "png" | "webp";
 
@@ -74,6 +75,7 @@ export default function JpgPngWebpConverterClient() {
   }, []);
 
   const convert = async (src: SourceImage | null = source) => {
+    trackToolUsed("jpg-png-webp-converter", "images");
     if (!src || busy) return;
     setBusy(true);
     setError(null);
@@ -143,6 +145,7 @@ export default function JpgPngWebpConverterClient() {
   };
 
   const download = () => {
+    trackDownload("jpg-png-webp-converter", "images");
     if (!converted) return;
     const meta = FORMATS.find((f) => f.id === format) ?? FORMATS[0];
     const a = document.createElement("a");

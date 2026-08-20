@@ -18,13 +18,13 @@ export const metadata: Metadata = {
     "pdf to jpg converter online",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/pdf-tools/pdf-to-images",
+    canonical: "https://www.multitoolbox.online/tools/pdf-tools/pdf-to-images",
   },
   openGraph: {
     title: "PDF to Images - PDF to JPG PNG | MultiTool",
     description:
       "Convert PDF pages to JPG or PNG in your browser. Free and private.",
-    url: "https://multitoolbox.online/tools/pdf-tools/pdf-to-images",
+    url: "https://www.multitoolbox.online/tools/pdf-tools/pdf-to-images",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

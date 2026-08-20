@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Generate beautiful color palettes from any base color: monochromatic, complementary, analogous, triadic and tetradic. Copy hex codes.",
   keywords: ["color palette generator", "color scheme generator", "hex color palette", "color wheel", "palette maker", "gerador de paleta"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/generators/color-palette",
+    canonical: "https://www.multitoolbox.online/tools/generators/color-palette",
   },
   openGraph: {
     title: "Color Palette Generator - HEX to Palette | MultiTool",
     description: "Generate beautiful color palettes from any base color: monochromatic, complementary, analogous, triadic and tetradic. Copy hex codes.",
-    url: "https://multitoolbox.online/tools/generators/color-palette",
+    url: "https://www.multitoolbox.online/tools/generators/color-palette",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

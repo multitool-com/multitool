@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Convert any number to words in English or Portuguese instantly — perfect for checks, invoices, contracts and essays.",
   keywords: ["number to words", "numbers to words converter", "write numbers in words", "check amount in words", "numero por extenso", "converter numero em palavras"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/text-tools/number-to-words",
+    canonical: "https://www.multitoolbox.online/tools/text-tools/number-to-words",
   },
   openGraph: {
     title: "Number to Words Converter - English & Portuguese | MultiTool",
     description: "Convert any number to words in English or Portuguese instantly — perfect for checks, invoices, contracts and essays.",
-    url: "https://multitoolbox.online/tools/text-tools/number-to-words",
+    url: "https://www.multitoolbox.online/tools/text-tools/number-to-words",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

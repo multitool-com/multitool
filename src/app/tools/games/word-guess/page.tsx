@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     "jogo de palavras",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/games/word-guess",
+    canonical: "https://www.multitoolbox.online/tools/games/word-guess",
   },
   openGraph: {
     title: "Word Guess - Guess the Word | MultiTool",
     description: "Guess the hidden word in six tries. Free, no download.",
-    url: "https://multitoolbox.online/tools/games/word-guess",
+    url: "https://www.multitoolbox.online/tools/games/word-guess",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

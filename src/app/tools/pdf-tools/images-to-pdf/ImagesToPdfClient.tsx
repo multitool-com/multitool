@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { trackToolUsed, trackDownload, trackCopy } from "@/lib/analytics";
 import { PDFDocument } from "pdf-lib";
 
 type PageSize = "match" | "a4" | "letter" | "fit";
@@ -119,6 +120,7 @@ export default function ImagesToPdfClient() {
   };
 
   const createPdf = async () => {
+    trackToolUsed("images-to-pdf", "pdf-tools");
     if (items.length === 0 || busy) return;
     setBusy(true);
     setError(null);

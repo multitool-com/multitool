@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Generate random numbers in any range, with options for unique values, sorting and up to 1000 numbers at once. Free.",
   keywords: ["random number generator", "random number between", "random integer generator", "lottery numbers", "numero aleatorio"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/generators/random-number-generator",
+    canonical: "https://www.multitoolbox.online/tools/generators/random-number-generator",
   },
   openGraph: {
     title: "Random Number Generator - No Repeats, Sorted | MultiTool",
     description: "Generate random numbers in any range, with options for unique values, sorting and up to 1000 numbers at once. Free.",
-    url: "https://multitoolbox.online/tools/generators/random-number-generator",
+    url: "https://www.multitoolbox.online/tools/generators/random-number-generator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

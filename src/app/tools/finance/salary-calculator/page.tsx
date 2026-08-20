@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Convert annual salary to hourly, weekly and monthly pay — or work out the annual value of an hourly rate. Free, no sign-up.",
   keywords: ["salary calculator", "hourly wage calculator", "annual to hourly", "monthly salary calculator", "paycheck calculator"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/finance/salary-calculator",
+    canonical: "https://www.multitoolbox.online/tools/finance/salary-calculator",
   },
   openGraph: {
     title: "Salary / Hourly Wage Calculator - Annual to Hourly | MultiTool",
     description: "Convert annual salary to hourly, weekly and monthly pay — or work out the annual value of an hourly rate. Free, no sign-up.",
-    url: "https://multitoolbox.online/tools/finance/salary-calculator",
+    url: "https://www.multitoolbox.online/tools/finance/salary-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",
@@ -41,6 +41,26 @@ export default function Page() {
             Enter your annual salary (or hourly rate), your hours per week and paid weeks per year, and the tool computes every period: hourly, daily, weekly, monthly and annual — useful for comparing job offers across pay structures.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Important limitations
+          </h2>
+          <p className="mb-4">
+            All figures are <strong>gross pay</strong> — before income tax,
+            social security, health insurance and any other deductions. Real
+            take-home pay can be 20–35% lower depending on your country and
+            tax bracket. The conversion also assumes a regular schedule and
+            paid weeks as you entered them; overtime, bonuses and unpaid leave
+            are not included.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Financial disclaimer
+          </h2>
+          <p className="mb-4">
+            This tool provides an educational estimate and is{" "}
+            <strong>not financial, tax or employment advice</strong>. Check
+            with your employer, payroll or a tax professional for exact
+            numbers.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>
@@ -56,6 +76,7 @@ export default function Page() {
         { question: "What is a standard work year?", answer: "40 hours per week x 52 weeks = 2,080 hours per year, the common full-time benchmark." },
         { question: "Can I compare hourly vs salaried offers?", answer: "Yes — switch modes to see the annual value of an hourly rate, or the hourly value of a salary, and compare apples to apples." },
         { question: "Is it free?", answer: "Yes, completely free with no account." },
+        { question: "Is this financial advice?", answer: "No — figures are gross estimates for comparison. Your payroll or a tax professional can give exact numbers." }
       ]}
       relatedTools={[
         { name: "Loan Calculator", href: "/tools/finance/loan-calculator" },

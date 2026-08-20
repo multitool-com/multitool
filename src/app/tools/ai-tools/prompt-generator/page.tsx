@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "best ai prompts",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/ai-tools/prompt-generator",
+    canonical: "https://www.multitoolbox.online/tools/ai-tools/prompt-generator",
   },
   openGraph: {
     title: "AI Prompt Generator - Free ChatGPT & Claude Prompts | MultiTool",
     description:
       "100+ ready-to-use AI prompt templates for marketing, coding, writing, design and education. Free and instant.",
-    url: "https://multitoolbox.online/tools/ai-tools/prompt-generator",
+    url: "https://www.multitoolbox.online/tools/ai-tools/prompt-generator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Compare two texts and see exactly what changed: added lines in green, removed lines in red. Side-by-side or unified view.",
   keywords: ["text diff", "compare text", "diff checker", "text comparison", "line diff tool"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/text-tools/text-diff",
+    canonical: "https://www.multitoolbox.online/tools/text-tools/text-diff",
   },
   openGraph: {
     title: "Text Diff Checker - Compare Texts Side by Side | MultiTool",
     description: "Compare two texts and see exactly what changed: added lines in green, removed lines in red. Side-by-side or unified view.",
-    url: "https://multitoolbox.online/tools/text-tools/text-diff",
+    url: "https://www.multitoolbox.online/tools/text-tools/text-diff",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

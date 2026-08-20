@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Generate 1 to 100 cryptographically secure random UUIDs (v4) at once, in upper or lower case. Free developer tool.",
   keywords: ["uuid generator", "uuid v4", "generate uuid", "guid generator", "random uuid"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/developer-tools/uuid-generator",
+    canonical: "https://www.multitoolbox.online/tools/developer-tools/uuid-generator",
   },
   openGraph: {
     title: "UUID Generator - v4 Random UUIDs | MultiTool",
     description: "Generate 1 to 100 cryptographically secure random UUIDs (v4) at once, in upper or lower case. Free developer tool.",
-    url: "https://multitoolbox.online/tools/developer-tools/uuid-generator",
+    url: "https://www.multitoolbox.online/tools/developer-tools/uuid-generator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

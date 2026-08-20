@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Check how strong your password is: score from very weak to strong, entropy estimate and 6 security checks. 100% local.",
   keywords: ["password strength", "password checker", "password test", "strong password", "verificador de senha"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/developer-tools/password-strength",
+    canonical: "https://www.multitoolbox.online/tools/developer-tools/password-strength",
   },
   openGraph: {
     title: "Password Strength Checker - Test Passwords | MultiTool",
     description: "Check how strong your password is: score from very weak to strong, entropy estimate and 6 security checks. 100% local.",
-    url: "https://multitoolbox.online/tools/developer-tools/password-strength",
+    url: "https://www.multitoolbox.online/tools/developer-tools/password-strength",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

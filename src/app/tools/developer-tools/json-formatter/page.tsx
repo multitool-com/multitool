@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "pretty print json",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/developer-tools/json-formatter",
+    canonical: "https://www.multitoolbox.online/tools/developer-tools/json-formatter",
   },
   openGraph: {
     title: "JSON Formatter, Validator & Beautifier | MultiTool",
     description:
       "Beautify, minify and validate JSON instantly. Free, fast and private — no uploads.",
-    url: "https://multitoolbox.online/tools/developer-tools/json-formatter",
+    url: "https://www.multitoolbox.online/tools/developer-tools/json-formatter",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

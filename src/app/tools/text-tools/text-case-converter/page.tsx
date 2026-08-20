@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Convert text between 10 cases: UPPERCASE, lowercase, Title Case, sentence case, camelCase, PascalCase, snake_case, kebab-case and more.",
   keywords: ["text case converter", "uppercase converter", "title case converter", "camel case converter", "snake case", "kebab case", "conversor de caixa"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/text-tools/text-case-converter",
+    canonical: "https://www.multitoolbox.online/tools/text-tools/text-case-converter",
   },
   openGraph: {
     title: "Text Case Converter - Upper, Lower, Title, camelCase & More | MultiTool",
     description: "Convert text between 10 cases: UPPERCASE, lowercase, Title Case, sentence case, camelCase, PascalCase, snake_case, kebab-case and more.",
-    url: "https://multitoolbox.online/tools/text-tools/text-case-converter",
+    url: "https://www.multitoolbox.online/tools/text-tools/text-case-converter",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

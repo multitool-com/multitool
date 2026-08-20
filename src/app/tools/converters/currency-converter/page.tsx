@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "currency calculator",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/converters/currency-converter",
+    canonical: "https://www.multitoolbox.online/tools/converters/currency-converter",
   },
   openGraph: {
     title: "Currency Converter - USD, EUR, GBP, BRL & More | MultiTool",
     description:
       "Convert between major world currencies instantly. Free and private amounts.",
-    url: "https://multitoolbox.online/tools/converters/currency-converter",
+    url: "https://www.multitoolbox.online/tools/converters/currency-converter",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

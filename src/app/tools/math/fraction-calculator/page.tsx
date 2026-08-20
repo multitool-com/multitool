@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Add, subtract, multiply and divide fractions with instant simplification and step-by-step results, including mixed numbers.",
   keywords: ["fraction calculator", "add fractions", "simplify fractions", "fraction simplifier", "mixed number calculator", "calculadora de fracoes"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/math/fraction-calculator",
+    canonical: "https://www.multitoolbox.online/tools/math/fraction-calculator",
   },
   openGraph: {
     title: "Fraction Calculator - Add, Subtract, Multiply, Divide | MultiTool",
     description: "Add, subtract, multiply and divide fractions with instant simplification and step-by-step results, including mixed numbers.",
-    url: "https://multitoolbox.online/tools/math/fraction-calculator",
+    url: "https://www.multitoolbox.online/tools/math/fraction-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

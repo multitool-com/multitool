@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Simplify any width and height to its aspect ratio (16:9, 4:3, 1:1) and find the missing dimension for videos, images and screens.",
   keywords: ["aspect ratio calculator", "16:9 calculator", "aspect ratio converter", "resolution ratio", "video aspect ratio", "image ratio"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/math/aspect-ratio-calculator",
+    canonical: "https://www.multitoolbox.online/tools/math/aspect-ratio-calculator",
   },
   openGraph: {
     title: "Aspect Ratio Calculator - 16:9, 4:3 & More | MultiTool",
     description: "Simplify any width and height to its aspect ratio (16:9, 4:3, 1:1) and find the missing dimension for videos, images and screens.",
-    url: "https://multitoolbox.online/tools/math/aspect-ratio-calculator",
+    url: "https://www.multitoolbox.online/tools/math/aspect-ratio-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

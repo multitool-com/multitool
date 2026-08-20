@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Encode text to Base64 and decode Base64 back to text instantly, with full UTF-8 support for emoji and accents. Free developer tool.",
   keywords: ["base64 encoder", "base64 decoder", "base64 encode", "base64 decode", "base64 converter"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/developer-tools/base64-encoder",
+    canonical: "https://www.multitoolbox.online/tools/developer-tools/base64-encoder",
   },
   openGraph: {
     title: "Base64 Encoder / Decoder - Text to Base64 | MultiTool",
     description: "Encode text to Base64 and decode Base64 back to text instantly, with full UTF-8 support for emoji and accents. Free developer tool.",
-    url: "https://multitoolbox.online/tools/developer-tools/base64-encoder",
+    url: "https://www.multitoolbox.online/tools/developer-tools/base64-encoder",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect, useRef} from "react";
+import { trackToolUsed, trackDownload, trackCopy } from "@/lib/analytics";
 
 type Currency = "USD" | "EUR" | "GBP" | "BRL";
 type ModelId =
@@ -59,6 +60,13 @@ function parsePositive(value: string): number | null {
 }
 
 export default function AiCostCalculatorClient() {
+  const firedRef = useRef(false);
+  useEffect(() => {
+    if (firedRef.current) return;
+    firedRef.current = true;
+    trackToolUsed("ai-cost-calculator", "ai-tools");
+  }, []);
+
   const [currency, setCurrency] = useState<Currency>("USD");
   const [modelId, setModelId] = useState<ModelId>("gpt-4o");
   const [inputTokens, setInputTokens] = useState("1500");

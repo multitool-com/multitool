@@ -26,7 +26,7 @@ export interface Category {
 export const SITE_CONFIG = {
   name: "MultiTool",
   domain: "multitoolbox.online",
-  url: "https://multitoolbox.online",
+  url: "https://www.multitoolbox.online",
   description:
     "Free online tools: calculators, converters, generators and utilities for everyday use. Fast, simple, no sign-up required.",
   email: "multitool.com@gmail.com",

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { trackToolUsed, trackDownload, trackCopy } from "@/lib/analytics";
 
 type Mode = "beautify" | "minify";
 
@@ -31,6 +32,7 @@ export default function JsonFormatterClient() {
   const [copied, setCopied] = useState(false);
 
   const process = () => {
+    trackToolUsed("json-formatter", "developer-tools");
     if (!input.trim()) {
       setResult({
         output: "",
@@ -74,6 +76,7 @@ export default function JsonFormatterClient() {
   };
 
   const copyOutput = async () => {
+    trackCopy("json-formatter", "developer-tools");
     if (!result?.output) return;
     try {
       await navigator.clipboard.writeText(result.output);

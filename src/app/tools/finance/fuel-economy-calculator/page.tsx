@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Calculate fuel consumption (km/L or MPG), liters per 100 km, fuel needed and total trip cost in metric or imperial units.",
   keywords: ["fuel economy calculator", "fuel cost calculator", "mpg calculator", "gas mileage calculator", "trip fuel cost", "consumo de combustivel"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/finance/fuel-economy-calculator",
+    canonical: "https://www.multitoolbox.online/tools/finance/fuel-economy-calculator",
   },
   openGraph: {
     title: "Fuel Economy Calculator - km/L, MPG & Trip Cost | MultiTool",
     description: "Calculate fuel consumption (km/L or MPG), liters per 100 km, fuel needed and total trip cost in metric or imperial units.",
-    url: "https://multitoolbox.online/tools/finance/fuel-economy-calculator",
+    url: "https://www.multitoolbox.online/tools/finance/fuel-economy-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Generate creative names for pets (dogs, cats, birds) by theme, and business names by style with your own keyword. One click to copy.",
   keywords: ["pet name generator", "business name generator", "dog name ideas", "company name generator", "brand name generator", "cat name ideas"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/generators/pet-business-name-generator",
+    canonical: "https://www.multitoolbox.online/tools/generators/pet-business-name-generator",
   },
   openGraph: {
     title: "Pet & Business Name Generator - Creative Ideas | MultiTool",
     description: "Generate creative names for pets (dogs, cats, birds) by theme, and business names by style with your own keyword. One click to copy.",
-    url: "https://multitoolbox.online/tools/generators/pet-business-name-generator",
+    url: "https://www.multitoolbox.online/tools/generators/pet-business-name-generator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

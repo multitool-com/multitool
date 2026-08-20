@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Roll up to 10 dice of any type — d4, d6, d8, d10, d12, d20 — with realistic animation, totals and full history.",
   keywords: ["dice roller", "roll dice", "d20", "rpg dice", "dice simulator", "dados online"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/generators/dice-roller",
+    canonical: "https://www.multitoolbox.online/tools/generators/dice-roller",
   },
   openGraph: {
     title: "Dice Roller - d4, d6, d8, d10, d12, d20 | MultiTool",
     description: "Roll up to 10 dice of any type — d4, d6, d8, d10, d12, d20 — with realistic animation, totals and full history.",
-    url: "https://multitoolbox.online/tools/generators/dice-roller",
+    url: "https://www.multitoolbox.online/tools/generators/dice-roller",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

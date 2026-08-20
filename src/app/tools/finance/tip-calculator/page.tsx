@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "tip calculator per person",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/finance/tip-calculator",
+    canonical: "https://www.multitoolbox.online/tools/finance/tip-calculator",
   },
   openGraph: {
     title: "Tip Calculator - Split Bill & Gratuity | MultiTool",
     description:
       "Calculate tip, total bill and split evenly between people. Free, fast and simple.",
-    url: "https://multitoolbox.online/tools/finance/tip-calculator",
+    url: "https://www.multitoolbox.online/tools/finance/tip-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

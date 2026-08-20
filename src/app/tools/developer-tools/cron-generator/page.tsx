@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Build cron expressions visually with presets and dropdowns, plus a human-readable description. Compatible with Linux, AWS and GitHub Actions.",
   keywords: ["cron generator", "cron expression", "cron job", "scheduler", "crontab generator"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/developer-tools/cron-generator",
+    canonical: "https://www.multitoolbox.online/tools/developer-tools/cron-generator",
   },
   openGraph: {
     title: "Cron Generator - 5-Field Cron Expressions | MultiTool",
     description: "Build cron expressions visually with presets and dropdowns, plus a human-readable description. Compatible with Linux, AWS and GitHub Actions.",
-    url: "https://multitoolbox.online/tools/developer-tools/cron-generator",
+    url: "https://www.multitoolbox.online/tools/developer-tools/cron-generator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

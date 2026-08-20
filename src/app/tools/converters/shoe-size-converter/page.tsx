@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Convert shoe sizes between US, UK, EU and centimeters for men and women. Instant, accurate size charts with no sign-up.",
   keywords: ["shoe size converter", "shoe size chart", "us to eu shoe size", "shoe size in cm", "uk to us size", "tamanho de sapato"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/converters/shoe-size-converter",
+    canonical: "https://www.multitoolbox.online/tools/converters/shoe-size-converter",
   },
   openGraph: {
     title: "Shoe Size Converter - US, UK, EU & CM | MultiTool",
     description: "Convert shoe sizes between US, UK, EU and centimeters for men and women. Instant, accurate size charts with no sign-up.",
-    url: "https://multitoolbox.online/tools/converters/shoe-size-converter",
+    url: "https://www.multitoolbox.online/tools/converters/shoe-size-converter",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

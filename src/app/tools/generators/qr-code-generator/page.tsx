@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "download qr code",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/generators/qr-code-generator",
+    canonical: "https://www.multitoolbox.online/tools/generators/qr-code-generator",
   },
   openGraph: {
     title: "QR Code Generator - Free Online QR Maker | MultiTool",
     description:
       "Create QR codes for URLs, text, Wi-Fi and more. Custom colors, instant PNG download, 100% free.",
-    url: "https://multitoolbox.online/tools/generators/qr-code-generator",
+    url: "https://www.multitoolbox.online/tools/generators/qr-code-generator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

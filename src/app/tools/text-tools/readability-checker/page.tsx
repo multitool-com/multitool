@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "writing level checker",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/text-tools/readability-checker",
+    canonical: "https://www.multitoolbox.online/tools/text-tools/readability-checker",
   },
   openGraph: {
     title: "Readability Checker - Flesch Score | MultiTool",
     description:
       "Measure the reading level of any text with Flesch scores. Free and private.",
-    url: "https://multitoolbox.online/tools/text-tools/readability-checker",
+    url: "https://www.multitoolbox.online/tools/text-tools/readability-checker",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "reorganizar pdf",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/pdf-tools/pdf-reorder",
+    canonical: "https://www.multitoolbox.online/tools/pdf-tools/pdf-reorder",
   },
   openGraph: {
     title: "Reorder PDF - Organize & Remove Pages | MultiTool",
     description:
       "Reorder PDF pages and remove unwanted ones in your browser. Free and private.",
-    url: "https://multitoolbox.online/tools/pdf-tools/pdf-reorder",
+    url: "https://www.multitoolbox.online/tools/pdf-tools/pdf-reorder",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

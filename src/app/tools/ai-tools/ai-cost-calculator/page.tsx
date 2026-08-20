@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "gpt-4o cost",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/ai-tools/ai-cost-calculator",
+    canonical: "https://www.multitoolbox.online/tools/ai-tools/ai-cost-calculator",
   },
   openGraph: {
     title: "AI API Cost Calculator - GPT, Claude & Gemini | MultiTool",
     description:
       "Estimate monthly AI API spend for GPT-4o, Claude and Gemini from tokens and request volume. Free and private.",
-    url: "https://multitoolbox.online/tools/ai-tools/ai-cost-calculator",
+    url: "https://www.multitoolbox.online/tools/ai-tools/ai-cost-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

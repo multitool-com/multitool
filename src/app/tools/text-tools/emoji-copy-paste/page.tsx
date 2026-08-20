@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Find and copy emojis instantly: smileys, hearts, animals, food, symbols and more. Search by name and copy with one click. Free, no sign-up.",
   keywords: ["emoji copy paste", "emoji keyboard", "copy emojis", "emojis for instagram", "emojis for whatsapp", "emojis gratis"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/text-tools/emoji-copy-paste",
+    canonical: "https://www.multitoolbox.online/tools/text-tools/emoji-copy-paste",
   },
   openGraph: {
     title: "Emoji Copy-Paste - Emojis for Social Media | MultiTool",
     description: "Find and copy emojis instantly: smileys, hearts, animals, food, symbols and more. Search by name and copy with one click. Free, no sign-up.",
-    url: "https://multitoolbox.online/tools/text-tools/emoji-copy-paste",
+    url: "https://www.multitoolbox.online/tools/text-tools/emoji-copy-paste",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

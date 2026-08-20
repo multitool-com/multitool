@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Encrypt any text with AES-256-GCM using a passphrase, and decrypt it back. Military-grade cryptography, 100% in your browser.",
   keywords: ["text encryptor", "encrypt text", "aes encryption", "decrypt text", "cipher online", "criptografar texto"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/text-tools/text-encryptor",
+    canonical: "https://www.multitoolbox.online/tools/text-tools/text-encryptor",
   },
   openGraph: {
     title: "Text Encryptor - AES-256 Encrypt & Decrypt | MultiTool",
     description: "Encrypt any text with AES-256-GCM using a passphrase, and decrypt it back. Military-grade cryptography, 100% in your browser.",
-    url: "https://multitoolbox.online/tools/text-tools/text-encryptor",
+    url: "https://www.multitoolbox.online/tools/text-tools/text-encryptor",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

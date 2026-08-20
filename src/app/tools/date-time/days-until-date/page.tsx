@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "days until birthday",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/date-time/days-until-date",
+    canonical: "https://www.multitoolbox.online/tools/date-time/days-until-date",
   },
   openGraph: {
     title: "Days Until Date - Countdown How Many Days Left | MultiTool",
     description:
       "Count days, weeks and months until any date. Free, instant and private.",
-    url: "https://multitoolbox.online/tools/date-time/days-until-date",
+    url: "https://www.multitoolbox.online/tools/date-time/days-until-date",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

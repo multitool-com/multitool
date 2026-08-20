@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Generate cool, unique usernames for games, social media and more. Mix styles, leet variations and copy with one click. Free, no sign-up.",
   keywords: ["username generator", "cool usernames", "gamertag generator", "name ideas", "social media username"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/generators/username-generator",
+    canonical: "https://www.multitoolbox.online/tools/generators/username-generator",
   },
   openGraph: {
     title: "Username Generator - Cool Usernames Online | MultiTool",
     description: "Generate cool, unique usernames for games, social media and more. Mix styles, leet variations and copy with one click. Free, no sign-up.",
-    url: "https://multitoolbox.online/tools/generators/username-generator",
+    url: "https://www.multitoolbox.online/tools/generators/username-generator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

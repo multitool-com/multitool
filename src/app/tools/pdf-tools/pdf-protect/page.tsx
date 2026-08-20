@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "proteger pdf",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/pdf-tools/pdf-protect",
+    canonical: "https://www.multitoolbox.online/tools/pdf-tools/pdf-protect",
   },
   openGraph: {
     title: "Protect PDF - Password Protect PDF | MultiTool",
     description:
       "Encrypt a PDF with a password in your browser. Free and private.",
-    url: "https://multitoolbox.online/tools/pdf-tools/pdf-protect",
+    url: "https://www.multitoolbox.online/tools/pdf-tools/pdf-protect",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

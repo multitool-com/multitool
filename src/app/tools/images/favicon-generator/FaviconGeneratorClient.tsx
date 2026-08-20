@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { trackToolUsed, trackDownload, trackCopy } from "@/lib/analytics";
 
 const SIZES = [16, 32, 48, 180, 192, 512];
 
@@ -117,6 +118,7 @@ export default function FaviconGeneratorClient() {
   };
 
   const download = (size: number, url: string) => {
+    trackDownload("favicon-generator", "images");
     const a = document.createElement("a");
     a.href = url;
     a.download = `favicon-${size}x${size}.png`;

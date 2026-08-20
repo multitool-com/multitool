@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Free statistics calculator. Compute mean, median, mode, range, variance and standard deviation from any list of numbers. Instant results.",
   keywords: ["statistics calculator", "mean median mode calculator", "standard deviation calculator", "variance calculator", "statistics solver"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/math/statistics-calculator",
+    canonical: "https://www.multitoolbox.online/tools/math/statistics-calculator",
   },
   openGraph: {
     title: "Statistics Calculator - Mean, Median, Mode Online | MultiTool",
     description: "Free statistics calculator. Compute mean, median, mode, range, variance and standard deviation from any list of numbers. Instant results.",
-    url: "https://multitoolbox.online/tools/math/statistics-calculator",
+    url: "https://www.multitoolbox.online/tools/math/statistics-calculator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

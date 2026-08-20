@@ -20,13 +20,13 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical:
-      "https://multitoolbox.online/tools/developer-tools/csv-json-converter",
+      "https://www.multitoolbox.online/tools/developer-tools/csv-json-converter",
   },
   openGraph: {
     title: "CSV to JSON Converter - CSV ⇄ JSON | MultiTool",
     description:
       "Convert between CSV and JSON instantly, with delimiters and header detection. Free and private.",
-    url: "https://multitoolbox.online/tools/developer-tools/csv-json-converter",
+    url: "https://www.multitoolbox.online/tools/developer-tools/csv-json-converter",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

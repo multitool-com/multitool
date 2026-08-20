@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     "llm system prompt",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/ai-tools/system-prompt-builder",
+    canonical: "https://www.multitoolbox.online/tools/ai-tools/system-prompt-builder",
   },
   openGraph: {
     title: "System Prompt Builder - AI Prompt Templates | MultiTool",
     description:
       "Assemble professional system prompts for ChatGPT, Claude and Gemini. Free and private.",
-    url: "https://multitoolbox.online/tools/ai-tools/system-prompt-builder",
+    url: "https://www.multitoolbox.online/tools/ai-tools/system-prompt-builder",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

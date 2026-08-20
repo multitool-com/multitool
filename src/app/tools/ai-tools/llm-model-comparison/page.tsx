@@ -21,13 +21,13 @@ export const metadata: Metadata = {
     "token pricing",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/ai-tools/llm-model-comparison",
+    canonical: "https://www.multitoolbox.online/tools/ai-tools/llm-model-comparison",
   },
   openGraph: {
     title: "LLM Model Comparison - GPT vs Claude vs Gemini | MultiTool",
     description:
       "Side-by-side comparison of the top LLMs: context, output limits and reference API prices.",
-    url: "https://multitoolbox.online/tools/ai-tools/llm-model-comparison",
+    url: "https://www.multitoolbox.online/tools/ai-tools/llm-model-comparison",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

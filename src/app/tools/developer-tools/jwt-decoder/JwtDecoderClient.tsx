@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect, useRef} from "react";
+import { trackToolUsed, trackDownload, trackCopy } from "@/lib/analytics";
 
 const SAMPLE_TOKEN =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL211bHRpdG9vbGJveC5vbmxpbmUiLCJzdWIiOiIxMjM0NTY3ODkwIiwiYXVkIjpbImFwaSIsIndlYiJdLCJuYW1lIjoiSm9obiBEb2UiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNzg2NjM2ODUyLCJleHAiOjE3ODY4MTMyNTIsImp0aSI6ImExYjJjM2Q0In0.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c";
@@ -68,6 +69,13 @@ type Decoded =
     };
 
 export default function JwtDecoderClient() {
+  const firedRef = useRef(false);
+  useEffect(() => {
+    if (firedRef.current) return;
+    firedRef.current = true;
+    trackToolUsed("jwt-decoder", "developer-tools");
+  }, []);
+
   const [token, setToken] = useState(SAMPLE_TOKEN);
   const [copied, setCopied] = useState<"header" | "payload" | null>(null);
 
@@ -125,6 +133,7 @@ export default function JwtDecoderClient() {
   }, [token]);
 
   const copy = async (kind: "header" | "payload") => {
+    trackCopy("jwt-decoder", "developer-tools");
     if (decoded.state !== "ok") return;
     const text = kind === "header" ? decoded.headerPretty : decoded.payloadPretty;
     try {

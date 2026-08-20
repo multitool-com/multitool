@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "tweet character counter",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/text-tools/word-counter",
+    canonical: "https://www.multitoolbox.online/tools/text-tools/word-counter",
   },
   openGraph: {
     title: "Word Counter - Count Words, Characters & Sentences | MultiTool",
     description:
       "Count words, characters, sentences, paragraphs and reading time instantly. Free and private.",
-    url: "https://multitoolbox.online/tools/text-tools/word-counter",
+    url: "https://www.multitoolbox.online/tools/text-tools/word-counter",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

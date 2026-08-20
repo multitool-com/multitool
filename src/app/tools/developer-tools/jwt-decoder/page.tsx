@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     "decode token online",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/developer-tools/jwt-decoder",
+    canonical: "https://www.multitoolbox.online/tools/developer-tools/jwt-decoder",
   },
   openGraph: {
     title: "JWT Decoder - Decode JSON Web Tokens Online | MultiTool",
     description:
       "Paste any JWT and read its header, payload and claims in clean JSON. Free and private.",
-    url: "https://multitoolbox.online/tools/developer-tools/jwt-decoder",
+    url: "https://www.multitoolbox.online/tools/developer-tools/jwt-decoder",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

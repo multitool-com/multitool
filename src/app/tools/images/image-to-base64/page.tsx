@@ -20,13 +20,13 @@ export const metadata: Metadata = {
     "base64 image converter",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/images/image-to-base64",
+    canonical: "https://www.multitoolbox.online/tools/images/image-to-base64",
   },
   openGraph: {
     title: "Image to Base64 - Data URI Converter | MultiTool",
     description:
       "Convert any image to a Base64 data URI for HTML, CSS or JSON. Free and private.",
-    url: "https://multitoolbox.online/tools/images/image-to-base64",
+    url: "https://www.multitoolbox.online/tools/images/image-to-base64",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

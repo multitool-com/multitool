@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "unit conversion",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/converters/unit-converter",
+    canonical: "https://www.multitoolbox.online/tools/converters/unit-converter",
   },
   openGraph: {
     title: "Unit Converter - Length, Weight, Volume & More | MultiTool",
     description:
       "Convert length, weight, volume, area, speed and data units instantly. Metric and imperial. Free and private.",
-    url: "https://multitoolbox.online/tools/converters/unit-converter",
+    url: "https://www.multitoolbox.online/tools/converters/unit-converter",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

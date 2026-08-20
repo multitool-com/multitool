@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Create a favicon from text, an emoji or your own image, and download every size you need: 16, 32, 48, 180, 192 and 512 px.",
   keywords: ["favicon generator", "favicon maker", "icon generator", "favicon from text", "site icon generator", "favicon emoji"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/images/favicon-generator",
+    canonical: "https://www.multitoolbox.online/tools/images/favicon-generator",
   },
   openGraph: {
     title: "Favicon Generator - Text, Emoji or Image | MultiTool",
     description: "Create a favicon from text, an emoji or your own image, and download every size you need: 16, 32, 48, 180, 192 and 512 px.",
-    url: "https://multitoolbox.online/tools/images/favicon-generator",
+    url: "https://www.multitoolbox.online/tools/images/favicon-generator",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

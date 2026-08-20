@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "girar pdf",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/pdf-tools/pdf-rotate",
+    canonical: "https://www.multitoolbox.online/tools/pdf-tools/pdf-rotate",
   },
   openGraph: {
     title: "Rotate PDF - Rotate Pages | MultiTool",
     description:
       "Rotate PDF pages 90, 180 or 270 degrees in your browser. Free and private.",
-    url: "https://multitoolbox.online/tools/pdf-tools/pdf-rotate",
+    url: "https://www.multitoolbox.online/tools/pdf-tools/pdf-rotate",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

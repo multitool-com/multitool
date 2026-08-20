@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
+import { trackToolUsed, trackDownload, trackCopy } from "@/lib/analytics";
 
 interface PasswordOptions {
   length: number;
@@ -110,6 +111,7 @@ export default function PasswordGeneratorClient() {
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
 
   const generate = useCallback(() => {
+    trackToolUsed("password-generator", "generators");
     setPassword(generatePassword(options));
     setBulkPasswords([]);
     setCopied(false);
@@ -127,6 +129,7 @@ export default function PasswordGeneratorClient() {
   }, [generate]);
 
   const copyToClipboard = async (text: string, index: number | null = null) => {
+    trackCopy("password-generator", "generators");
     try {
       await navigator.clipboard.writeText(text);
       if (index === null) {

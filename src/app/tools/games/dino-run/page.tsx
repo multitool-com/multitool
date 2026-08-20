@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     "jogo do dinossauro",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/games/dino-run",
+    canonical: "https://www.multitoolbox.online/tools/games/dino-run",
   },
   openGraph: {
     title: "Dino Run - Endless Runner | MultiTool",
     description: "Run, jump and duck. How far can you go? Free, no download.",
-    url: "https://multitoolbox.online/tools/games/dino-run",
+    url: "https://www.multitoolbox.online/tools/games/dino-run",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

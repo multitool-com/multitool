@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Crop any image online with free, 1:1, 4:3, 16:9 and other preset ratios. Drag to position, zoom, then download as PNG. 100% private.",
   keywords: ["image cropper", "crop photo online", "crop image", "square crop", "crop tool", "cortar imagem"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/images/image-cropper",
+    canonical: "https://www.multitoolbox.online/tools/images/image-cropper",
   },
   openGraph: {
     title: "Image Cropper - Crop Photos Online | MultiTool",
     description: "Crop any image online with free, 1:1, 4:3, 16:9 and other preset ratios. Drag to position, zoom, then download as PNG. 100% private.",
-    url: "https://multitoolbox.online/tools/images/image-cropper",
+    url: "https://www.multitoolbox.online/tools/images/image-cropper",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

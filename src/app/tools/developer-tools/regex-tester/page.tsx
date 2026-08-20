@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "online regex",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/developer-tools/regex-tester",
+    canonical: "https://www.multitoolbox.online/tools/developer-tools/regex-tester",
   },
   openGraph: {
     title: "Regex Tester - Test Regular Expressions Online | MultiTool",
     description:
       "Test JavaScript regex live: matches, groups and flags. Free and private.",
-    url: "https://multitoolbox.online/tools/developer-tools/regex-tester",
+    url: "https://www.multitoolbox.online/tools/developer-tools/regex-tester",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

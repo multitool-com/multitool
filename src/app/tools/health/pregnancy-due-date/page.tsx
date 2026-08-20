@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Estimate your due date, current pregnancy week and trimester from the first day of your last period. Free, private, no sign-up.",
   keywords: ["pregnancy due date calculator", "due date from lmp", "pregnancy week calculator", "edd calculator", "data provavel do parto"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/health/pregnancy-due-date",
+    canonical: "https://www.multitoolbox.online/tools/health/pregnancy-due-date",
   },
   openGraph: {
     title: "Pregnancy Due Date Calculator - from LMP | MultiTool",
     description: "Estimate your due date, current pregnancy week and trimester from the first day of your last period. Free, private, no sign-up.",
-    url: "https://multitoolbox.online/tools/health/pregnancy-due-date",
+    url: "https://www.multitoolbox.online/tools/health/pregnancy-due-date",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",
@@ -41,6 +41,26 @@ export default function Page() {
             Enter the first day of your last menstrual period (LMP). The tool applies Naegele's rule — LMP plus 280 days — to estimate the due date, then shows your current week, trimester and conception window.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Important limitations
+          </h2>
+          <p className="mb-4">
+            Naegele&apos;s rule assumes a regular 28-day menstrual cycle and
+            averages 40 weeks (280 days) of pregnancy. Only about{" "}
+            <strong>5% of babies are born exactly on their due date</strong>{" "}
+            — most arrive within two weeks before or after. Cycle length,
+            ovulation timing and ultrasound measurements can shift the
+            estimate, so treat the result as a guide, not a promise.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Health disclaimer
+          </h2>
+          <p className="mb-4">
+            This tool provides general information only and is{" "}
+            <strong>not medical advice</strong>. Every pregnancy is unique —
+            always follow the guidance of your doctor or midwife, who can date
+            your pregnancy with ultrasound and clinical evaluation.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>
@@ -56,6 +76,7 @@ export default function Page() {
         { question: "How is the current week calculated?", answer: "The tool counts full weeks since the LMP. Pregnancy is measured this way even before conception." },
         { question: "What are the trimesters?", answer: "First trimester: weeks 1-13. Second: weeks 14-26. Third: weeks 27-40." },
         { question: "Is it free?", answer: "Yes, completely free, and the calculation happens on your device." },
+        { question: "Is this medical advice?", answer: "No — this is an educational estimate. Always confirm dates and care with a qualified healthcare provider." }
       ]}
       relatedTools={[
         { name: "BMI Calculator", href: "/tools/health/bmi-calculator" },

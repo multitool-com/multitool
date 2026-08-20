@@ -17,12 +17,12 @@ export const metadata: Metadata = {
     "jogo brick breaker",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/games/brick-breaker",
+    canonical: "https://www.multitoolbox.online/tools/games/brick-breaker",
   },
   openGraph: {
     title: "Brick Breaker - Breakout Style | MultiTool",
     description: "Smash the bricks, catch power-ups, clear the levels. Free.",
-    url: "https://multitoolbox.online/tools/games/brick-breaker",
+    url: "https://www.multitoolbox.online/tools/games/brick-breaker",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

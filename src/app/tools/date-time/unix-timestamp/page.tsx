@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Convert Unix timestamps (seconds or milliseconds) to human-readable dates and vice versa, in local time or UTC. Live clock included.",
   keywords: ["unix timestamp converter", "epoch converter", "epoch to date", "timestamp to date", "unix time"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/date-time/unix-timestamp",
+    canonical: "https://www.multitoolbox.online/tools/date-time/unix-timestamp",
   },
   openGraph: {
     title: "Unix Timestamp Converter - Epoch to Date & Back | MultiTool",
     description: "Convert Unix timestamps (seconds or milliseconds) to human-readable dates and vice versa, in local time or UTC. Live clock included.",
-    url: "https://multitoolbox.online/tools/date-time/unix-timestamp",
+    url: "https://www.multitoolbox.online/tools/date-time/unix-timestamp",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

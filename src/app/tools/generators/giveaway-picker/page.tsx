@@ -21,13 +21,13 @@ export const metadata: Metadata = {
     "sorteio comentários instagram",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/generators/giveaway-picker",
+    canonical: "https://www.multitoolbox.online/tools/generators/giveaway-picker",
   },
   openGraph: {
     title: "Giveaway Picker / Sorteador Instagram | MultiTool",
     description:
       "Draw random winners from a pasted or uploaded list. Sorteador gratuito para Instagram, no your browser.",
-    url: "https://multitoolbox.online/tools/generators/giveaway-picker",
+    url: "https://www.multitoolbox.online/tools/generators/giveaway-picker",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef} from "react";
+import { trackToolUsed, trackDownload, trackCopy } from "@/lib/analytics";
 
 // Simple line-level LCS diff. Returns rows: {type: "same"|"add"|"del", a?: string, b?: string}
 export function diffLines(aText: string, bText: string): { type: "same" | "add" | "del"; a: string; b: string }[] {
@@ -32,6 +33,13 @@ export function diffStats(rows: { type: "same" | "add" | "del"; a: string; b: st
 }
 
 export default function TextDiffClient() {
+  const firedRef = useRef(false);
+  useEffect(() => {
+    if (firedRef.current) return;
+    firedRef.current = true;
+    trackToolUsed("text-diff", "text-tools");
+  }, []);
+
   const [a, setA] = useState("Hello world\nThis is line two\nSame line here\nRemoved line");
   const [b, setB] = useState("Hello world\nThis is line two changed\nSame line here\nBrand new line");
   const [mode, setMode] = useState<"side" | "unified">("side");

@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { trackToolUsed, trackDownload, trackCopy } from "@/lib/analytics";
 import { PDFDocument } from "pdf-lib";
 import JSZip from "jszip";
 
@@ -104,6 +105,7 @@ export default function PdfSplitClient() {
   };
 
   const runExtract = async () => {
+    trackToolUsed("pdf-split", "pdf-tools");
     if (!pdf || busy) return;
     const { pages, error: rangeError } = parseRanges(rangeInput, pdf.pages);
     if (rangeError) {
@@ -137,6 +139,7 @@ export default function PdfSplitClient() {
   };
 
   const runSingle = async () => {
+    trackToolUsed("pdf-split", "pdf-tools");
     if (!pdf || busy) return;
     setBusy(true);
     setError(null);

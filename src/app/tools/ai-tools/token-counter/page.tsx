@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "gpt-4 tokens",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/ai-tools/token-counter",
+    canonical: "https://www.multitoolbox.online/tools/ai-tools/token-counter",
   },
   openGraph: {
     title: "AI Token Counter - GPT-4, Claude & Gemini | MultiTool",
     description:
       "Count tokens for GPT-4, Claude and Gemini. Estimate API cost and context-window usage instantly. Free and private.",
-    url: "https://multitoolbox.online/tools/ai-tools/token-counter",
+    url: "https://www.multitoolbox.online/tools/ai-tools/token-counter",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

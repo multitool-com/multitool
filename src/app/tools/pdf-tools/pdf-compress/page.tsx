@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "comprimir pdf",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/pdf-tools/pdf-compress",
+    canonical: "https://www.multitoolbox.online/tools/pdf-tools/pdf-compress",
   },
   openGraph: {
     title: "Compress PDF - Reduce PDF Size | MultiTool",
     description:
       "Reduce PDF file size in your browser. Adjust quality and resolution. Free and private.",
-    url: "https://multitoolbox.online/tools/pdf-tools/pdf-compress",
+    url: "https://www.multitoolbox.online/tools/pdf-tools/pdf-compress",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

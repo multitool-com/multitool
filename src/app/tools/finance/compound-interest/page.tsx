@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "how compound interest works",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/finance/compound-interest",
+    canonical: "https://www.multitoolbox.online/tools/finance/compound-interest",
   },
   openGraph: {
     title: "Compound Interest Calculator | MultiTool",
     description:
       "Calculate compound interest and future value. Free, instant and private.",
-    url: "https://multitoolbox.online/tools/finance/compound-interest",
+    url: "https://www.multitoolbox.online/tools/finance/compound-interest",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

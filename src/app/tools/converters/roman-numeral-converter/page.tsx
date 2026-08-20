@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description: "Convert numbers between Arabic and Roman numerals (1-3999) instantly, with validation of canonical form.",
   keywords: ["roman numeral converter", "arabic to roman", "roman numeral translation", "mmxxvi", "conversor de numeros romanos"],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/converters/roman-numeral-converter",
+    canonical: "https://www.multitoolbox.online/tools/converters/roman-numeral-converter",
   },
   openGraph: {
     title: "Roman Numeral Converter - Arabic to Roman & Back | MultiTool",
     description: "Convert numbers between Arabic and Roman numerals (1-3999) instantly, with validation of canonical form.",
-    url: "https://multitoolbox.online/tools/converters/roman-numeral-converter",
+    url: "https://www.multitoolbox.online/tools/converters/roman-numeral-converter",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",

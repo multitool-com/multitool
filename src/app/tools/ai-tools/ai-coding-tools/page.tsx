@@ -19,13 +19,13 @@ export const metadata: Metadata = {
     "best ai ide",
   ],
   alternates: {
-    canonical: "https://multitoolbox.online/tools/ai-tools/ai-coding-tools",
+    canonical: "https://www.multitoolbox.online/tools/ai-tools/ai-coding-tools",
   },
   openGraph: {
     title: "AI Coding Tools Comparison - Copilot, Cursor, Windsurf | MultiTool",
     description:
       "Side-by-side comparison of Copilot, Cursor, Windsurf, Claude Code and free open-source coding agents.",
-    url: "https://multitoolbox.online/tools/ai-tools/ai-coding-tools",
+    url: "https://www.multitoolbox.online/tools/ai-tools/ai-coding-tools",
     siteName: "MultiTool",
     type: "website",
     locale: "en_US",
