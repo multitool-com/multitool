@@ -96,6 +96,22 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col bg-paper text-ink font-sans">
+        {/* Privacidade: remove o parametro ?q= da URL antes de o GA4 ler a
+            pagina. Script inline no HTML server-rendered = executa durante o
+            parse, antes de qualquer script externo. Intercepta tambem
+            navegacoes client-side (pushState/replaceState). A busca continua
+            funcionando: o servidor ja recebeu o q na requisicao original. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{
+var C=function(u){try{if(!u)return u;var x=new URL(u,location.origin);if(x.pathname==="/search"){x.searchParams.delete("q");return x.pathname+x.search+x.hash}}catch(e){}return u};
+if(location.pathname==="/search"){var c=C(location.href);if(c!==location.href)history.replaceState(null,"",c)}
+var ps=history.pushState,rs=history.replaceState;
+history.pushState=function(s,t,u){return ps.call(history,s,t,C(u))};
+history.replaceState=function(s,t,u){return rs.call(history,s,t,C(u))};
+}catch(e){}})();`,
+          }}
+        />
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-accent focus:text-paper focus:px-4 focus:py-2 focus:rounded-full focus:font-mono focus:text-xs focus:tracking-widest"
