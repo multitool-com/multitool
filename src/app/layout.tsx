@@ -2,8 +2,28 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
 import PageViewSanitizer from "@/components/PageViewSanitizer";
+import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import { SITE_CONFIG, categories } from "@/lib/tools";
 import SiteHeader from "@/components/SiteHeader";
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  display: "swap",
+  variable: "--font-inter-nf",
+});
+const grotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["600", "700"],
+  display: "swap",
+  variable: "--font-grotesk-nf",
+});
+const jetbrains = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["500", "600"],
+  display: "swap",
+  variable: "--font-jetbrains-nf",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.url),
@@ -95,7 +115,9 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
-      <body className="min-h-screen flex flex-col bg-paper text-ink font-sans">
+      <body
+        className={`${inter.variable} ${grotesk.variable} ${jetbrains.variable} min-h-screen flex flex-col bg-paper text-ink font-sans`}
+      >
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-accent focus:text-paper focus:px-4 focus:py-2 focus:rounded-full focus:font-mono focus:text-xs focus:tracking-widest"

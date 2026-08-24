@@ -45,11 +45,18 @@ export default function Home() {
     <div>
       <section className="relative overflow-hidden min-h-[520px]">
         <div className="absolute inset-0" aria-hidden="true">
-          <img
-            src="/hero.jpg"
-            alt=""
-            className="h-full w-full object-cover object-center"
-          />
+          <picture>
+            <source srcSet="/hero.webp" type="image/webp" />
+            <img
+              src="/hero.jpg"
+              alt=""
+              width={1621}
+              height={970}
+              fetchPriority="high"
+              decoding="async"
+              className="h-full w-full object-cover object-center"
+            />
+          </picture>
           <div className="absolute inset-0 bg-deep/50" />
         </div>
 
