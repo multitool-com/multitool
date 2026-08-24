@@ -53,6 +53,12 @@ export default function SiteHeader() {
           >
             All
           </Link>
+          <Link
+            href="/guides"
+            className="text-accent hover:text-paper focus:outline-none transition-colors whitespace-nowrap font-medium"
+          >
+            Guides
+          </Link>
           {categories.map((cat) => (
             <Link
               key={cat.slug}
@@ -99,6 +105,12 @@ export default function SiteHeader() {
             className="py-2.5 text-accent font-semibold border-b border-paper/10"
           >
             All Tools
+          </Link>
+          <Link
+            href="/guides"
+            className="py-2.5 text-accent font-semibold border-b border-paper/10"
+          >
+            Guides
           </Link>
           {categories.map((cat) => (
             <Link

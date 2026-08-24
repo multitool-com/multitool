@@ -143,6 +143,30 @@ export default function Page() {
           </p>
 
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Word counts that matter
+          </h2>
+          <div className="bg-white border border-ink/10 rounded-lg overflow-hidden my-3 text-sm">
+            {[
+              ["Google meta description", "150–160 characters"],
+              ["Tweet / X post", "280 characters"],
+              ["Instagram caption (truncation)", "~125 characters"],
+              ["College essay page (double-spaced)", "~250 words"],
+              ["Blog post (solid read)", "1,000–2,000 words"],
+              ["Average novel", "80,000–100,000 words"],
+            ].map(([a, b], i) => (
+              <div key={a} className={`flex justify-between gap-4 px-4 py-2 ${i % 2 ? "bg-paper/60" : ""}`}>
+                <span className="text-ink/70">{a}</span>
+                <span className="font-mono text-accent whitespace-nowrap">{b}</span>
+              </div>
+            ))}
+          </div>
+          <p className="mb-4">
+            Reading-time math: average adults read 200–250 words per minute,
+            so a 1,000-word article ≈ 4–5 minutes. Use the counts to hit
+            limits exactly — editors, forms and platforms rarely warn you
+            before cutting text off.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

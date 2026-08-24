@@ -78,6 +78,21 @@ export default function Page() {
           </p>
 
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Pro tips for perfect merges
+          </h2>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Order is yours to define</strong> — add files in the exact order you want them in the final document (or drag to reorder before merging).</li>
+            <li><strong>Expect the merged size to be the sum of the parts</strong> — merging copies pages as-is, it does not compress. Compress the final file if you need it smaller.</li>
+            <li><strong>Page size stays per-document</strong> — merging an A4 file with a Letter file keeps each page its original size. That is normal PDF behavior, not an error.</li>
+            <li><strong>Interactive forms</strong> — form fields are preserved, but if both PDFs have forms with the same field names, keep only the version you actually need.</li>
+            <li><strong>Encrypted PDFs</strong> — password-protected files must be unlocked first (our PDF Unlock handles this).</li>
+          </ul>
+          <p className="mb-4">
+            Common uses: combining scanned contracts into one file, joining
+            separate report chapters, attaching certificates to a résumé,
+            and merging receipts for expense reports.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

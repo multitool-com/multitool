@@ -98,6 +98,35 @@ export default function Page() {
           </ul>
 
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            How much smaller will YOUR file get?
+          </h2>
+          <p className="mb-4">
+            It depends entirely on what is inside. Realistic expectations
+            after thousands of documents:
+          </p>
+          <div className="bg-white border border-ink/10 rounded-lg overflow-hidden my-3 text-sm">
+            {[
+              ["Scanned document (300 DPI)", "70–85% smaller"],
+              ["Photo-heavy export (Canva/InDesign)", "60–80% smaller"],
+              ["Mixed report (charts + photos)", "40–65% smaller"],
+              ["Text-only (contracts, invoices)", "0–15% (already tiny)"],
+              ["Previously compressed file", "~0% (nothing left to squeeze)"],
+            ].map(([a, b], i) => (
+              <div key={a} className={`flex justify-between gap-4 px-4 py-2 ${i % 2 ? "bg-paper/60" : ""}`}>
+                <span className="text-ink/70">{a}</span>
+                <span className="font-mono text-accent whitespace-nowrap">{b}</span>
+              </div>
+            ))}
+          </div>
+          <p className="mb-4">
+            Sweet spot: quality 70–80% keeps text sharp for printing. If the
+            file is still too big after compressing, split it or remove
+            pages instead of pushing quality below 50%.{" "}
+            <a href="/guides/compress-pdf-guide" className="text-accent underline underline-offset-2">
+              Read the full compression guide with real numbers →
+            </a>
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

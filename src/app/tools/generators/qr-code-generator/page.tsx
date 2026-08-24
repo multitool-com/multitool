@@ -152,6 +152,23 @@ export default function Page() {
           </ul>
 
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            How QR codes work (and how to make yours scannable)
+          </h2>
+          <p className="mb-4">
+            A QR code stores your data in a pattern of squares plus
+            mathematical redundancy called{" "}
+            <strong>error correction</strong> — up to 30% of the code can be
+            damaged and it still scans. That is also why a small logo in the
+            middle usually works.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Size rule:</strong> minimum size ≈ scan distance ÷ 10. A code scanned from 1 meter needs at least 10 cm.</li>
+            <li><strong>Contrast:</strong> dark modules on light background. Inverted codes fail on many scanners.</li>
+            <li><strong>Quiet zone:</strong> keep a white margin around the code — at least 4 modules wide.</li>
+            <li><strong>Static codes never expire.</strong> The data lives in the code itself; no server, no shutdown risk.</li>
+            <li><strong>Test before printing.</strong> Scan with 2–3 different phones before committing to a banner or business card.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

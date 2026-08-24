@@ -3,6 +3,22 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
+/** Ferramentas do último lote — ganham selo NEW (remover após algumas semanas). */
+const NEW_TOOLS = new Set([
+  "image-resizer",
+  "heic-to-jpg",
+  "webp-to-jpg",
+  "png-to-webp",
+  "exif-viewer",
+  "xml-formatter",
+  "yaml-formatter",
+  "sql-formatter",
+  "json-to-yaml",
+  "length-converter",
+  "weight-converter",
+  "pdf-remove-pages",
+]);
+
 export interface HubTool {
   slug: string;
   name: string;
@@ -99,9 +115,16 @@ export default function ToolsHubClient({
               href={`/tools/${t.catSlug}/${t.slug}`}
               className="group bg-white border border-ink/10 rounded-xl p-5 hover:border-accent hover:shadow-md transition-all"
             >
-              <p className="font-mono text-[10px] tracking-widest text-ink/30 mb-2">
-                {t.catName.toUpperCase()}
-              </p>
+              <div className="flex items-center justify-between mb-2">
+                <p className="font-mono text-[10px] tracking-widest text-ink/30">
+                  {t.catName.toUpperCase()}
+                </p>
+                {NEW_TOOLS.has(t.slug) && (
+                  <span className="font-mono text-[9px] tracking-widest bg-accent text-paper rounded-full px-2 py-0.5">
+                    NEW
+                  </span>
+                )}
+              </div>
               <h2 className="font-display font-semibold text-lg mb-1 group-hover:text-accent transition-colors">
                 {t.name}
               </h2>

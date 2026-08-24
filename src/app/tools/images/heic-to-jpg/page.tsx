@@ -65,6 +65,16 @@ export default function HeicToJpgPage() {
             does not remove Apple&apos;s effect edits stored in the file —
             export from the Photos app first if you need those applied.
           </p>
+          <div className="bg-accent/10 border border-accent/30 rounded-lg p-4 my-3">
+            <p className="text-sm text-ink/80">
+              📚 <strong>New to HEIC?</strong> Read{" "}
+              <a href="/guides/what-is-heic" className="text-accent underline underline-offset-2">
+                What Is HEIC? The iPhone Photo Format Explained
+              </a>{" "}
+              — why Apple uses it, how it compares to JPG in size and
+              quality, and the smartest workflow for your photos.
+            </p>
+          </div>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>

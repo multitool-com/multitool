@@ -17,3 +17,31 @@ body {
   color: var(--color-ink);
   font-family: var(--font-sans);
 }
+
+/* ---------- corpo do guia ---------- */
+.guide-body { font-size: 1.0625rem; line-height: 1.8; color: #2e322f; }
+.guide-body h2 {
+  font-family: var(--font-display);
+  font-size: 1.6rem; font-weight: 700;
+  margin: 2.2rem 0 0.9rem; line-height: 1.25; color: var(--color-ink);
+}
+.guide-body h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem; font-weight: 700;
+  margin: 1.7rem 0 0.7rem; color: var(--color-ink);
+}
+.guide-body p { margin: 0 0 1.05rem; }
+.guide-body ul, .guide-body ol { margin: 0 0 1.1rem 1.4rem; }
+.guide-body ul { list-style: disc; }
+.guide-body ol { list-style: decimal; }
+.guide-body li { margin-bottom: 0.45rem; }
+.guide-body a { color: var(--color-accent); text-decoration: underline; text-underline-offset: 3px; }
+.guide-body img { max-width: 100%; height: auto; border-radius: 0.75rem; margin: 1.4rem auto; display: block; }
+.guide-body table { width: 100%; border-collapse: collapse; margin: 1.4rem 0; font-size: 0.9rem; display: block; overflow-x: auto; }
+.guide-body th { background: var(--color-deep); color: #fff; text-align: left; padding: 0.55rem 0.85rem; font-weight: 600; }
+.guide-body td { padding: 0.5rem 0.85rem; border-bottom: 1px solid #e5e2da; }
+.guide-body tr:nth-child(even) td { background: #f3f1ea; }
+.guide-body blockquote { border-left: 4px solid var(--color-accent); padding: 0.4rem 1.2rem; margin: 1.4rem 0; background: #f3f1ea; border-radius: 0 0.5rem 0.5rem 0; }
+.guide-body hr { border: 0; border-top: 1px solid #e5e2da; margin: 2rem 0; }
+.guide-body strong { color: var(--color-ink); }
+.guide-body code { font-family: var(--font-mono); background: #f3f1ea; padding: 0.1rem 0.4rem; border-radius: 0.3rem; font-size: 0.9em; }

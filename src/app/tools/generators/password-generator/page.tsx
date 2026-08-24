@@ -130,6 +130,35 @@ export default function Page() {
           </ul>
 
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Why length beats complexity
+          </h2>
+          <p className="mb-4">
+            Password strength is measured in <strong>entropy</strong> —
+            roughly, how many guesses an attacker needs. Adding characters
+            to the length multiplies the search space exponentially; adding
+            a symbol only helps a little. Compare offline cracking times
+            (a modern GPU rig):
+          </p>
+          <div className="bg-white border border-ink/10 rounded-lg overflow-hidden my-3 text-sm">
+            {[
+              ["8 characters, lowercase only", "minutes"],
+              ["8 characters, full mix", "a few days"],
+              ["12 characters, full mix", "centuries"],
+              ["16 characters, full mix", "longer than the universe's age"],
+              ["4 random words (passphrase)", "centuries + easy to remember"],
+            ].map(([a, b], i) => (
+              <div key={a} className={`flex justify-between gap-4 px-4 py-2 ${i % 2 ? "bg-paper/60" : ""}`}>
+                <span className="text-ink/70">{a}</span>
+                <span className="font-mono text-accent whitespace-nowrap">{b}</span>
+              </div>
+            ))}
+          </div>
+          <p className="mb-4">
+            The rules that actually protect you: long and random, unique per
+            site (one leak should not open other doors), stored in a
+            password manager, with 2FA on important accounts.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

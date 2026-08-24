@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE_CONFIG, categories, getAllTools } from "@/lib/tools";
+import { getAllGuides } from "@/lib/guides";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -17,6 +18,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: now,
       changeFrequency: "weekly",
       priority: 0.9,
+    },
+    {
+      url: `${SITE_CONFIG.url}/guides`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
     },
     {
       url: `${SITE_CONFIG.url}/about`,
@@ -73,5 +80,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: tool.status === "ready" ? 0.9 : 0.6,
   }));
 
-  return [...staticPages, ...categoryPages, ...toolPages];
+    const guidePages: MetadataRoute.Sitemap = getAllGuides().map((g) => ({
+    url: `${SITE_CONFIG.url}/guides/${g.slug}`,
+    lastModified: new Date(g.updated),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
+return [...staticPages, ...categoryPages, ...toolPages, ...guidePages];
 }

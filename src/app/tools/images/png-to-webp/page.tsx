@@ -64,6 +64,16 @@ export default function PngToWebpPage() {
             Safari versions may fail to export — in that case use the JPG /
             PNG / WebP Converter as fallback.
           </p>
+          <div className="bg-accent/10 border border-accent/30 rounded-lg p-4 my-3">
+            <p className="text-sm text-ink/80">
+              📚 <strong>Learn before converting:</strong> our guide{" "}
+              <a href="/guides/png-vs-webp" className="text-accent underline underline-offset-2">
+                PNG vs WebP — which format should you use?
+              </a>{" "}
+              compares compression, transparency, compatibility and real
+              file sizes, so you know exactly when each format wins.
+            </p>
+          </div>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
