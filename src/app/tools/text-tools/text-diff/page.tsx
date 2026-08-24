@@ -41,6 +41,19 @@ export default function Page() {
             Paste the original and the modified text. The tool runs a line-level diff algorithm and highlights additions in green and removals in red, with statistics on how many lines changed.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            How to read a diff
+          </h2>
+          <p className="mb-4">
+            A diff compares two texts line by line and shows what changed.
+            Two views help different jobs:
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Side-by-side</strong> — best for revisions and proofreading: original left, new right, eye catches movement.</li>
+            <li><strong>Unified</strong> — best for code review: one stream with − removed and + added lines.</li>
+            <li><strong>Ignore whitespace/case</strong> when you care about content, not formatting — avoids false positives from re-indentation.</li>
+            <li><strong>Classic uses:</strong> contract versions, changelogs, homework before/after, detecting accidental edits in configs.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

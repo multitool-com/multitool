@@ -41,6 +41,16 @@ export default function Page() {
             Paste or type any text and switch between 10 case styles with one click — from simple UPPERCASE to developer formats like camelCase, PascalCase, snake_case and kebab-case.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            When to use each case
+          </h2>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Title Case</strong> — headlines, book titles, menu items (capitalize main words, skip articles/short prepositions).</li>
+            <li><strong>Sentence case</strong> — the modern default for UI text and emails: only the first word and proper nouns capitalized. Reads friendlier.</li>
+            <li><strong>UPPERCASE</strong> — sparingly: acronyms, warnings, emphasis of one word. Full sentences in caps read as shouting.</li>
+            <li><strong>lowercase</strong> — normalizing pasted text (e.g. song lists, code identifiers) before reformatting.</li>
+            <li><strong>camelCase / snake_case</strong> — programming conventions: variables, file names, config keys.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

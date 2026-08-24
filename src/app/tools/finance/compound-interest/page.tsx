@@ -106,6 +106,30 @@ export default function Page() {
           </p>
 
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Time does the heavy lifting
+          </h2>
+          <p className="mb-4">
+            Investing <strong>$100/month at 8% a year</strong>, compounded
+            monthly:
+          </p>
+          <div className="bg-white border border-ink/10 rounded-lg overflow-hidden my-3 text-sm">
+            {[
+              ["After 10 years", "≈ $18,300 invested $12,000"],
+              ["After 20 years", "≈ $58,900 invested $24,000"],
+              ["After 30 years", "≈ $149,000 invested $36,000"],
+            ].map(([a, b], i) => (
+              <div key={a} className={`flex justify-between gap-4 px-4 py-2 ${i % 2 ? "bg-paper/60" : ""}`}>
+                <span className="text-ink/70">{a}</span>
+                <span className="font-mono text-accent whitespace-nowrap">{b}</span>
+              </div>
+            ))}
+          </div>
+          <p className="mb-4">
+            Notice the pattern: the same monthly effort, but the last decade
+            alone adds ~$90,000. Starting early beats investing more — and
+            compounding frequency (monthly vs annual) also lifts the result.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

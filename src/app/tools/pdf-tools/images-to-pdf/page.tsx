@@ -87,6 +87,16 @@ export default function Page() {
           </ul>
 
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Perfect image PDFs
+          </h2>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Page size:</strong> “Fit to image” keeps each page exactly the image’s dimensions (great for screen); A4/Letter normalizes pages for printing.</li>
+            <li><strong>Margins matter for print</strong> — without them, edges may be cut by home printers (most have a ~5 mm unprintable border).</li>
+            <li><strong>Order first:</strong> sort your images before converting — the PDF follows the list order.</li>
+            <li><strong>Quality tradeoff:</strong> photos at high quality look great but weigh more; compress first if the PDF will be emailed.</li>
+            <li><strong>One PDF per batch</strong> — converting in one go keeps size and quality consistent across pages.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

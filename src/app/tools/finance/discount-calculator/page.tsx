@@ -134,6 +134,15 @@ export default function Page() {
           </ul>
 
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Discount math that tricks people
+          </h2>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Stacked ≠ summed:</strong> “50% off + extra 20%” is <strong>not</strong> 70% off — it’s 60% (100 → 50 → 40). That’s why our Double Discount toggle exists.</li>
+            <li><strong>Quick 10% mental rule:</strong> move the decimal one place left ($80 → $8). 20% = double it, 5% = half it, 15% = 10% + 5%.</li>
+            <li><strong>Reverse mode</strong> answers “what was the original price?” when you only know the sale price and the % off.</li>
+            <li><strong>“Was/now” check:</strong> divide current by original — some “40% off” tags are actually 25%.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

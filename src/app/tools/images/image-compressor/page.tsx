@@ -101,6 +101,28 @@ export default function Page() {
           </p>
 
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Compression without regret
+          </h2>
+          <div className="bg-white border border-ink/10 rounded-lg overflow-hidden my-3 text-sm">
+            {[
+              ["Website / blog images", "quality 75–85"],
+              ["Email attachments", "quality ~70"],
+              ["Social media uploads", "quality 80"],
+              ["Printing or archiving", "keep the original"],
+            ].map(([a, b], i) => (
+              <div key={a} className={`flex justify-between gap-4 px-4 py-2 ${i % 2 ? "bg-paper/60" : ""}`}>
+                <span className="text-ink/70">{a}</span>
+                <span className="font-mono text-accent whitespace-nowrap">{b}</span>
+              </div>
+            ))}
+          </div>
+          <p className="mb-4">
+            Two rules the pros follow: <strong>always keep the original</strong>{" "}
+            (compress a copy), and when an image is also huge in pixels,
+            resize first — shrinking 6000×4000 to 1920px saves more than any
+            quality slider.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

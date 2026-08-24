@@ -88,6 +88,16 @@ export default function Page() {
           </p>
 
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Getting splits right
+          </h2>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Two strategies:</strong> extract only the pages you need (e.g. 3-5) or split everything into one file per page — pick whichever the recipient actually wants.</li>
+            <li><strong>Order is preserved</strong> — pages come out in the order you type, so 5,1,3 gives you a file in that sequence if the tool allows reordering.</li>
+            <li><strong>Naming convention</strong> — files come out as page-001.pdf, page-002.pdf… so alphabetical order matches page order in any file manager.</li>
+            <li><strong>Encrypted PDFs</strong> must be unlocked first; split cannot read protected files.</li>
+            <li><strong>Common uses:</strong> sending just one chapter, separating a scanned batch, extracting an invoice from a statement.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE_CONFIG, categories, getAllTools } from "@/lib/tools";
+import { getAllGuides } from "@/lib/guides";
 
 export const metadata: Metadata = {
   title: "MultiTool - Free Online Calculators, Converters & Utilities",
@@ -124,6 +125,42 @@ export default function Home() {
                 {cat.name}
               </h3>
               <p className="text-sm text-ink/60">{cat.description}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      <section className="max-w-6xl mx-auto px-4 py-14">
+        <div className="flex items-end justify-between mb-6">
+          <div>
+            <p className="font-mono text-xs tracking-widest text-accent uppercase mb-2">
+              Learn
+            </p>
+            <h2 className="font-display text-2xl md:text-3xl font-bold">
+              From our guides
+            </h2>
+          </div>
+          <Link
+            href="/guides"
+            className="text-sm font-medium text-accent hover:underline whitespace-nowrap"
+          >
+            All guides →
+          </Link>
+        </div>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {getAllGuides().slice(0, 3).map((g) => (
+            <Link
+              key={g.slug}
+              href={`/guides/${g.slug}`}
+              className="group bg-white border border-ink/10 rounded-xl p-5 hover:border-accent hover:shadow-md transition-all"
+            >
+              <p className="font-mono text-[10px] tracking-widest text-ink/40 mb-2">
+                GUIDE · {g.readingTime} MIN
+              </p>
+              <h3 className="font-display font-bold text-lg leading-snug group-hover:text-accent transition-colors">
+                {g.title}
+              </h3>
+              <p className="text-sm text-ink/60 mt-2 line-clamp-2">{g.description}</p>
             </Link>
           ))}
         </div>

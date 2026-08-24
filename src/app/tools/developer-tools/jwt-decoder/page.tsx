@@ -95,6 +95,19 @@ export default function Page() {
           </ul>
 
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Anatomy of a JWT
+          </h2>
+          <p className="mb-4">
+            A JWT has three parts separated by dots —{" "}
+            <code className="font-mono bg-paper px-1 rounded">header.payload.signature</code>:
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Header</strong> — algorithm and token type.</li>
+            <li><strong>Payload</strong> — the claims: <code className="font-mono bg-paper px-1 rounded">sub</code> (subject), <code className="font-mono bg-paper px-1 rounded">exp</code> (expiry), <code className="font-mono bg-paper px-1 rounded">iat</code> (issued-at) and custom data.</li>
+            <li><strong>Signature</strong> — proves authenticity. <strong>Decoding is not verifying:</strong> checking the signature requires the secret/public key, which only the server holds.</li>
+            <li><strong>Privacy note:</strong> payloads are readable by anyone with the token — never put secrets inside. This decoder runs in your browser, so your tokens never leave your device.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

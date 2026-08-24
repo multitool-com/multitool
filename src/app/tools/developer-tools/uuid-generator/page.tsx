@@ -41,6 +41,20 @@ export default function Page() {
             Choose how many UUIDs you need (1-100), optionally uppercase, and generate. Uses the browser's cryptographically secure random number generator — every ID is unique and unpredictable.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            UUIDs explained
+          </h2>
+          <p className="mb-4">
+            A version 4 UUID contains <strong>122 random bits</strong>. The
+            math: even generating a billion UUIDs per second, you would need
+            about 10 years to have a 50% chance of a single collision. In
+            practice: unique forever.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Where used:</strong> database keys, distributed systems, trace/request IDs, unique file names.</li>
+            <li><strong>Identifier, not secret</strong> — a UUID proves uniqueness, not ownership. Never use one as a password or API key.</li>
+            <li><strong>Uppercase toggle</strong> — same value, different visual style; some legacy systems expect caps.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

@@ -41,6 +41,16 @@ export default function Page() {
             Type a letter or emoji (or upload an image), pick background and text colors and the shape — square, rounded or circle. The tool renders your icon at every standard size and lets you download each one as a PNG.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Favicon sizes explained
+          </h2>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>16×16 / 32×32</strong> — browser tabs, bookmarks, history. The classic sizes, always included.</li>
+            <li><strong>180×180 (apple-touch)</strong> — the icon when someone saves your site to an iPhone/iPad home screen.</li>
+            <li><strong>ICO vs PNG</strong> — modern browsers happily use PNG; the ICO bundle covers legacy corners (old bookmarks, some intranet tools).</li>
+            <li><strong>Design tip:</strong> start from a square image with bold shapes — at 16px, thin lines disappear. Test by shrinking your logo and squinting.</li>
+            <li><strong>Not updating?</strong> Favicons are cached aggressively — test in an incognito window or hard-refresh (Ctrl+Shift+R).</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

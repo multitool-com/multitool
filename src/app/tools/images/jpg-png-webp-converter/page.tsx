@@ -102,6 +102,28 @@ export default function Page() {
           </p>
 
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Choosing the right format
+          </h2>
+          <div className="bg-white border border-ink/10 rounded-lg overflow-hidden my-3 text-sm">
+            {[
+              ["Photos and complex images", "JPG (or WebP)"],
+              ["Transparency, logos, sharp text", "PNG"],
+              ["Websites and apps (25–35% smaller)", "WebP"],
+            ].map(([a, b], i) => (
+              <div key={a} className={`flex justify-between gap-4 px-4 py-2 ${i % 2 ? "bg-paper/60" : ""}`}>
+                <span className="text-ink/70">{a}</span>
+                <span className="font-mono text-accent whitespace-nowrap">{b}</span>
+              </div>
+            ))}
+          </div>
+          <p className="mb-4">
+            Default quality 85–90 keeps photos visually identical in all
+            three formats. Deep comparison with real numbers: read our{" "}
+            <a href="/guides/png-vs-webp" className="text-accent underline underline-offset-2">
+              PNG vs WebP guide
+            </a>.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

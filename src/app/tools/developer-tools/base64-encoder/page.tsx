@@ -41,6 +41,15 @@ export default function Page() {
             Choose Encode or Decode, paste your input and convert instantly. Encoding uses UTF-8 so emoji, accents and any Unicode text survive the round trip perfectly.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            What Base64 is (and isn’t)
+          </h2>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Encoding, not encryption.</strong> Anyone can decode Base64 instantly — it protects formatting in transit, not secrecy.</li>
+            <li><strong>Size grows ~33%</strong> — every 3 bytes become 4 characters. Expected, not a bug.</li>
+            <li><strong>Where it shines:</strong> embedding images as data URLs in CSS/HTML, sending binary inside JSON, HTTP Basic auth headers, and the payload of JWTs.</li>
+            <li><strong>Never as security</strong> — hiding an API key in Base64 is the same as writing it in the open.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

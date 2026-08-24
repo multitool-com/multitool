@@ -139,6 +139,15 @@ export default function Page() {
           </p>
 
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Where AI API money goes
+          </h2>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Output costs more than input</strong> — generating a token is typically 3–5× pricier than reading one. Rambling answers are the #1 hidden cost.</li>
+            <li><strong>Volume multiplies fast:</strong> $0.01 per call is $365/year at 100 calls/day. Always estimate before committing.</li>
+            <li><strong>Three saving levers:</strong> shorter prompts, right-sized model (cheap model for simple tasks), and prompt caching where the provider offers it.</li>
+            <li><strong>Plan for growth:</strong> run the numbers at 10× your current usage — the model choice that survives is the right one.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

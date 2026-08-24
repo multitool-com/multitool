@@ -153,6 +153,20 @@ export default function Page() {
           </p>
 
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            What is a token?
+          </h2>
+          <p className="mb-4">
+            Models don’t read characters or words — they read{" "}
+            <strong>tokens</strong>: chunks of roughly 4 characters (¾ of a
+            word in English). “Unbelievable” splits into pieces; “the” is
+            one token.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Budget rule:</strong> 100 words ≈ 130 tokens. A 10-page document ≈ 5,000+ tokens.</li>
+            <li><strong>Why it matters:</strong> API billing is per token, and every model has a context limit — long prompts plus long answers can exceed it and silently truncate.</li>
+            <li><strong>Estimates vary per model</strong> — use the count as a solid approximation for planning, not an invoice.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>
