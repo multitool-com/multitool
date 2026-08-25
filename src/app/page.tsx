@@ -120,7 +120,7 @@ export default function Home() {
           <h2 className="font-display text-2xl font-bold">
             Browse by category
           </h2>
-          <p className="font-mono text-xs tracking-widest text-ink/60">
+          <p className="font-mono text-xs tracking-widest text-ink/70">
             {totalCategories} CATEGORIES &middot; {totalTools}+ TOOLS
           </p>
         </div>
@@ -132,7 +132,7 @@ export default function Home() {
               href={`/tools/${cat.slug}`}
               className="group bg-white border border-ink/10 rounded-xl p-5 hover:border-accent hover:shadow-md focus:outline-none focus:border-accent focus:shadow-md transition-all"
             >
-              <span className="font-mono text-xs text-ink/60">
+              <span className="font-mono text-xs text-ink/70">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <h3 className="font-display font-semibold text-lg mt-1 mb-1 group-hover:text-accent transition-colors">
@@ -156,7 +156,7 @@ export default function Home() {
           </div>
           <Link
             href="/guides"
-            className="text-sm font-medium text-accent-deep hover:underline whitespace-nowrap"
+            className="text-sm font-medium text-accent-deep underline underline-offset-2 whitespace-nowrap"
           >
             All guides →
           </Link>
@@ -168,7 +168,7 @@ export default function Home() {
               href={`/guides/${g.slug}`}
               className="group bg-white border border-ink/10 rounded-xl p-5 hover:border-accent hover:shadow-md transition-all"
             >
-              <p className="font-mono text-[10px] tracking-widest text-ink/60 mb-2">
+              <p className="font-mono text-[10px] tracking-widest text-ink/70 mb-2">
                 GUIDE · {g.readingTime} MIN
               </p>
               <h3 className="font-display font-bold text-lg leading-snug group-hover:text-accent transition-colors">
@@ -202,7 +202,7 @@ export default function Home() {
                 Most tools process files and inputs locally in your
                 browser. A few tools use external services when required,
                 sending only the data that feature needs.{" "}
-                <Link href="/privacy" className="text-accent-deep hover:underline">
+                <Link href="/privacy" className="text-accent-deep underline underline-offset-2">
                   See our Privacy Policy
                 </Link>{" "}
                 for details.

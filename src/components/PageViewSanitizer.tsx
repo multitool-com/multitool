@@ -46,14 +46,22 @@ function bootstrapGa(): void {
       document.head.appendChild(s);
     }
   };
+  // Atraso MINIMO de 3s antes de buscar idle: em conexoes rapidas o idle
+  // chega antes do fim da janela de TBT (FCP->TTI) e o gtag (161 KB)
+  // parava DENTRO dela, explodindo o Total Blocking Time no desktop.
+  // Com 3s de piso: desktop executa depois do TTI (fora do TBT) e o
+  // mobile segue igual (la o idle ja era tardio). Nada se perde — os
+  // comandos seguem na fila dataLayer.
   const ric = (window as unknown as {
     requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number;
   }).requestIdleCallback;
-  if (typeof ric === "function") {
-    ric(load, { timeout: 3000 });
-  } else {
-    setTimeout(load, 1200);
-  }
+  setTimeout(() => {
+    if (typeof ric === "function") {
+      ric(load, { timeout: 2000 });
+    } else {
+      load();
+    }
+  }, 3000);
 }
 
 /**
