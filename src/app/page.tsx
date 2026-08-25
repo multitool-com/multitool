@@ -72,7 +72,14 @@ export default function Home() {
           ))}
         </div>
 
-        <div className="relative max-w-6xl mx-auto px-4 py-24 text-center">
+        <link
+      rel="preload"
+      as="image"
+      href="/hero.webp"
+      type="image/webp"
+      fetchPriority="high"
+    />
+    <div className="relative max-w-6xl mx-auto px-4 py-24 text-center">
           <p className="font-mono text-xs tracking-widest text-accent mb-4">
             FREE · NO SIGN-UP · INSTANT RESULTS
           </p>
@@ -102,7 +109,7 @@ export default function Home() {
               name="q"
               placeholder="Search tools..."
               aria-label="Search tools"
-              className="w-full bg-paper rounded-full px-5 py-3 text-ink placeholder:text-ink/40 focus:outline-none focus:ring-2 focus:ring-accent"
+              className="w-full bg-paper rounded-full px-5 py-3 text-ink placeholder:text-ink/50 focus:outline-none focus:ring-2 focus:ring-accent"
             />
           </form>
         </div>
@@ -113,7 +120,7 @@ export default function Home() {
           <h2 className="font-display text-2xl font-bold">
             Browse by category
           </h2>
-          <p className="font-mono text-xs tracking-widest text-ink/40">
+          <p className="font-mono text-xs tracking-widest text-ink/60">
             {totalCategories} CATEGORIES &middot; {totalTools}+ TOOLS
           </p>
         </div>
@@ -125,13 +132,13 @@ export default function Home() {
               href={`/tools/${cat.slug}`}
               className="group bg-white border border-ink/10 rounded-xl p-5 hover:border-accent hover:shadow-md focus:outline-none focus:border-accent focus:shadow-md transition-all"
             >
-              <span className="font-mono text-xs text-ink/30">
+              <span className="font-mono text-xs text-ink/60">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <h3 className="font-display font-semibold text-lg mt-1 mb-1 group-hover:text-accent transition-colors">
                 {cat.name}
               </h3>
-              <p className="text-sm text-ink/60">{cat.description}</p>
+              <p className="text-sm text-ink/70">{cat.description}</p>
             </Link>
           ))}
         </div>
@@ -140,7 +147,7 @@ export default function Home() {
       <section className="max-w-6xl mx-auto px-4 py-14">
         <div className="flex items-end justify-between mb-6">
           <div>
-            <p className="font-mono text-xs tracking-widest text-accent uppercase mb-2">
+            <p className="font-mono text-xs tracking-widest text-accent-deep uppercase mb-2">
               Learn
             </p>
             <h2 className="font-display text-2xl md:text-3xl font-bold">
@@ -149,7 +156,7 @@ export default function Home() {
           </div>
           <Link
             href="/guides"
-            className="text-sm font-medium text-accent hover:underline whitespace-nowrap"
+            className="text-sm font-medium text-accent-deep hover:underline whitespace-nowrap"
           >
             All guides →
           </Link>
@@ -161,13 +168,13 @@ export default function Home() {
               href={`/guides/${g.slug}`}
               className="group bg-white border border-ink/10 rounded-xl p-5 hover:border-accent hover:shadow-md transition-all"
             >
-              <p className="font-mono text-[10px] tracking-widest text-ink/40 mb-2">
+              <p className="font-mono text-[10px] tracking-widest text-ink/60 mb-2">
                 GUIDE · {g.readingTime} MIN
               </p>
               <h3 className="font-display font-bold text-lg leading-snug group-hover:text-accent transition-colors">
                 {g.title}
               </h3>
-              <p className="text-sm text-ink/60 mt-2 line-clamp-2">{g.description}</p>
+              <p className="text-sm text-ink/70 mt-2 line-clamp-2">{g.description}</p>
             </Link>
           ))}
         </div>
@@ -181,7 +188,7 @@ export default function Home() {
               <h2 className="font-display font-semibold text-lg mb-2">
                 Lightning Fast
               </h2>
-              <p className="text-sm text-ink/60">
+              <p className="text-sm text-ink/70">
                 All tools run instantly in your browser. No waiting, no
                 loading screens.
               </p>
@@ -191,11 +198,11 @@ export default function Home() {
               <h2 className="font-display font-semibold text-lg mb-2">
                 Privacy-First
               </h2>
-              <p className="text-sm text-ink/60">
+              <p className="text-sm text-ink/70">
                 Most tools process files and inputs locally in your
                 browser. A few tools use external services when required,
                 sending only the data that feature needs.{" "}
-                <Link href="/privacy" className="text-accent hover:underline">
+                <Link href="/privacy" className="text-accent-deep hover:underline">
                   See our Privacy Policy
                 </Link>{" "}
                 for details.
@@ -206,7 +213,7 @@ export default function Home() {
               <h2 className="font-display font-semibold text-lg mb-2">
                 Always Free
               </h2>
-              <p className="text-sm text-ink/60">
+              <p className="text-sm text-ink/70">
                 Every tool is free forever. No sign-ups, no paywalls, no
                 hidden fees.
               </p>
@@ -216,13 +223,13 @@ export default function Home() {
       </section>
 
       <section className="max-w-4xl mx-auto px-4 py-16 text-center">
-        <p className="font-mono text-xs tracking-widest text-accent mb-3">
+        <p className="font-mono text-xs tracking-widest text-accent-deep mb-3">
           NEW TOOLS EVERY WEEK
         </p>
         <h2 className="font-display text-2xl md:text-3xl font-bold mb-3">
           Miss a tool? Let us know.
         </h2>
-        <p className="text-ink/60 mb-6 max-w-lg mx-auto">
+        <p className="text-ink/70 mb-6 max-w-lg mx-auto">
           We add new calculators, converters and utilities every week. If
           there&apos;s something specific you need, we&apos;d love to hear
           from you.

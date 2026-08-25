@@ -35,11 +35,24 @@ function bootstrapGa(): void {
   // Comandos pelo stub oficial (viram `arguments` na fila)
   w.gtag?.("js", new Date());
   w.gtag?.("config", GA_ID, { send_page_view: false });
-  if (!document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
-    const s = document.createElement("script");
-    s.async = true;
-    s.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
-    document.head.appendChild(s);
+  // A lib gtag.js (161 KB, third-party) nao disputa com o carregamento:
+  // injeta so depois da pagina interativa (idle). Os comandos ficam na
+  // fila dataLayer e sao processados quando a lib carrega — nada se perde.
+  const load = () => {
+    if (!document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
+      const s = document.createElement("script");
+      s.async = true;
+      s.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+      document.head.appendChild(s);
+    }
+  };
+  const ric = (window as unknown as {
+    requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number;
+  }).requestIdleCallback;
+  if (typeof ric === "function") {
+    ric(load, { timeout: 3000 });
+  } else {
+    setTimeout(load, 1200);
   }
 }
 

@@ -95,7 +95,7 @@ export default function ToolsHubClient({
             );
           })}
         </div>
-        <p className="font-mono text-xs text-ink/40">
+        <p className="font-mono text-xs text-ink/60">
           {filtered.length} TOOL{filtered.length === 1 ? "" : "S"}
           {query && ` MATCHING “${query.trim()}”`}
         </p>
@@ -116,7 +116,7 @@ export default function ToolsHubClient({
               className="group bg-white border border-ink/10 rounded-xl p-5 hover:border-accent hover:shadow-md transition-all"
             >
               <div className="flex items-center justify-between mb-2">
-                <p className="font-mono text-[10px] tracking-widest text-ink/30">
+                <p className="font-mono text-[10px] tracking-widest text-ink/60">
                   {t.catName.toUpperCase()}
                 </p>
                 {NEW_TOOLS.has(t.slug) && (

@@ -148,7 +148,7 @@ export default function RootLayout({
               </div>
 
               <nav aria-label="Categories">
-                <h2 className="font-mono text-xs tracking-widest text-accent mb-4">
+                <h2 className="font-mono text-xs tracking-widest text-accent-soft mb-4">
                   CATEGORIES
                 </h2>
                 <ul className="space-y-2 text-sm">
@@ -166,7 +166,7 @@ export default function RootLayout({
               </nav>
 
               <nav aria-label="More tools">
-                <h2 className="font-mono text-xs tracking-widest text-accent mb-4">
+                <h2 className="font-mono text-xs tracking-widest text-accent-soft mb-4">
                   MORE TOOLS
                 </h2>
                 <ul className="space-y-2 text-sm">
@@ -184,7 +184,7 @@ export default function RootLayout({
               </nav>
 
               <nav aria-label="Company and legal">
-                <h2 className="font-mono text-xs tracking-widest text-accent mb-4">
+                <h2 className="font-mono text-xs tracking-widest text-accent-soft mb-4">
                   COMPANY
                 </h2>
                 <ul className="space-y-2 text-sm">
@@ -250,7 +250,7 @@ export default function RootLayout({
           </div>
 
           <div className="border-t border-paper/10">
-            <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-paper/40">
+            <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-paper/60">
               <p>
                 © {new Date().getFullYear()} {SITE_CONFIG.name}. All rights
                 reserved.

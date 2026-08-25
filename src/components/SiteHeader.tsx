@@ -55,7 +55,7 @@ export default function SiteHeader() {
           </Link>
           <Link
             href="/guides"
-            className="text-accent hover:text-paper focus:outline-none transition-colors whitespace-nowrap font-medium"
+            className="text-accent-soft hover:text-paper focus:outline-none transition-colors whitespace-nowrap font-medium"
           >
             Guides
           </Link>
@@ -102,13 +102,13 @@ export default function SiteHeader() {
           </form>
           <Link
             href="/tools"
-            className="py-2.5 text-accent font-semibold border-b border-paper/10"
+            className="py-2.5 text-accent-soft font-semibold border-b border-paper/10"
           >
             All Tools
           </Link>
           <Link
             href="/guides"
-            className="py-2.5 text-accent font-semibold border-b border-paper/10"
+            className="py-2.5 text-accent-soft font-semibold border-b border-paper/10"
           >
             Guides
           </Link>
