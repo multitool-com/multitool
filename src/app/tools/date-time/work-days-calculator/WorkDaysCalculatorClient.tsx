@@ -69,9 +69,9 @@ export default function WorkDaysCalculatorClient() {
           <span className="font-mono text-[10px] text-paper/60">Mon–Fri{hols.length ? ` · ${hols.length} holiday(s) excluded` : ""}</span>
         </div>
         <div className="bg-paper border border-ink/10 rounded-xl px-4 py-5 flex flex-col items-center gap-1">
-          <span className="font-mono text-[10px] tracking-widest text-ink/50">CALENDAR DAYS</span>
+          <span className="font-mono text-[10px] tracking-widest text-ink/70">CALENDAR DAYS</span>
           <span className="font-display text-4xl font-bold text-deep">{total !== null ? total : "—"}</span>
-          <span className="font-mono text-[10px] text-ink/50">including weekends</span>
+          <span className="font-mono text-[10px] text-ink/70">including weekends</span>
         </div>
       </div>
     </div>

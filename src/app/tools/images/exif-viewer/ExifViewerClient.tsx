@@ -146,7 +146,7 @@ export default function ExifViewerClient() {
         />
         <button
           onClick={() => inputRef.current?.click()}
-          className="w-full border-2 border-dashed border-ink/15 hover:border-accent rounded-lg py-8 font-mono text-xs tracking-widest text-ink/50 hover:text-accent transition-colors"
+          className="w-full border-2 border-dashed border-ink/15 hover:border-accent rounded-lg py-8 font-mono text-xs tracking-widest text-ink/70 hover:text-accent transition-colors"
         >
           {file ? file.name.toUpperCase() : "SELECT A PHOTO (JPG · HEIC · TIFF)"}
         </button>
@@ -175,7 +175,7 @@ export default function ExifViewerClient() {
                       key={k}
                       className={`flex justify-between gap-3 px-3 py-2 text-xs font-mono ${i % 2 ? "bg-paper/60" : "bg-white"}`}
                     >
-                      <span className="text-ink/50">{FRIENDLY[k] ?? k}</span>
+                      <span className="text-ink/70">{FRIENDLY[k] ?? k}</span>
                       <span className="text-right break-all">{fmtValue(k, v)}</span>
                     </div>
                   ))}

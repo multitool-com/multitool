@@ -172,7 +172,7 @@ export default function UrlShortenerClient() {
             {history.map((h, i) => (
               <div key={i} className="px-4 py-2.5 flex items-center gap-3">
                 <div className="flex-1 min-w-0">
-                  <p className="font-mono text-xs text-ink/50 truncate">{h.original}</p>
+                  <p className="font-mono text-xs text-ink/70 truncate">{h.original}</p>
                   <p className="font-mono text-xs font-semibold text-accent break-all">
                     {h.short}
                   </p>

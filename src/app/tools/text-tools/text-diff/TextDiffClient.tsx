@@ -67,7 +67,7 @@ export default function TextDiffClient() {
       <div className="flex gap-2 flex-wrap items-center">
         <button type="button" onClick={() => setMode("side")} className={`font-mono text-xs tracking-widest px-4 py-2 rounded-full transition-colors ${mode === "side" ? "bg-deep text-paper" : "bg-paper text-ink/60 border border-ink/15 hover:border-accent hover:text-accent"}`}>SIDE BY SIDE</button>
         <button type="button" onClick={() => setMode("unified")} className={`font-mono text-xs tracking-widest px-4 py-2 rounded-full transition-colors ${mode === "unified" ? "bg-deep text-paper" : "bg-paper text-ink/60 border border-ink/15 hover:border-accent hover:text-accent"}`}>UNIFIED</button>
-        <span className="font-mono text-xs text-ink/50 ml-auto">+{stats.add} added · −{stats.del} removed · {stats.same} same</span>
+        <span className="font-mono text-xs text-ink/70 ml-auto">+{stats.add} added · −{stats.del} removed · {stats.same} same</span>
       </div>
 
       {mode === "side" ? (

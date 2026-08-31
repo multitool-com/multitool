@@ -67,7 +67,7 @@ export default function UuidGeneratorClient() {
           ))}
         </div>
       )}
-      <p className="text-xs text-ink/50">Uses the browser&apos;s cryptographically secure random generator (crypto.randomUUID).</p>
+      <p className="text-xs text-ink/70">Uses the browser&apos;s cryptographically secure random generator (crypto.randomUUID).</p>
     </div>
   );
 }

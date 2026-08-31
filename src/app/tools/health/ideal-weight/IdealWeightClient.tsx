@@ -65,13 +65,13 @@ export default function IdealWeightClient() {
           const v = h > 0 ? FORMULAS[name](male, h) : null;
           return (
             <div key={name} className="bg-paper border border-ink/10 rounded-lg px-4 py-4 flex items-center justify-between">
-              <span className="font-mono text-xs tracking-widest text-ink/50">{name}</span>
+              <span className="font-mono text-xs tracking-widest text-ink/70">{name}</span>
               <span className="font-display text-xl font-bold text-deep">{v ? v.toFixed(1) + " kg" : "—"}</span>
             </div>
           );
         })}
       </div>
-      <p className="text-xs text-ink/50">
+      <p className="text-xs text-ink/70">
         Formulas: Devine, Robinson, Miller and Hamwi — classic estimates for ideal body weight. They do not account for muscle mass; use as a rough guide.
       </p>
     </div>

@@ -135,14 +135,14 @@ export default function PdfRemovePagesClient() {
         />
         <button
           onClick={() => inputRef.current?.click()}
-          className="w-full border-2 border-dashed border-ink/15 hover:border-accent rounded-lg py-8 font-mono text-xs tracking-widest text-ink/50 hover:text-accent transition-colors"
+          className="w-full border-2 border-dashed border-ink/15 hover:border-accent rounded-lg py-8 font-mono text-xs tracking-widest text-ink/70 hover:text-accent transition-colors"
         >
           {file ? file.name.toUpperCase() : "SELECT PDF FILE"}
         </button>
 
         {file && pageCount > 0 && (
           <div className="mt-5 flex flex-col gap-4">
-            <p className="font-mono text-xs text-ink/50">
+            <p className="font-mono text-xs text-ink/70">
               {pageCount} PAGES · TYPE PAGES LIKE <code>1,3,5-8</code>
             </p>
 

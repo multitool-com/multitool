@@ -273,7 +273,7 @@ export default function BMICalculatorClient() {
       {result && (
         <div className="grid sm:grid-cols-2 gap-3">
           <div className="bg-paper border border-ink/10 rounded-lg px-4 py-3">
-            <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">
+            <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">
               CATEGORY
             </span>
             <span className={`font-display font-semibold text-lg ${result.categoryColor}`}>
@@ -284,7 +284,7 @@ export default function BMICalculatorClient() {
             </span>
           </div>
           <div className="bg-paper border border-ink/10 rounded-lg px-4 py-3">
-            <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">
+            <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">
               IDEAL WEIGHT RANGE
             </span>
             <span className="font-display font-semibold text-lg text-ink">
@@ -300,7 +300,7 @@ export default function BMICalculatorClient() {
       )}
 
       {!result && (
-        <p className="text-sm text-ink/50 text-center italic">
+        <p className="text-sm text-ink/70 text-center italic">
           Enter your height and weight to calculate your BMI.
         </p>
       )}

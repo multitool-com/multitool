@@ -94,7 +94,7 @@ export default function TypingTestClient() {
         <div className="flex items-center justify-between">
           <span className="font-mono text-2xl font-bold text-accent tabular-nums">{timeLeft}s</span>
           {status === "running" && (
-            <span className="font-mono text-xs text-ink/50">word {currentWordIndex + 1}</span>
+            <span className="font-mono text-xs text-ink/70">word {currentWordIndex + 1}</span>
           )}
         </div>
       )}
@@ -125,7 +125,7 @@ export default function TypingTestClient() {
       />
 
       {status === "running" && (
-        <div className="flex gap-4 font-mono text-xs text-ink/50 justify-center">
+        <div className="flex gap-4 font-mono text-xs text-ink/70 justify-center">
           <span>chars: {typedCount}</span>
           <span>errors: {errors}</span>
           <span>acc: {typedCount ? Math.round(((typedCount - errors) / typedCount) * 100) : 100}%</span>

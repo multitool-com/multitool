@@ -258,7 +258,7 @@ export default function LoanCalculatorClient() {
         <>
           <div className="grid sm:grid-cols-2 gap-3">
             <div className="bg-paper border border-ink/10 rounded-lg px-4 py-3">
-              <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">
+              <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">
                 TOTAL PAID
               </span>
               <span className="font-mono text-lg font-semibold text-ink">
@@ -266,7 +266,7 @@ export default function LoanCalculatorClient() {
               </span>
             </div>
             <div className="bg-paper border border-ink/10 rounded-lg px-4 py-3">
-              <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">
+              <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">
                 TOTAL INTEREST
               </span>
               <span className="font-mono text-lg font-semibold text-accent">
@@ -312,16 +312,16 @@ export default function LoanCalculatorClient() {
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b border-ink/15">
-                    <th className="font-mono text-[10px] tracking-widest text-ink/50 text-left py-2 px-2">
+                    <th className="font-mono text-[10px] tracking-widest text-ink/70 text-left py-2 px-2">
                       YEAR
                     </th>
-                    <th className="font-mono text-[10px] tracking-widest text-ink/50 text-right py-2 px-2">
+                    <th className="font-mono text-[10px] tracking-widest text-ink/70 text-right py-2 px-2">
                       PRINCIPAL
                     </th>
-                    <th className="font-mono text-[10px] tracking-widest text-ink/50 text-right py-2 px-2">
+                    <th className="font-mono text-[10px] tracking-widest text-ink/70 text-right py-2 px-2">
                       INTEREST
                     </th>
-                    <th className="font-mono text-[10px] tracking-widest text-ink/50 text-right py-2 px-2">
+                    <th className="font-mono text-[10px] tracking-widest text-ink/70 text-right py-2 px-2">
                       BALANCE
                     </th>
                   </tr>
@@ -352,7 +352,7 @@ export default function LoanCalculatorClient() {
       )}
 
       {!result && (
-        <p className="text-sm text-ink/50 text-center italic">
+        <p className="text-sm text-ink/70 text-center italic">
           Enter loan amount, interest rate and term to see your payment.
         </p>
       )}

@@ -108,7 +108,7 @@ export default function WebpToJpgClient() {
         />
         <button
           onClick={() => inputRef.current?.click()}
-          className="w-full border-2 border-dashed border-ink/15 hover:border-accent rounded-lg py-8 font-mono text-xs tracking-widest text-ink/50 hover:text-accent transition-colors"
+          className="w-full border-2 border-dashed border-ink/15 hover:border-accent rounded-lg py-8 font-mono text-xs tracking-widest text-ink/70 hover:text-accent transition-colors"
         >
           {items.length ? `${items.length} WEBP FILE(S) SELECTED — CLICK TO CHANGE` : "SELECT WEBP FILES (BATCH OK)"}
         </button>

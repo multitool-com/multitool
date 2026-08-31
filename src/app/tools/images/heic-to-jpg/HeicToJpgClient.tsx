@@ -69,13 +69,13 @@ export default function HeicToJpgClient() {
         />
         <button
           onClick={() => inputRef.current?.click()}
-          className="w-full border-2 border-dashed border-ink/15 hover:border-accent rounded-lg py-8 font-mono text-xs tracking-widest text-ink/50 hover:text-accent transition-colors"
+          className="w-full border-2 border-dashed border-ink/15 hover:border-accent rounded-lg py-8 font-mono text-xs tracking-widest text-ink/70 hover:text-accent transition-colors"
         >
           {file ? file.name.toUpperCase() : "SELECT HEIC / HEIF PHOTO"}
         </button>
 
         {file && (
-          <p className="mt-3 text-sm font-mono text-ink/50">
+          <p className="mt-3 text-sm font-mono text-ink/70">
             {formatBytes(file.size)} · {file.type || "HEIC"}
           </p>
         )}

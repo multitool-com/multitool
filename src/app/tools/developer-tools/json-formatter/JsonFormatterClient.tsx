@@ -180,7 +180,7 @@ export default function JsonFormatterClient() {
             <button
               type="button"
               onClick={loadSample}
-              className="font-mono text-[10px] tracking-widest text-ink/50 hover:text-accent transition-colors"
+              className="font-mono text-[10px] tracking-widest text-ink/70 hover:text-accent transition-colors"
             >
               LOAD SAMPLE
             </button>
@@ -188,7 +188,7 @@ export default function JsonFormatterClient() {
             <button
               type="button"
               onClick={clearAll}
-              className="font-mono text-[10px] tracking-widest text-ink/50 hover:text-accent transition-colors"
+              className="font-mono text-[10px] tracking-widest text-ink/70 hover:text-accent transition-colors"
             >
               CLEAR
             </button>
@@ -282,7 +282,7 @@ export default function JsonFormatterClient() {
       )}
 
       {!result && (
-        <p className="text-sm text-ink/50 text-center italic">
+        <p className="text-sm text-ink/70 text-center italic">
           Paste your JSON and click the button to process.
         </p>
       )}
@@ -307,7 +307,7 @@ function StatBlock({
           : "bg-paper border-ink/10"
       }`}
     >
-      <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">
+      <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">
         {label}
       </span>
       <span

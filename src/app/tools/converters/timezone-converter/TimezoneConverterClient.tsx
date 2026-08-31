@@ -99,7 +99,7 @@ export default function TimezoneConverterClient() {
 
       <div className="grid grid-cols-2 gap-3">
         <div className="bg-paper border border-ink/10 rounded-xl px-4 py-4 flex flex-col items-center gap-1">
-          <span className="font-mono text-[10px] tracking-widest text-ink/50">{from} (UTC{fromOffset >= 0 ? "+" : ""}{fromOffset / 60})</span>
+          <span className="font-mono text-[10px] tracking-widest text-ink/70">{from} (UTC{fromOffset >= 0 ? "+" : ""}{fromOffset / 60})</span>
           <span className="font-display text-lg font-bold text-deep">{formatInZone(targetIso, from)}</span>
         </div>
         <div className="bg-deep rounded-xl px-4 py-4 flex flex-col items-center gap-1">
@@ -107,7 +107,7 @@ export default function TimezoneConverterClient() {
           <span className="font-display text-lg font-bold text-accent">{formatInZone(targetIso, to)}</span>
         </div>
       </div>
-      <p className="text-xs text-ink/50">DST-aware: offsets update automatically for zones with daylight saving (e.g. New York, London).</p>
+      <p className="text-xs text-ink/70">DST-aware: offsets update automatically for zones with daylight saving (e.g. New York, London).</p>
     </div>
   );
 }

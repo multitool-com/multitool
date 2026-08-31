@@ -229,7 +229,7 @@ export default function LlmModelComparisonClient() {
                     ✕
                   </button>
                 </div>
-                <p className="font-mono text-[10px] text-ink/50 mb-2">
+                <p className="font-mono text-[10px] text-ink/70 mb-2">
                   {m.provider.toUpperCase()}
                 </p>
                 <p className="font-mono text-[11px] text-ink/80">
@@ -255,7 +255,7 @@ export default function LlmModelComparisonClient() {
       <div className="overflow-x-auto">
         <table className="w-full text-left border-collapse min-w-[640px]">
           <thead>
-            <tr className="font-mono text-[10px] tracking-widest text-ink/50 border-b border-ink/10">
+            <tr className="font-mono text-[10px] tracking-widest text-ink/70 border-b border-ink/10">
               <th className="py-2 pr-2">MODEL</th>
               <th className="py-2 pr-2">PROVIDER</th>
               <th className="py-2 pr-2 text-right">CONTEXT</th>
@@ -279,7 +279,7 @@ export default function LlmModelComparisonClient() {
                     <span className="font-display font-semibold text-sm">
                       {m.name}
                     </span>
-                    <p className="font-mono text-[10px] text-ink/50 mt-0.5">
+                    <p className="font-mono text-[10px] text-ink/70 mt-0.5">
                       {m.bestFor}
                     </p>
                   </td>
@@ -335,7 +335,7 @@ export default function LlmModelComparisonClient() {
             })}
             {filtered.length === 0 && (
               <tr>
-                <td colSpan={7} className="py-8 text-center font-mono text-xs text-ink/50">
+                <td colSpan={7} className="py-8 text-center font-mono text-xs text-ink/70">
                   No models match your filter.
                 </td>
               </tr>
@@ -372,7 +372,7 @@ function StatBlock({
           : "bg-paper border-ink/10"
       }`}
     >
-      <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">
+      <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">
         {label}
       </span>
       <span

@@ -63,7 +63,7 @@ export default function CronGeneratorClient() {
           { label: "DAY OF WEEK", val: dow, set: setDow, opts: dowOpts },
         ].map((f) => (
           <div key={f.label}>
-            <label className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">{f.label}</label>
+            <label className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">{f.label}</label>
             <select value={f.val} onChange={(e) => f.set(e.target.value)} className={selectCls + " w-full"}>
               {f.opts.map((o) => <option key={o} value={o}>{o}</option>)}
             </select>
@@ -77,7 +77,7 @@ export default function CronGeneratorClient() {
         <span className="font-mono text-xs text-paper/70 text-center max-w-md">{describeCron(minute, hour, dom, month, dow)}</span>
         <button type="button" onClick={copy} className="mt-2 bg-accent text-paper font-mono text-xs tracking-widest px-5 py-2 rounded-lg hover:opacity-90 transition-opacity">{copied ? "✓ COPIED" : "📋 COPY"}</button>
       </div>
-      <p className="text-xs text-ink/50">Standard 5-field cron (minute hour day-of-month month day-of-week), compatible with Linux crontab, AWS, GitHub Actions schedules and most schedulers.</p>
+      <p className="text-xs text-ink/70">Standard 5-field cron (minute hour day-of-month month day-of-week), compatible with Linux crontab, AWS, GitHub Actions schedules and most schedulers.</p>
     </div>
   );
 }

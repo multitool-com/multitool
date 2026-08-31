@@ -43,7 +43,7 @@ export default function GpaCalculatorClient() {
       <div className="overflow-x-auto">
         <table className="w-full text-sm">
           <thead>
-            <tr className="font-mono text-[10px] tracking-widest text-ink/50">
+            <tr className="font-mono text-[10px] tracking-widest text-ink/70">
               <th className="text-left pb-2">COURSE</th>
               <th className="text-left pb-2">GRADE</th>
               <th className="text-left pb-2">CREDITS</th>

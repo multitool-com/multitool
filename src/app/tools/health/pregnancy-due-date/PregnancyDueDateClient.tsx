@@ -52,19 +52,19 @@ export default function PregnancyDueDateClient() {
           </div>
           <div className="grid grid-cols-3 gap-3">
             <div className="bg-paper border border-ink/10 rounded-lg px-3 py-4 flex flex-col items-center gap-1">
-              <span className="font-mono text-[10px] tracking-widest text-ink/50">CURRENT WEEK</span>
+              <span className="font-mono text-[10px] tracking-widest text-ink/70">CURRENT WEEK</span>
               <span className="font-display text-2xl font-bold text-deep">{Math.min(week, 42)}</span>
             </div>
             <div className="bg-paper border border-ink/10 rounded-lg px-3 py-4 flex flex-col items-center gap-1">
-              <span className="font-mono text-[10px] tracking-widest text-ink/50">TRIMESTER</span>
+              <span className="font-mono text-[10px] tracking-widest text-ink/70">TRIMESTER</span>
               <span className="font-display text-2xl font-bold text-deep">{trimester}</span>
             </div>
             <div className="bg-paper border border-ink/10 rounded-lg px-3 py-4 flex flex-col items-center gap-1">
-              <span className="font-mono text-[10px] tracking-widest text-ink/50">CONCEPTION ~</span>
+              <span className="font-mono text-[10px] tracking-widest text-ink/70">CONCEPTION ~</span>
               <span className="font-display text-lg font-bold text-deep">{fmtDate(addDays(d, 14))}</span>
             </div>
           </div>
-          <p className="text-xs text-ink/50">
+          <p className="text-xs text-ink/70">
             Based on Naegele&apos;s rule: LMP + 280 days (40 weeks). Only ~5% of babies arrive exactly on the due date — treat it as a guide.
           </p>
         </>

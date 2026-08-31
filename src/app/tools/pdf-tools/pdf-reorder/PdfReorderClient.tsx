@@ -161,7 +161,7 @@ export default function PdfReorderClient() {
         >
           {pdf ? "CHOOSE ANOTHER PDF" : "CHOOSE A PDF"}
         </label>
-        <p className="mt-3 font-mono text-xs text-ink/50">
+        <p className="mt-3 font-mono text-xs text-ink/70">
           OR DRAG & DROP HERE — ONE FILE AT A TIME
         </p>
       </div>
@@ -244,7 +244,7 @@ export default function PdfReorderClient() {
                 </div>
               ))}
               {pages.length === 0 && (
-                <div className="px-4 py-6 text-center font-mono text-xs text-ink/50">
+                <div className="px-4 py-6 text-center font-mono text-xs text-ink/70">
                   All pages removed — use RESET ORDER to bring them back.
                 </div>
               )}
@@ -294,7 +294,7 @@ function StatBlock({
           : "bg-paper border-ink/10"
       }`}
     >
-      <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">
+      <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">
         {label}
       </span>
       <span

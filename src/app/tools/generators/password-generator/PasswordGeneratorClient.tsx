@@ -201,7 +201,7 @@ export default function PasswordGeneratorClient() {
       {password && (
         <div>
           <div className="flex justify-between items-center mb-2">
-            <span className="font-mono text-[10px] tracking-widest text-ink/50">
+            <span className="font-mono text-[10px] tracking-widest text-ink/70">
               STRENGTH
             </span>
             <span className={`font-mono text-xs font-semibold ${strength.color}`}>
@@ -302,7 +302,7 @@ export default function PasswordGeneratorClient() {
       {/* Lista em massa */}
       {bulkPasswords.length > 0 && (
         <div className="border-t border-ink/10 pt-4">
-          <p className="font-mono text-xs tracking-widest text-ink/50 mb-3">
+          <p className="font-mono text-xs tracking-widest text-ink/70 mb-3">
             10 PASSWORDS GENERATED
           </p>
           <div className="space-y-2">

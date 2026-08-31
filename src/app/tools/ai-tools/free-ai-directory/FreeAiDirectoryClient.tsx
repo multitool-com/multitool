@@ -436,7 +436,7 @@ export default function FreeAiDirectoryClient() {
       </p>
 
       {visible.length === 0 ? (
-        <p className="text-sm text-ink/50 text-center italic">
+        <p className="text-sm text-ink/70 text-center italic">
           No tools match that search and filter.
         </p>
       ) : (
@@ -462,7 +462,7 @@ export default function FreeAiDirectoryClient() {
                   >
                     {tool.name}
                   </span>
-                  <span className="font-mono text-[10px] tracking-widest text-ink/50 shrink-0">
+                  <span className="font-mono text-[10px] tracking-widest text-ink/70 shrink-0">
                     {CATEGORY_LABEL[tool.category]}
                   </span>
                 </div>
@@ -537,7 +537,7 @@ export default function FreeAiDirectoryClient() {
 
 function Tag({ children }: { children: React.ReactNode }) {
   return (
-    <span className="font-mono text-[9px] tracking-widest text-ink/50 bg-white border border-ink/10 rounded-full px-2 py-0.5">
+    <span className="font-mono text-[9px] tracking-widest text-ink/70 bg-white border border-ink/10 rounded-full px-2 py-0.5">
       {children}
     </span>
   );
@@ -571,7 +571,7 @@ function StatBlock({
           : "bg-paper border-ink/10"
       }`}
     >
-      <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">
+      <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">
         {label}
       </span>
       <span

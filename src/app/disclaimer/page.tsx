@@ -36,7 +36,7 @@ export default function DisclaimerPage() {
         LEGAL
       </p>
       <h1 className="font-display text-4xl font-bold mb-3">Disclaimer</h1>
-      <p className="text-ink/60 mb-10">
+      <p className="text-ink/70 mb-10">
         Last updated: <strong>{LAST_UPDATED}</strong>
       </p>
 

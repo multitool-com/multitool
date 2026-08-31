@@ -101,7 +101,7 @@ export default function ColorPaletteClient() {
           </button>
         ))}
       </div>
-      <p className="text-xs text-ink/50">
+      <p className="text-xs text-ink/70">
         {type === "mono" ? "Five shades of the same hue." : type === "complementary" ? "Base + its exact opposite on the wheel." : type === "analogous" ? "Neighbors on the color wheel — harmonious." : type === "triadic" ? "Three evenly spaced colors." : "Four evenly spaced colors."} Click any swatch to copy its hex.
       </p>
     </div>

@@ -86,7 +86,7 @@ export default function SalaryCalculatorClient() {
       <div className="grid sm:grid-cols-2 gap-3">
         {rows.map((r) => (
           <div key={r.label} className="bg-paper border border-ink/10 rounded-lg px-4 py-4 flex flex-col items-center gap-1">
-            <span className="font-mono text-[10px] tracking-widest text-ink/50">{r.label}</span>
+            <span className="font-mono text-[10px] tracking-widest text-ink/70">{r.label}</span>
             <span className="font-display text-2xl font-bold text-deep">{r.value}</span>
           </div>
         ))}

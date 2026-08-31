@@ -151,14 +151,14 @@ export default function RegexTesterClient() {
               key={`${m.index}-${i}`}
               className="bg-paper border border-ink/10 rounded-lg px-3 py-3"
             >
-              <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">
+              <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">
                 #{i + 1} · INDEX {m.index}
               </span>
               <span className="font-mono text-sm font-semibold text-accent break-all">
                 {m.text}
               </span>
               {m.groups.length > 0 && (
-                <p className="font-mono text-[11px] text-ink/50 mt-1 break-all">
+                <p className="font-mono text-[11px] text-ink/70 mt-1 break-all">
                   groups: {m.groups.map((g, gi) => `${gi + 1}=${g || "∅"}`).join(" · ")}
                 </p>
               )}

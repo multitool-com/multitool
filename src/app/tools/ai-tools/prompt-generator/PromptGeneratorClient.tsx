@@ -546,7 +546,7 @@ export default function PromptGeneratorClient() {
             <div key={v.name}>
               <label
                 htmlFor={`var-${v.name}`}
-                className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1"
+                className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1"
               >
                 {v.label.toUpperCase()}
               </label>

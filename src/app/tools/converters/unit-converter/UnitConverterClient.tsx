@@ -251,7 +251,7 @@ export default function UnitConverterClient() {
                     : "bg-paper border-ink/10 hover:border-accent"
                 }`}
               >
-                <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">
+                <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">
                   {row.symbol}
                 </span>
                 <span

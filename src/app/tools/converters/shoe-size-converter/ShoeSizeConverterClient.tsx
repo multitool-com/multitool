@@ -142,7 +142,7 @@ export default function ShoeSizeConverterClient() {
               s.id === system ? "border-accent" : "border-ink/10"
             }`}
           >
-            <span className="font-mono text-[10px] tracking-widest text-ink/50">{s.label}</span>
+            <span className="font-mono text-[10px] tracking-widest text-ink/70">{s.label}</span>
             <span className="font-display text-2xl font-bold text-deep">
               {match ? fmt(match[s.id]) : "—"}
             </span>
@@ -163,7 +163,7 @@ export default function ShoeSizeConverterClient() {
         <div className="overflow-x-auto border border-ink/10 rounded-lg">
           <table className="w-full text-sm">
             <thead>
-              <tr className="bg-paper font-mono text-[10px] tracking-widest text-ink/50">
+              <tr className="bg-paper font-mono text-[10px] tracking-widest text-ink/70">
                 <th className="px-3 py-2 text-left">US</th>
                 <th className="px-3 py-2 text-left">UK</th>
                 <th className="px-3 py-2 text-left">EU</th>
@@ -187,7 +187,7 @@ export default function ShoeSizeConverterClient() {
             </tbody>
           </table>
         </div>
-        <p className="text-xs text-ink/50 mt-2">
+        <p className="text-xs text-ink/70 mt-2">
           Sizes vary slightly by brand — always try shoes on or measure your foot in centimeters (heel to longest toe).
         </p>
       </div>

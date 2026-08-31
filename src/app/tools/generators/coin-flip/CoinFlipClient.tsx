@@ -209,11 +209,11 @@ export default function CoinFlipClient() {
       {mode === "coin" && (
         <div className="grid grid-cols-2 gap-3">
           <div className="bg-paper border border-ink/10 rounded-lg px-4 py-3 text-center">
-            <span className="font-mono text-[10px] tracking-widest text-ink/50 block">HEADS</span>
+            <span className="font-mono text-[10px] tracking-widest text-ink/70 block">HEADS</span>
             <span className="font-mono text-2xl font-bold text-ink">{flips.heads}</span>
           </div>
           <div className="bg-paper border border-ink/10 rounded-lg px-4 py-3 text-center">
-            <span className="font-mono text-[10px] tracking-widest text-ink/50 block">TAILS</span>
+            <span className="font-mono text-[10px] tracking-widest text-ink/70 block">TAILS</span>
             <span className="font-mono text-2xl font-bold text-ink">{flips.tails}</span>
           </div>
         </div>

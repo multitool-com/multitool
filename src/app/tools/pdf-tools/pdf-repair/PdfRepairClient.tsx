@@ -81,7 +81,7 @@ export default function PdfRepairClient() {
           <button type="button" onClick={download} className="self-center bg-deep text-paper font-mono text-xs tracking-widest px-6 py-3 rounded-lg hover:bg-accent transition-colors">
             ⬇ DOWNLOAD REPAIRED PDF
           </button>
-          <p className="text-xs text-ink/50">
+          <p className="text-xs text-ink/70">
             The file is rebuilt page by page: broken cross-references and orphan objects are dropped, producing a clean PDF that opens in any reader. All processing happens in your browser.
           </p>
         </>

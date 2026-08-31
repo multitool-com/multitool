@@ -122,7 +122,7 @@ export default function ToolLayout({
         {/* Breadcrumb visual */}
         <nav
           aria-label="Breadcrumb"
-          className="font-mono text-xs tracking-widest text-ink/50 mb-2"
+          className="font-mono text-xs tracking-widest text-ink/70 mb-2"
         >
           <Link href="/" className="hover:text-accent transition-colors">
             HOME
@@ -140,7 +140,7 @@ export default function ToolLayout({
 
         {/* Título + descrição */}
         <h1 className="font-display text-3xl font-bold mb-2">{title}</h1>
-        <p className="text-ink/60 mb-8">{description}</p>
+        <p className="text-ink/70 mb-8">{description}</p>
 
         {/* UI interativa da ferramenta */}
         {children}

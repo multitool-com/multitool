@@ -395,7 +395,7 @@ export default function ScientificCalculatorClient() {
                 }}
                 className="w-full flex items-baseline justify-between gap-3 px-4 py-2 text-left hover:bg-ink/5 transition-colors"
               >
-                <span className="font-mono text-xs text-ink/50 break-all">
+                <span className="font-mono text-xs text-ink/70 break-all">
                   {h.expr}
                 </span>
                 <span className="font-mono text-sm font-semibold text-accent whitespace-nowrap">

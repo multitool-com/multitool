@@ -58,7 +58,7 @@ export default function GeometryCalculatorClient() {
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
         {info.fields.map((f) => (
           <div key={f.key}>
-            <label className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">{f.label.toUpperCase()}</label>
+            <label className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">{f.label.toUpperCase()}</label>
             <input type="number" min="0" value={vals[f.key] ?? ""} onChange={(e) => setVals((m) => ({ ...m, [f.key]: e.target.value }))} className="w-full border border-ink/15 rounded-lg px-3 py-2 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-accent" />
           </div>
         ))}
@@ -71,9 +71,9 @@ export default function GeometryCalculatorClient() {
           <span className="font-mono text-[10px] text-paper/60">units²</span>
         </div>
         <div className="bg-paper border border-ink/10 rounded-xl px-4 py-5 flex flex-col items-center gap-1">
-          <span className="font-mono text-[10px] tracking-widest text-ink/50">PERIMETER</span>
+          <span className="font-mono text-[10px] tracking-widest text-ink/70">PERIMETER</span>
           <span className="font-display text-3xl font-bold text-deep">{per !== null ? per.toFixed(2) : "—"}</span>
-          <span className="font-mono text-[10px] text-ink/50">units</span>
+          <span className="font-mono text-[10px] text-ink/70">units</span>
         </div>
       </div>
     </div>

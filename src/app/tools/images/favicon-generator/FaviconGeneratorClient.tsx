@@ -220,7 +220,7 @@ export default function FaviconGeneratorClient() {
             className="w-full text-sm text-ink/60 file:mr-3 file:bg-deep file:text-paper file:font-mono file:text-xs file:tracking-widest file:px-4 file:py-2.5 file:rounded-lg file:border-0 file:cursor-pointer hover:file:bg-accent transition-colors"
           />
           {fileName && (
-            <p className="text-xs text-ink/50 mt-2">✓ Loaded {fileName} — centered and cropped to a square.</p>
+            <p className="text-xs text-ink/70 mt-2">✓ Loaded {fileName} — centered and cropped to a square.</p>
           )}
         </div>
       )}
@@ -254,7 +254,7 @@ export default function FaviconGeneratorClient() {
         </div>
       )}
 
-      <p className="text-xs text-ink/50">
+      <p className="text-xs text-ink/70">
         Tip: add <code className="bg-accent/10 px-1 rounded">&lt;link rel="icon" href="/favicon-32x32.png"&gt;</code> to your
         site's <code className="bg-accent/10 px-1 rounded">&lt;head&gt;</code>. Everything is generated in your browser — no uploads.
       </p>

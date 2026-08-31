@@ -27,7 +27,7 @@ export default function NotFound() {
       <h1 className="font-display text-3xl md:text-4xl font-bold mb-3">
         Page not found
       </h1>
-      <p className="text-ink/60 mb-10 text-lg max-w-xl mx-auto">
+      <p className="text-ink/70 mb-10 text-lg max-w-xl mx-auto">
         The page you&apos;re looking for doesn&apos;t exist or has been moved.
         Try one of the popular tools below or explore our categories.
       </p>

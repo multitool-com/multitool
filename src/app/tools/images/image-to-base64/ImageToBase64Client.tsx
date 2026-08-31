@@ -210,7 +210,7 @@ export default function ImageToBase64Client() {
         >
           {source ? "CHOOSE ANOTHER IMAGE" : "CHOOSE AN IMAGE"}
         </label>
-        <p className="mt-3 font-mono text-xs text-ink/50">
+        <p className="mt-3 font-mono text-xs text-ink/70">
           OR DRAG & DROP HERE — JPG · PNG · WEBP · GIF
         </p>
       </div>
@@ -367,7 +367,7 @@ export default function ImageToBase64Client() {
           {dataUri && (
             <div className="grid sm:grid-cols-2 gap-3 items-start">
               <div className="bg-paper border border-ink/10 rounded-lg p-3">
-                <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-2">
+                <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-2">
                   PREVIEW
                 </span>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -378,7 +378,7 @@ export default function ImageToBase64Client() {
                 />
               </div>
               <div className="bg-paper border border-ink/10 rounded-lg p-3">
-                <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-2">
+                <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-2">
                   HTML SNIPPET
                 </span>
                 <pre className="font-mono text-[11px] text-ink/80 overflow-x-auto whitespace-pre-wrap break-all bg-white rounded p-3">
@@ -424,7 +424,7 @@ function StatBlock({
           : "bg-paper border-ink/10"
       }`}
     >
-      <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">
+      <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">
         {label}
       </span>
       <span

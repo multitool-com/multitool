@@ -56,7 +56,7 @@ export default function RatioCalculatorClient() {
             <input type="number" min="0" value={a} onChange={(e) => setA(e.target.value)} className={inputCls} />
             <span className="font-display text-xl font-bold text-ink/40">:</span>
             <input type="number" min="0" value={b} onChange={(e) => setB(e.target.value)} className={inputCls} />
-            <span className="font-mono text-sm text-ink/50">= {c} :</span>
+            <span className="font-mono text-sm text-ink/70">= {c} :</span>
             <div className="bg-paper border-2 border-accent rounded-lg px-3 py-2 text-center font-display text-xl font-bold text-accent">{x !== null ? x.toFixed(2) : "—"}</div>
           </div>
           <div className="bg-paper border border-ink/10 rounded-lg px-4 py-3 text-sm text-ink/70">

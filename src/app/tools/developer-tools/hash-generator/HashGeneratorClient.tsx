@@ -63,7 +63,7 @@ export default function HashGeneratorClient() {
         <div className="flex flex-col gap-3">
           {Object.entries(results).map(([algo, hex]) => (
             <div key={algo} className="bg-paper border border-ink/10 rounded-lg px-4 py-3 flex flex-col gap-1">
-              <span className="font-mono text-[10px] tracking-widest text-ink/50">{algo} · {hex.length * 4} bits</span>
+              <span className="font-mono text-[10px] tracking-widest text-ink/70">{algo} · {hex.length * 4} bits</span>
               <code className="font-mono text-xs text-deep break-all">{hex}</code>
             </div>
           ))}

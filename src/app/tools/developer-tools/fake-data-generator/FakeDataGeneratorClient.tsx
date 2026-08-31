@@ -117,7 +117,7 @@ export default function FakeDataGeneratorClient() {
         <div className="overflow-x-auto border border-ink/10 rounded-lg">
           <table className="w-full text-xs font-mono">
             <thead>
-              <tr className="bg-paper text-[10px] tracking-widest text-ink/50">
+              <tr className="bg-paper text-[10px] tracking-widest text-ink/70">
                 {header.map((h) => <th key={h} className="px-3 py-2 text-left whitespace-nowrap">{h.toUpperCase()}</th>)}
               </tr>
             </thead>
@@ -131,7 +131,7 @@ export default function FakeDataGeneratorClient() {
           </table>
         </div>
       )}
-      <p className="text-xs text-ink/50">All data is fictional and generated locally — perfect for testing forms, mockups and databases.</p>
+      <p className="text-xs text-ink/70">All data is fictional and generated locally — perfect for testing forms, mockups and databases.</p>
     </div>
   );
 }

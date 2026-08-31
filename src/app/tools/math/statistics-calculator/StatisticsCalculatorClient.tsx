@@ -82,7 +82,7 @@ export default function StatisticsCalculatorClient() {
             <StatBlock label="VARIANCE" value={fmt(stats.variance)} />
             <StatBlock label="STD DEV" value={fmt(stats.stdDev)} highlight />
             <div className="col-span-2 bg-paper border border-ink/10 rounded-lg px-3 py-3">
-              <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">SORTED</span>
+              <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">SORTED</span>
               <span className="font-mono text-xs text-ink break-all">
                 {stats.sorted.map(fmt).join(", ")}
               </span>
@@ -108,7 +108,7 @@ function StatBlock({
 }: { label: string; value: string; highlight?: boolean }) {
   return (
     <div className={`border rounded-lg px-3 py-3 ${highlight ? "bg-accent/10 border-accent/30" : "bg-paper border-ink/10"}`}>
-      <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">{label}</span>
+      <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">{label}</span>
       <span className={`font-mono text-sm font-semibold ${highlight ? "text-accent" : "text-ink"}`}>{value}</span>
     </div>
   );

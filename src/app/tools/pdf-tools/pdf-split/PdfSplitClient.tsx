@@ -246,7 +246,7 @@ export default function PdfSplitClient() {
         >
           {pdf ? "CHOOSE ANOTHER PDF" : "CHOOSE A PDF"}
         </label>
-        <p className="mt-3 font-mono text-xs text-ink/50">
+        <p className="mt-3 font-mono text-xs text-ink/70">
           OR DRAG & DROP HERE — ONE FILE AT A TIME
         </p>
       </div>
@@ -333,7 +333,7 @@ export default function PdfSplitClient() {
               ) : (
                 rangeInput.trim() &&
                 pages.length > 0 && (
-                  <p className="font-mono text-[10px] text-ink/50 mt-1">
+                  <p className="font-mono text-[10px] text-ink/70 mt-1">
                     {pages.length} page{pages.length === 1 ? "" : "s"} selected.
                   </p>
                 )
@@ -363,7 +363,7 @@ export default function PdfSplitClient() {
                 if (!Number.isNaN(n) && n >= 1) {
                   const files = Math.ceil(pdf.pages / n);
                   return (
-                    <p className="font-mono text-[10px] text-ink/50 mt-1">
+                    <p className="font-mono text-[10px] text-ink/70 mt-1">
                       {files} file{files === 1 ? "" : "s"} of up to {n} page{n === 1 ? "" : "s"} each.
                     </p>
                   );
@@ -426,7 +426,7 @@ function StatBlock({
           : "bg-paper border-ink/10"
       }`}
     >
-      <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">
+      <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">
         {label}
       </span>
       <span

@@ -47,7 +47,7 @@ export default function AboutPage() {
       <h1 className="font-display text-4xl font-bold mb-3">
         Every tool you need, in one place.
       </h1>
-      <p className="text-ink/60 mb-10 text-lg">
+      <p className="text-ink/70 mb-10 text-lg">
         Free, fast and reliable online utilities — built to just work.
       </p>
 
@@ -105,7 +105,7 @@ export default function AboutPage() {
                 <h3 className="font-display font-semibold mb-1 group-hover:text-accent transition-colors">
                   {cat.name}
                 </h3>
-                <p className="text-sm text-ink/60">{cat.description}</p>
+                <p className="text-sm text-ink/70">{cat.description}</p>
               </Link>
             ))}
           </div>

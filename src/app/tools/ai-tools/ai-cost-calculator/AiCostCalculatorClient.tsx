@@ -305,7 +305,7 @@ export default function AiCostCalculatorClient() {
                     : "bg-paper border-ink/10"
                 }`}
               >
-                <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">
+                <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">
                   {item.label}
                 </span>
                 <span
@@ -388,7 +388,7 @@ function StatBlock({
           : "bg-paper border-ink/10"
       }`}
     >
-      <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">
+      <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">
         {label}
       </span>
       <span

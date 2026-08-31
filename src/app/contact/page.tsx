@@ -50,7 +50,7 @@ export default function ContactPage() {
         CONTACT US
       </p>
       <h1 className="font-display text-4xl font-bold mb-3">Get in touch</h1>
-      <p className="text-ink/60 mb-10 text-lg">
+      <p className="text-ink/70 mb-10 text-lg">
         Have a question, suggestion, or just want to say hi? We&apos;d love to
         hear from you.
       </p>
@@ -70,7 +70,7 @@ export default function ContactPage() {
                 {SITE_CONFIG.email}
               </a>
             </div>
-            <p className="text-ink/60 max-w-md">
+            <p className="text-ink/70 max-w-md">
               We read every message and typically reply within{" "}
               <strong>1-3 business days</strong>.
             </p>

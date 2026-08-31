@@ -119,7 +119,7 @@ export default function PngToWebpClient() {
         />
         <button
           onClick={() => inputRef.current?.click()}
-          className="w-full border-2 border-dashed border-ink/15 hover:border-accent rounded-lg py-8 font-mono text-xs tracking-widest text-ink/50 hover:text-accent transition-colors"
+          className="w-full border-2 border-dashed border-ink/15 hover:border-accent rounded-lg py-8 font-mono text-xs tracking-widest text-ink/70 hover:text-accent transition-colors"
         >
           {items.length ? `${items.length} PNG FILE(S) SELECTED — CLICK TO CHANGE` : "SELECT PNG FILES (BATCH OK)"}
         </button>

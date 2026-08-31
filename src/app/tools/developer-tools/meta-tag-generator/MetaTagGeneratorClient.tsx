@@ -72,7 +72,7 @@ export default function MetaTagGeneratorClient() {
       <div>
         <div className="font-mono text-xs tracking-widest text-ink/60 block mb-2">GOOGLE PREVIEW</div>
         <div className="bg-paper border border-ink/10 rounded-lg px-4 py-3">
-          <div className="text-xs text-ink/50 truncate">
+          <div className="text-xs text-ink/70 truncate">
             {url.replace(/^https?:\/\//, "").split("/")[0] || "yoursite.com"}
           </div>
           <div className="text-lg text-[#1a0dab] leading-snug hover:underline truncate">
@@ -97,7 +97,7 @@ export default function MetaTagGeneratorClient() {
             </div>
           )}
           <div className="px-4 py-3">
-            <div className="text-[11px] uppercase tracking-wider text-ink/50 truncate">
+            <div className="text-[11px] uppercase tracking-wider text-ink/70 truncate">
               {siteName || "yoursite.com"}
             </div>
             <div className="text-sm font-semibold text-ink leading-snug truncate">{title}</div>

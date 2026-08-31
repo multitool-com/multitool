@@ -77,7 +77,7 @@ export default function FractionCalculatorClient() {
         <span className="font-display text-4xl font-bold text-accent">{ok ? fmtFraction(rn, rd) : "—"}</span>
         {ok && rd !== 1 && <span className="font-mono text-xs text-paper/70">decimal: {(rn / rd).toFixed(4)}</span>}
       </div>
-      <p className="text-xs text-ink/50">Denominators cannot be zero. Results are always reduced to the simplest form.</p>
+      <p className="text-xs text-ink/70">Denominators cannot be zero. Results are always reduced to the simplest form.</p>
     </div>
   );
 }

@@ -69,7 +69,7 @@ export default async function GuidePage({ params }: Params) {
 
       <nav
         aria-label="Breadcrumb"
-        className="font-mono text-xs tracking-widest text-ink/50 mb-4"
+        className="font-mono text-xs tracking-widest text-ink/70 mb-4"
       >
         <Link href="/" className="hover:text-accent transition-colors">
           HOME
@@ -85,8 +85,8 @@ export default async function GuidePage({ params }: Params) {
       <h1 className="font-display text-3xl md:text-4xl font-bold leading-tight mb-4">
         {guide.title}
       </h1>
-      <p className="text-ink/60 text-lg mb-3">{guide.description}</p>
-      <p className="font-mono text-xs text-ink/40 mb-8">
+      <p className="text-ink/70 text-lg mb-3">{guide.description}</p>
+      <p className="font-mono text-xs text-ink/70 mb-8">
         UPDATED {guide.updated.toUpperCase()} · {guide.readingTime} MIN READ
       </p>
 
@@ -115,7 +115,7 @@ export default async function GuidePage({ params }: Params) {
                   <span className="font-display font-semibold block group-hover:text-accent transition-colors">
                     {t.name}
                   </span>
-                  <span className="text-xs text-ink/50">{t.description}</span>
+                  <span className="text-xs text-ink/70">{t.description}</span>
                 </span>
               </Link>
             ))}
@@ -126,7 +126,7 @@ export default async function GuidePage({ params }: Params) {
       {/* outros guias */}
       {others.length > 0 && (
         <section className="mt-10 pt-8 border-t border-ink/10">
-          <p className="font-mono text-xs tracking-widest text-ink/40 mb-4">
+          <p className="font-mono text-xs tracking-widest text-ink/70 mb-4">
             MORE GUIDES
           </p>
           <div className="flex flex-col gap-3">

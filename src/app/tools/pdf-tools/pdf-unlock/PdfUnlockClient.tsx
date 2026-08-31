@@ -150,7 +150,7 @@ export default function PdfUnlockClient() {
         >
           {pdf ? "CHOOSE ANOTHER PDF" : "CHOOSE A PDF"}
         </label>
-        <p className="mt-3 font-mono text-xs text-ink/50">
+        <p className="mt-3 font-mono text-xs text-ink/70">
           OR DRAG & DROP HERE — ONE FILE AT A TIME
         </p>
       </div>
@@ -249,7 +249,7 @@ function StatBlock({
           : "bg-paper border-ink/10"
       }`}
     >
-      <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">
+      <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">
         {label}
       </span>
       <span

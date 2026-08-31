@@ -55,7 +55,7 @@ export default function CountdownTimerClient() {
               </div>
             ))}
           </div>
-          <p className="text-center text-xs text-ink/50">Counting down to {label}</p>
+          <p className="text-center text-xs text-ink/70">Counting down to {label}</p>
         </>
       ) : (
         <div className="bg-paper border border-ink/10 rounded-xl px-6 py-6 text-center">

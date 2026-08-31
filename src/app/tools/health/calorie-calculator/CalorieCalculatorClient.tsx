@@ -75,14 +75,14 @@ export default function CalorieCalculatorClient() {
 
       <div className="grid grid-cols-2 gap-3">
         <div className="bg-paper border border-ink/10 rounded-lg px-4 py-4 flex flex-col items-center gap-1">
-          <span className="font-mono text-[10px] tracking-widest text-ink/50">BMR (Mifflin-St Jeor)</span>
+          <span className="font-mono text-[10px] tracking-widest text-ink/70">BMR (Mifflin-St Jeor)</span>
           <span className="font-display text-2xl font-bold text-deep">{bmr ? Math.round(bmr).toLocaleString() : "—"}</span>
-          <span className="font-mono text-[10px] text-ink/50">kcal/day at rest</span>
+          <span className="font-mono text-[10px] text-ink/70">kcal/day at rest</span>
         </div>
         <div className="bg-paper border border-ink/10 rounded-lg px-4 py-4 flex flex-col items-center gap-1">
-          <span className="font-mono text-[10px] tracking-widest text-ink/50">DAILY CALORIES</span>
+          <span className="font-mono text-[10px] tracking-widest text-ink/70">DAILY CALORIES</span>
           <span className="font-display text-2xl font-bold text-accent">{goalCal ? Math.round(goalCal).toLocaleString() : "—"}</span>
-          <span className="font-mono text-[10px] text-ink/50">kcal/day for goal</span>
+          <span className="font-mono text-[10px] text-ink/70">kcal/day for goal</span>
         </div>
       </div>
     </div>

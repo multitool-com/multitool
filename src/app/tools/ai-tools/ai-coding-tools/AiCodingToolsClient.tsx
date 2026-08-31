@@ -295,7 +295,7 @@ export default function AiCodingToolsClient() {
                 >
                   {tool.name}
                 </span>
-                <span className="font-mono text-[10px] tracking-widest text-ink/50 shrink-0">
+                <span className="font-mono text-[10px] tracking-widest text-ink/70 shrink-0">
                   {tool.priceLabel}
                 </span>
               </div>
@@ -370,7 +370,7 @@ export default function AiCodingToolsClient() {
 
 function Tag({ children }: { children: React.ReactNode }) {
   return (
-    <span className="font-mono text-[9px] tracking-widest text-ink/50 bg-white border border-ink/10 rounded-full px-2 py-0.5">
+    <span className="font-mono text-[9px] tracking-widest text-ink/70 bg-white border border-ink/10 rounded-full px-2 py-0.5">
       {children}
     </span>
   );
@@ -404,7 +404,7 @@ function StatBlock({
           : "bg-paper border-ink/10"
       }`}
     >
-      <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">
+      <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">
         {label}
       </span>
       <span

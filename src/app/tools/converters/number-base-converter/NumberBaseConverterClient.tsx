@@ -61,14 +61,14 @@ export default function NumberBaseConverterClient() {
       <div className="flex flex-col gap-2.5">
         {bases.map((x) => (
           <div key={x.b} className={`flex items-center justify-between gap-3 rounded-xl px-4 py-3.5 ${x.b === fromBaseN ? "bg-deep" : "bg-paper border border-ink/10"}`}>
-            <span className={`font-mono text-[10px] tracking-widest ${x.b === fromBaseN ? "text-paper/60" : "text-ink/50"}`}>{x.label}</span>
+            <span className={`font-mono text-[10px] tracking-widest ${x.b === fromBaseN ? "text-paper/60" : "text-ink/70"}`}>{x.label}</span>
             <span className={`font-mono text-lg font-bold break-all text-right ${x.b === fromBaseN ? "text-accent" : "text-deep"}`}>
               {value !== null ? toBase(value, x.b) : "—"}
             </span>
           </div>
         ))}
       </div>
-      <p className="text-xs text-ink/50">Supports bases 2–36. Invalid digits for the selected base are rejected automatically.</p>
+      <p className="text-xs text-ink/70">Supports bases 2–36. Invalid digits for the selected base are rejected automatically.</p>
     </div>
   );
 }

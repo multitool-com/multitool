@@ -50,7 +50,7 @@ export default function PasswordStrengthClient() {
             placeholder="Type a password…"
             className="w-full border border-ink/15 rounded-lg px-3 py-2.5 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-accent pr-16"
           />
-          <button type="button" onClick={() => setShow((s) => !s)} className="absolute right-3 top-1/2 -translate-y-1/2 font-mono text-xs text-ink/50 hover:text-accent">{show ? "🙈" : "👁"}</button>
+          <button type="button" onClick={() => setShow((s) => !s)} className="absolute right-3 top-1/2 -translate-y-1/2 font-mono text-xs text-ink/70 hover:text-accent">{show ? "🙈" : "👁"}</button>
         </div>
       </div>
 
@@ -66,19 +66,19 @@ export default function PasswordStrengthClient() {
               <span className="font-mono text-xs font-bold" style={{ color: r.score >= 3 ? "#16a34a" : r.score === 2 ? "#ca8a04" : "#dc2626" }}>
                 {LABELS[r.score]}
               </span>
-              <span className="font-mono text-[10px] text-ink/50">~{Math.round(r.entropy)} bits of entropy</span>
+              <span className="font-mono text-[10px] text-ink/70">~{Math.round(r.entropy)} bits of entropy</span>
             </div>
           </div>
 
           <div className="flex flex-col gap-1.5">
             {r.checks.map((c, i) => (
-              <div key={i} className={`flex items-center gap-2 text-sm ${c.ok ? "text-green-600" : "text-ink/50"}`}>
+              <div key={i} className={`flex items-center gap-2 text-sm ${c.ok ? "text-green-600" : "text-ink/70"}`}>
                 <span className="font-mono text-xs w-5 text-center">{c.ok ? "✓" : "○"}</span>
                 {c.label}
               </div>
             ))}
           </div>
-          <p className="text-xs text-ink/50">No password is sent anywhere — everything is checked locally in your browser.</p>
+          <p className="text-xs text-ink/70">No password is sent anywhere — everything is checked locally in your browser.</p>
         </>
       )}
     </div>

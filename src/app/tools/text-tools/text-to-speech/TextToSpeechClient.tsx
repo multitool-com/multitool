@@ -213,7 +213,7 @@ export default function TextToSpeechClient() {
         )}
       </div>
 
-      <p className="text-xs text-ink/50">
+      <p className="text-xs text-ink/70">
         Speech is generated locally by your device — nothing is uploaded. Voices depend on
         your operating system and browser.
       </p>

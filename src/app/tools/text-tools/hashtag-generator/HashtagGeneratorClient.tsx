@@ -75,7 +75,7 @@ export default function HashtagGeneratorClient() {
           ))}
         </div>
       )}
-      <p className="text-xs text-ink/50">Stop words (the, and, of…) are removed automatically. Click any tag to copy it.</p>
+      <p className="text-xs text-ink/70">Stop words (the, and, of…) are removed automatically. Click any tag to copy it.</p>
     </div>
   );
 }

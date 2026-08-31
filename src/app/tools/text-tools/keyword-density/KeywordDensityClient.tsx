@@ -56,11 +56,11 @@ export default function KeywordDensityClient() {
 
       <div className="grid grid-cols-3 gap-3">
         <div className="bg-paper border border-ink/10 rounded-lg px-3 py-4 flex flex-col items-center gap-1">
-          <span className="font-mono text-[10px] tracking-widest text-ink/50">TOTAL WORDS</span>
+          <span className="font-mono text-[10px] tracking-widest text-ink/70">TOTAL WORDS</span>
           <span className="font-display text-3xl font-bold text-deep">{r.total.toLocaleString()}</span>
         </div>
         <div className="bg-paper border border-ink/10 rounded-lg px-3 py-4 flex flex-col items-center gap-1">
-          <span className="font-mono text-[10px] tracking-widest text-ink/50">KEYWORD COUNT</span>
+          <span className="font-mono text-[10px] tracking-widest text-ink/70">KEYWORD COUNT</span>
           <span className="font-display text-3xl font-bold text-deep">{r.keywordCount}</span>
         </div>
         <div className="bg-deep rounded-lg px-3 py-4 flex flex-col items-center gap-1">
@@ -77,11 +77,11 @@ export default function KeywordDensityClient() {
             <div key={w.word} className="flex items-center gap-3 px-3 py-1.5 border-b border-ink/5 text-sm">
               <span className="font-mono text-[10px] text-ink/40 w-5">{i + 1}</span>
               <span className="font-mono text-xs text-ink/80 flex-1 break-all">{w.word}</span>
-              <span className="font-mono text-xs text-ink/50">{w.count}×</span>
+              <span className="font-mono text-xs text-ink/70">{w.count}×</span>
               <div className="w-24 bg-ink/10 rounded-full h-1.5 overflow-hidden">
                 <div className="bg-accent h-full rounded-full" style={{ width: `${Math.min(100, w.density * 6)}%` }} />
               </div>
-              <span className="font-mono text-[10px] text-ink/50 w-12 text-right">{w.density.toFixed(1)}%</span>
+              <span className="font-mono text-[10px] text-ink/70 w-12 text-right">{w.density.toFixed(1)}%</span>
             </div>
           ))}
         </div>

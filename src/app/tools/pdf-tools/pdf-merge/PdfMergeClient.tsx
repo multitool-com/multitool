@@ -195,7 +195,7 @@ export default function PdfMergeClient() {
         >
           {items.length > 0 ? "ADD MORE FILES" : "CHOOSE PDF FILES"}
         </label>
-        <p className="mt-3 font-mono text-xs text-ink/50">
+        <p className="mt-3 font-mono text-xs text-ink/70">
           OR DRAG & DROP HERE — MULTIPLE FILES OK
         </p>
       </div>
@@ -238,7 +238,7 @@ export default function PdfMergeClient() {
                   <p className="font-mono text-xs font-semibold text-ink truncate">
                     {item.file.name}
                   </p>
-                  <p className="font-mono text-[10px] text-ink/50 mt-0.5">
+                  <p className="font-mono text-[10px] text-ink/70 mt-0.5">
                     {item.error ? (
                       <span className="text-accent">{item.error}</span>
                     ) : (
@@ -331,7 +331,7 @@ function StatBlock({
           : "bg-paper border-ink/10"
       }`}
     >
-      <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">
+      <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">
         {label}
       </span>
       <span

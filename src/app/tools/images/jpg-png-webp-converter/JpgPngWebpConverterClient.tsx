@@ -200,7 +200,7 @@ export default function JpgPngWebpConverterClient() {
         >
           {source ? "CHOOSE ANOTHER IMAGE" : "CHOOSE AN IMAGE"}
         </label>
-        <p className="mt-3 font-mono text-xs text-ink/50">
+        <p className="mt-3 font-mono text-xs text-ink/70">
           OR DRAG & DROP HERE — JPG · PNG · WEBP · GIF
         </p>
       </div>
@@ -324,7 +324,7 @@ export default function JpgPngWebpConverterClient() {
             <>
               <div className="grid sm:grid-cols-2 gap-3">
                 <div className="bg-paper border border-ink/10 rounded-lg p-3">
-                  <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-2">
+                  <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-2">
                     ORIGINAL
                   </span>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -393,7 +393,7 @@ function StatBlock({
           : "bg-paper border-ink/10"
       }`}
     >
-      <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">
+      <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">
         {label}
       </span>
       <span

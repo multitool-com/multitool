@@ -144,7 +144,7 @@ export default function ImageResizerClient() {
         />
         <button
           onClick={() => inputRef.current?.click()}
-          className="w-full border-2 border-dashed border-ink/15 hover:border-accent rounded-lg py-8 font-mono text-xs tracking-widest text-ink/50 hover:text-accent transition-colors"
+          className="w-full border-2 border-dashed border-ink/15 hover:border-accent rounded-lg py-8 font-mono text-xs tracking-widest text-ink/70 hover:text-accent transition-colors"
         >
           {img ? "CHOOSE ANOTHER IMAGE" : "SELECT IMAGE (JPG · PNG · WEBP · GIF)"}
         </button>
@@ -266,7 +266,7 @@ export default function ImageResizerClient() {
               <div className="bg-accent/10 border border-accent/30 text-accent rounded-lg px-4 py-3 font-mono text-xs">
                 DONE — {result.w} × {result.h} px · {formatBytes(result.size)}
                 {img && result.size > 0 && (
-                  <span className="text-ink/50">
+                  <span className="text-ink/70">
                     {" "}
                     (original {formatBytes(img.file.size)})
                   </span>

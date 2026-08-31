@@ -158,7 +158,7 @@ export default function TemperatureConverterClient() {
               }}
               className="bg-paper border border-ink/10 hover:border-accent hover:text-accent transition-colors rounded-lg px-3 py-2 text-left"
             >
-              <span className="font-mono text-[10px] tracking-widest text-ink/50 block">
+              <span className="font-mono text-[10px] tracking-widest text-ink/70 block">
                 {ref.label.toUpperCase()}
               </span>
               <span className="font-mono text-sm font-semibold">
@@ -170,7 +170,7 @@ export default function TemperatureConverterClient() {
       </div>
 
       {!result && (
-        <p className="text-sm text-ink/50 text-center italic">
+        <p className="text-sm text-ink/70 text-center italic">
           Enter a valid number to see conversions.
         </p>
       )}

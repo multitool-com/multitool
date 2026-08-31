@@ -280,7 +280,7 @@ export default function JwtDecoderClient() {
             <span className="font-mono text-xs tracking-widest text-ink/60">
               SIGNATURE
             </span>
-            <pre className="bg-paper border border-ink/10 rounded-lg px-4 py-3 font-mono text-xs text-ink/50 overflow-x-auto whitespace-pre-wrap break-all">
+            <pre className="bg-paper border border-ink/10 rounded-lg px-4 py-3 font-mono text-xs text-ink/70 overflow-x-auto whitespace-pre-wrap break-all">
               {decoded.signatureRaw}
             </pre>
           </div>

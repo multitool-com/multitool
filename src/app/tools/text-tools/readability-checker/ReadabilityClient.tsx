@@ -193,7 +193,7 @@ export default function ReadabilityClient() {
         </span>
         <div className="bg-paper border border-ink/10 rounded-lg p-4">
           <div className="h-2 rounded-full bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 mb-3" />
-          <div className="grid grid-cols-4 sm:grid-cols-7 gap-1 font-mono text-[10px] text-ink/50">
+          <div className="grid grid-cols-4 sm:grid-cols-7 gap-1 font-mono text-[10px] text-ink/70">
             <span>0–29 VERY DIFFICULT</span>
             <span>30–49 DIFFICULT</span>
             <span>50–59 FAIRLY DIFFICULT</span>
@@ -210,7 +210,7 @@ export default function ReadabilityClient() {
           <strong className="text-ink">Words per sentence:</strong>{" "}
           {stats.avgWordsPerSentence.toFixed(1)}
           <br />
-          <span className="text-ink/50">
+          <span className="text-ink/70">
             Aim for 15–20 in plain English.
           </span>
         </div>
@@ -218,7 +218,7 @@ export default function ReadabilityClient() {
           <strong className="text-ink">Syllables per word:</strong>{" "}
           {stats.avgSyllablesPerWord.toFixed(2)}
           <br />
-          <span className="text-ink/50">
+          <span className="text-ink/70">
             Short words (≈1.5) are easier to read.
           </span>
         </div>
@@ -259,7 +259,7 @@ function StatBlock({
           : "bg-paper border-ink/10"
       }`}
     >
-      <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">
+      <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">
         {label}
       </span>
       <span

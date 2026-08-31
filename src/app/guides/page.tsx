@@ -34,7 +34,7 @@ export default function GuidesIndexPage() {
     <div className="max-w-4xl mx-auto px-4 py-12">
       <nav
         aria-label="Breadcrumb"
-        className="font-mono text-xs tracking-widest text-ink/50 mb-4"
+        className="font-mono text-xs tracking-widest text-ink/70 mb-4"
       >
         <Link href="/" className="hover:text-accent transition-colors">
           HOME
@@ -49,14 +49,14 @@ export default function GuidesIndexPage() {
       <h1 className="font-display text-4xl font-bold mb-3">
         Guides & Tutorials
       </h1>
-      <p className="text-ink/60 mb-10 max-w-2xl text-lg">
+      <p className="text-ink/70 mb-10 max-w-2xl text-lg">
         Real numbers, format comparisons and practical answers for everyday
         file tasks — each guide connects directly to the free tools that do
         the job.
       </p>
 
       {guides.length === 0 ? (
-        <p className="text-ink/50">New guides are coming soon.</p>
+        <p className="text-ink/70">New guides are coming soon.</p>
       ) : (
         <div className="flex flex-col gap-5">
           {guides.map((g) => (
@@ -71,7 +71,7 @@ export default function GuidesIndexPage() {
               <h2 className="font-display text-2xl font-bold group-hover:text-accent transition-colors">
                 {g.title}
               </h2>
-              <p className="text-ink/60 mt-2">{g.description}</p>
+              <p className="text-ink/70 mt-2">{g.description}</p>
               {g.tools.length > 0 && (
                 <p className="font-mono text-xs text-ink/40 mt-3">
                   TOOLS: {g.tools.map((t) => t.name).join(" · ")}

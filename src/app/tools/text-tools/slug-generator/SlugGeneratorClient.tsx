@@ -52,7 +52,7 @@ export default function SlugGeneratorClient() {
           <button type="button" onClick={copy} className="absolute top-1/2 -translate-y-1/2 right-2 bg-deep text-paper font-mono text-xs tracking-widest px-4 py-2 rounded-lg hover:bg-accent transition-colors">{copied ? "✓" : "📋 COPY"}</button>
         </div>
       </div>
-      <p className="text-xs text-ink/50">Accents, emoji and special characters are removed automatically: "Café à vonté" → "cafe-a-vonte".</p>
+      <p className="text-xs text-ink/70">Accents, emoji and special characters are removed automatically: "Café à vonté" → "cafe-a-vonte".</p>
     </div>
   );
 }

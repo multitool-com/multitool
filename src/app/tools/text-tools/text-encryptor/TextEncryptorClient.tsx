@@ -109,7 +109,7 @@ export default function TextEncryptorClient() {
         </div>
       )}
 
-      <p className="text-xs text-ink/50">AES-256-GCM with PBKDF2 key derivation (100,000 iterations). The passphrase never leaves your device — if you lose it, the data is unrecoverable.</p>
+      <p className="text-xs text-ink/70">AES-256-GCM with PBKDF2 key derivation (100,000 iterations). The passphrase never leaves your device — if you lose it, the data is unrecoverable.</p>
     </div>
   );
 }

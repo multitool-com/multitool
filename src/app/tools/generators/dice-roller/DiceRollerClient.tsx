@@ -71,13 +71,13 @@ export default function DiceRollerClient() {
               <span key={i} className={`w-14 h-14 sm:w-16 sm:h-16 rounded-xl flex items-center justify-center font-display text-2xl font-bold ${rolling ? "bg-accent/20 text-accent" : "bg-deep text-paper"}`}>{f}</span>
             ))}
           </div>
-          <span className="font-mono text-xs text-ink/50">TOTAL: <strong className="text-ink">{total}</strong></span>
+          <span className="font-mono text-xs text-ink/70">TOTAL: <strong className="text-ink">{total}</strong></span>
         </div>
       )}
 
       {history.length > 0 && (
         <div className="border-t border-ink/10 pt-3">
-          <div className="font-mono text-[10px] tracking-widest text-ink/50 mb-2">HISTORY</div>
+          <div className="font-mono text-[10px] tracking-widest text-ink/70 mb-2">HISTORY</div>
           <div className="flex flex-col gap-1">
             {history.map((h, i) => (
               <div key={i} className="flex items-center justify-between text-xs font-mono text-ink/60">

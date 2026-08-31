@@ -187,7 +187,7 @@ export default function AgeCalculatorClient() {
       )}
 
       {!result && !isInvalidFuture && (
-        <p className="text-sm text-ink/50 text-center italic">
+        <p className="text-sm text-ink/70 text-center italic">
           Enter your date of birth to calculate your age.
         </p>
       )}
@@ -212,7 +212,7 @@ function StatBlock({
           : "bg-paper border-ink/10"
       }`}
     >
-      <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">
+      <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">
         {label}
       </span>
       <span

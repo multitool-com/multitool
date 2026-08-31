@@ -147,7 +147,7 @@ export default function FancyTextGeneratorClient() {
             return (
               <div key={style.id} className="bg-paper border border-ink/10 rounded-lg px-4 py-3 flex items-center justify-between gap-3">
                 <div className="min-w-0">
-                  <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">
+                  <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">
                     {style.label}
                   </span>
                   <span className="text-lg break-all">{out || " "}</span>

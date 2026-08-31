@@ -107,7 +107,7 @@ function StatBlock({
 }: { label: string; value: string; highlight?: boolean }) {
   return (
     <div className={`border rounded-lg px-3 py-3 ${highlight ? "bg-accent/10 border-accent/30" : "bg-paper border-ink/10"}`}>
-      <span className="font-mono text-[10px] tracking-widest text-ink/50 block mb-1">{label}</span>
+      <span className="font-mono text-[10px] tracking-widest text-ink/70 block mb-1">{label}</span>
       <span className={`font-mono text-sm font-semibold ${highlight ? "text-accent" : "text-ink"}`}>{value}</span>
     </div>
   );

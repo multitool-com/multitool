@@ -158,7 +158,7 @@ export default function ImageCropperClient() {
           <canvas ref={canvasRef} className="hidden" />
         </>
       )}
-      <p className="text-xs text-ink/50">Everything runs locally — images are never uploaded.</p>
+      <p className="text-xs text-ink/70">Everything runs locally — images are never uploaded.</p>
     </div>
   );
 }
