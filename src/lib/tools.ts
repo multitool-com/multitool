@@ -1567,6 +1567,23 @@ export const categories: Category[] = [
         status: "ready",
         image: "/games/four-in-a-row.jpg",
       },
+      {
+        slug: "sudoku",
+        name: "Sudoku",
+        description:
+          "Play free Sudoku online with 4 difficulty levels, pencil notes, hints and timer. Every puzzle is generated fresh with a single guaranteed solution.",
+        keywords: [
+          "sudoku",
+          "sudoku online",
+          "play sudoku free",
+          "sudoku puzzle",
+          "sudoku easy",
+          "sudoku hard",
+          "web sudoku",
+        ],
+        status: "ready",
+        image: "/games/sudoku.jpg",
+      },
     ],
   },
 ];
