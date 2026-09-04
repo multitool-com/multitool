@@ -266,6 +266,13 @@ export default function RootLayout({
           gtag via DOM (sem <script> cru no SSR — React 19 safe) com
           send_page_view: false e envia cada page_view com a URL
           sanitizada — em /search o ?q= nunca chega ao GA4. */}
+      {/* AdSense — carregamento async fora do caminho critico.
+          O pub-ID e o mesmo da conta (YouTube+site na MESMA conta). */}
+      <script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9130344238396108"
+        crossOrigin="anonymous"
+      ></script>
       <PageViewSanitizer />
     </html>
   );
