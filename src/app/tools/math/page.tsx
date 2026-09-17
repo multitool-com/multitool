@@ -53,6 +53,23 @@ export default function CategoryPage() {
         {category.seoDescription}
       </p>
 
+
+      {/* Intro editorial */}
+      <section className="max-w-3xl mb-10 text-ink/70 leading-relaxed">
+        <p className="mb-3">
+          From splitting a bill to grading a semester, math tools earn
+          their keep by removing the moment of doubt. This section covers
+          the classics — fractions, percentages, ratios, statistics and
+          geometry — each with the formula displayed beside the answer,
+          turning every calculation into a small lesson.
+        </p>
+        <p>
+          The goal is not just the number: it is understanding where the
+          number came from, so next time you can sanity-check any result —
+          including this one.
+        </p>
+      </section>
+
       {/* Tools grid */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {category.tools.map((tool, i) => (

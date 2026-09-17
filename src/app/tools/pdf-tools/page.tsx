@@ -53,6 +53,24 @@ export default function CategoryPage() {
         {category.seoDescription}
       </p>
 
+
+      {/* Intro editorial */}
+      <section className="max-w-3xl mb-10 text-ink/70 leading-relaxed">
+        <p className="mb-3">
+          PDFs are where documents go to be final — signed, archived,
+          submitted. These 15 tools cover the whole document lifecycle:
+          merge and split, compress for email limits, protect with real
+          encryption, unlock what you own, sign, rotate, watermark, number
+          pages and repair damaged files.
+        </p>
+        <p>
+          The differentiator is architecture: every operation runs locally
+          in your browser. Contracts, medical records and financial
+          statements never touch a server — read our compression guide to
+          see realistic size-reduction numbers by document type.
+        </p>
+      </section>
+
       {/* Tools grid */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {category.tools.map((tool, i) => (

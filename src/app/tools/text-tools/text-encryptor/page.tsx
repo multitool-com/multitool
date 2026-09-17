@@ -41,6 +41,33 @@ export default function Page() {
             Type your text and a passphrase, then encrypt. The output is a compact Base64 payload (salt + IV + ciphertext). Paste it back with the same passphrase to decrypt — nowhere else can.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Encoding, hashing, encryption — the 30-second version
+          </h2>
+          <p className="mb-4">
+            Three words people mix up constantly, each with a different
+            job:
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Encoding</strong> (Base64, URL-encode) makes data travel safely — anyone can reverse it. It protects <em>format</em>, not <em>secrets</em>.</li>
+            <li><strong>Hashing</strong> (SHA-256…) is a one-way fingerprint — great for verifying integrity and passwords, impossible to “decrypt”.</li>
+            <li><strong>Encryption</strong> (what this tool does) transforms text so only someone with the <strong>key</strong> can read it back. The key is the secret — not the algorithm.</li>
+          </ul>
+          <p className="mb-4">
+            This tool applies real symmetric encryption in your browser:
+            type a message, choose a passphrase, and the ciphertext can
+            only be reversed with the same passphrase. Use cases that make
+            sense: sharing a note with someone who will receive the key
+            through another channel, keeping a diary entry scrambled from
+            prying eyes, or adding a layer to a message that must cross
+            insecure hands.
+          </p>
+          <p className="mb-4">
+            One honest rule: for serious confidentiality (legal, medical,
+            corporate), use audited tools and key management — a browser
+            cipher is excellent for everyday privacy, not for state
+            secrets.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

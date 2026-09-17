@@ -41,6 +41,20 @@ export default function Page() {
             Enter your root font size (16px by default), then convert either direction: px to rem or rem to px, with a quick table of the most common font sizes.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            The px vs rem decision, settled
+          </h2>
+          <p className="mb-4">
+            <strong>rem</strong> is relative to the root font-size (16px by
+            default), <strong>px</strong> is absolute. That single
+            difference drives the whole modern CSS strategy:
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Accessibility:</strong> users who raise their browser&apos;s default text size get larger text only if you used rem. Hard-coded px ignores their choice — the #1 reason accessibility audits flag stylesheets.</li>
+            <li><strong>The pattern professionals use:</strong> rem for everything that reads (font sizes, line-height, margins around text), px for things that must stay fixed (1px borders, shadows, hairlines).</li>
+            <li><strong>The math:</strong> rem = px ÷ 16. The classic scale — 0.75 (12px), 0.875 (14px), 1 (16px), 1.125 (18px), 1.25 (20px), 1.5 (24px), 2 (32px) — covers 95% of real designs.</li>
+            <li><strong>Media queries too:</strong> rem-based breakpoints respect user zoom consistently across browsers.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

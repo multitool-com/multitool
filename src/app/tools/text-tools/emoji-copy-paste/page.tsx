@@ -41,6 +41,22 @@ export default function Page() {
             Find and copy emojis instantly: smileys, hearts, animals, food, symbols and more. Search by name and copy with one click. Free, no sign-up.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            A field guide to the emoji you actually need
+          </h2>
+          <p className="mb-4">
+            There are thousands of emoji, but daily communication runs on a
+            few dozen workhorses. Knowing the classics — and their{" "}
+            <strong>cultural subtext</strong> — is what separates clear
+            messages from accidental confusion.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>👍 is not always “yes”:</strong> among younger users it can read as dismissive or passive-aggressive. In professional chat, a short “ok, done” beats a thumbs-up.</li>
+            <li><strong>Emotional honesty:</strong> 😂 🥲 😅 carry meanings a plain sentence cannot — they set tone before the reader even parses the words.</li>
+            <li><strong>Search by concept:</strong> the tool is organized by category exactly for this — find the feeling first, then the symbol.</li>
+            <li><strong>Emoji ≠ universal:</strong> symbols render differently per platform (the pistol became a water gun everywhere; 🙏 reads as thanks, prayer or a high five depending on culture). The words around them carry the meaning.</li>
+            <li><strong>Compatibility tip:</strong> brand-new emoji appear as □ on outdated systems. For important messages, the safest set is the one that has existed for a decade.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

@@ -41,6 +41,28 @@ export default function Page() {
             Enter any width and height and the tool simplifies them to the classic aspect ratio (like 16:9) using the greatest common divisor. You can also pick a target ratio and one known side to find the missing dimension — perfect for resizing videos, images or screens without distortion.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Aspect ratios you meet every day
+          </h2>
+          <p className="mb-4">
+            Aspect ratio is shape expressed as numbers — width ÷ height.
+            Once you see them, they are everywhere:
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>16:9</strong> — the universal video standard (YouTube, TVs, monitors). From 1920×1080 to 3840×2160, same shape.</li>
+            <li><strong>9:16</strong> — the vertical revolution (Stories, Reels, TikTok). The exact inverse of TV.</li>
+            <li><strong>4:5 and 1:1</strong> — feed posts; portraits perform best on reach, squares survive everywhere.</li>
+            <li><strong>3:2 and 4:3</strong> — classic photography (35mm film was 3:2) and tablets/older screens.</li>
+            <li><strong>21:9 (“ultrawide”)</strong> — cinematic monitors; movies themselves use even wider anamorphic ratios.</li>
+          </ul>
+          <p className="mb-4">
+            The calculator&apos;s daily job: <strong>scaling without
+            distortion</strong>. To fit 16:9 content into a 4:5 slot, you
+            compute the matching height (or width) and crop the overflow —
+            that is what every smart thumbnail does. For the full table of
+            exact pixel sizes per platform, see our{" "}
+            <a href="/guides/social-media-image-sizes" className="text-accent-deep underline underline-offset-2">social media sizes guide</a>.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

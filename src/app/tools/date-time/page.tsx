@@ -53,6 +53,23 @@ export default function CategoryPage() {
         {category.seoDescription}
       </p>
 
+
+      {/* Intro editorial */}
+      <section className="max-w-3xl mb-10 text-ink/70 leading-relaxed">
+        <p className="mb-3">
+          Date math looks trivial until calendars fight back: leap years,
+          months of different lengths, business-day conventions and time
+          zones that shift with the seasons. These tools handle the edge
+          cases so your deadline, countdown or timestamp is right the
+          first time.
+        </p>
+        <p>
+          Everything is plain calendar dates — no time-zone surprises —
+          and business-day counting follows the standard
+          weekend-exclusion convention used by contracts worldwide.
+        </p>
+      </section>
+
       {/* Tools grid */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {category.tools.map((tool, i) => (

@@ -41,6 +41,21 @@ export default function Page() {
             Type a topic or phrase, choose how many hashtags (3-30) and generate. The tool builds phrase tags, individual word tags, bigrams and common suffixes, removing stop words automatically.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            How hashtags actually work in 2026
+          </h2>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>They are search, not decoration:</strong> platforms index hashtags — a good tag puts your post in front of people searching that topic. A bad tag does nothing.</li>
+            <li><strong>Fewer, bigger, relevant:</strong> the trend of the last years favors 3–5 targeted tags over 30 desperate ones. Reach comes from relevance, not volume.</li>
+            <li><strong>Mix sizes:</strong> combine one broad tag (millions of posts) with niche ones (thousands). Broad gives you a chance at reach; niche is where you can actually rank in “Top”.</li>
+            <li><strong>CamelCase for accessibility:</strong> #DigitalMarketing is read correctly by screen readers; #digitalmarketing comes out as gibberish. Same tag, better manners.</li>
+            <li><strong>Never copy-paste the same block</strong> on every post — platforms downrank accounts whose tags never match their content.</li>
+          </ul>
+          <p className="mb-4">
+            The generator builds tags from your topic with these rules
+            baked in: lowercase slugs, no spaces or special characters,
+            ready-to-paste blocks per platform.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

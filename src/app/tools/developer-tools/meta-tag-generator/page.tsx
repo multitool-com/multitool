@@ -41,6 +41,19 @@ export default function Page() {
             Fill in your page title, description, URL and optional image. The tool shows exactly how your result appears on Google and when shared on WhatsApp, Facebook or X (Twitter), then generates the complete HTML to paste into your page's head.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            The tags that win the click
+          </h2>
+          <p className="mb-4">
+            Meta tags are your page&apos;s advertisement in search results
+            and shared links. Three of them do 90% of the work:
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>&lt;title&gt;:</strong> the clickable headline. ~50–60 characters before truncation; lead with the keyword, end with the brand. The single highest-impact SEO tag on any page.</li>
+            <li><strong>meta description:</strong> the two-line pitch below. Not a ranking factor, but a <em>click</em> factor — 140–160 characters, an action verb, a reason to visit.</li>
+            <li><strong>Open Graph (og:title, og:image…):</strong> what WhatsApp, Facebook, LinkedIn and Slack show when your link is shared. A page without og tags shares as a naked URL — instant credibility loss.</li>
+            <li><strong>Keep them unique per page:</strong> duplicated titles/descriptions across pages is one of the most common SEO audit findings. The generator produces the full block (title, description, OG, Twitter) ready to paste.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

@@ -41,6 +41,22 @@ export default function Page() {
             Choose how many words per paragraph and how many paragraphs, optionally start with the classic 'Lorem ipsum dolor sit amet', and generate clean Latin placeholder text ready to copy into designs and layouts.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            The 2,000-year-old placeholder
+          </h2>
+          <p className="mb-4">
+            Lorem ipsum is scrambled Latin — adapted from a passage of
+            Cicero written around 45 BC. Printers in the 1500s used it to
+            show page layouts, and half a millennium later, designers still
+            do, for one good reason:{" "}
+            <strong>it looks like text but reads like nothing</strong>.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Why not real text?</strong> readable content invites reviewers to edit copy when they should be evaluating layout, contrast and hierarchy. Dummy text keeps attention on design.</li>
+            <li><strong>Word/paragraph control:</strong> generate exactly the amount a mockup needs — headings to body copy ratio that matches the real design.</li>
+            <li><strong>For testing:</strong> feeds, tables, truncation (“…” after 3 lines) and overflow bugs all need text of a precise length. Lorem gives you arbitrary lengths on demand.</li>
+            <li><strong>The rule:</strong> placeholder in, placeholder out — never let lorem ipsum reach production. Real content always breaks a layout differently than the dummy did.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

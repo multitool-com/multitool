@@ -53,6 +53,22 @@ export default function CategoryPage() {
         {category.seoDescription}
       </p>
 
+
+      {/* Intro editorial */}
+      <section className="max-w-3xl mb-10 text-ink/70 leading-relaxed">
+        <p className="mb-3">
+          Conversion is really translation — same value, different
+          language. The trap is never the arithmetic; it is the hidden
+          rules: the imperial gallon vs the US one, daylight saving
+          shifting time zones, shoe systems disagreeing by brand.
+        </p>
+        <p>
+          These converters handle the arithmetic and the traps, using
+          internationally defined factors and showing every unit at once —
+          because usually you want the answer in more than one language.
+        </p>
+      </section>
+
       {/* Tools grid */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {category.tools.map((tool, i) => (

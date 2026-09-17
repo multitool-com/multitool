@@ -53,6 +53,23 @@ export default function CategoryPage() {
         {category.seoDescription}
       </p>
 
+
+      {/* Intro editorial */}
+      <section className="max-w-3xl mb-10 text-ink/70 leading-relaxed">
+        <p className="mb-3">
+          Text is the raw material of the web — and text tools are the
+          quiet workhorses: counting words against limits, comparing
+          versions, converting case, decoding Morse, checking readability
+          and keyword balance. Writers, students, marketers and developers
+          each keep three or four of these bookmarked.
+        </p>
+        <p>
+          All of them process your text locally in the browser — which for
+          contracts, drafts and personal documents is not a feature, it is
+          the requirement.
+        </p>
+      </section>
+
       {/* Tools grid */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {category.tools.map((tool, i) => (

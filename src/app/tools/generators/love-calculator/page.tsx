@@ -41,6 +41,21 @@ export default function Page() {
             Free love calculator. Enter two names and discover your love compatibility percentage. Fun, instant and viral — try it with your crush!
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            The science and the fun of it
+          </h2>
+          <p className="mb-4">
+            No algorithm can measure love — but the fun of comparing names
+            is universal, and the psychology behind it is real. This tool
+            is entertainment with a wink, and the honest framing below is
+            part of the joke.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Why it works as a game:</strong> icebreaking. Name-match games have started conversations at parties for a century — from paper fortune tellers to this page. The number is the excuse; the laugh is the product.</li>
+            <li><strong>What relationship science actually says:</strong> decades of studies point to boring-but-real predictors — how couples handle conflict, shared values, kindness in small moments. Nothing about the letters in names.</li>
+            <li><strong>Deterministic by design:</strong> the same pair always gets the same score (a stable hash of the names) — so you can argue about the result fairly.</li>
+            <li><strong>Party mode:</strong> try celebrity pairs, pet + owner, team names. The scoreboard gets competitive fast.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

@@ -53,6 +53,23 @@ export default function CategoryPage() {
         {category.seoDescription}
       </p>
 
+
+      {/* Intro editorial */}
+      <section className="max-w-3xl mb-10 text-ink/70 leading-relaxed">
+        <p className="mb-3">
+          Fourteen classics, rebuilt with care: real difficulty curves,
+          keyboard and touch controls, sound you can mute, and sessions
+          that survive a refresh. From Sudoku with guaranteed-unique
+          puzzles to an unbeatable minimax tic-tac-toe, these are the
+          games that made browsers fun — no installs, no accounts.
+        </p>
+        <p>
+          A quiet bonus: every game is a small demonstration of what
+          client-side engineering can do — the same privacy principle as
+          the tools, applied to play.
+        </p>
+      </section>
+
       {/* Games grid with covers */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {category.tools.map((tool, i) => (

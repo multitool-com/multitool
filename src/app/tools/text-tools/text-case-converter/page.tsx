@@ -51,6 +51,20 @@ export default function Page() {
             <li><strong>camelCase / snake_case</strong> — programming conventions: variables, file names, config keys.</li>
           </ul>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            The case for correct casing
+          </h2>
+          <p className="mb-4">
+            Casing is invisible when right and jarring when wrong. The
+            styles in this converter each solve a real formatting job:
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Sentence case</strong> — the quiet default of modern interfaces and emails. Only the first word and proper nouns capitalized; reads as human.</li>
+            <li><strong>Title Case</strong> — headlines and book titles. Capitalize main words, skip articles and short prepositions (the AP/Chicago style most publications use).</li>
+            <li><strong>UPPERCASE and lowercase</strong> — normalizing pasted text before reformatting; also the building blocks for acronyms and code identifiers.</li>
+            <li><strong>camelCase, PascalCase, snake_case, kebab-case</strong> — the programmer&apos;s quartet: variables (camelCase), classes (Pascal), file names (kebab), database fields (snake).</li>
+            <li><strong>Small-caps party trick:</strong> ᴛʏᴘɪɴɢ ʟɪᴋᴇ ᴛʜɪs uses Unicode — it works in bios, but screen readers may stumble; use for flair, not information.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

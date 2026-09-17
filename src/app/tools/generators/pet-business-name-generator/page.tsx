@@ -41,6 +41,16 @@ export default function Page() {
             For pets: pick the type and a theme (Cute, Food, Nature, Funny or Famous) and get 10 name ideas with fun prefixes. For business: choose a style (Modern, Classic, Playful, Tech, Luxury), optionally add your keyword like pizza, and generate 10 ready-to-use company names.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Anatomy of a memorable brand name
+          </h2>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Two syllables, easy to say:</strong> the names people remember (Google, Nike, Pix) are effortless to pronounce and hard to misspell. If you must spell it on the phone, it is too complicated.</li>
+            <li><strong>Evocative beats literal:</strong> “Duke &amp; Duchess Pet Spa” paints a picture; “Very Good Pet Grooming LLC Number 2” describes a filing. Suggest the feeling you sell.</li>
+            <li><strong>Check the basics before falling in love:</strong> domain availability, Instagram handle, and a quick web search for existing businesses with the name in your region and niche.</li>
+            <li><strong>Say it out loud in a sentence:</strong> “Book me an appointment at ___.” Your name will live inside sentences — some great names die in that test.</li>
+            <li><strong>Use the generator as a divergence tool:</strong> generate twenty options; the winner usually appears when you try to argue against the ones you dislike. Naming is taste discovering itself.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

@@ -41,6 +41,24 @@ export default function Page() {
             Pick a preset (every minute, every 5 minutes, hourly, daily 9am, Mondays 9am, monthly) or build a custom expression with the five dropdowns — minute, hour, day of month, month and day of week — with a plain-English description.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Cron: the scheduler of the internet
+          </h2>
+          <p className="mb-4">
+            Nearly every server on earth has a quiet clock-watcher called{" "}
+            <strong>cron</strong>. A cron expression is five fields that
+            answer “when”: minute, hour, day-of-month, month, day-of-week.
+            <code className="font-mono bg-paper px-1 rounded">0 3 * * *</code> is
+            “03:00 every day”;{" "}
+            <code className="font-mono bg-paper px-1 rounded">*/15 * * * *</code> is
+            “every 15 minutes”.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>The famous gotchas:</strong> day-of-month AND day-of-week together mean “both” in standard cron (OR in some dialects) — the #1 surprise in schedules. Our generator builds the expression visually so the logic is explicit.</li>
+            <li><strong>Server time:</strong> most servers run UTC. A cron set to “9 AM” fires at 9 AM UTC — check the server clock before blaming the expression.</li>
+            <li><strong>Timezones in the expression:</strong> modern cron implementations (Vixie cron, Kubernetes) accept a <code className="font-mono bg-paper px-1 rounded">CRON_TZ=America/Sao_Paulo</code> line — worth using when the schedule is local by nature.</li>
+            <li><strong>Common jobs:</strong> backups at 3 AM, log rotation, certificate renewals, database cleanup, report emails — the invisible plumbing of the web.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

@@ -41,6 +41,22 @@ export default function Page() {
             Type any number — with decimals, commas or a minus sign — pick English or Portuguese, and the tool writes it out in full words. The conversion follows standard check-writing conventions for both languages.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Why writing numbers as words still matters
+          </h2>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Legal documents:</strong> contracts write “two thousand five hundred dollars (US$ 2,500.00)” — the words protect against a tampered digit, which is far easier to alter than a spelled amount.</li>
+            <li><strong>Banking:</strong> checks require the amount in words; a mismatch between words and figures can void them.</li>
+            <li><strong>Formal writing:</strong> style guides agree on one thing — spell out small numbers (“three reasons”), use digits for large or technical ones (“3,482 users”).</li>
+            <li><strong>Readability:</strong> words remove ambiguity in speech-to-text, invoices read aloud, and international contexts where “1,005” means one thousand and five in one country and something else in another.</li>
+            <li><strong>Language support:</strong> this tool handles English and Portuguese, including the hyphenation rules (“twenty-one”, “vinte e um”) that trip up manual writing.</li>
+          </ul>
+          <p className="mb-4">
+            The converter handles the fiddly parts automatically —
+            “and” placement, hyphens, millions vs billions (a billion is a
+            thousand million in the short scale most of the world uses
+            today) — so every result is style-guide correct.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

@@ -190,6 +190,14 @@ export default function RootLayout({
                 <ul className="space-y-2 text-sm">
                   <li>
                     <Link
+                      href="/how-we-build"
+                      className="text-paper/70 hover:text-accent focus:text-accent focus:outline-none transition-colors"
+                    >
+                      How we build
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
                       href="/guides"
                       className="text-paper/70 hover:text-accent focus:text-accent focus:outline-none transition-colors"
                     >

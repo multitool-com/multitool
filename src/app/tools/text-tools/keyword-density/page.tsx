@@ -41,6 +41,21 @@ export default function Page() {
             Paste your text and type a keyword. The tool counts total words, keyword occurrences and density percentage (with an ideal 0.5-3% indicator), plus a frequency table of the 10 most common words in your text.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Keyword density without the folklore
+          </h2>
+          <p className="mb-4">
+            Ancient SEO folklore claimed a magic density (2%, 3%…) would
+            win rankings. Modern reality is simpler and harsher:{" "}
+            <strong>there is no magic number</strong>. Search engines
+            understand language, not just counts.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>What density is still good for:</strong> spotting accidental <em>over</em>-optimization. If your target phrase appears 8% of the time, the text reads robotic — to humans first, and to search engines second.</li>
+            <li><strong>The healthy range</strong> most editors target: main keyword around 0.5–2%, plus natural variations and synonyms. Write for readers; check the meter only to catch excess.</li>
+            <li><strong>Related terms matter more:</strong> a page about “air fryer” that never mentions cooking, temperature or crispy is weaker than one that reads naturally on the topic.</li>
+            <li><strong>Where keywords genuinely count:</strong> title, headings, first paragraph and the URL — one clear appearance each beats twenty repetitions in the body.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

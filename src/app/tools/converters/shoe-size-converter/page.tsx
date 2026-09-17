@@ -41,6 +41,21 @@ export default function Page() {
             Choose your gender, pick the size system you know (US, UK, EU or centimeters) and type your size. The tool finds the matching row in its reference table and shows every equivalent instantly, with the full size chart below.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Why shoe sizes are a mess (and how to shop safely)
+          </h2>
+          <p className="mb-4">
+            Shoe sizes are the wild west of measurements: the US, UK and EU
+            systems are all different, and brands apply their own
+            interpretations on top. The only honest anchor is{" "}
+            <strong>your foot in centimeters</strong>.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Measure at the end of the day:</strong> feet swell and get up to half a size bigger by evening. Measure standing, both feet, longest toe to heel — many people have one foot longer than the other (size the bigger one).</li>
+            <li><strong>The sneaker rule:</strong> athletic shoes usually run with ~1 cm of toe room; formal shoes fit closer. That is why the same foot needs different numbers by shoe type.</li>
+            <li><strong>US vs UK trap:</strong> US men&apos;s sizes are roughly one unit above UK for the same foot; US women&apos;s adds another offset. Amazon listings that mix systems are the source of most bad buys.</li>
+            <li><strong>When shopping abroad online:</strong> convert your centimeters to the brand&apos;s own size chart — not to a generic conversion. The converter gives you the map; the brand chart is the territory.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

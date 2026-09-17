@@ -53,6 +53,22 @@ export default function CategoryPage() {
         {category.seoDescription}
       </p>
 
+
+      {/* Intro editorial */}
+      <section className="max-w-3xl mb-10 text-ink/70 leading-relaxed">
+        <p className="mb-3">
+          Generators turn a decision into a button: strong passwords, QR
+          codes, random draws, palettes, usernames, spinners. Behind the
+          fun there is serious engineering — cryptographic randomness for
+          secrets, uniform probability for fair draws, and color harmony
+          rules for palettes that actually look designed.
+        </p>
+        <p>
+          Every result is generated on your device, the moment you click —
+          nothing is stored, nothing is sent.
+        </p>
+      </section>
+
       {/* Tools grid */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {category.tools.map((tool, i) => (

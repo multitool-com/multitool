@@ -41,6 +41,24 @@ export default function Page() {
             Paste a URL or a query string and encode or decode it. Component mode percent-encodes every special character (ideal for query values); Full URL mode preserves URL structure while encoding the rest.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Why URLs need encoding at all
+          </h2>
+          <p className="mb-4">
+            URLs may only contain a small safe alphabet (letters, digits
+            and a few symbols like <code className="font-mono bg-paper px-1 rounded">- _ . ~</code>).
+            Everything else — spaces, accents, <code className="font-mono bg-paper px-1 rounded">&amp;</code>,
+            <code className="font-mono bg-paper px-1 rounded">?</code>, <code className="font-mono bg-paper px-1 rounded">#</code> — must be
+            written as <strong>%XX</strong>, its byte value in hexadecimal.
+            That is <em>percent-encoding</em>, and it exists so a URL can
+            travel through any system on earth without breaking.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Why &amp; and ? are special:</strong> they structure query strings (<code className="font-mono bg-paper px-1 rounded">?a=1&amp;b=2</code>). Encoding a value&apos;s &amp; as %26 keeps data from being parsed as structure.</li>
+            <li><strong>Two flavors:</strong> <strong>encodeURIComponent</strong> (encodes everything — for values) vs <strong>encodeURI</strong> (keeps ://?&amp;= — for full URLs). Choosing wrong is the #1 cause of broken links.</li>
+            <li><strong>Spaces:</strong> become %20 in paths; the <code className="font-mono bg-paper px-1 rounded">+</code> you sometimes see is a form-encoding legacy in queries.</li>
+            <li><strong>Accents and emoji:</strong> “café” and “🎉” become multi-byte sequences (%C3%A9…, %F0%9F%8E%89) — the UTF-8 bytes, one %XX per byte.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

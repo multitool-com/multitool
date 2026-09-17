@@ -54,6 +54,21 @@ export default function Page() {
             <li><strong>Classic uses:</strong> contract versions, changelogs, homework before/after, detecting accidental edits in configs.</li>
           </ul>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Diff thinking: a skill disguised as a tool
+          </h2>
+          <p className="mb-4">
+            Reading a diff quickly is a genuine professional skill —
+            lawyers compare contracts, editors compare drafts, developers
+            review code, and analysts compare exported reports. The
+            discipline is the same:
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Scan for moved blocks first:</strong> most “changes” are text that traveled. Ignore position, hunt for what actually appeared or vanished.</li>
+            <li><strong>Small words carry the risk:</strong> contracts are won and lost on “may” vs “shall”, “within 5 days” vs “within five (5) business days”. Zoom into single-word changes.</li>
+            <li><strong>Numbers deserve a second pass:</strong> dates, amounts, quantities — read digits character by character; 2026 vs 2028 is the diff your eye loves to skip.</li>
+            <li><strong>Clean both texts first:</strong> paste plain text (not from formatted PDFs) so line breaks and quote marks don&apos;t flood the diff with fake changes.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

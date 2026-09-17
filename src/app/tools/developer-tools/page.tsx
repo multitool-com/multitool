@@ -53,6 +53,22 @@ export default function CategoryPage() {
         {category.seoDescription}
       </p>
 
+
+      {/* Intro editorial */}
+      <section className="max-w-3xl mb-10 text-ink/70 leading-relaxed">
+        <p className="mb-3">
+          Developer tools earn trust by being exact: a JSON parser that
+          shows the precise error position, a cron builder that makes the
+          day-of-week logic explicit, encoders that explain the difference
+          between encoding and encryption. This is the toolkit for the
+          daily 1% of the job that is not writing code.
+        </p>
+        <p>
+          Everything runs client-side — paste real payloads without
+          pasting them into a stranger&apos;s server.
+        </p>
+      </section>
+
       {/* Tools grid */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {category.tools.map((tool, i) => (

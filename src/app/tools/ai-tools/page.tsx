@@ -39,6 +39,24 @@ export default function AiToolsPage() {
       </h1>
       <p className="text-ink/60 mb-10 max-w-xl">{category.seoDescription}</p>
 
+
+      {/* Intro editorial */}
+      <section className="max-w-3xl mb-10 text-ink/70 leading-relaxed">
+        <p className="mb-3">
+          Working with AI is a new literacy: writing better prompts,
+          counting tokens against model limits, comparing models by price
+          and capability, and estimating what an idea costs at scale
+          before committing to it. These tools exist for the practical
+          side of the AI era — no API keys, no sign-ups.
+        </p>
+        <p>
+          Token counts are close estimates (the exact tokenizer varies by
+          model); cost math uses published list prices. Good enough for
+          planning — and a habit worth building before the invoice
+          arrives.
+        </p>
+      </section>
+
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {category.tools.map((tool, i) => (
           <Link

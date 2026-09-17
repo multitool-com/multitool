@@ -41,6 +41,21 @@ export default function Page() {
             In Consumption mode, enter distance and fuel used to get km/L (or MPG) plus L/100km. In Trip Cost mode, enter your consumption, distance and fuel price to see exactly how much fuel the trip needs and what it costs, per trip and per kilometer or mile.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            MPG, L/100km and km/L, translated
+          </h2>
+          <p className="mb-4">
+            Three systems measure the same thing, and one of them{" "}
+            <strong>inverts the logic</strong> — the source of endless
+            confusion:
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>MPG (US) and km/L:</strong> distance per unit of fuel — <em>higher is better</em>.</li>
+            <li><strong>L/100km (Europe, Brazil):</strong> fuel per distance — <em>lower is better</em>. A car that does 12 km/L consumes 8.3 L/100km.</li>
+            <li><strong>Imperial gallon trap:</strong> UK mpg uses a bigger gallon — 40 UK mpg ≈ 33 US mpg. Comparing across articles without checking the gallon is a classic error.</li>
+            <li><strong>What the numbers hide:</strong> consumption varies ±25% with driving style, tires, AC and city vs highway. Use your own fill-up data (km driven ÷ liters filled) for a real personal figure.</li>
+            <li><strong>Cost math that matters:</strong> at 20,000 km/year, the gap between 10 and 14 km/L is ~570 liters a year — real money. The calculator turns efficiency into currency per month or year.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

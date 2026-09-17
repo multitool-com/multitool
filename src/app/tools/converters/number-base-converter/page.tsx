@@ -41,6 +41,21 @@ export default function Page() {
             Type a number, choose the base it is written in, and instantly see its value in binary, octal, decimal and hexadecimal. Invalid digits for the source base are rejected automatically.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Binary, hex and the bases that run the world
+          </h2>
+          <p className="mb-4">
+            A number base is just how many symbols you count with before
+            “carrying” — decimal uses 10 (0–9), binary uses 2 (0–1),{" "}
+            <strong>hexadecimal</strong> uses 16 (0–9 plus A–F). The value
+            is the same; only the notation changes.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Why binary exists:</strong> transistors have two reliable states — on/off. Everything digital is bits at the bottom: 8 bits = 1 byte = values 0–255.</li>
+            <li><strong>Why hex is everywhere:</strong> one hex digit maps exactly to 4 bits, so a byte is always two tidy characters. Colors (#ff5f1f), MAC addresses, memory dumps and error codes all speak hex.</li>
+            <li><strong>Octal</strong> (base 8) survives in file permissions on Unix systems — that curious <code className="font-mono bg-paper px-1 rounded">chmod 755</code> is octal.</li>
+            <li><strong>The positional trick:</strong> 1011 in binary is 1×8 + 0×4 + 1×2 + 1×1 = 11. Every base works this way — the converter just does it instantly, any direction, with full precision up to 64-bit values.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

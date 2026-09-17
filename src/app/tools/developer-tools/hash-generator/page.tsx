@@ -41,6 +41,22 @@ export default function Page() {
             Paste any text, pick one or more algorithms and get the hash instantly. All hashing happens locally with the Web Crypto API — your text never leaves the browser.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Hashes: the digital fingerprint
+          </h2>
+          <p className="mb-4">
+            A hash function takes any input and produces a fixed-size
+            fingerprint — change one comma in a 500-page document and the
+            SHA-256 output changes completely. That property,{" "}
+            <strong>avalanche effect</strong>, is what makes hashes the
+            backbone of digital trust.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Verifying downloads:</strong> software sites publish SHA-256 checksums — hash the file you downloaded; if it matches, not a single bit was corrupted or tampered in transit.</li>
+            <li><strong>Password storage:</strong> systems store hashes, never passwords. At login, they hash what you typed and compare fingerprints. (Real systems add “salt” and slow functions on top.)</li>
+            <li><strong>MD5 and SHA-1 are retired:</strong> researchers demonstrated collisions (two inputs, same fingerprint), so they are no longer safe for security. Prefer SHA-256 or SHA-3 — both available here.</li>
+            <li><strong>One-way street:</strong> a hash cannot be “reversed” into the original — there is nothing to reverse; information is intentionally lost. The best anyone can do is guess inputs until one matches.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

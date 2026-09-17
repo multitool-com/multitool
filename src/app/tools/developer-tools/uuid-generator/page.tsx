@@ -55,6 +55,22 @@ export default function Page() {
             <li><strong>Uppercase toggle</strong> — same value, different visual style; some legacy systems expect caps.</li>
           </ul>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            A peek inside a UUID
+          </h2>
+          <p className="mb-4">
+            Look closely at a v4 UUID:{" "}
+            <code className="font-mono bg-paper px-1 rounded">xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx</code>.
+            The <strong>4</strong> marks the version; the first character of
+            the third group (<strong>y</strong>) is always 8, 9, a or b —
+            the variant marker. You are literally seeing the structure of
+            the standard in every ID.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>1 in 10²²:</strong> the chance of a single collision in a system generating a billion v4 UUIDs per year for 100 years. Engineering practice treats them as unique with confidence.</li>
+            <li><strong>UUID v7 — the new trend:</strong> time-ordered IDs (timestamp prefix + randomness) that sort chronologically, perfect as database keys in modern systems.</li>
+            <li><strong>How many do you need?</strong> Generate in bulk here for data seeding, trace IDs, test fixtures, unique file names — with one click each copies cleanly.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

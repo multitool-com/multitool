@@ -41,6 +41,21 @@ export default function Page() {
             Type Markdown on the left and watch the rendered preview on the right, with the generated HTML below. It supports headings, bold, italic, links, images, ordered and unordered lists, blockquotes, inline and fenced code, and horizontal rules.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Why the web runs on Markdown
+          </h2>
+          <p className="mb-4">
+            Markdown is what you get when you optimize writing for{" "}
+            <strong>humans first</strong>: <code className="font-mono bg-paper px-1 rounded">**bold**</code> reads
+            as emphasis even in plain text, and a converter turns it into
+            clean HTML for publishing.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Where it lives:</strong> GitHub READMEs, chat apps, technical docs, note apps (Obsidian, Notion), static site generators, and every developer forum — knowing Markdown is a modern literacy.</li>
+            <li><strong>The core vocabulary fits in a napkin:</strong> <code className="font-mono bg-paper px-1 rounded"># headings</code>, <code className="font-mono bg-paper px-1 rounded">**bold**</code>, <code className="font-mono bg-paper px-1 rounded">*italic*</code>, <code className="font-mono bg-paper px-1 rounded">- lists</code>, <code className="font-mono bg-paper px-1 rounded">[links](url)</code>, <code className="font-mono bg-paper px-1 rounded">&gt; quotes</code> — ten minutes to learn, used for life.</li>
+            <li><strong>Why convert to HTML:</strong> email templates, CMS inputs, description fields and old blogs accept HTML, not Markdown. Paste clean output instead of hand-writing tags.</li>
+            <li><strong>Flavors exist:</strong> GitHub-Flavored Markdown adds tables and task lists — the converter supports the extensions that matter in practice.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

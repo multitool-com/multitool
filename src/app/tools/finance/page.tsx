@@ -53,6 +53,24 @@ export default function CategoryPage() {
         {category.seoDescription}
       </p>
 
+
+      {/* Intro editorial */}
+      <section className="max-w-3xl mb-10 text-ink/70 leading-relaxed">
+        <p className="mb-3">
+          Money questions are usually simple math wearing a suit — the
+          difference between guessing and knowing is a formula and thirty
+          seconds. These calculators cover the decisions that repeat every
+          month: loans and installments, discounts (including the stacked
+          ones stores love), tips, taxes, salaries and the quiet superpower
+          of compound interest over decades.
+        </p>
+        <p>
+          Every calculation runs in your browser, supports multiple
+          currencies (USD, EUR, GBP, BRL) and shows the formula it used —
+          so you can verify the math, not just trust it.
+        </p>
+      </section>
+
       {/* Tools grid */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {category.tools.map((tool, i) => (

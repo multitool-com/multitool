@@ -41,6 +41,16 @@ export default function Page() {
             Pick the date and time, choose the source and target zones from 17 major cities (New York, London, Sao Paulo, Tokyo and more), and see both times instantly. Daylight saving is handled automatically by the browser.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Time zones: the rules nobody memorizes
+          </h2>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Offsets are not fixed:</strong> most zones shift with daylight saving time, so “New York = UTC−5” is only true half the year (−4 in summer). A converter that knows the date — like this one — spares you the classic scheduling mistake.</li>
+            <li><strong>Meeting math:</strong> the safe window for global calls is roughly 13:00–17:00 UTC (morning in the Americas, late afternoon in Europe, evening in Asia). Outside that, someone is asleep.</li>
+            <li><strong>The confusing pairs:</strong> India is UTC+5:30 (half-hour offset), Nepal +5:45, Australia has zones with :30 and :45 — the world is not neatly hourly.</li>
+            <li><strong>UTC vs GMT:</strong> practically the same clock; UTC is the modern standard (no timezone, no daylight saving). Servers, logs and aviation run on it.</li>
+            <li><strong>Golden rule for events:</strong> always announce the time zone explicitly (“15:00 BRT / 18:00 UTC”) — and remember Brazil abolished daylight saving in 2019, while Europe and the US still observe it.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

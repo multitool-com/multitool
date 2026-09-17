@@ -53,6 +53,23 @@ export default function CategoryPage() {
         {category.seoDescription}
       </p>
 
+
+      {/* Intro editorial */}
+      <section className="max-w-3xl mb-10 text-ink/70 leading-relaxed">
+        <p className="mb-3">
+          Health numbers are reference points, not verdicts. BMI is a
+          screening tool (muscular people often score “overweight” on it),
+          calorie estimates are starting points, and ideal weight formulas
+          disagree with each other on purpose — they were built for
+          different populations.
+        </p>
+        <p>
+          These calculators show the formula, the source and the
+          limitations of each result — informational, never a substitute
+          for a professional who can see the whole picture.
+        </p>
+      </section>
+
       {/* Tools grid */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {category.tools.map((tool, i) => (

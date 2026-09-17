@@ -41,6 +41,16 @@ export default function Page() {
             Pick two colors (or hit Random), choose linear or radial, drag the angle for linear gradients, and copy the generated CSS. Popular presets like Sunset and Ocean are one click away.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Gradients that look expensive
+          </h2>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Adjacent hues win:</strong> colors sitting near each other on the wheel (teal→blue, peach→rose) look refined; opposite colors meet in an ugly gray-brown middle zone.</li>
+            <li><strong>The 20% rule:</strong> professionals rarely use pure 0%→100% ranges. Shifting the first stop to ~20% and the last to ~80% keeps both colors rich instead of washed out.</li>
+            <li><strong>Diagonal &gt; vertical:</strong> a 135° angle adds depth where a flat vertical reads as “default button from 2012”.</li>
+            <li><strong>Overlay trick:</strong> a subtle gradient over a photo (deep color at 30–50% opacity) creates premium hero sections — the technique behind most landing pages you admire.</li>
+            <li><strong>Performance note:</strong> CSS gradients cost nothing to load — they are computed by the browser, unlike background images. A gradient hero can save a megabyte versus a JPEG hero.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

@@ -53,6 +53,23 @@ export default function CategoryPage() {
         {category.seoDescription}
       </p>
 
+
+      {/* Intro editorial */}
+      <section className="max-w-3xl mb-10 text-ink/70 leading-relaxed">
+        <p className="mb-3">
+          Image work is mostly three jobs: smaller (compress), different
+          shape (crop and resize), different format (convert) — plus the
+          privacy job of seeing and stripping EXIF metadata before sharing.
+          These tools do all four entirely in your browser, which for
+          family photos and confidential documents is exactly the point.
+        </p>
+        <p>
+          Pair them with our guides — PNG vs WebP, HEIC explained, social
+          media sizes — to know <em>what</em> to choose before{" "}
+          <em>how</em>.
+        </p>
+      </section>
+
       {/* Tools grid */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {category.tools.map((tool, i) => (
