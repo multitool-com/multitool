@@ -41,6 +41,45 @@ export default function Page() {
             Type a title or phrase and instantly get a URL-friendly slug: lowercase, accents stripped, special characters removed and spaces replaced by your choice of separator (-, _ or .).
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            What makes a great URL slug
+          </h2>
+          <p className="mb-4">
+            A slug is the readable part of a URL after the domain. Search
+            engines and humans both read it — a clean slug tells both what
+            the page is about before clicking.
+          </p>
+          <div className="bg-white border border-ink/10 rounded-lg overflow-hidden my-3 text-sm">
+            {[
+              ["“10 Tips For a Better Garden!!”", "10-tips-better-garden"],
+              ["How to Make  French  Toast (2026)", "how-make-french-toast"],
+              ["Onde Comprar Café Especial em SP?", "onde-comprar-cafe-especial-sp"],
+              ["Product Review: Best Laptops", "product-review-best-laptops"],
+            ].map(([a, b], i) => (
+              <div key={a} className={`flex justify-between gap-4 px-4 py-2 ${i % 2 ? "bg-paper/60" : ""}`}>
+                <span className="text-ink/60 line-through decoration-ink/30">{a}</span>
+                <span className="font-mono text-accent whitespace-nowrap">{b}</span>
+              </div>
+            ))}
+          </div>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Lowercase, hyphen-separated</strong> — the universal convention; underscores and spaces break links and readability.</li>
+            <li><strong>3–6 words maximum</strong> — keep the keywords, drop stopwords (a, the, of, in) that add nothing.</li>
+            <li><strong>Accents and symbols out</strong> — ç becomes c, ã becomes a: URLs must travel through any system uncorrupted.</li>
+            <li><strong>Stable forever:</strong> once a slug is published and indexed, changing it breaks links and SEO. Choose well, then keep it — or set up a redirect if you must change.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Where your slug lives
+          </h2>
+          <p className="mb-4">
+            Anatomy of a URL:{" "}
+            <code className="font-mono bg-paper px-1 rounded">https://site.com/category/your-slug</code>{" "}
+            — protocol, domain, path, slug. The slug is the only part you
+            usually control at authoring time, which makes it your
+            on-page SEO handshake: it appears in search results, in shared
+            links, in browser history and often as the anchor text when
+            people paste the link raw in chats and documents.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

@@ -41,6 +41,27 @@ export default function Page() {
             Free online stopwatch with laps, countdown timer and Pomodoro timer. Precise, with sound alerts. Works on any device, no download.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Chronometer vs timer (and how to use both)
+          </h2>
+          <p className="mb-4">
+            A stopwatch measures <strong>elapsed time</strong> (from a start
+            gun); a timer counts <strong>remaining time</strong> (to a
+            deadline). Training, cooking and experiments typically need
+            both — laps on the way, a bell at the end — which is why this
+            tool includes the Pomodoro cycle alongside the chronometer.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Laps</strong> capture intervals without stopping the clock — the right way to time workout rounds, repeated experiments or customer-service handling steps.</li>
+            <li><strong>Centiseconds matter</strong> when comparing runs; they are noise when boiling eggs. The display gives you both without clutter.</li>
+            <li><strong>Keyboard-friendly:</strong> space starts and stops — much faster than mouse hunting when your hands are busy (or floury).</li>
+            <li><strong>Pomodoro built in:</strong> 25/5 focus cycles with a rest reminder — no need to reset a kitchen timer eleven times a day.</li>
+          </ul>
+          <p className="mb-4">
+            Everything runs locally: closing the tab resets it, keeping the
+            stopwatch honest (no accidental eternal runs) and your data
+            private.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

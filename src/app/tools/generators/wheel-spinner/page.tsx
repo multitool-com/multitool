@@ -41,6 +41,26 @@ export default function Page() {
             Type your options (one per line), then spin. The wheel animates through several rotations and lands on a randomly selected winner with a satisfying reveal.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Fair spins and good decisions
+          </h2>
+          <p className="mb-4">
+            A spin is a decision made by chance — and that is its power.
+            Psychology calls it <em>removing the decision cost</em>: when the
+            wheel picks the restaurant, nobody argues, and research on
+            decision fatigue suggests small randomizations actually conserve
+            mental energy for what matters.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Equal segments = fair draw.</strong> Every entry has the same probability — the digital equivalent of names in a hat, but with a drumroll.</li>
+            <li><strong>Classrooms:</strong> pick the next presenter or quiz team without bias — students accept the wheel faster than any teacher&apos;s choice.</li>
+            <li><strong>Giveaways:</strong> paste participant names and record the screen; a visible, dramatic draw builds trust in the result.</li>
+            <li><strong>Decision roulette:</strong> dinner options, chores, which project to start — list only options you genuinely accept, or the wheel wins the argument.</li>
+          </ul>
+          <p className="mb-4">
+            The result is determined at spin time by an unbiased random draw
+            — the animation is theater, and great theater at that.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

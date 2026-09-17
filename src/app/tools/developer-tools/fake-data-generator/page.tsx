@@ -41,6 +41,27 @@ export default function Page() {
             Select the fields you need (name, email, phone, address, city, country, company, job, date, UUID, SSN), choose 1-50 rows and generate realistic test data — exportable as CSV.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Why developers test with fake data
+          </h2>
+          <p className="mb-4">
+            Testing with real customer data is a liability; testing with an
+            empty database is useless. Fake data is the professional middle
+            ground: realistic names, emails, phones and addresses that
+            behave like real data — with zero real people attached.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Seed databases and demos:</strong> populate a staging environment or a sales demo with a believable user table in seconds.</li>
+            <li><strong>Privacy by design:</strong> screenshots, bug reports and training materials never leak real personal data — an easy win for GDPR/LGPD hygiene.</li>
+            <li><strong>Volume testing:</strong> generate hundreds of rows to see how tables, pagination and exports behave at realistic scale.</li>
+            <li><strong>API payloads and forms:</strong> paste plausible values into test forms without inventing a new persona each time.</li>
+          </ul>
+          <p className="mb-4">
+            The generated values are random combinations — not real
+            people&apos;s data — and everything is produced locally in your
+            browser. One honest warning: use it for testing and mocking
+            only; fake identities have no place in signups or transactions.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

@@ -41,6 +41,46 @@ export default function Page() {
             Pick a duration (15, 30 or 60 seconds) and start typing. Every keystroke is scored live — correct characters in dark, errors in red — and at the end you get your WPM, CPM and accuracy.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            How WPM is measured (and what is good)
+          </h2>
+          <p className="mb-4">
+            The industry standard defines a <strong>word as any 5
+            characters</strong> — so accuracy of the count does not depend on
+            actual word length. <strong>Net WPM</strong> (what serious tests
+            report) subtracts errors; gross WPM does not. Always compare net
+            numbers.
+          </p>
+          <div className="bg-white border border-ink/10 rounded-lg overflow-hidden my-3 text-sm">
+            {[
+              ["30–40 WPM", "average casual typist"],
+              ["50–60 WPM", "solid professional range"],
+              ["70–85 WPM", "fast; most office jobs peak here"],
+              ["100+ WPM", "top 1% territory"],
+            ].map(([a, b], i) => (
+              <div key={a} className={`flex justify-between gap-4 px-4 py-2 ${i % 2 ? "bg-paper/60" : ""}`}>
+                <span className="font-mono text-ink/70">{a}</span>
+                <span className="text-accent">{b}</span>
+              </div>
+            ))}
+          </div>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Accuracy first, speed second:</strong> 55 WPM at 98% accuracy beats 70 WPM at 88% — corrections cost more than they gain. Chase accuracy and speed follows.</li>
+            <li><strong>Home row and posture</strong> beat any trick: fingers anchored on ASDF/JKL; eyes on the text, never the keyboard.</li>
+            <li><strong>Improvement is mechanical:</strong> 10–15 minutes of deliberate practice daily typically adds 10–20 WPM within a month.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            A practice routine that works
+          </h2>
+          <p className="mb-4">
+            Keyboard layouts are a fun piece of history — QWERTY was
+            designed for 1870s typewriters to keep mechanical hammers from
+            jamming, and it simply never left. Whatever your layout, the
+            routine is the same: 10 minutes daily, focus on accuracy only
+            for the first week, then gradually allow speed. Most people gain
+            10–20 WPM in a month of deliberate practice — and the skill,
+            like riding a bike, stays for decades.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

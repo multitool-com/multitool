@@ -41,6 +41,26 @@ export default function Page() {
             Translate text to Morse code and back, with sound playback. Learn the classic alphabet and encode messages instantly. Free, no download.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            The code that refused to die
+          </h2>
+          <p className="mb-4">
+            Samuel Morse and Alfred Vail created this code in the 1830s–40s
+            for the telegraph — the first time in history a message could
+            travel faster than a horse. Nearly two centuries later, it still
+            has active users.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>SOS is not an abbreviation:</strong> it was chosen because the pattern ···−−−··· is unmistakable through noise — three short, three long, three short.</li>
+            <li><strong>Timing rules:</strong> a dash is three times a dot; letters are separated by a pause, words by a longer one. That is why well-formed Morse is readable even at high speed.</li>
+            <li><strong>Still in use today:</strong> amateur radio operators worldwide, aviation navigation beacons (identifying Morse letters), assistive technology for accessibility, and emergency signaling with a flashlight.</li>
+            <li><strong>Learning it:</strong> most people learn by sound, not by reading — 10 minutes a day of listening practice builds the reflex in a few weeks.</li>
+          </ul>
+          <p className="mb-4">
+            The letter frequency wisdom is baked into the code itself: the
+            most common English letter, E, is a single dot — the shortest
+            possible symbol. Old engineering, still elegant.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

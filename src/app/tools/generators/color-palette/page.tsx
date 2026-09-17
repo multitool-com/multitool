@@ -41,6 +41,40 @@ export default function Page() {
             Pick a base color and a harmony type — mono, complementary, analogous, triadic or tetradic — and instantly get a 5-color palette with hex codes ready to copy into your designs.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Color harmony in 60 seconds
+          </h2>
+          <p className="mb-4">
+            Palettes feel right when colors relate by position on the color
+            wheel. The classic harmonies this tool plays with:
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Complementary</strong> — opposites on the wheel (blue/orange). High energy, great for call-to-action accents.</li>
+            <li><strong>Analogous</strong> — neighbors (teal/green/yellow-green). Calm and cohesive; nature is full of them.</li>
+            <li><strong>Triadic</strong> — three points evenly spaced. Vibrant but balanced — the classic children&apos;s-book trio.</li>
+            <li><strong>Monochrome</strong> — one hue, many lightness levels. Elegant, hard to get wrong.</li>
+          </ul>
+          <p className="mb-4">
+            <strong>The 60-30-10 rule:</strong> dominate with one color (60%),
+            support with a second (30%), accent sparingly (10%). It is the
+            fastest way to turn any palette into a usable design — for
+            slides, rooms, brands or websites. And remember: text needs
+            contrast — keep body text at WCAG AA levels against its
+            background.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            HEX, RGB and HSL, decoded
+          </h2>
+          <p className="mb-4">
+            The same color wears three uniforms: <strong>HEX</strong>{" "}
+            (#b4552d) is the web&apos;s shorthand for red-green-blue values
+            in hexadecimal; <strong>RGB</strong> (180, 85, 45) says the same
+            thing in decimal; <strong>HSL</strong> splits color into
+            hue/saturation/lightness — far more intuitive for humans, which
+            is why designers tweak in HSL (“a bit darker, a bit less
+            saturated”). A practical trick for building palettes: keep the
+            same hue and vary lightness for instant elegance.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

@@ -41,6 +41,24 @@ export default function Page() {
             The live clock shows the current Unix timestamp, updating every second. Convert any timestamp to a date (local or UTC), or any date to a timestamp — the tool auto-detects seconds vs milliseconds.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Why computers count from 1970
+          </h2>
+          <p className="mb-4">
+            A Unix timestamp is simply the number of seconds elapsed since{" "}
+            <strong>January 1, 1970, 00:00:00 UTC</strong> — the moment
+            engineers call <em>the Epoch</em>. It is the common language of
+            computing time: unambiguous (no time zones, no daylight saving,
+            no month names), trivially sortable (bigger number = later), and
+            perfect for arithmetic (subtract two timestamps and you get
+            elapsed seconds).
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Where you meet it:</strong> log files, APIs, databases, spreadsheet exports — any string of digits like <code className="font-mono bg-paper px-1 rounded">1762300000</code> that mystifies humans is probably one.</li>
+            <li><strong>UTC, not local:</strong> timestamps are always UTC-based; converting to your local time is exactly what this tool does.</li>
+            <li><strong>The Year 2038 problem:</strong> systems that store the counter in a signed 32-bit integer overflow on <strong>January 19, 2038</strong> — a fun piece of trivia, and the reason modern systems moved to 64-bit counting long ago.</li>
+            <li><strong>Milliseconds variant:</strong> some systems (JavaScript, Java) count milliseconds instead — the numbers are just 1000× longer. Check the digit count if a value looks wrong.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

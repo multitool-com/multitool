@@ -41,6 +41,22 @@ export default function Page() {
             Upload a damaged PDF and the tool parses its pages and re-saves the document with a fresh, valid structure — dropping broken cross-references and orphaned objects that make readers fail.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            What PDF repair can and cannot recover
+          </h2>
+          <p className="mb-4">
+            A PDF breaks in predictable ways: a truncated download (the file
+            ends mid-structure), a damaged cross-reference table (the map
+            that says where each object lives), or a corrupted header. This
+            tool rebuilds the structure — recovering pages the data of which
+            is still physically present in the file.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>What it fixes well:</strong> broken xref tables, missing end-of-file markers, partially recovered downloads — cases where the content is intact but the map is not.</li>
+            <li><strong>What no tool can do:</strong> restore bytes that are simply not in the file. If a download stopped at 60% and the rest never arrived, the missing pages cannot be invented — re-download from the source instead.</li>
+            <li><strong>Prevention beats repair:</strong> let downloads finish, avoid force-quitting apps mid-save, keep the original scan, and store important documents in two places.</li>
+            <li><strong>Try repair when:</strong> a reader shows “format error” or blank pages, but the file size still looks plausible. It runs locally — confidential documents never leave your device.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

@@ -41,6 +41,24 @@ export default function Page() {
             Convert your text into fancy unicode styles: bold, italic, cursive, monospace, upside down and more. Copy with one click for bios and messages. Free.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            How “different fonts” really work
+          </h2>
+          <p className="mb-4">
+            Those stylish characters are not fonts at all — they are{" "}
+            <strong>Unicode symbols</strong> that <em>look like</em> styled
+            letters: mathematical alphanumerics (𝐛𝐨𝐥𝐝, 𝑖𝑡𝑎𝑙𝑖𝑐), fullwidth
+            forms (ｗｉｄｅ), and letter-like symbols from other alphabets. A
+            font changes how a character renders; these replace the
+            character itself — which is why they survive copy-paste into
+            bios and chats that forbid formatting.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Where they work:</strong> Instagram bios, WhatsApp statuses, Discord nicknames, YouTube titles, tweet-style posts — anywhere plain text is allowed.</li>
+            <li><strong>Where they fail:</strong> some platforms and forms strip exotic Unicode (you get empty boxes □), and search engines do not treat 𝕊𝕥𝕪𝕝𝕖 as “Style” — never use them for SEO or passwords.</li>
+            <li><strong>Accessibility note:</strong> screen readers may spell out decorative characters oddly or skip them. Use them for flair, not for information — the content should still work as plain text.</li>
+            <li><strong>Fun that is safe:</strong> all conversion happens in your browser; type, tap a style, copy, paste.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

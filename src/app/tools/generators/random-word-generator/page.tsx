@@ -41,6 +41,28 @@ export default function Page() {
             Generate random words instantly for writing prompts, games, passwords and inspiration. Choose how many words you need. Free, no sign-up.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Why random words are surprisingly useful
+          </h2>
+          <p className="mb-4">
+            A random word is a creativity trigger. Writers use them to break
+            writer&apos;s block, teachers to build vocabulary quizzes, and game
+            nights run on them — Pictionary, charades and improv games all
+            need an unbiased word source.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Brainstorming:</strong> forcing a connection between your problem and a random word is a classic ideation technique (called random stimulus).</li>
+            <li><strong>Passphrases:</strong> several random words strung together make passwords that are both strong and memorable — see our <a href="/guides/strong-passphrases" className="text-accent-deep underline underline-offset-2">passphrase guide</a> for the math.</li>
+            <li><strong>Writing prompts:</strong> generate three words and build a story, scene or headline around them.</li>
+            <li><strong>Language learning:</strong> random words turn into flashcard practice and translation drills.</li>
+            <li><strong>Testing:</strong> developers use random words to seed test data, fake names and placeholder text with more variety than lorem ipsum.</li>
+          </ul>
+          <p className="mb-4">
+            The tool draws from a curated English word list with common,
+            recognizable words — biased toward usefulness rather than obscure
+            dictionary entries — and can produce several at once for games
+            and prompts.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

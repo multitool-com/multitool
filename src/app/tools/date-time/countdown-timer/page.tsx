@@ -41,6 +41,28 @@ export default function Page() {
             Pick a target date and time and the tool counts down live — days, hours, minutes and seconds update in real time until the moment arrives.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Timeboxing, the productivity classic
+          </h2>
+          <p className="mb-4">
+            A countdown turns an intention into a commitment. Assigning a
+            visible, shrinking block of time to a task — the technique
+            experts call <strong>timeboxing</strong> — is one of the
+            best-supported productivity habits: the timer creates gentle
+            urgency, and the deadline kills perfectionist drift.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>25/5 Pomodoro:</strong> 25 minutes of focus, 5 of rest — the most famous timebox of all. Our <a href="/tools/date-time/stopwatch" className="text-accent-deep underline underline-offset-2">Stopwatch & Pomodoro tool</a> automates the cycle.</li>
+            <li><strong>Kitchen use:</strong> recipes trust timers, not memory — tea steeps 3 minutes, cookies bake 12, resting dough 30.</li>
+            <li><strong>Training intervals:</strong> 40/20 work/rest rounds, plank challenges, breathing exercises (box breathing: 4-4-4-4).</li>
+            <li><strong>Kids and transitions:</strong> a visible countdown (“10 minutes until bedtime”) converts negotiations into math.</li>
+          </ul>
+          <p className="mb-4">
+            The timer runs entirely in your browser tab — keep the tab open,
+            and the alarm plays even if you switch windows. If you need to
+            measure how long something <em>took</em> instead, that is the
+            stopwatch&apos;s job.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

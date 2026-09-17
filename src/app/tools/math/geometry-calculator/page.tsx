@@ -41,6 +41,27 @@ export default function Page() {
             Pick a shape (square, rectangle, triangle, circle or trapezoid), enter its dimensions and get the area and perimeter instantly with correct units.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Formulas you will actually use
+          </h2>
+          <p className="mb-4">
+            Geometry questions in real life are usually one of three:
+            <strong> how much surface</strong> (area — paint, flooring,
+            grass), <strong>how much border</strong> (perimeter — fences,
+            trim, baseboards) or <strong>how much volume</strong> (boxes,
+            tanks, concrete).
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>The classic trap — radius vs diameter:</strong> half of all geometry errors are using the diameter where the radius belongs. Double-check which one your tape measure gave you before trusting any circle formula.</li>
+            <li><strong>Paint math:</strong> wall area minus doors/windows, divided by the coverage printed on the can (typically ~10 m² or ~350 ft² per liter/gallon per coat) — always budget two coats.</li>
+            <li><strong>π is not 3.14 by accident:</strong> the calculator uses full floating-point precision; the rounding to 3.14 is only for humans.</li>
+            <li><strong>Composite shapes:</strong> an L-shaped room is two rectangles; a round table with a rectangular leaf is a circle plus a rectangle. Split, compute, add — that is 90% of practical geometry.</li>
+          </ul>
+          <p className="mb-4">
+            The tool covers the essentials — rectangles, circles, triangles
+            and friends — with the formulas shown beside the results, so the
+            calculator doubles as a reference.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

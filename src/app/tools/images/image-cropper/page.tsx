@@ -41,6 +41,51 @@ export default function Page() {
             Upload an image, pick a crop ratio (free, 1:1, 4:3, 3:2, 16:9, 9:16), drag the image inside the crop box and zoom as needed, then crop and download the result as PNG.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Crop with intention
+          </h2>
+          <p className="mb-4">
+            Cropping is composition, not just trimming. Two principles do
+            most of the work:
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Rule of thirds:</strong> place the subject where the grid lines intersect (the preset overlays help) — off-center compositions feel more alive than centered ones.</li>
+            <li><strong>Headroom and direction:</strong> leave a little space above heads, and more space in front of a face (or moving object) than behind it.</li>
+          </ul>
+          <div className="bg-white border border-ink/10 rounded-lg overflow-hidden my-3 text-sm">
+            {[
+              ["1:1", "profile photos, avatars, grid posts"],
+              ["4:5", "Instagram/Facebook feed portraits"],
+              ["9:16", "Stories, Reels, TikTok covers"],
+              ["16:9", "thumbnails, banners, YouTube"],
+            ].map(([a, b], i) => (
+              <div key={a} className={`flex justify-between gap-4 px-4 py-2 ${i % 2 ? "bg-paper/60" : ""}`}>
+                <span className="font-mono text-ink/70">{a}</span>
+                <span className="text-accent">{b}</span>
+              </div>
+            ))}
+          </div>
+          <p className="mb-4">
+            <strong>Crop ≠ resize:</strong> cropping cuts content to change
+            the shape; resizing scales everything without removing anything.
+            Crop first (shape), then{" "}
+            <a href="/tools/images/image-resizer" className="text-accent-deep underline underline-offset-2">resize</a>{" "}
+            to the exact pixels — the full workflow with every platform size
+            lives in our{" "}
+            <a href="/guides/social-media-image-sizes" className="text-accent-deep underline underline-offset-2">social media sizes guide</a>.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Straighten, then crop
+          </h2>
+          <p className="mb-4">
+            Two pro habits that instantly improve most photos:{" "}
+            <strong>straighten the horizon first</strong> (a 1° tilt is
+            subconsciously annoying; align water lines and buildings with
+            the frame edges), then crop for composition. And a fact that
+            surprises people: cropping does <strong>not</strong> reduce
+            resolution of what remains — the pixels you keep stay
+            pixel-perfect, so a tight crop of a sharp photo stays sharp.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

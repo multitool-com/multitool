@@ -41,6 +41,42 @@ export default function Page() {
             Set the minimum and maximum, choose how many numbers (up to 1000) and toggle no-repeats and sorting. Perfect for draws, testing and learning probability.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Randomness, pseudo-randomness and fairness
+          </h2>
+          <p className="mb-4">
+            Browser random number generators are <strong>pseudo-random</strong>:
+            they start from an unpredictable seed (timings, entropy from your
+            machine) and produce a sequence that is statistically
+            indistinguishable from random. For draws, games, sampling and
+            giveaways, that is exactly what you want — every number has the
+            same chance, and no pattern a human could exploit.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>No-repeats mode</strong> draws without replacement (a Fisher–Yates style shuffle), just like pulling numbered balls from a bag — perfect for raffles and bingo-style draws.</li>
+            <li><strong>With repeats</strong> simulates true dice-and-coins behavior — ideal for games, simulations and probability exercises.</li>
+            <li><strong>Cryptography is different:</strong> generating passwords, keys or tokens requires <em>cryptographic</em> randomness — that is what our Password Generator uses internally.</li>
+          </ul>
+          <div className="bg-white border border-ink/10 rounded-lg overflow-hidden my-3 text-sm">
+            {[
+              ["Raffle / giveaway (unique)", "1 – number of entries, no repeats"],
+              ["Dice simulation", "1–6, repeats on"],
+              ["Percent decisions", "1–100"],
+              ["Random sample from a list", "1 – list size, no repeats"],
+              ["Lottery-style practice", "1–60, 6 unique numbers"],
+            ].map(([a, b], i) => (
+              <div key={a} className={`flex justify-between gap-4 px-4 py-2 ${i % 2 ? "bg-paper/60" : ""}`}>
+                <span className="text-ink/70">{a}</span>
+                <span className="font-mono text-accent whitespace-nowrap">{b}</span>
+              </div>
+            ))}
+          </div>
+          <p className="mb-4">
+            A note on fairness for public draws: because the numbers are
+            generated on each participant&apos;s own device, the result is
+            auditable only by trust. For high-stakes public raffles, record
+            your screen or use the wheel-style draw with visible participants.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

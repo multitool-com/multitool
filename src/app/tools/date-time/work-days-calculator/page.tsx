@@ -41,6 +41,27 @@ export default function Page() {
             Enter a start and end date, optionally list holidays in YYYY-MM-DD format (comma separated), and the tool counts the business days between them, excluding weekends and any holidays you provide.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Business days, explained
+          </h2>
+          <p className="mb-4">
+            A business day is any day that is not a weekend day — that is the
+            convention contracts, banks and shipping companies use. This
+            calculator counts days excluding Saturdays and Sundays, which
+            matches the default almost everywhere in the world.
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Holidays vary by country:</strong> national and local holidays are not subtracted automatically. If your deadline is “5 business days” and there is a holiday in between, add it manually to be safe.</li>
+            <li><strong>Counting conventions differ:</strong> some contracts count the start day, others do not. If the result matters legally, check which convention applies — the difference is one full day.</li>
+            <li><strong>Deadlines that land on a weekend</strong> usually slide to the next business day in most jurisdictions — but verify for your case.</li>
+          </ul>
+          <p className="mb-4">
+            Common uses: SLA and delivery deadlines, notice periods in
+            contracts, project planning, payroll and overtime windows, and
+            “respond within X business days” promises. For plain calendar
+            differences (weekends included), use the{" "}
+            <a href="/tools/date-time/date-calculator" className="text-accent-deep underline underline-offset-2">Date Calculator</a>.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

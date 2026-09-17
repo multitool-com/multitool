@@ -41,6 +41,23 @@ export default function Page() {
             Type a password and watch the score update live: length, character variety, patterns, common passwords and estimated entropy bits. Everything is evaluated locally — nothing is sent anywhere.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            What a strength checker can and cannot know
+          </h2>
+          <p className="mb-4">
+            This tool estimates strength from <strong>entropy</strong> —
+            length plus variety of characters — and flags the patterns
+            crackers try first: dictionary words, keyboard walks
+            (qwerty…123), repeated characters and predictable substitutions
+            (a→@, o→0 add almost nothing; every cracking tool tries them
+            automatically).
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Length is the lever that matters:</strong> each additional random character multiplies the work to crack it; symbols are garnish. The difference between 8 and 14 characters is days versus centuries.</li>
+            <li><strong>What it cannot know:</strong> whether the password is reused on other sites, appears in a public data leak, or is written on a sticky note. Those risks sink more accounts than weak entropy ever did.</li>
+            <li><strong>The three rules that actually protect you:</strong> unique password per site (a manager makes this easy), long and random where it matters, and 2FA on email and finance.</li>
+            <li><strong>Checking is safe here:</strong> the analysis runs locally in your browser — nothing is transmitted or stored. Still, prefer testing variations rather than pasting your real, current passwords anywhere.</li>
+          </ul>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

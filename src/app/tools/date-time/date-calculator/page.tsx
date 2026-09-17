@@ -41,6 +41,24 @@ export default function Page() {
             Two modes: Days Between counts the exact calendar days between two dates (including both), and Add/Subtract moves any date forward or backward by a chosen number of days.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Calendar math and its traps
+          </h2>
+          <p className="mb-4">
+            Date arithmetic looks trivial until calendars fight back. These
+            are the traps this calculator handles for you:
+          </p>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Leap years:</strong> February 29th exists in years divisible by 4 — except century years not divisible by 400 (2000 was a leap year; 1900 and 2100 are not).</li>
+            <li><strong>Month lengths:</strong> adding “one month” to January 31 lands on March 3 (or 2nd in a leap year) because February is short. Good calculators clamp to the last valid day.</li>
+            <li><strong>Off-by-one:</strong> whether the start day counts as day 1 or day 0 changes results — wedding countdowns and contract deadlines are classic victims.</li>
+            <li><strong>Time zones:</strong> a timestamp at midnight in one country is a different date in another. This tool works with plain calendar dates, immune to that class of bug.</li>
+          </ul>
+          <p className="mb-4">
+            Typical uses: deadline arithmetic (“30 days from signing”),
+            age and tenure, countdowns, subscription periods, warranty
+            windows and historical “how long ago” questions.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>

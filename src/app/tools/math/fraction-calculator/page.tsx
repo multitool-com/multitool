@@ -41,6 +41,25 @@ export default function Page() {
             Enter two fractions (numerator over denominator), pick an operation and the tool computes the result instantly, always reduced to its simplest form — with the decimal equivalent shown as well.
           </p>
           <h2 className="font-display text-xl font-semibold mt-6 mb-3">
+            Fraction operations, demystified
+          </h2>
+          <ul className="mb-4 list-disc pl-5 space-y-1.5">
+            <li><strong>Adding and subtracting</strong> require a common denominator — you are re-slicing both fractions so the pieces are the same size, then counting pieces.</li>
+            <li><strong>Multiplying is the easy one:</strong> straight across (numerators × numerators, denominators × denominators). No common denominator needed.</li>
+            <li><strong>Dividing = multiply by the reciprocal</strong> (flip the second fraction). “Keep, change, flip” is the classroom mnemonic.</li>
+            <li><strong>Simplifying</strong> divides top and bottom by their greatest common divisor — 8/12 and 2/3 are the same number, but one is polite.</li>
+            <li><strong>Mixed vs improper:</strong> 1½ and 3/2 are equals in different clothes; recipes prefer mixed, math prefers improper.</li>
+          </ul>
+          <p className="mb-4">
+            Real life is full of fractions pretending to be something else:
+            <strong> cooking</strong> (double the ¾ cup),{" "}
+            <strong>woodworking and sewing</strong> (add 5/8 + 3/16 of an
+            inch), <strong>time</strong> (quarter past = ¼ of an hour) and{" "}
+            <strong>sales</strong> (half of a third off). This calculator
+            handles all four operations with automatic simplification and
+            step-ready results.
+          </p>
+          <h2 className="font-display text-xl font-semibold mt-6 mb-3">
             Your privacy
           </h2>
           <p>
