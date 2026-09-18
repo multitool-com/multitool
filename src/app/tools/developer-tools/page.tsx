@@ -1,9 +1,35 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getCategoryBySlug, SITE_CONFIG } from "@/lib/tools";
+import ToolPreview from "@/components/ToolPreview";
 import { notFound } from "next/navigation";
 
 const CATEGORY_SLUG = "developer-tools";
+
+
+// Previews dos cards (estáticos = uma imagem; animados = antes/depois)
+const PREVIEWS: Record<string, { before?: string; after?: string }> = {
+  "json-formatter": { before: "/previews/dev/json-formatter-before.jpg", after: "/previews/dev/json-formatter-after.jpg" },
+  "base64-encoder": { before: "/previews/dev/base64-encoder-before.jpg", after: "/previews/dev/base64-encoder-after.jpg" },
+  "url-encoder": { before: "/previews/dev/url-encoder-before.jpg", after: "/previews/dev/url-encoder-after.jpg" },
+  "uuid-generator": { before: "/previews/dev/uuid-generator-before.jpg", after: "/previews/dev/uuid-generator-after.jpg" },
+  "hash-generator": { before: "/previews/dev/hash-generator-before.jpg", after: "/previews/dev/hash-generator-after.jpg" },
+  "password-strength": { before: "/previews/dev/password-strength-before.jpg", after: "/previews/dev/password-strength-after.jpg" },
+  "regex-tester": { before: "/previews/dev/regex-tester-before.jpg", after: "/previews/dev/regex-tester-after.jpg" },
+  "jwt-decoder": { before: "/previews/dev/jwt-decoder-before.jpg", after: "/previews/dev/jwt-decoder-after.jpg" },
+  "csv-json-converter": { before: "/previews/dev/csv-json-converter-before.jpg", after: "/previews/dev/csv-json-converter-after.jpg" },
+  "fake-data-generator": { before: "/previews/dev/fake-data-generator-before.jpg", after: "/previews/dev/fake-data-generator-after.jpg" },
+  "url-shortener": { before: "/previews/dev/url-shortener-before.jpg", after: "/previews/dev/url-shortener-after.jpg" },
+  "cron-generator": { before: "/previews/dev/cron-generator-before.jpg", after: "/previews/dev/cron-generator-after.jpg" },
+  "markdown-to-html": { before: "/previews/dev/markdown-to-html-before.jpg", after: "/previews/dev/markdown-to-html-after.jpg" },
+  "css-gradient-generator": { before: "/previews/dev/css-gradient-generator-before.jpg", after: "/previews/dev/css-gradient-generator-after.jpg" },
+  "px-to-rem": { before: "/previews/dev/px-to-rem-before.jpg", after: "/previews/dev/px-to-rem-after.jpg" },
+  "meta-tag-generator": { before: "/previews/dev/meta-tag-generator-before.jpg", after: "/previews/dev/meta-tag-generator-after.jpg" },
+  "xml-formatter": { before: "/previews/dev/xml-formatter-before.jpg", after: "/previews/dev/xml-formatter-after.jpg" },
+  "yaml-formatter": { before: "/previews/dev/yaml-formatter-before.jpg", after: "/previews/dev/yaml-formatter-after.jpg" },
+  "sql-formatter": { before: "/previews/dev/sql-formatter-before.jpg", after: "/previews/dev/sql-formatter-after.jpg" },
+  "json-to-yaml": { before: "/previews/dev/json-to-yaml-before.jpg", after: "/previews/dev/json-to-yaml-after.jpg" },
+};
 
 const category = getCategoryBySlug(CATEGORY_SLUG);
 
@@ -75,27 +101,30 @@ export default function CategoryPage() {
           <Link
             key={tool.slug}
             href={`/tools/${category.slug}/${tool.slug}`}
-            className="group bg-white border border-ink/10 rounded-xl p-5 hover:border-accent hover:shadow-md transition-all relative"
+            className="group bg-white border border-ink/10 rounded-xl overflow-hidden hover:border-accent hover:shadow-md transition-all relative flex flex-col"
           >
-            <div className="flex items-start justify-between mb-2">
-              <span className="font-mono text-xs text-ink/30">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              {tool.status === "coming-soon" && (
-                <span className="font-mono text-[10px] tracking-widest bg-ink/5 text-ink/50 rounded-full px-2 py-1">
-                  SOON
+            <ToolPreview
+              before={PREVIEWS[tool.slug]?.before}
+              after={PREVIEWS[tool.slug]?.after}
+              alt={tool.name}
+              staticText="🛠️"
+            />
+            <div className="p-5 flex flex-col flex-1">
+              <div className="flex items-start justify-between mb-2">
+                <span className="font-mono text-xs text-ink/30">
+                  {String(i + 1).padStart(2, "0")}
                 </span>
-              )}
-              {tool.status === "ready" && (
-                <span className="font-mono text-[10px] tracking-widest bg-accent/10 text-accent rounded-full px-2 py-1">
-                  READY
-                </span>
-              )}
+                {tool.status === "ready" && (
+                  <span className="font-mono text-[10px] tracking-widest bg-accent/10 text-accent rounded-full px-2 py-1">
+                    READY
+                  </span>
+                )}
+              </div>
+              <h2 className="font-display font-semibold text-lg mb-1 group-hover:text-accent transition-colors">
+                {tool.name}
+              </h2>
+              <p className="text-sm text-ink/60 line-clamp-2">{tool.description}</p>
             </div>
-            <h2 className="font-display font-semibold text-lg mb-1 group-hover:text-accent transition-colors">
-              {tool.name}
-            </h2>
-            <p className="text-sm text-ink/60">{tool.description}</p>
           </Link>
         ))}
       </div>

@@ -1,9 +1,24 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getCategoryBySlug, SITE_CONFIG } from "@/lib/tools";
+import ToolPreview from "@/components/ToolPreview";
 import { notFound } from "next/navigation";
 
 const CATEGORY_SLUG = "converters";
+
+
+// Previews dos cards (estáticos = uma imagem; animados = antes/depois)
+const PREVIEWS: Record<string, { before?: string; after?: string }> = {
+  "unit-converter": { before: "/previews/conv/unit-converter-before.jpg", after: "/previews/conv/unit-converter-after.jpg" },
+  "temperature-converter": { before: "/previews/conv/temperature-converter-before.jpg", after: "/previews/conv/temperature-converter-after.jpg" },
+  "timezone-converter": { before: "/previews/conv/timezone-converter-before.jpg", after: "/previews/conv/timezone-converter-after.jpg" },
+  "number-base-converter": { before: "/previews/conv/number-base-converter-before.jpg", after: "/previews/conv/number-base-converter-after.jpg" },
+  "roman-numeral-converter": { before: "/previews/conv/roman-numeral-converter-before.jpg", after: "/previews/conv/roman-numeral-converter-after.jpg" },
+  "currency-converter": { before: "/previews/conv/currency-converter-before.jpg", after: "/previews/conv/currency-converter-after.jpg" },
+  "shoe-size-converter": { before: "/previews/conv/shoe-size-converter-before.jpg", after: "/previews/conv/shoe-size-converter-after.jpg" },
+  "length-converter": { before: "/previews/conv/length-converter-before.jpg", after: "/previews/conv/length-converter-after.jpg" },
+  "weight-converter": { before: "/previews/conv/weight-converter-before.jpg", after: "/previews/conv/weight-converter-after.jpg" },
+};
 
 const category = getCategoryBySlug(CATEGORY_SLUG);
 
@@ -75,27 +90,30 @@ export default function CategoryPage() {
           <Link
             key={tool.slug}
             href={`/tools/${category.slug}/${tool.slug}`}
-            className="group bg-white border border-ink/10 rounded-xl p-5 hover:border-accent hover:shadow-md transition-all relative"
+            className="group bg-white border border-ink/10 rounded-xl overflow-hidden hover:border-accent hover:shadow-md transition-all relative flex flex-col"
           >
-            <div className="flex items-start justify-between mb-2">
-              <span className="font-mono text-xs text-ink/30">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              {tool.status === "coming-soon" && (
-                <span className="font-mono text-[10px] tracking-widest bg-ink/5 text-ink/50 rounded-full px-2 py-1">
-                  SOON
+            <ToolPreview
+              before={PREVIEWS[tool.slug]?.before}
+              after={PREVIEWS[tool.slug]?.after}
+              alt={tool.name}
+              staticText="🛠️"
+            />
+            <div className="p-5 flex flex-col flex-1">
+              <div className="flex items-start justify-between mb-2">
+                <span className="font-mono text-xs text-ink/30">
+                  {String(i + 1).padStart(2, "0")}
                 </span>
-              )}
-              {tool.status === "ready" && (
-                <span className="font-mono text-[10px] tracking-widest bg-accent/10 text-accent rounded-full px-2 py-1">
-                  READY
-                </span>
-              )}
+                {tool.status === "ready" && (
+                  <span className="font-mono text-[10px] tracking-widest bg-accent/10 text-accent rounded-full px-2 py-1">
+                    READY
+                  </span>
+                )}
+              </div>
+              <h2 className="font-display font-semibold text-lg mb-1 group-hover:text-accent transition-colors">
+                {tool.name}
+              </h2>
+              <p className="text-sm text-ink/60 line-clamp-2">{tool.description}</p>
             </div>
-            <h2 className="font-display font-semibold text-lg mb-1 group-hover:text-accent transition-colors">
-              {tool.name}
-            </h2>
-            <p className="text-sm text-ink/60">{tool.description}</p>
           </Link>
         ))}
       </div>

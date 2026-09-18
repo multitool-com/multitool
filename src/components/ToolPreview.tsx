@@ -49,11 +49,26 @@ export default function ToolPreview({
     return () => cancelAnimationFrame(raf);
   }, []);
 
-  if (!before || !after) {
+  if (!before && !after) {
     // fallback estático (categoria sem preview)
     return (
       <div className="w-full aspect-[16/9] bg-gradient-to-br from-deep to-[#0a2e2a] flex items-center justify-center">
         <span className="text-3xl opacity-80">{staticText ?? "🛠️"}</span>
+      </div>
+    );
+  }
+
+  if (!before && after) {
+    // MODO ESTÁTICO: uma única imagem, sem animação (calculadoras etc.)
+    return (
+      <div className="relative w-full aspect-[16/9] overflow-hidden bg-ink/10">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={after}
+          alt={alt}
+          loading="lazy"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
       </div>
     );
   }

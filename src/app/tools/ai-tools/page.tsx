@@ -1,6 +1,19 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getCategoryBySlug, SITE_CONFIG } from "@/lib/tools";
+import ToolPreview from "@/components/ToolPreview";
+
+
+// Previews estáticos dos cards
+const PREVIEWS: Record<string, { before?: string; after?: string }> = {
+  "prompt-generator": { after: "/previews/ai/prompt-generator.jpg" },
+  "token-counter": { after: "/previews/ai/token-counter.jpg" },
+  "ai-cost-calculator": { after: "/previews/ai/ai-cost-calculator.jpg" },
+  "ai-coding-tools": { after: "/previews/ai/ai-coding-tools.jpg" },
+  "free-ai-directory": { after: "/previews/ai/free-ai-directory.jpg" },
+  "llm-model-comparison": { after: "/previews/ai/llm-model-comparison.jpg" },
+  "system-prompt-builder": { after: "/previews/ai/system-prompt-builder.jpg" },
+};
 
 const category = getCategoryBySlug("ai-tools")!;
 
@@ -66,28 +79,36 @@ export default function AiToolsPage() {
                 ? `/tools/ai-tools/${tool.slug}`
                 : "#"
             }
-            className={`border border-ink/10 rounded-xl p-5 transition-all ${
+            className={`border border-ink/10 rounded-xl overflow-hidden transition-all flex flex-col ${
               tool.status === "ready"
                 ? "bg-white hover:border-accent hover:shadow-md cursor-pointer"
                 : "bg-paper/50 cursor-default opacity-75"
             }`}
           >
-            <div className="flex items-center justify-between mb-3">
-              <span className="font-mono text-[10px] tracking-widest text-ink/40">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <span
-                className={`font-mono text-[10px] tracking-widest px-2 py-0.5 rounded-full ${
-                  tool.status === "ready"
-                    ? "bg-accent/15 text-accent"
-                    : "bg-ink/5 text-ink/40"
-                }`}
-              >
-                {tool.status === "ready" ? "READY" : "SOON"}
-              </span>
+            <ToolPreview
+              before={PREVIEWS[tool.slug]?.before}
+              after={PREVIEWS[tool.slug]?.after}
+              alt={tool.name}
+              staticText="🤖"
+            />
+            <div className="p-5 flex flex-col flex-1">
+              <div className="flex items-center justify-between mb-3">
+                <span className="font-mono text-[10px] tracking-widest text-ink/40">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span
+                  className={`font-mono text-[10px] tracking-widest px-2 py-0.5 rounded-full ${
+                    tool.status === "ready"
+                      ? "bg-accent/15 text-accent"
+                      : "bg-ink/5 text-ink/40"
+                  }`}
+                >
+                  {tool.status === "ready" ? "READY" : "SOON"}
+                </span>
+              </div>
+              <h2 className="font-display font-semibold mb-1">{tool.name}</h2>
+              <p className="text-sm text-ink/60 line-clamp-2">{tool.description}</p>
             </div>
-            <h2 className="font-display font-semibold mb-1">{tool.name}</h2>
-            <p className="text-sm text-ink/60">{tool.description}</p>
           </Link>
         ))}
       </div>
