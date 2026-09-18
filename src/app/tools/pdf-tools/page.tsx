@@ -1,9 +1,33 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getCategoryBySlug, SITE_CONFIG } from "@/lib/tools";
+import ToolPreview from "@/components/ToolPreview";
 import { notFound } from "next/navigation";
 
 const CATEGORY_SLUG = "pdf-tools";
+
+
+// Previews "before/after" — cada par conta a história real da operação
+const PREVIEWS: Record<string, { before: string; after: string }> = {
+  "pdf-merge": { before: "/previews/pdf/merge-before.jpg", after: "/previews/pdf/merge-after.jpg" },
+  "pdf-split": { before: "/previews/pdf/split-before.jpg", after: "/previews/pdf/split-after.jpg" },
+  "images-to-pdf": { before: "/previews/pdf/img2pdf-before.jpg", after: "/previews/pdf/img2pdf-after.jpg" },
+  "pdf-protect": { before: "/previews/pdf/protect-before.jpg", after: "/previews/pdf/protect-after.jpg" },
+  "pdf-rotate": { before: "/previews/pdf/rotate-before.jpg", after: "/previews/pdf/rotate-after.jpg" },
+  "pdf-sign": { before: "/previews/pdf/sign-before.jpg", after: "/previews/pdf/sign-after.jpg" },
+  "pdf-unlock": { before: "/previews/pdf/unlock-before.jpg", after: "/previews/pdf/unlock-after.jpg" },
+  "pdf-compress": { before: "/previews/pdf/compress-before.jpg", after: "/previews/pdf/compress-after.jpg" },
+  "pdf-watermark": { before: "/previews/pdf/watermark-before.jpg", after: "/previews/pdf/watermark-after.jpg" },
+  "pdf-reorder": { before: "/previews/pdf/reorder-before.jpg", after: "/previews/pdf/reorder-after.jpg" },
+  "pdf-number-pages": { before: "/previews/pdf/number-before.jpg", after: "/previews/pdf/number-after.jpg" },
+  "pdf-metadata": { before: "/previews/pdf/metadata-before.jpg", after: "/previews/pdf/metadata-after.jpg" },
+  "pdf-to-images": { before: "/previews/pdf/pdf2img-before.jpg", after: "/previews/pdf/pdf2img-after.jpg" },
+  "pdf-repair": { before: "/previews/pdf/repair-before.jpg", after: "/previews/pdf/repair-after.jpg" },
+  "pdf-remove-pages": { before: "/previews/pdf/remove-before.jpg", after: "/previews/pdf/remove-after.jpg" },
+  "crop-pdf": { before: "/previews/pdf/crop-before.jpg", after: "/previews/pdf/crop-after.jpg" },
+  "flatten-pdf": { before: "/previews/pdf/flatten-before.jpg", after: "/previews/pdf/flatten-after.jpg" },
+  "markdown-to-pdf": { before: "/previews/pdf/md-before.jpg", after: "/previews/pdf/md-after.jpg" },
+};
 
 const category = getCategoryBySlug(CATEGORY_SLUG);
 
@@ -77,27 +101,30 @@ export default function CategoryPage() {
           <Link
             key={tool.slug}
             href={`/tools/${category.slug}/${tool.slug}`}
-            className="group bg-white border border-ink/10 rounded-xl p-5 hover:border-accent hover:shadow-md transition-all relative"
+            className="group bg-white border border-ink/10 rounded-xl overflow-hidden hover:border-accent hover:shadow-md transition-all relative flex flex-col"
           >
-            <div className="flex items-start justify-between mb-2">
-              <span className="font-mono text-xs text-ink/30">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              {tool.status === "coming-soon" && (
-                <span className="font-mono text-[10px] tracking-widest bg-ink/5 text-ink/50 rounded-full px-2 py-1">
-                  SOON
+            <ToolPreview
+              before={PREVIEWS[tool.slug]?.before}
+              after={PREVIEWS[tool.slug]?.after}
+              alt={tool.name}
+              staticText="📄"
+            />
+            <div className="p-5 flex flex-col flex-1">
+              <div className="flex items-start justify-between mb-2">
+                <span className="font-mono text-xs text-ink/30">
+                  {String(i + 1).padStart(2, "0")}
                 </span>
-              )}
-              {tool.status === "ready" && (
-                <span className="font-mono text-[10px] tracking-widest bg-accent/10 text-accent rounded-full px-2 py-1">
-                  READY
-                </span>
-              )}
+                {tool.status === "ready" && (
+                  <span className="font-mono text-[10px] tracking-widest bg-accent/10 text-accent rounded-full px-2 py-1">
+                    READY
+                  </span>
+                )}
+              </div>
+              <h2 className="font-display font-semibold text-lg mb-1 group-hover:text-accent transition-colors">
+                {tool.name}
+              </h2>
+              <p className="text-sm text-ink/60 line-clamp-2">{tool.description}</p>
             </div>
-            <h2 className="font-display font-semibold text-lg mb-1 group-hover:text-accent transition-colors">
-              {tool.name}
-            </h2>
-            <p className="text-sm text-ink/60">{tool.description}</p>
           </Link>
         ))}
       </div>

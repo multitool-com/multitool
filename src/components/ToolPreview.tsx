@@ -27,15 +27,16 @@ export default function ToolPreview({
     let last = 0;
     const loop = (t: number) => {
       if (t - last > 30) {
-        // ~33fps; varredura completa em ~2s
+        // ~33fps; varredura completa em ~2.4s (2x o original)
+        // vai de 0% a 100% — ponta a ponta da imagem
         setPos((p) => {
-          let next = p + dirRef.current * 3.2;
-          if (next >= 92) {
-            next = 92;
+          let next = p + dirRef.current * 2.6;
+          if (next >= 100) {
+            next = 100;
             dirRef.current = -1;
           }
-          if (next <= 8) {
-            next = 8;
+          if (next <= 0) {
+            next = 0;
             dirRef.current = 1;
           }
           return next;
