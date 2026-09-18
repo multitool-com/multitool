@@ -26,10 +26,10 @@ export default function ToolPreview({
     let raf = 0;
     let last = 0;
     const loop = (t: number) => {
-      if (t - last > 40) {
-        // ~25fps suficiente; avança em ciclo
+      if (t - last > 30) {
+        // ~33fps; varredura completa em ~2s
         setPos((p) => {
-          let next = p + dirRef.current * 1.6;
+          let next = p + dirRef.current * 3.2;
           if (next >= 92) {
             next = 92;
             dirRef.current = -1;
