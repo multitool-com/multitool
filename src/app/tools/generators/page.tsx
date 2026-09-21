@@ -7,20 +7,20 @@ import { notFound } from "next/navigation";
 const CATEGORY_SLUG = "generators";
 
 
-// Previews dos cards (estáticos = uma imagem; animados = antes/depois)
+// Previews dos cards — estáticos: uma imagem mostra o resultado
 const PREVIEWS: Record<string, { before?: string; after?: string }> = {
-  "password-generator": { before: "/previews/gen/password-generator-before.jpg", after: "/previews/gen/password-generator-after.jpg" },
-  "random-number-generator": { before: "/previews/gen/random-number-generator-before.jpg", after: "/previews/gen/random-number-generator-after.jpg" },
-  "qr-code-generator": { before: "/previews/gen/qr-code-generator-before.jpg", after: "/previews/gen/qr-code-generator-after.jpg" },
-  "color-palette": { before: "/previews/gen/color-palette-before.jpg", after: "/previews/gen/color-palette-after.jpg" },
-  "dice-roller": { before: "/previews/gen/dice-roller-before.jpg", after: "/previews/gen/dice-roller-after.jpg" },
-  "wheel-spinner": { before: "/previews/gen/wheel-spinner-before.jpg", after: "/previews/gen/wheel-spinner-after.jpg" },
-  "giveaway-picker": { before: "/previews/gen/giveaway-picker-before.jpg", after: "/previews/gen/giveaway-picker-after.jpg" },
-  "love-calculator": { before: "/previews/gen/love-calculator-before.jpg", after: "/previews/gen/love-calculator-after.jpg" },
-  "coin-flip": { before: "/previews/gen/coin-flip-before.jpg", after: "/previews/gen/coin-flip-after.jpg" },
-  "username-generator": { before: "/previews/gen/username-generator-before.jpg", after: "/previews/gen/username-generator-after.jpg" },
-  "random-word-generator": { before: "/previews/gen/random-word-generator-before.jpg", after: "/previews/gen/random-word-generator-after.jpg" },
-  "pet-business-name-generator": { before: "/previews/gen/pet-business-name-generator-before.jpg", after: "/previews/gen/pet-business-name-generator-after.jpg" },
+  "password-generator": { after: "/previews/gen/password-generator.jpg" },
+  "random-number-generator": { after: "/previews/gen/random-number-generator.jpg" },
+  "qr-code-generator": { after: "/previews/gen/qr-code-generator.jpg" },
+  "color-palette": { after: "/previews/gen/color-palette.jpg" },
+  "dice-roller": { after: "/previews/gen/dice-roller.jpg" },
+  "wheel-spinner": { after: "/previews/gen/wheel-spinner.jpg" },
+  "giveaway-picker": { after: "/previews/gen/giveaway-picker.jpg" },
+  "love-calculator": { after: "/previews/gen/love-calculator.jpg" },
+  "coin-flip": { after: "/previews/gen/coin-flip.jpg" },
+  "username-generator": { after: "/previews/gen/username-generator.jpg" },
+  "random-word-generator": { after: "/previews/gen/random-word-generator.jpg" },
+  "pet-business-name-generator": { after: "/previews/gen/pet-business-name-generator.jpg" },
 };
 
 const category = getCategoryBySlug(CATEGORY_SLUG);
