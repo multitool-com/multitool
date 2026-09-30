@@ -27,6 +27,7 @@ const PREVIEWS: Record<string, { before: string; after: string }> = {
   "crop-pdf": { before: "/previews/pdf/crop-before.jpg", after: "/previews/pdf/crop-after.jpg" },
   "flatten-pdf": { before: "/previews/pdf/flatten-before.jpg", after: "/previews/pdf/flatten-after.jpg" },
   "markdown-to-pdf": { before: "/previews/pdf/md-before.jpg", after: "/previews/pdf/md-after.jpg" },
+  "pdf-to-markdown": { before: "/previews/pdf/pdf2md-before.jpg", after: "/previews/pdf/pdf2md-after.jpg" },
 };
 
 const category = getCategoryBySlug(CATEGORY_SLUG);
@@ -82,10 +83,11 @@ export default function CategoryPage() {
       <section className="max-w-3xl mb-10 text-ink/70 leading-relaxed">
         <p className="mb-3">
           PDFs are where documents go to be final — signed, archived,
-          submitted. These 15 tools cover the whole document lifecycle:
-          merge and split, compress for email limits, protect with real
-          encryption, unlock what you own, sign, rotate, watermark, number
-          pages and repair damaged files.
+          submitted. These {category.tools.length} tools cover the whole
+          document lifecycle: merge and split, compress for email limits,
+          protect with real encryption, unlock what you own, sign, rotate,
+          watermark, number pages and repair damaged files — plus the
+          Markdown bridge in both directions.
         </p>
         <p>
           The differentiator is architecture: every operation runs locally

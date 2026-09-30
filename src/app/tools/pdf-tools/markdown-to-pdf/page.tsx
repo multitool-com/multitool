@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ToolLayout from "@/components/ToolLayout";
 import MarkdownPdfClient from "./MarkdownPdfClient";
 
@@ -60,7 +61,7 @@ export default function MarkdownToPdfPage() {
             <li><strong>Selectable by construction:</strong> text is embedded as genuine PDF text — copyable, searchable and readable by screen readers.</li>
             <li><strong>Automatic pagination:</strong> content flows across A4 pages with consistent margins; headings never get orphaned at page bottoms.</li>
             <li><strong>Honest limitation:</strong> tables and images are simplified out of this renderer (kept as formatted text blocks) — for pixel-perfect layouts, print-to-PDF from a browser remains the artisanal route.</li>
-            <li><strong>The reverse trip exists too:</strong> need to go the other way? That is PDF-to-text territory — see our PDF tools family.</li>
+            <li><strong>The reverse trip exists too:</strong> need to go the other way? Our <Link href="/tools/pdf-tools/pdf-to-markdown" className="text-accent-deep underline underline-offset-2">PDF to Markdown</Link> converter rebuilds headings, lists and code blocks from an existing PDF — same privacy rules, same browser-only processing.</li>
           </ul>
           <p className="mb-4">
             Use cases: shipping documentation to non-technical stakeholders,
@@ -110,8 +111,8 @@ export default function MarkdownToPdfPage() {
         },
       ]}
       relatedTools={[
+        { name: "PDF to Markdown", href: "/tools/pdf-tools/pdf-to-markdown" },
         { name: "Markdown to HTML", href: "/tools/developer-tools/markdown-to-html" },
-        { name: "PDF Merge", href: "/tools/pdf-tools/pdf-merge" },
         { name: "PDF Metadata Editor", href: "/tools/pdf-tools/pdf-metadata" },
         { name: "PDF Compress", href: "/tools/pdf-tools/pdf-compress" },
       ]}

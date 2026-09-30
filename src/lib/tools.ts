@@ -1215,7 +1215,7 @@ export const categories: Category[] = [
     shortName: "PDF",
     description: "Merge, split, convert and protect PDFs.",
     seoDescription:
-      "Free PDF tools: merge, split, compress, unlock, convert images to PDF, protect with password, rotate and sign — all in your browser, no upload.",
+      "Free PDF tools: merge, split, compress, unlock, convert images to PDF, protect with password, rotate and sign — plus PDF to Markdown and Markdown to PDF conversion. All in your browser, no upload.",
     tools: [
       {
         slug: "pdf-merge",
@@ -1470,6 +1470,20 @@ export const categories: Category[] = [
           "md to pdf online",
           "convert markdown",
           "readme to pdf",
+        ],
+        status: "ready",
+      },
+      {
+        slug: "pdf-to-markdown",
+        name: "PDF to Markdown",
+        description: "Convert PDF to Markdown with real headings, bullet and numbered lists, fenced code blocks and clean paragraphs. Private, free, no upload.",
+        keywords: [
+          "pdf to markdown",
+          "pdf to md",
+          "convert pdf to markdown",
+          "extract text from pdf",
+          "pdf to md online",
+          "pdf text extractor",
         ],
         status: "ready",
       },
