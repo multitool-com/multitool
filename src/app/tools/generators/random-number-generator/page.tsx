@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import RandomNumberGeneratorClient from "./RandomNumberGeneratorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("random-number-generator"),
   title: "Random Number Generator - No Repeats, Sorted | MultiTool",
   description: "Generate random numbers in any range, with options for unique values, sorting and up to 1000 numbers at once. Free.",
   keywords: ["random number generator", "random number between", "random integer generator", "lottery numbers", "numero aleatorio"],

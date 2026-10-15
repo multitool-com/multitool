@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import MemeClient from "./MemeClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("meme-generator"),
   title: "Meme Generator Online - Free Meme Maker | MultiTool",
   description:
     "Create memes online with your own images: classic top/bottom captions in the meme typeface, adjustable size. Free, private, no watermark, no signup.",

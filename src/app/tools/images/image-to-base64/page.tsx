@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import ImageToBase64Client from "./ImageToBase64Client";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("image-to-base64"),
   title: "Image to Base64 - Convert Image to Data URI Online | MultiTool",
   description:
     "Free image to Base64 converter. Convert any image to a Base64 data URI for embedding in HTML, CSS or JSON. Choose output quality and format. 100% in your browser.",

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import ImageResizerClient from "./ImageResizerClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("image-resizer"),
   title: "Image Resizer - Resize Photos to Exact Dimensions | MultiTool",
   description:
     "Resize images to exact pixel dimensions online. Keep aspect ratio or set custom width and height, choose format and quality — free, private, no upload.",

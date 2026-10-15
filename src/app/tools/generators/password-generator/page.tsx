@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PasswordGeneratorClient from "./PasswordGeneratorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("password-generator"),
   title: "Password Generator - Free Strong Random Passwords | MultiTool",
   description:
     "Generate strong, secure random passwords instantly. Free online password generator with customizable length, symbols, numbers and copy-to-clipboard.",

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import CssGradientGeneratorClient from "./CssGradientGeneratorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("css-gradient-generator"),
   title: "CSS Gradient Generator - Linear & Radial | MultiTool",
   description: "Create beautiful CSS gradients visually: pick colors, angle and type, then copy the ready-to-use code. Free, no sign-up.",
   keywords: ["css gradient generator", "gradient maker", "css background gradient", "linear gradient generator", "color gradient", "gradiente css"],

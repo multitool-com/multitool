@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import QRCodeGeneratorClient from "./QRCodeGeneratorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("qr-code-generator"),
   title: "QR Code Generator - Free Online QR Maker | MultiTool",
   description:
     "Create QR codes for URLs, text, phone numbers, Wi-Fi and more. Free online QR code generator with custom colors and instant PNG download.",

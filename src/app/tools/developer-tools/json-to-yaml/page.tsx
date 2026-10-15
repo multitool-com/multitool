@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import JsonToYamlClient from "./JsonToYamlClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("json-to-yaml"),
   title: "JSON to YAML Converter - Convert Both Ways Online | MultiTool",
   description:
     "Convert JSON to YAML and YAML to JSON online, both directions, with instant validation and error messages. Free, private, no upload.",

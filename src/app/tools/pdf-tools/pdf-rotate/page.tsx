@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PdfRotateClient from "./PdfRotateClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("pdf-rotate"),
   title: "Rotate PDF - Rotate PDF Pages Online Free | MultiTool",
   description:
     "Free PDF rotator. Rotate all pages or selected pages 90, 180 or 270 degrees. Fix sideways scans and upside-down documents in your browser, no upload.",

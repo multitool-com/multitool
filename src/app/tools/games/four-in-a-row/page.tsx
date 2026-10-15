@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import FourInARowClient from "./FourInARowClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("four-in-a-row"),
   title: "Four in a Row - Play Connect 4 Online Free | MultiTool",
   description:
     "Play Four in a Row online free (connect-4 style). Drop discs and connect four in a row — against the computer with 3 difficulty levels or a friend. Neon visuals, sounds, no download.",

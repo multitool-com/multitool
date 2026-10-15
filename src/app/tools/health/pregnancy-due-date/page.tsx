@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PregnancyDueDateClient from "./PregnancyDueDateClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("pregnancy-due-date"),
   title: "Pregnancy Due Date Calculator - from LMP | MultiTool",
   description: "Estimate your due date, current pregnancy week and trimester from the first day of your last period. Free, private, no sign-up.",
   keywords: ["pregnancy due date calculator", "due date from lmp", "pregnancy week calculator", "edd calculator", "data provavel do parto"],

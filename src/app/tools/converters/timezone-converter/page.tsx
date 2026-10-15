@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import TimezoneConverterClient from "./TimezoneConverterClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("timezone-converter"),
   title: "Time Zone Converter - World Clock | MultiTool",
   description: "Convert times between 17 world time zones with automatic daylight saving handling. Perfect for meetings across countries.",
   keywords: ["time zone converter", "world clock", "time converter", "meeting time", "utc to local", "fuso horario"],

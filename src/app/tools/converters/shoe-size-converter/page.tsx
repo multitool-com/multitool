@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import ShoeSizeConverterClient from "./ShoeSizeConverterClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("shoe-size-converter"),
   title: "Shoe Size Converter - US, UK, EU & CM | MultiTool",
   description: "Convert shoe sizes between US, UK, EU and centimeters for men and women. Instant, accurate size charts with no sign-up.",
   keywords: ["shoe size converter", "shoe size chart", "us to eu shoe size", "shoe size in cm", "uk to us size", "tamanho de sapato"],

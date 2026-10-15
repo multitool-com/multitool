@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import TextToSpeechClient from "./TextToSpeechClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("text-to-speech"),
   title: "Text to Speech - Read Aloud Online Free | MultiTool",
   description: "Turn any text into spoken audio right in your browser: choose a voice, speed and pitch. Free, no sign-up, nothing uploaded.",
   keywords: ["text to speech", "tts", "read aloud", "text reader", "texto em voz", "texto para voz"],

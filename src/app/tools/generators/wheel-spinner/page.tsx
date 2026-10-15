@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import WheelSpinnerClient from "./WheelSpinnerClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("wheel-spinner"),
   title: "Wheel Spinner - Random Picker | MultiTool",
   description: "Spin the wheel to pick a random winner from your list. Add options, spin with animation, and get a fair result every time.",
   keywords: ["wheel spinner", "random picker", "spin the wheel", "name picker", "roleta online"],

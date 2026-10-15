@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import TemperatureConverterClient from "./TemperatureConverterClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("temperature-converter"),
   title: "Temperature Converter - Celsius, Fahrenheit, Kelvin | MultiTool",
   description:
     "Free temperature converter: instantly convert between Celsius (°C), Fahrenheit (°F), Kelvin (K) and Rankine (°R). Accurate scientific formulas, real-time results.",

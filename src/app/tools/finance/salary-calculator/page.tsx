@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import SalaryCalculatorClient from "./SalaryCalculatorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("salary-calculator"),
   title: "Salary / Hourly Wage Calculator - Annual to Hourly | MultiTool",
   description: "Convert annual salary to hourly, weekly and monthly pay — or work out the annual value of an hourly rate. Free, no sign-up.",
   keywords: ["salary calculator", "hourly wage calculator", "annual to hourly", "monthly salary calculator", "paycheck calculator"],

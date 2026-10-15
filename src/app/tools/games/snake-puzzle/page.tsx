@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import SnakePuzzleClient from "./SnakePuzzleClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("snake-puzzle"),
   title: "Snake Puzzle - Untangle the Snakes Online Free | MultiTool",
   description:
     "Play the Snake Puzzle online free. Click a snake to slide it forward — but only if there's space. Clear every snake off the board across endless levels. Neon visuals, sounds, no download.",

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import RegexTesterClient from "./RegexTesterClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("regex-tester"),
   title: "Regex Tester - Test Regular Expressions Online | MultiTool",
   description:
     "Free online regex tester. Test JavaScript regular expressions with live matches, capture groups and flags (g, i, m, s). 100% in your browser.",

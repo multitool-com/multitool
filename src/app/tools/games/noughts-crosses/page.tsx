@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import NoughtsCrossesClient from "./NoughtsCrossesClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("noughts-crosses"),
   title: "Noughts & Crosses - Play Tic Tac Toe Online Free | MultiTool",
   description:
     "Play Noughts & Crosses (tic-tac-toe) online free. Play against the computer with 3 difficulty levels or with a friend. Neon visuals and sounds. No download.",

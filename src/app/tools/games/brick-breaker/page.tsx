@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import BrickBreakerClient from "./BrickBreakerClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("brick-breaker"),
   title: "Brick Breaker - Play Breakout Style Game Online Free | MultiTool",
   description:
     "Play the breakout-style brick breaker online free. Smash every brick, catch power-ups and clear all levels. Neon visuals, touch and keyboard controls, sounds. No download.",

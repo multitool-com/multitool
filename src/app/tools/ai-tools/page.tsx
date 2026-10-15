@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { getCategoryBySlug, SITE_CONFIG } from "@/lib/tools";
 import ToolPreview from "@/components/ToolPreview";
+import { categoryRobots } from "@/lib/indexing";
 
 
 // Previews estáticos dos cards
@@ -18,6 +19,7 @@ const PREVIEWS: Record<string, { before?: string; after?: string }> = {
 const category = getCategoryBySlug("ai-tools")!;
 
 export const metadata: Metadata = {
+  robots: categoryRobots("ai-tools"),
   title: "Free AI Tools - Prompts, Token Counter & AI Costs | MultiTool",
   description: category.seoDescription,
   alternates: {

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PdfReorderClient from "./PdfReorderClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("pdf-reorder"),
   title: "Reorder PDF - Organize & Remove PDF Pages Online Free | MultiTool",
   description:
     "Free PDF page organizer. Reorder pages with up/down arrows, remove pages you don't need, and download the new PDF. 100% in your browser, no upload.",

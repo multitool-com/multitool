@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import MinesweeperClient from "./MinesweeperClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("minesweeper"),
   title: "Minesweeper - Play Minesweeper Online Free | MultiTool",
   description:
     "Play Minesweeper online free. Clear the board without hitting a mine. Three difficulty levels, flags, timer and best times. Neon style and sounds. No download.",

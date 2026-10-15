@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import RandomWordGeneratorClient from "./RandomWordGeneratorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("random-word-generator"),
   title: "Random Word Generator - Random Words Online | MultiTool",
   description: "Generate random words instantly for writing prompts, games, passwords and inspiration. Choose how many words you need. Free, no sign-up.",
   keywords: ["random word generator", "random words", "writing prompt generator", "word list", "inspiration words"],

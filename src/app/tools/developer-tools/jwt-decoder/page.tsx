@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import JwtDecoderClient from "./JwtDecoderClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("jwt-decoder"),
   title: "JWT Decoder - Decode JSON Web Tokens Online | MultiTool",
   description:
     "Free online JWT decoder. Decode the header and payload of any JSON Web Token (JWT) into readable JSON instantly. 100% in your browser, no sign-up.",

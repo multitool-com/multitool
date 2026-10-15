@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import AddTextClient from "./AddTextClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("add-text-to-image"),
   title: "Add Text to Image Online - Text on Photos | MultiTool",
   description:
     "Write text over photos: quotes, promos, announcements and labels — with position, size, color and outline control. Free, private, runs in your browser.",

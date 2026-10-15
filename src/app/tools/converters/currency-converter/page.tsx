@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import CurrencyConverterClient from "./CurrencyConverterClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("currency-converter"),
   title: "Currency Converter - USD, EUR, GBP, BRL & More | MultiTool",
   description:
     "Free currency converter for USD, EUR, GBP, BRL, INR, JPY and more. Convert any amount instantly. Rates update from public ECB data when available.",

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PasswordStrengthClient from "./PasswordStrengthClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("password-strength"),
   title: "Password Strength Checker - Test Passwords | MultiTool",
   description: "Check how strong your password is: score from very weak to strong, entropy estimate and 6 security checks. 100% local.",
   keywords: ["password strength", "password checker", "password test", "strong password", "verificador de senha"],

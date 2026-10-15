@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import GiveawayPickerClient from "./GiveawayPickerClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("giveaway-picker"),
   title: "Giveaway Picker - Random Winner / Sorteador Instagram | MultiTool",
   description:
     "Free giveaway picker and Instagram raffle tool. Paste or upload a list of usernames and draw random winners. Sorteador aleatório para sorteios do Instagram, 100% no navegador.",

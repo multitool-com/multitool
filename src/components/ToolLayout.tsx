@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SITE_CONFIG } from "@/lib/tools";
+import { formatReviewedDate, toolReviewedAt } from "@/lib/contentDates";
 
 interface FAQ {
   question: string;
@@ -35,6 +36,7 @@ export default function ToolLayout({
   relatedTools,
 }: Props) {
   const toolUrl = `${SITE_CONFIG.url}/tools/${categorySlug}/${toolSlug}`;
+  const reviewedAt = toolReviewedAt(toolSlug);
 
   // JSON-LD: Breadcrumb schema (Google adora)
   const breadcrumbSchema = {
@@ -140,7 +142,12 @@ export default function ToolLayout({
 
         {/* Título + descrição */}
         <h1 className="font-display text-3xl font-bold mb-2">{title}</h1>
-        <p className="text-ink/70 mb-8">{description}</p>
+        <p className="text-ink/70 mb-3">{description}</p>
+        {reviewedAt && (
+          <p className="font-mono text-[10px] tracking-widest text-ink/50 mb-8">
+            LAST REVIEWED {formatReviewedDate(reviewedAt).toUpperCase()} · EVERY TOOL RUNS LOCALLY IN YOUR BROWSER
+          </p>
+        )}
 
         {/* UI interativa da ferramenta */}
         {children}

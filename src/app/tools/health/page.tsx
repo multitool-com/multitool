@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getCategoryBySlug, SITE_CONFIG } from "@/lib/tools";
 import ToolPreview from "@/components/ToolPreview";
 import { notFound } from "next/navigation";
+import { categoryRobots } from "@/lib/indexing";
 
 const CATEGORY_SLUG = "health";
 
@@ -20,6 +21,7 @@ const category = getCategoryBySlug(CATEGORY_SLUG);
 
 export const metadata: Metadata = category
   ? {
+      robots: categoryRobots("health"),
       title: "Health & Fitness Calculators - BMI, Calories & More | MultiTool",
       description: category.seoDescription,
       alternates: {

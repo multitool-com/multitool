@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import LoremIpsumGeneratorClient from "./LoremIpsumGeneratorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("lorem-ipsum-generator"),
   title: "Lorem Ipsum Generator - Words, Paragraphs | MultiTool",
   description: "Generate Lorem Ipsum placeholder text with the exact number of words and paragraphs you need. Free, instant, copy-ready.",
   keywords: ["lorem ipsum generator", "lorem ipsum", "placeholder text", "dummy text generator", "fake text"],

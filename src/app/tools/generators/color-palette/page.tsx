@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import ColorPaletteClient from "./ColorPaletteClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("color-palette"),
   title: "Color Palette Generator - HEX to Palette | MultiTool",
   description: "Generate beautiful color palettes from any base color: monochromatic, complementary, analogous, triadic and tetradic. Copy hex codes.",
   keywords: ["color palette generator", "color scheme generator", "hex color palette", "color wheel", "palette maker", "gerador de paleta"],

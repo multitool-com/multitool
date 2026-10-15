@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import UuidGeneratorClient from "./UuidGeneratorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("uuid-generator"),
   title: "UUID Generator - v4 Random UUIDs | MultiTool",
   description: "Generate 1 to 100 cryptographically secure random UUIDs (v4) at once, in upper or lower case. Free developer tool.",
   keywords: ["uuid generator", "uuid v4", "generate uuid", "guid generator", "random uuid"],

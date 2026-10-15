@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import CropPdfClient from "./CropPdfClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("crop-pdf"),
   title: "Crop PDF Margins Online - Trim Page Edges | MultiTool",
   description:
     "Trim PDF margins by percentage — cut white borders from scanned pages and exports, on every page or a range. Free, private, no upload, no watermark.",

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PxToRemClient from "./PxToRemClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("px-to-rem"),
   title: "PX to REM Converter - CSS Units | MultiTool",
   description: "Convert pixels to rem and rem to pixels with any root font size (default 16px). Includes a quick reference table for common sizes.",
   keywords: ["px to rem", "rem to px", "px rem converter", "css rem", "font size converter"],

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import WeightConverterClient from "./WeightConverterClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("weight-converter"),
   title: "Weight Converter - kg, lbs, ounces, stones & More | MultiTool",
   description:
     "Convert weight and mass units instantly: kg to lbs, pounds to kg, grams to ounces, stones and tons — all units at once. Free and private.",

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import MergeImagesClient from "./MergeImagesClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("merge-images"),
   title: "Merge Images Side by Side or Stacked Online | MultiTool",
   description:
     "Combine two or more images side by side or top to bottom — with gap, background color and smart height matching. Before/after comparisons in seconds. Free and private.",

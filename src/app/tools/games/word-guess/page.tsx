@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import WordGuessClient from "./WordGuessClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("word-guess"),
   title: "Word Guess - Guess the Word in 6 Tries Online Free | MultiTool",
   description:
     "Play the word guessing game online free. Guess the hidden 5-letter word in six tries with color feedback. Daily brain teaser with session stats and sounds. No download.",

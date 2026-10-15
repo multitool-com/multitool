@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PdfToImagesClient from "./PdfToImagesClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("pdf-to-images"),
   title: "PDF to Images - Convert PDF Pages to JPG PNG Online Free | MultiTool",
   description:
     "Free PDF to image converter. Convert every page of a PDF to JPG or PNG with adjustable quality and resolution. Download all pages as a ZIP. 100% in your browser.",

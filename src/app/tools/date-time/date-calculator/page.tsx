@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import DateCalculatorClient from "./DateCalculatorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("date-calculator"),
   title: "Date Calculator - Days Between Dates & Add Days | MultiTool",
   description: "Count the exact number of days between two dates, or add and subtract days from any date. Free, instant, precise.",
   keywords: ["date calculator", "days between dates", "add days to date", "days from date", "date difference", "calculadora de datas"],

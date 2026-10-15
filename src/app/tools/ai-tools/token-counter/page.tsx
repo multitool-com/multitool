@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import TokenCounterClient from "./TokenCounterClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("token-counter"),
   title: "AI Token Counter - GPT-4, Claude & Gemini | MultiTool",
   description:
     "Free AI token counter for GPT-4, GPT-4o, Claude and Gemini. Count tokens, estimate API cost and see how much of the context window your prompt uses. 100% private, runs in your browser.",

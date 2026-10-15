@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE_CONFIG, categories, getAllTools } from "@/lib/tools";
+import { isCategoryIndexable, isToolIndexable } from "@/lib/indexing";
 import { getAllGuides } from "@/lib/guides";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -69,22 +70,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  // Páginas de categoria
-  const categoryPages: MetadataRoute.Sitemap = categories.map((cat) => ({
-    url: `${SITE_CONFIG.url}/tools/${cat.slug}`,
-    lastModified: now,
-    changeFrequency: "weekly",
-    priority: 0.8,
-  }));
+  // Páginas de categoria — só as que passam no critério de qualidade (ver src/lib/indexing.ts)
+  const categoryPages: MetadataRoute.Sitemap = categories
+    .filter((cat) => isCategoryIndexable(cat.slug))
+    .map((cat) => ({
+      url: `${SITE_CONFIG.url}/tools/${cat.slug}`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    }));
 
   // Páginas de ferramentas
   // Ferramentas "ready" têm prioridade maior que "coming-soon"
-  const toolPages: MetadataRoute.Sitemap = getAllTools().map((tool) => ({
-    url: `${SITE_CONFIG.url}/tools/${tool.categorySlug}/${tool.slug}`,
-    lastModified: now,
-    changeFrequency: "weekly",
-    priority: tool.status === "ready" ? 0.9 : 0.6,
-  }));
+  // Ferramentas: apenas as que passam no critério de qualidade. As demais seguem
+  // no ar para os usuários (robots: noindex, follow) e entram aqui quando forem
+  // aprofundadas — ver src/lib/indexing.ts.
+  const toolPages: MetadataRoute.Sitemap = getAllTools()
+    .filter((tool) => isToolIndexable(tool.slug))
+    .map((tool) => ({
+      url: `${SITE_CONFIG.url}/tools/${tool.categorySlug}/${tool.slug}`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    }));
 
     const guidePages: MetadataRoute.Sitemap = getAllGuides().map((g) => ({
     url: `${SITE_CONFIG.url}/guides/${g.slug}`,

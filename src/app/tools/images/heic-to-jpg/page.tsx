@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import HeicToJpgClient from "./HeicToJpgClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("heic-to-jpg"),
   title: "HEIC to JPG Converter - Convert iPhone Photos Online | MultiTool",
   description:
     "Convert HEIC and HEIF photos (iPhone default) to JPG online, free and private. Choose quality, download instantly — no upload, no watermark.",

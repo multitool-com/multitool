@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import FractionCalculatorClient from "./FractionCalculatorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("fraction-calculator"),
   title: "Fraction Calculator - Add, Subtract, Multiply, Divide | MultiTool",
   description: "Add, subtract, multiply and divide fractions with instant simplification and step-by-step results, including mixed numbers.",
   keywords: ["fraction calculator", "add fractions", "simplify fractions", "fraction simplifier", "mixed number calculator", "calculadora de fracoes"],

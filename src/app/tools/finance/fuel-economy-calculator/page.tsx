@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import FuelEconomyCalculatorClient from "./FuelEconomyCalculatorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("fuel-economy-calculator"),
   title: "Fuel Economy Calculator - km/L, MPG & Trip Cost | MultiTool",
   description: "Calculate fuel consumption (km/L or MPG), liters per 100 km, fuel needed and total trip cost in metric or imperial units.",
   keywords: ["fuel economy calculator", "fuel cost calculator", "mpg calculator", "gas mileage calculator", "trip fuel cost", "consumo de combustivel"],

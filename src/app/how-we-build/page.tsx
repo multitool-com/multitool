@@ -5,7 +5,7 @@ import { SITE_CONFIG } from "@/lib/tools";
 export const metadata: Metadata = {
   title: "How We Build Our Tools — Methodology & Quality",
   description:
-    "How MultiTool's 130+ tools are built, tested and kept private: the engineering standards, the testing process and the privacy-first architecture behind every calculator and converter.",
+    "How MultiTool's tools are built, tested and kept private: the engineering standards, the testing process and the privacy-first architecture behind every calculator and converter.",
   alternates: {
     canonical: `${SITE_CONFIG.url}/how-we-build`,
   },
@@ -42,7 +42,7 @@ export default function HowWeBuildPage() {
         How we build our tools
       </h1>
       <p className="text-lg text-ink/70 mb-2">
-        130+ tools, one standard: every calculator, converter and game on
+        Every tool, one standard: each calculator, converter and game on
         this site is built the same way — engineered to be exact, tested
         before published, and private by architecture.
       </p>
@@ -102,6 +102,49 @@ export default function HowWeBuildPage() {
         PageSpeed — optimized images, self-hosted fonts, no tracking
         bloat. Speed is part of quality: a tool that takes seconds to
         appear is a worse tool.
+      </p>
+
+      <H>6. How we decide what to publish — and what to index</H>
+      <p>
+        A tool is published only when it works on real files and its page
+        carries its own explanation: what the result means, where the limits
+        are, and when another approach is better. Publishing is not the same as
+        asking search engines to index, though. After the whole catalogue was
+        reviewed, the pages that were still too thin — a couple of paragraphs
+        around a button — were deliberately kept out of search engines until
+        they meet the same bar as the rest. A page here is indexable when it has
+        substantial content of its own, and that is a judgement we make page by
+        page, not in bulk.
+      </p>
+      <p>
+        Three things we do not do, on principle: we do not republish content
+        from other sites, we do not generate pages automatically to cover
+        keyword variations, and we do not hide text or swap content for
+        crawlers. If a page exists here, someone read it, used the tool on real
+        material and checked the result.
+      </p>
+
+      <H>7. Maintained, and corrected in the open</H>
+      <p>
+        Every tool page shows the date it was last reviewed, taken from the
+        actual change history of the page — not a decorative date. When a bug is
+        reported through the{" "}
+        <Link href="/contact" className="text-accent-deep underline underline-offset-2">
+          contact page
+        </Link>
+        , the correction ships in the next release and the review date moves with
+        it. Explanations that turn out to be wrong, incomplete or out of date are
+        treated as bugs, because a wrong explanation is worse than no
+        explanation.
+      </p>
+
+      <H>8. How the site pays for itself</H>
+      <p>
+        MultiTool is free and supported by advertising. There are no accounts,
+        no subscriptions, no premium tier and no data sales — the ads next to a
+        tool are the entire business model. That is also why we care about the
+        reading experience: a page cluttered with interstitials would defeat the
+        reason you came here, which is to finish a small task quickly.
       </p>
 
       <H>Found an issue?</H>

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import RotateFlipClient from "./RotateFlipClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("rotate-flip-image"),
   title: "Rotate & Flip Image - Fix Sideways Photos Online | MultiTool",
   description:
     "Rotate images 90° or 180° and flip horizontally or vertically — fix sideways photos, mirrored selfies and wrong scan orientation. Free, private, no upload.",

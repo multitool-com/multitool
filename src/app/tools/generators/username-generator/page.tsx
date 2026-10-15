@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import UsernameGeneratorClient from "./UsernameGeneratorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("username-generator"),
   title: "Username Generator - Cool Usernames Online | MultiTool",
   description: "Generate cool, unique usernames for games, social media and more. Mix styles, leet variations and copy with one click. Free, no sign-up.",
   keywords: ["username generator", "cool usernames", "gamertag generator", "name ideas", "social media username"],

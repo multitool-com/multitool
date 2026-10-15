@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PdfCompressClient from "./PdfCompressClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("pdf-compress"),
   title: "Compress PDF - Reduce PDF Size Online Free | MultiTool",
   description:
     "Free PDF compressor. Reduce the file size of a PDF by re-encoding pages as optimized images. Adjust quality and resolution. 100% in your browser, no upload.",

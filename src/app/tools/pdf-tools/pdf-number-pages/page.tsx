@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PdfNumberPagesClient from "./PdfNumberPagesClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("pdf-number-pages"),
   title: "Add Page Numbers to PDF - Number PDF Pages Online Free | MultiTool",
   description:
     "Free tool to add page numbers to a PDF. Choose the position (bottom center, bottom right, top), starting number, font size and prefix. 100% in your browser, no upload.",

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import MarkdownToHtmlClient from "./MarkdownToHtmlClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("markdown-to-html"),
   title: "Markdown to HTML Converter - Instant Live Preview | MultiTool",
   description: "Convert Markdown to clean HTML instantly with a live preview. Headings, lists, links, code blocks, blockquotes and more.",
   keywords: ["markdown to html", "md to html", "markdown converter", "markdown editor", "html generator", "markdown preview"],

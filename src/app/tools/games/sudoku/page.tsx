@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import SudokuClient from "./SudokuClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("sudoku"),
   title: "Sudoku - Play Free Online Sudoku Puzzles | MultiTool",
   description:
     "Play free Sudoku online with 4 difficulty levels, pencil notes, hints, undo and timer. Every puzzle is generated fresh with a single guaranteed solution — in your browser.",

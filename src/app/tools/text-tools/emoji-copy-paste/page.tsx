@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import EmojiCopyPasteClient from "./EmojiCopyPasteClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("emoji-copy-paste"),
   title: "Emoji Copy-Paste - Emojis for Social Media | MultiTool",
   description: "Find and copy emojis instantly: smileys, hearts, animals, food, symbols and more. Search by name and copy with one click. Free, no sign-up.",
   keywords: ["emoji copy paste", "emoji keyboard", "copy emojis", "emojis for instagram", "emojis for whatsapp", "emojis gratis"],

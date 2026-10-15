@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import GeometryCalculatorClient from "./GeometryCalculatorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("geometry-calculator"),
   title: "Geometry Calculator - Area & Perimeter | MultiTool",
   description: "Calculate the area and perimeter of squares, rectangles, triangles, circles and trapezoids in seconds. Free and precise.",
   keywords: ["geometry calculator", "area calculator", "perimeter calculator", "circle area", "triangle area", "trapezoid area"],

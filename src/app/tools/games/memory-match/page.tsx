@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import MemoryMatchClient from "./MemoryMatchClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("memory-match"),
   title: "Memory Match - Play Memory Card Game Online Free | MultiTool",
   description:
     "Play the classic memory card game online free. Flip the cards, find all the matching pairs and beat your best time. Three difficulty levels, no download.",

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PngToWebpClient from "./PngToWebpClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("png-to-webp"),
   title: "PNG to WebP Converter - Convert PNG Images Online | MultiTool",
   description:
     "Convert PNG images to WebP and cut file size by 25%+ with the quality you choose. Batch + ZIP download. Free, private, no upload.",

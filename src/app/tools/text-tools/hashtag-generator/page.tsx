@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import HashtagGeneratorClient from "./HashtagGeneratorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("hashtag-generator"),
   title: "Hashtag Generator - Free Hashtags for Social Media | MultiTool",
   description: "Generate 3-30 relevant hashtags from any topic: phrase tags, per-word tags, bigrams and trending variants. One click to copy all.",
   keywords: ["hashtag generator", "hashtags for instagram", "hashtag ideas", "social media hashtags", "gerador de hashtags"],

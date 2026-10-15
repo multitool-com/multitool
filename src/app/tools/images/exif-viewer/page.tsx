@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import ExifViewerClient from "./ExifViewerClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("exif-viewer"),
   title: "EXIF Viewer & Remover - See and Strip Photo Metadata | MultiTool",
   description:
     "View the EXIF metadata hidden in your photos (camera, date, GPS) and download a clean copy with all metadata removed. 100% private, no upload.",

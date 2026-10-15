@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import BlockStackerClient from "./BlockStackerClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("block-stacker"),
   title: "Block Stacker - Falling Blocks Puzzle Game Online Free | MultiTool",
   description:
     "Play the classic falling-blocks puzzle game online free, in the tradition of the 80s arcade favorite. Rotate, stack and clear lines. Speed rises every level. Keyboard controls, sounds, no download.",

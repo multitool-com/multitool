@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import SnakeClient from "./SnakeClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("snake"),
   title: "Snake Game - Play Classic Snake Online Free | MultiTool",
   description:
     "Play the classic Snake game online free. Eat the food, grow longer and avoid the walls. Neon visuals, keyboard and touch controls, high score tracking. No download.",

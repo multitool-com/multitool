@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import FreeAiDirectoryClient from "./FreeAiDirectoryClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("free-ai-directory"),
   title: "Free AI Tools Directory - No Signup & Open Source | MultiTool",
   description:
     "Curated directory of the best free AI tools in 2026. Filter by chat, image, video, coding, writing and research. See no-signup and open-source options.",

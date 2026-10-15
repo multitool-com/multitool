@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import AspectRatioCalculatorClient from "./AspectRatioCalculatorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("aspect-ratio-calculator"),
   title: "Aspect Ratio Calculator - 16:9, 4:3 & More | MultiTool",
   description: "Simplify any width and height to its aspect ratio (16:9, 4:3, 1:1) and find the missing dimension for videos, images and screens.",
   keywords: ["aspect ratio calculator", "16:9 calculator", "aspect ratio converter", "resolution ratio", "video aspect ratio", "image ratio"],

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import Game2048Client from "./Game2048Client";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("2048"),
   title: "2048 Game - Play 2048 Online Free | MultiTool",
   description:
     "Play 2048 online free. Merge the tiles, reach 2048 and keep going. Keyboard and touch controls, score and best score tracking. No download, no sign-up.",

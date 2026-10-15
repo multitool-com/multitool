@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PdfWatermarkClient from "./PdfWatermarkClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("pdf-watermark"),
   title: "PDF Watermark - Add Watermark to PDF Online Free | MultiTool",
   description:
     "Free PDF watermark tool. Add a text or image watermark to every page of a PDF with position, rotation and opacity controls. 100% in your browser, no upload.",

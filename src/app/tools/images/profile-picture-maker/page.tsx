@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import ProfilePicClient from "./ProfilePicClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("profile-picture-maker"),
   title: "Profile Picture Maker - Circle Avatar Crop Online | MultiTool",
   description:
     "Create polished profile pictures: circular or square crops with zoom control, exported at the right size for every platform. Free, private, no upload.",

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PdfRemovePagesClient from "./PdfRemovePagesClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("pdf-remove-pages"),
   title: "Remove Pages from PDF - Delete PDF Pages Online | MultiTool",
   description:
     "Delete pages from a PDF online — select pages to remove or keep, download the result instantly. Free, private, no upload, no watermark.",

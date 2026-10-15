@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import CalorieCalculatorClient from "./CalorieCalculatorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("calorie-calculator"),
   title: "Calorie / BMR Calculator - Daily Calories | MultiTool",
   description: "Calculate your BMR (Mifflin-St Jeor) and daily calorie target for weight loss, maintenance or gain. Free and private.",
   keywords: ["calorie calculator", "bmr calculator", "daily calorie intake", "calories to lose weight", "tdee calculator", "calorias por dia"],

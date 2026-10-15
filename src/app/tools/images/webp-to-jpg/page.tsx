@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import WebpToJpgClient from "./WebpToJpgClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("webp-to-jpg"),
   title: "WebP to JPG Converter - Convert WebP Images Online | MultiTool",
   description:
     "Convert WebP images to JPG online, one or many at a time (ZIP download). Free, private, no upload, no watermark — runs entirely in your browser.",

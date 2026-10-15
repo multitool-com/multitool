@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import BMICalculatorClient from "./BMICalculatorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("bmi-calculator"),
   title: "BMI Calculator - Body Mass Index Free Online Tool | MultiTool",
   description:
     "Calculate your BMI (Body Mass Index) instantly. Free online BMI calculator for metric and imperial units, with weight category and ideal weight range.",

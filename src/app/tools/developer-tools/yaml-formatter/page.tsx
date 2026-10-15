@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import YamlFormatterClient from "./YamlFormatterClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("yaml-formatter"),
   title: "YAML Formatter - Beautify & Validate YAML Online | MultiTool",
   description:
     "Format and validate YAML online with consistent indentation, instant error messages with line numbers. Free, private, runs in your browser.",

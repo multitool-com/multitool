@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import FaviconGeneratorClient from "./FaviconGeneratorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("favicon-generator"),
   title: "Favicon Generator - Text, Emoji or Image | MultiTool",
   description: "Create a favicon from text, an emoji or your own image, and download every size you need: 16, 32, 48, 180, 192 and 512 px.",
   keywords: ["favicon generator", "favicon maker", "icon generator", "favicon from text", "site icon generator", "favicon emoji"],

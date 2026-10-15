@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import UrlEncoderClient from "./UrlEncoderClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("url-encoder"),
   title: "URL Encoder / Decoder - Percent-Encoding | MultiTool",
   description: "Percent-encode and decode URLs: encode whole URLs or just query parameters, with automatic handling of special characters.",
   keywords: ["url encoder", "url decoder", "percent encoding", "url encode", "url decode", "encodeuri"],

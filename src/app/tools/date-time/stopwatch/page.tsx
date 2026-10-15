@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import StopwatchClient from "./StopwatchClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("stopwatch"),
   title: "Stopwatch, Timer & Pomodoro - Online Time Tools | MultiTool",
   description: "Free online stopwatch with laps, countdown timer and Pomodoro timer. Precise, with sound alerts. Works on any device, no download.",
   keywords: ["stopwatch", "online timer", "countdown timer", "pomodoro timer", "stopwatch online", "cronometro"],

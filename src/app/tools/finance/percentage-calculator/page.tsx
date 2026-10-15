@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PercentageCalculatorClient from "./PercentageCalculatorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("percentage-calculator"),
   title: "Percentage Calculator - What is X% of Y | MultiTool",
   description:
     "Free online percentage calculator. Instantly find what X% of Y is, with the formula and examples. Fast, private, no sign-up — runs entirely in your browser.",

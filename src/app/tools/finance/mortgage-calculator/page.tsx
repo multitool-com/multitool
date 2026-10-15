@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import MortgageCalculatorClient from "./MortgageCalculatorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("mortgage-calculator"),
   title: "Mortgage Calculator - Monthly Payment Estimator | MultiTool",
   description: "Free mortgage calculator. Estimate your monthly payment, total interest and total cost for any home price, down payment, rate and term.",
   keywords: ["mortgage calculator", "home loan calculator", "monthly payment calculator", "mortgage payment", "house payment calculator"],

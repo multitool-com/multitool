@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import WatermarkClient from "./WatermarkClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("watermark-image"),
   title: "Watermark Image Online - Protect Your Photos | MultiTool",
   description:
     "Add text watermarks to images: diagonal, tiled or positioned, with opacity, size and rotation control. Protect photos and proofs — free, private, no upload.",

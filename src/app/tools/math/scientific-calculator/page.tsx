@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import ScientificCalculatorClient from "./ScientificCalculatorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("scientific-calculator"),
   title: "Scientific Calculator - Free Online Calculator | MultiTool",
   description:
     "Free online scientific calculator. Trigonometry, logarithms, powers, roots, π and constants. Keyboard support, history and copy results. 100% in your browser.",

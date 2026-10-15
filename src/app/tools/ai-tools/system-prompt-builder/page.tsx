@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import SystemPromptBuilderClient from "./SystemPromptBuilderClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("system-prompt-builder"),
   title: "System Prompt Builder - Create Perfect AI System Prompts | MultiTool",
   description:
     "Free system prompt builder. Assemble professional ChatGPT, Claude and Gemini system prompts from roles, tones, constraints and output formats. Copy with one click. 100% in your browser.",

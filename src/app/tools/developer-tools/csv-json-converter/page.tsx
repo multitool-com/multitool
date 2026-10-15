@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import CsvJsonConverterClient from "./CsvJsonConverterClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("csv-json-converter"),
   title: "CSV to JSON Converter - Convert CSV ⇄ JSON Online | MultiTool",
   description:
     "Free CSV to JSON converter and JSON to CSV. Paste CSV or JSON and convert instantly with custom delimiters (comma, semicolon, tab) and header-row detection. 100% in your browser.",

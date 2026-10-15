@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import VatCalculatorClient from "./VatCalculatorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("vat-calculator"),
   title: "VAT / Sales Tax Calculator - GST, IVA & More | MultiTool",
   description:
     "Free VAT, GST and sales tax calculator. Add or remove tax from a price. Presets for common rates. USD, EUR, GBP and BRL.",

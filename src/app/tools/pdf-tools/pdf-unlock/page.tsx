@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PdfUnlockClient from "./PdfUnlockClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("pdf-unlock"),
   title: "Unlock PDF - Remove Password from PDF Online Free | MultiTool",
   description:
     "Free PDF unlocker. Remove the password from a PDF you own. Enter the password once, download the unlocked file. 100% in your browser, no upload.",

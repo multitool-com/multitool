@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import CoinFlipClient from "./CoinFlipClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("coin-flip"),
   title: "Coin Flip & Magic 8-Ball - Flip a Coin Online | MultiTool",
   description: "Flip a virtual coin, get a Yes/No answer or ask the Magic 8-Ball. Instant decisions with sounds, history and fair randomness. Free, no download.",
   keywords: ["coin flip", "flip a coin", "coin toss", "yes or no", "magic 8 ball", "decision maker", "cara ou coroa"],

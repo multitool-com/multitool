@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import DiscountCalculatorClient from "./DiscountCalculatorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("discount-calculator"),
   title: "Discount Calculator - Sale Price & Savings | MultiTool",
   description:
     "Calculate discount, sale price and total savings instantly. Free online discount calculator with reverse mode and double-discount support.",

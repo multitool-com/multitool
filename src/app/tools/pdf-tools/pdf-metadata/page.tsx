@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PdfMetadataClient from "./PdfMetadataClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("pdf-metadata"),
   title: "PDF Metadata Editor - Edit PDF Title & Author Online Free | MultiTool",
   description:
     "Free PDF metadata editor. View and edit the title, author, subject and keywords of a PDF. 100% in your browser, no upload, no sign-up.",

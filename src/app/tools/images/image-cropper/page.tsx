@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import ImageCropperClient from "./ImageCropperClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("image-cropper"),
   title: "Image Cropper - Crop Photos Online | MultiTool",
   description: "Crop any image online with free, 1:1, 4:3, 16:9 and other preset ratios. Drag to position, zoom, then download as PNG. 100% private.",
   keywords: ["image cropper", "crop photo online", "crop image", "square crop", "crop tool", "cortar imagem"],

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import XmlFormatterClient from "./XmlFormatterClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("xml-formatter"),
   title: "XML Formatter - Beautify & Minify XML Online | MultiTool",
   description:
     "Format and validate XML online with 2 or 4 space indentation, or minify it. Instant syntax error detection. Free, private, no upload.",

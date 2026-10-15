@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import CompoundInterestClient from "./CompoundInterestClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("compound-interest"),
   title: "Compound Interest Calculator - Free Investment Growth | MultiTool",
   description:
     "Free compound interest calculator. See how principal, rate, compounding frequency and time grow an investment. USD, EUR, GBP and BRL.",

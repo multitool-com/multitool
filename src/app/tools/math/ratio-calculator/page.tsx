@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import RatioCalculatorClient from "./RatioCalculatorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("ratio-calculator"),
   title: "Ratio Calculator - Simplify & Solve for X | MultiTool",
   description: "Simplify any ratio (12:8 to 3:2) or solve for the missing value in a proportion a:b = c:x. Free and instant.",
   keywords: ["ratio calculator", "simplify ratio", "ratio solver", "proportion calculator", "solve for x ratio"],

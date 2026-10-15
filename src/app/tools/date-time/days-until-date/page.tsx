@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import DaysUntilDateClient from "./DaysUntilDateClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("days-until-date"),
   title: "Days Until Date - Countdown How Many Days Left | MultiTool",
   description:
     "Free days until date calculator. Count days, weeks, months and hours remaining until a birthday, holiday, wedding or deadline. Instant countdown in your browser.",

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import TipCalculatorClient from "./TipCalculatorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("tip-calculator"),
   title: "Tip Calculator - Split Bill & Gratuity | MultiTool",
   description:
     "Free tip calculator: calculate tip amount, total bill and split evenly between people. Quick preset percentages, round-up option and multi-currency support.",

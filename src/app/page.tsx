@@ -3,17 +3,18 @@ import Link from "next/link";
 import { SITE_CONFIG, categories, getAllTools } from "@/lib/tools";
 import { getAllGuides } from "@/lib/guides";
 
+const TOTAL_TOOLS = getAllTools().length;
+const TOTAL_GUIDES = getAllGuides().length;
+
 export const metadata: Metadata = {
-  title: "MultiTool - Free Online Calculators, Converters & Utilities",
-  description:
-    "100+ free online tools: calculators, converters, generators and utilities for finance, health, math, developers and more. No sign-up, instant results.",
+  title: "MultiTool — Free Online Calculators, Converters & Utilities",
+  description: `${TOTAL_TOOLS} free online tools and ${TOTAL_GUIDES} written guides: PDF, image, text, finance, health and developer utilities that run entirely in your browser. No sign-up, nothing uploaded.`,
   alternates: {
     canonical: SITE_CONFIG.url,
   },
   openGraph: {
-    title: "MultiTool - Free Online Calculators, Converters & Utilities",
-    description:
-      "100+ free online tools: calculators, converters, generators and utilities. No sign-up, instant results.",
+    title: "MultiTool — Free Online Calculators, Converters & Utilities",
+    description: `${TOTAL_TOOLS} free browser-based tools plus ${TOTAL_GUIDES} practical guides. No sign-up, nothing uploaded.`,
     url: SITE_CONFIG.url,
     siteName: SITE_CONFIG.name,
     type: "website",
@@ -21,9 +22,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "MultiTool - Free Online Tools",
-    description:
-      "100+ free online calculators, converters and generators. Instant results, no sign-up.",
+    title: "MultiTool — Free Online Tools",
+    description: `${TOTAL_TOOLS} free tools that run in your browser, with written guides explaining the math behind them.`,
   },
 };
 
@@ -88,10 +88,11 @@ export default function Home() {
             <br />
             in one place.
           </h1>
-          <p className="text-paper/70 max-w-xl mx-auto mb-8">
-            {totalTools}+ simple, fast utility tools for everyday math,
-            conversions and text — built to just work, right in your
-            browser.
+          <p className="text-paper/70 max-w-2xl mx-auto mb-8">
+            {totalTools} tools for PDF, images, text, finance, maths and
+            everyday conversions — plus written guides that explain the numbers
+            behind them. Everything is processed inside your browser, so your
+            files never leave your device.
           </p>
 
           <form
@@ -113,6 +114,74 @@ export default function Home() {
             />
           </form>
         </div>
+      </section>
+
+      <section className="max-w-3xl mx-auto px-4 pt-14 pb-2">
+        <p className="font-mono text-xs tracking-widest text-accent-deep uppercase mb-3">
+          What this site is
+        </p>
+        <h2 className="font-display text-2xl md:text-3xl font-bold mb-4">
+          A toolbox built to be used, not to collect your files
+        </h2>
+        <p className="text-ink/80 leading-relaxed mb-4">
+          MultiTool gathers the small utilities that keep interrupting real
+          work: merging a PDF before sending it, converting a HEIC photo from a
+          phone, checking how long a text takes to read out loud, comparing two
+          AI models by price, calculating a loan, rotating a scanned page the
+          right way up. Each one is a single page that does one job — no
+          account, no installation, no watermark, no "upgrade to continue".
+        </p>
+        <p className="text-ink/80 leading-relaxed mb-4">
+          The engine behind almost every tool runs <strong>inside your
+          browser</strong>. PDF merging, image compression, format conversion,
+          Word-to-PDF, password generation: the file is read on your own machine
+          and the result is written on your own machine. That is why the tools
+          work offline once the page has loaded, why they are fast even on large
+          files, and why you can use them with contracts, medical documents or
+          unpublished coursework without uploading anything anywhere. The few
+          exceptions — where a tool genuinely needs an external service — say so
+          on their own page and in the{" "}
+          <Link href="/privacy" className="text-accent-deep underline underline-offset-2">
+            privacy policy
+          </Link>.
+        </p>
+        <p className="text-ink/80 leading-relaxed mb-4">
+          Every tool is free and stays free. The site is supported by
+          advertising, which is why you may see ads next to the tools — we do
+          not sell data, we do not run accounts, and there is nothing to
+          subscribe to.
+        </p>
+
+        <h2 className="font-display text-2xl md:text-3xl font-bold mt-12 mb-4">
+          How tools get published here
+        </h2>
+        <p className="text-ink/80 leading-relaxed mb-4">
+          A tool only goes live when it actually works on real files and its
+          page explains what it does in plain language: what the result means,
+          which limits it has, and when a different approach is better. We
+          recently went through the whole catalogue and pulled the thinnest
+          pages out of search engines until they meet the same bar — a page is
+          only indexable here when it carries its own explanation, not just a
+          button. Guessing is not a feature: when a limitation is real (a
+          scanned PDF needs OCR, a chart cannot be compared automatically, a
+          legacy <code className="font-mono text-xs">.doc</code> loses its
+          formatting), the page says it outright instead of pretending.
+        </p>
+        <p className="text-ink/80 leading-relaxed">
+          The written{" "}
+          <Link href="/guides" className="text-accent-deep underline underline-offset-2">
+            guides
+          </Link>{" "}
+          follow the same rule. They exist to answer the question behind the
+          tool — how much a PDF can really be compressed, why a lossless format
+          can still shrink a file, what those image dimensions in social media
+          actually are — with numbers and tables you can check, and a direct
+          link to the tool that performs the operation. The engineering
+          standards behind both are documented in{" "}
+          <Link href="/how-we-build" className="text-accent-deep underline underline-offset-2">
+            how we build
+          </Link>.
+        </p>
       </section>
 
       <section className="max-w-6xl mx-auto px-4 py-16">
@@ -199,13 +268,13 @@ export default function Home() {
                 Privacy-First
               </h2>
               <p className="text-sm text-ink/70">
-                Most tools process files and inputs locally in your
-                browser. A few tools use external services when required,
-                sending only the data that feature needs.{" "}
+                Files are processed locally with JavaScript — nothing is
+                uploaded. The few tools that need an external service say so on
+                their page;{" "}
                 <Link href="/privacy" className="text-accent-deep underline underline-offset-2">
-                  See our Privacy Policy
+                  the privacy policy
                 </Link>{" "}
-                for details.
+                lists them all.
               </p>
             </div>
             <div>
@@ -214,12 +283,35 @@ export default function Home() {
                 Always Free
               </h2>
               <p className="text-sm text-ink/70">
-                Every tool is free forever. No sign-ups, no paywalls, no
-                hidden fees.
+                Every tool is free, with no sign-up and no paywall. The site is
+                funded by advertising, never by your data.
               </p>
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="max-w-3xl mx-auto px-4 pb-4">
+        <h2 className="font-display text-2xl md:text-3xl font-bold mb-4">
+          What these tools do not do
+        </h2>
+        <p className="text-ink/80 leading-relaxed mb-4">
+          Being useful also means being precise about the gaps. The tools do
+          not read scanned documents (OCR needs more than a browser can
+          offer), they do not replace a spreadsheet for modelling, and they do
+          not turn a phone photo into a professionally typeset PDF. The
+          converters do not guess: if a file has no text layer, the page tells
+          you instead of returning empty output. If you need an operation that
+          is genuinely beyond what a browser can do safely, we would rather
+          tell you than pretend otherwise.
+        </p>
+        <p className="text-ink/80 leading-relaxed mb-10">
+          The tools are used by students finishing coursework, by freelancers
+          sending budgets and reports, by small offices that need a contract in
+          PDF before the end of the day, by developers converting a payload to
+          Base64, and by anyone who needs an answer in thirty seconds without
+          installing anything.
+        </p>
       </section>
 
       <section className="max-w-4xl mx-auto px-4 py-16 text-center">
@@ -229,10 +321,12 @@ export default function Home() {
         <h2 className="font-display text-2xl md:text-3xl font-bold mb-3">
           Miss a tool? Let us know.
         </h2>
-        <p className="text-ink/70 mb-6 max-w-lg mx-auto">
-          We add new calculators, converters and utilities every week. If
-          there&apos;s something specific you need, we&apos;d love to hear
-          from you.
+        <p className="text-ink/70 mb-6 max-w-xl mx-auto">
+          New calculators, converters and utilities are added regularly — and
+          each one only goes live when it works on real files and its page
+          explains the result. If there is something specific you need, or a
+          page here got something wrong, write to us: reports from people using
+          the tools are how the catalogue improves.
         </p>
         <Link
           href="/contact"

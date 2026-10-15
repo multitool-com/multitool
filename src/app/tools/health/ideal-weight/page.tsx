@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import IdealWeightClient from "./IdealWeightClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("ideal-weight"),
   title: "Ideal Weight Calculator - 4 Classic Formulas | MultiTool",
   description: "Find your ideal body weight with the Devine, Robinson, Miller and Hamwi formulas, plus your healthy BMI range.",
   keywords: ["ideal weight calculator", "healthy weight range", "ideal body weight", "devine formula", "peso ideal"],

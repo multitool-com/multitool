@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getCategoryBySlug, SITE_CONFIG } from "@/lib/tools";
 import ToolPreview from "@/components/ToolPreview";
 import { notFound } from "next/navigation";
+import { categoryRobots } from "@/lib/indexing";
 
 const CATEGORY_SLUG = "generators";
 
@@ -27,6 +28,7 @@ const category = getCategoryBySlug(CATEGORY_SLUG);
 
 export const metadata: Metadata = category
   ? {
+      robots: categoryRobots("generators"),
       title: "Free Online Generators - Passwords, QR Codes & More | MultiTool",
       description: category.seoDescription,
       alternates: {

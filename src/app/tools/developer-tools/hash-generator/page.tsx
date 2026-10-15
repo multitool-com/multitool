@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import HashGeneratorClient from "./HashGeneratorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("hash-generator"),
   title: "Hash Generator - SHA-1, SHA-256, SHA-384, SHA-512 | MultiTool",
   description: "Generate cryptographic hashes of any text: SHA-1, SHA-256, SHA-384 and SHA-512. Instant, local, free.",
   keywords: ["hash generator", "sha256", "sha512", "sha1", "hash text", "checksum generator"],

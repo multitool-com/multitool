@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import NumberToWordsClient from "./NumberToWordsClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("number-to-words"),
   title: "Number to Words Converter - English & Portuguese | MultiTool",
   description: "Convert any number to words in English or Portuguese instantly — perfect for checks, invoices, contracts and essays.",
   keywords: ["number to words", "numbers to words converter", "write numbers in words", "check amount in words", "numero por extenso", "converter numero em palavras"],

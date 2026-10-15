@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import TypingTestClient from "./TypingTestClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("typing-test"),
   title: "Typing Test - WPM Speed Test Free | MultiTool",
   description: "Measure your typing speed in WPM and accuracy with 15, 30 or 60 second tests. Live feedback on every keystroke.",
   keywords: ["typing test", "wpm test", "typing speed test", "words per minute", "teste de digitacao"],

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import SequenceMemoryClient from "./SequenceMemoryClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("sequence-memory"),
   title: "Sequence Memory - Play Simon Memory Game Online Free | MultiTool",
   description:
     "Play the classic sequence memory game online free. Watch the glowing colors, repeat the sequence and beat your record. Endless levels with sounds. No download.",

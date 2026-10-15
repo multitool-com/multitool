@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import CronGeneratorClient from "./CronGeneratorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("cron-generator"),
   title: "Cron Generator - 5-Field Cron Expressions | MultiTool",
   description: "Build cron expressions visually with presets and dropdowns, plus a human-readable description. Compatible with Linux, AWS and GitHub Actions.",
   keywords: ["cron generator", "cron expression", "cron job", "scheduler", "crontab generator"],

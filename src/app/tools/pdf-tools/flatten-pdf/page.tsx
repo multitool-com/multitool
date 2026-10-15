@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import FlattenPdfClient from "./FlattenPdfClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("flatten-pdf"),
   title: "Flatten PDF Online - Bake Form Fields & Layers | MultiTool",
   description:
     "Flatten PDFs in your browser: turn interactive form fields, layers and annotations into permanent page content. Required by many portals. Free, private, no upload.",

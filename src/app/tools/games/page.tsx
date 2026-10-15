@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getCategoryBySlug, SITE_CONFIG } from "@/lib/tools";
 import { notFound } from "next/navigation";
+import { categoryRobots } from "@/lib/indexing";
 
 const CATEGORY_SLUG = "games";
 
@@ -9,6 +10,7 @@ const category = getCategoryBySlug(CATEGORY_SLUG);
 
 export const metadata: Metadata = category
   ? {
+      robots: categoryRobots("games"),
       title: "Free Online Games - Play in Your Browser | MultiTool",
       description: category.seoDescription,
       alternates: {

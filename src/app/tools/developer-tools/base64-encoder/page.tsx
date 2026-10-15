@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import Base64EncoderClient from "./Base64EncoderClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("base64-encoder"),
   title: "Base64 Encoder / Decoder - Text to Base64 | MultiTool",
   description: "Encode text to Base64 and decode Base64 back to text instantly, with full UTF-8 support for emoji and accents. Free developer tool.",
   keywords: ["base64 encoder", "base64 decoder", "base64 encode", "base64 decode", "base64 converter"],

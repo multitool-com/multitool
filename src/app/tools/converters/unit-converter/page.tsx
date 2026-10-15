@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import UnitConverterClient from "./UnitConverterClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("unit-converter"),
   title: "Unit Converter - Length, Weight, Volume, Area & Speed | MultiTool",
   description:
     "Free unit converter for length, weight, volume, area, speed and digital storage. Convert metric and imperial instantly in your browser. No sign-up.",

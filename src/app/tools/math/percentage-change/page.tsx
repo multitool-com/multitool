@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PercentageChangeClient from "./PercentageChangeClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("percentage-change"),
   title: "Percentage Increase / Decrease Calculator | MultiTool",
   description:
     "Free percentage change calculator. Find the percent increase or decrease between two numbers, plus the absolute difference. Instant, private, no sign-up.",

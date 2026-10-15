@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import AgeCalculatorClient from "./AgeCalculatorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("age-calculator"),
   title: "Age Calculator - How Old Am I? Free Online Tool | MultiTool",
   description:
     "Calculate your exact age in years, months, weeks, days, hours and minutes. Free online age calculator with instant results — no sign-up required.",

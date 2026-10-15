@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import AddBorderClient from "./AddBorderClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("add-border"),
   title: "Add Border to Image Online - Frames & Polaroid | MultiTool",
   description:
     "Add borders to photos: solid color frames, double frames or polaroid-style layouts with adjustable width and color. Free, private, runs in your browser.",

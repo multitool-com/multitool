@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PdfProtectClient from "./PdfProtectClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("pdf-protect"),
   title: "Protect PDF - Password Protect PDF Online Free | MultiTool",
   description:
     "Free PDF password protector. Encrypt a PDF with a password so only people with the password can open it. Optionally restrict printing and copying. 100% in your browser, no upload.",

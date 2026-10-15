@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import TextDiffClient from "./TextDiffClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("text-diff"),
   title: "Text Diff Checker - Compare Texts Side by Side | MultiTool",
   description: "Compare two texts and see exactly what changed: added lines in green, removed lines in red. Side-by-side or unified view.",
   keywords: ["text diff", "compare text", "diff checker", "text comparison", "line diff tool"],

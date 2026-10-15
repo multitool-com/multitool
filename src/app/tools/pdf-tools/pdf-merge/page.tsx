@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PdfMergeClient from "./PdfMergeClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("pdf-merge"),
   title: "Merge PDF - Combine PDF Files Online Free | MultiTool",
   description:
     "Free PDF merger. Combine multiple PDF files into one document in seconds, keeping your page order. No upload, no sign-up — 100% in your browser.",
@@ -116,7 +118,7 @@ export default function Page() {
         {
           question: "My file shows an error — why?",
           answer:
-            "The tool cannot read files that are password-protected or corrupted. Remove the password first (our PDF Protect/Unlock tools are coming soon) and try again.",
+            "The tool cannot read files that are password-protected or corrupted. Remove the password first with the PDF Unlock tool and try again.",
         },
         {
           question: "Are my files uploaded anywhere?",

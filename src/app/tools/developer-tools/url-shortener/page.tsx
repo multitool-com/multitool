@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import UrlShortenerClient from "./UrlShortenerClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("url-shortener"),
   title: "URL Shortener - Shorten Links Online Free | MultiTool",
   description:
     "Free URL shortener. Turn any long link into a short, shareable URL in seconds. Copy with one click, session history included. No sign-up.",

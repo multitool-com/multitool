@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import DiceRollerClient from "./DiceRollerClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("dice-roller"),
   title: "Dice Roller - d4, d6, d8, d10, d12, d20 | MultiTool",
   description: "Roll up to 10 dice of any type — d4, d6, d8, d10, d12, d20 — with realistic animation, totals and full history.",
   keywords: ["dice roller", "roll dice", "d20", "rpg dice", "dice simulator", "dados online"],

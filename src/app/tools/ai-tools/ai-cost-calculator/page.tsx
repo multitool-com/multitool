@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import AiCostCalculatorClient from "./AiCostCalculatorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("ai-cost-calculator"),
   title: "AI API Cost Calculator - GPT, Claude & Gemini Pricing | MultiTool",
   description:
     "Free AI API cost calculator for GPT-4o, Claude and Gemini. Estimate monthly spend from tokens per request, request volume and input/output prices. USD, EUR, GBP and BRL.",

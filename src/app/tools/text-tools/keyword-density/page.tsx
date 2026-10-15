@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import KeywordDensityClient from "./KeywordDensityClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("keyword-density"),
   title: "Keyword Density Checker - SEO Keyword Frequency | MultiTool",
   description: "Check how often a keyword appears in your text as a percentage of all words, with a top-words frequency table. Free SEO tool.",
   keywords: ["keyword density", "keyword density checker", "seo keyword", "keyword frequency", "word frequency counter"],

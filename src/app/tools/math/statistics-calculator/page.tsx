@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import StatisticsCalculatorClient from "./StatisticsCalculatorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("statistics-calculator"),
   title: "Statistics Calculator - Mean, Median, Mode Online | MultiTool",
   description: "Free statistics calculator. Compute mean, median, mode, range, variance and standard deviation from any list of numbers. Instant results.",
   keywords: ["statistics calculator", "mean median mode calculator", "standard deviation calculator", "variance calculator", "statistics solver"],

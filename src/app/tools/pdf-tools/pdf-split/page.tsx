@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PdfSplitClient from "./PdfSplitClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("pdf-split"),
   title: "Split PDF - Extract Pages from PDF Online Free | MultiTool",
   description:
     "Free PDF splitter. Extract specific pages or ranges from a PDF, split into single pages, or divide into chunks of N pages. Download as PDF or ZIP. 100% in your browser.",

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import SlugGeneratorClient from "./SlugGeneratorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("slug-generator"),
   title: "Slug Generator - URL-Friendly Text | MultiTool",
   description: "Convert any title into a clean URL slug: lowercase, accents removed, spaces replaced. Perfect for blog posts and SEO.",
   keywords: ["slug generator", "url slug", "seo slug", "clean url", "gerador de slug"],

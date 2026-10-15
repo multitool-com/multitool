@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import LengthConverterClient from "./LengthConverterClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("length-converter"),
   title: "Length Converter - cm, inches, feet, meters & More | MultiTool",
   description:
     "Convert length and distance units instantly: cm to inches, meters to feet, km to miles and more. See all units at once. Free and private.",

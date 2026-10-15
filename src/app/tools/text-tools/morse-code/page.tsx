@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import MorseCodeClient from "./MorseCodeClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("morse-code"),
   title: "Morse Code Translator - Text to Morse Code Online | MultiTool",
   description: "Translate text to Morse code and back, with sound playback. Learn the classic alphabet and encode messages instantly. Free, no download.",
   keywords: ["morse code", "morse code translator", "text to morse", "morse decoder", "morse alphabet", "codigo morse"],

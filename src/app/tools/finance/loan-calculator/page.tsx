@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import LoanCalculatorClient from "./LoanCalculatorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("loan-calculator"),
   title: "Loan Calculator - EMI & Amortization Schedule | MultiTool",
   description:
     "Free online loan calculator with EMI calculation and amortization schedule. Calculate monthly payments, total interest and see your loan breakdown.",

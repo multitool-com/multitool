@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import GrayscaleClient from "./GrayscaleClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("grayscale-image"),
   title: "Convert Image to Grayscale (Black & White) Online | MultiTool",
   description:
     "Turn photos into black and white with adjustable intensity. The classic luminance formula, live preview, PNG/JPG export — free, private, no upload.",

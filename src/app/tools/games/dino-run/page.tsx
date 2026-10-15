@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import DinoRunClient from "./DinoRunClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("dino-run"),
   title: "Dino Run - Endless Runner Game Online Free | MultiTool",
   description:
     "Play the endless runner game online free. Jump over cacti, duck under birds and run as far as you can. Speed keeps rising, day turns to night. Sounds, no download.",

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import ImagesToPdfClient from "./ImagesToPdfClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("images-to-pdf"),
   title: "Images to PDF - JPG PNG WebP to PDF Converter | MultiTool",
   description:
     "Free Images to PDF converter. Turn JPG, PNG and WebP images into a single PDF document — reorder, rotate and fit pages. 100% in your browser, no upload.",

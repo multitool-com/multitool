@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import MetaTagGeneratorClient from "./MetaTagGeneratorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("meta-tag-generator"),
   title: "Meta Tag Generator - SEO Title & Description | MultiTool",
   description: "Generate SEO meta tags (title, description, Open Graph, Twitter) with a live Google search preview and social share preview.",
   keywords: ["meta tag generator", "seo meta tags", "meta description generator", "og tags generator", "title tag generator", "meta tags seo"],

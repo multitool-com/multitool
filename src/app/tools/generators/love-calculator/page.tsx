@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import LoveCalculatorClient from "./LoveCalculatorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("love-calculator"),
   title: "Love Calculator - Test Love Compatibility Online | MultiTool",
   description: "Free love calculator. Enter two names and discover your love compatibility percentage. Fun, instant and viral — try it with your crush!",
   keywords: ["love calculator", "love test", "compatibility test", "love percentage", "calculator de amor", "teste de amor"],

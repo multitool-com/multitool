@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getCategoryBySlug, SITE_CONFIG } from "@/lib/tools";
 import ToolPreview from "@/components/ToolPreview";
 import { notFound } from "next/navigation";
+import { categoryRobots } from "@/lib/indexing";
 
 const CATEGORY_SLUG = "text-tools";
 
@@ -30,6 +31,7 @@ const category = getCategoryBySlug(CATEGORY_SLUG);
 
 export const metadata: Metadata = category
   ? {
+      robots: categoryRobots("text-tools"),
       title: "Free Online Text Tools - Counter, Case Converter & More | MultiTool",
       description: category.seoDescription,
       alternates: {

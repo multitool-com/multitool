@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import RomanNumeralConverterClient from "./RomanNumeralConverterClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("roman-numeral-converter"),
   title: "Roman Numeral Converter - Arabic to Roman & Back | MultiTool",
   description: "Convert numbers between Arabic and Roman numerals (1-3999) instantly, with validation of canonical form.",
   keywords: ["roman numeral converter", "arabic to roman", "roman numeral translation", "mmxxvi", "conversor de numeros romanos"],

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import ReadabilityClient from "./ReadabilityClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("readability-checker"),
   title: "Readability Checker - Flesch Score & Reading Level | MultiTool",
   description:
     "Free readability checker. Measure the Flesch Reading Ease score and Flesch-Kincaid grade level of any text. Word, sentence and syllable counts. 100% in your browser.",

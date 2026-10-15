@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import LlmModelComparisonClient from "./LlmModelComparisonClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("llm-model-comparison"),
   title: "LLM Model Comparison - GPT vs Claude vs Gemini | MultiTool",
   description:
     "Compare the top LLMs side by side: GPT-4o, Claude, Gemini, Llama, DeepSeek and more. Context windows, max output and reference API prices per 1M tokens. Free, no sign-up.",

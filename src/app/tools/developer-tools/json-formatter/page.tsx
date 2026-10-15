@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import JsonFormatterClient from "./JsonFormatterClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("json-formatter"),
   title: "JSON Formatter, Validator & Beautifier | MultiTool",
   description:
     "Free online JSON formatter and validator. Beautify, minify, validate and fix JSON instantly. Works with large files, all in your browser — no uploads.",

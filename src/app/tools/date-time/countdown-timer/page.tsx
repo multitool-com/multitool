@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import CountdownTimerClient from "./CountdownTimerClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("countdown-timer"),
   title: "Countdown Timer - Live Days, Hours, Minutes, Seconds | MultiTool",
   description: "Count down to any event: days, hours, minutes and seconds, updating live. Perfect for launches, trips and deadlines.",
   keywords: ["countdown timer", "countdown to date", "event countdown", "days hours minutes seconds", "timer online"],

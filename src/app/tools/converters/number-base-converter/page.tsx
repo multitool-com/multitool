@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import NumberBaseConverterClient from "./NumberBaseConverterClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("number-base-converter"),
   title: "Number Base Converter - Binary, Octal, Decimal, Hex | MultiTool",
   description: "Convert numbers between binary, octal, decimal and hexadecimal instantly, with support for any base from 2 to 36.",
   keywords: ["number base converter", "binary to hex", "decimal to binary", "hex converter", "base converter", "conversor de base"],

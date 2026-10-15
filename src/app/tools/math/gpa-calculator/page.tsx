@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import GpaCalculatorClient from "./GpaCalculatorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("gpa-calculator"),
   title: "GPA Calculator - 4.0 Scale, Any Credits | MultiTool",
   description: "Calculate your GPA on the 4.0 scale: add courses with letter grades and credit hours, get instant weighted GPA and total credits.",
   keywords: ["gpa calculator", "college gpa", "high school gpa", "4.0 scale", "grade point average calculator"],

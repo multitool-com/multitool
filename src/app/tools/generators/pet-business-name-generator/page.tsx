@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PetBusinessNameGeneratorClient from "./PetBusinessNameGeneratorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("pet-business-name-generator"),
   title: "Pet & Business Name Generator - Creative Ideas | MultiTool",
   description: "Generate creative names for pets (dogs, cats, birds) by theme, and business names by style with your own keyword. One click to copy.",
   keywords: ["pet name generator", "business name generator", "dog name ideas", "company name generator", "brand name generator", "cat name ideas"],

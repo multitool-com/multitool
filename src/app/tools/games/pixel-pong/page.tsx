@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PixelPongClient from "./PixelPongClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("pixel-pong"),
   title: "Pixel Pong - Play Pong Online Free | MultiTool",
   description:
     "Play the arcade paddle classic online free with neon pixel style. Beat the computer across 3 difficulty levels. Touch and keyboard controls, sounds. No download.",

@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import ImageCompressorClient from "./ImageCompressorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("image-compressor"),
   title: "Image Compressor - Resize & Compress Images Online | MultiTool",
   description:
     "Free online image compressor. Reduce the file size of JPEG, PNG and WebP images with quality control and resize. 100% in your browser, no upload.",

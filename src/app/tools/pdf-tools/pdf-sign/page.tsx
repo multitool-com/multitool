@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PdfSignClient from "./PdfSignClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("pdf-sign"),
   title: "Sign PDF - Sign PDF Online Free | MultiTool",
   description:
     "Free PDF signer. Draw your signature with your mouse or finger, place it on the page and download the signed PDF. 100% in your browser, no account.",

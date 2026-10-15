@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import JpgPngWebpConverterClient from "./JpgPngWebpConverterClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("jpg-png-webp-converter"),
   title: "JPG to PNG & WebP Converter - Free Image Format Converter | MultiTool",
   description:
     "Free image format converter. Convert images between JPG, PNG and WebP instantly in your browser. Transparency, quality control and download. No upload, no sign-up.",

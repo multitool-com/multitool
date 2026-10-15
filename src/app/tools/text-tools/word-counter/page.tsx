@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import WordCounterClient from "./WordCounterClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("word-counter"),
   title: "Word Counter - Count Words, Characters & Sentences | MultiTool",
   description:
     "Free online word counter: count words, characters (with & without spaces), sentences, paragraphs and reading time. Perfect for essays, articles, tweets and SEO.",

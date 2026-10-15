@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PdfRepairClient from "./PdfRepairClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("pdf-repair"),
   title: "PDF Repair - Fix Corrupted PDF Files Online | MultiTool",
   description: "Rebuild corrupted or broken PDF files: the tool re-creates a clean, valid PDF structure page by page. Free, private, in your browser.",
   keywords: ["pdf repair", "fix corrupted pdf", "repair pdf online", "broken pdf fixer", "corrupted pdf recovery"],

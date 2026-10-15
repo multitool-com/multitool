@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import PromptGeneratorClient from "./PromptGeneratorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("prompt-generator"),
   title: "AI Prompt Generator - Free ChatGPT & Claude Prompts | MultiTool",
   description:
     "Free AI prompt generator with 100+ ready-to-use templates for marketing, coding, writing, design and education. Customize variables and copy instantly.",

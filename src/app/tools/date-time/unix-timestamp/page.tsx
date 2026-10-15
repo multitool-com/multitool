@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import UnixTimestampClient from "./UnixTimestampClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("unix-timestamp"),
   title: "Unix Timestamp Converter - Epoch to Date & Back | MultiTool",
   description: "Convert Unix timestamps (seconds or milliseconds) to human-readable dates and vice versa, in local time or UTC. Live clock included.",
   keywords: ["unix timestamp converter", "epoch converter", "epoch to date", "timestamp to date", "unix time"],

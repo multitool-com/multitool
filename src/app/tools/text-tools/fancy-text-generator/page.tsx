@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import FancyTextGeneratorClient from "./FancyTextGeneratorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("fancy-text-generator"),
   title: "Fancy Text Generator - Cool Fonts & Styles Online | MultiTool",
   description: "Convert your text into fancy unicode styles: bold, italic, cursive, monospace, upside down and more. Copy with one click for bios and messages. Free.",
   keywords: ["fancy text generator", "fancy fonts", "cool text generator", "cursive text", "unicode text", "letras diferentes"],

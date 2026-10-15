@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ToolLayout from "@/components/ToolLayout";
 import PdfToMarkdownClient from "./PdfToMarkdownClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("pdf-to-markdown"),
   title: "PDF to Markdown Converter Online - Free & Private | MultiTool",
   description:
     "Convert PDF to Markdown in your browser: real headings, bullet and numbered lists, fenced code blocks and clean paragraphs. No upload, no sign-up, no watermark.",
@@ -120,6 +122,18 @@ export default function PdfToMarkdownPage() {
             documents that arrive as email attachments.
           </p>
           <p className="mb-4">
+            Reorganising the result somewhere else? Then run the{" "}
+            <Link
+              href="/tools/pdf-tools/markdown-integrity-check"
+              className="text-accent-deep underline underline-offset-2"
+            >
+              Markdown Integrity Check
+            </Link>{" "}
+            afterwards: it compares this PDF with the rewritten Markdown and lists any
+            sentence, number, heading or figure that disappeared.
+          </p>
+
+          <p className="mb-4">
             Going the other way? Our{" "}
             <Link
               href="/tools/pdf-tools/markdown-to-pdf"
@@ -215,10 +229,10 @@ export default function PdfToMarkdownPage() {
         },
       ]}
       relatedTools={[
+        { name: "Markdown Integrity Check", href: "/tools/pdf-tools/markdown-integrity-check" },
         { name: "Markdown to PDF", href: "/tools/pdf-tools/markdown-to-pdf" },
         { name: "PDF to Images", href: "/tools/pdf-tools/pdf-to-images" },
         { name: "PDF Unlock", href: "/tools/pdf-tools/pdf-unlock" },
-        { name: "PDF Metadata Editor", href: "/tools/pdf-tools/pdf-metadata" },
       ]}
     >
       <PdfToMarkdownClient />

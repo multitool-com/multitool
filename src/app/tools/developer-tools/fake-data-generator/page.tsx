@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import FakeDataGeneratorClient from "./FakeDataGeneratorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("fake-data-generator"),
   title: "Fake Data Generator - Test Data for Developers | MultiTool",
   description: "Generate realistic fake data: names, emails, phones, addresses, companies, dates, UUIDs and SSNs. Export as CSV or copy.",
   keywords: ["fake data generator", "test data generator", "mock data", "dummy data", "fake name generator"],

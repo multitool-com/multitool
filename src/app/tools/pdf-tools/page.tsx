@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getCategoryBySlug, SITE_CONFIG } from "@/lib/tools";
 import ToolPreview from "@/components/ToolPreview";
 import { notFound } from "next/navigation";
+import { categoryRobots } from "@/lib/indexing";
 
 const CATEGORY_SLUG = "pdf-tools";
 
@@ -28,12 +29,15 @@ const PREVIEWS: Record<string, { before: string; after: string }> = {
   "flatten-pdf": { before: "/previews/pdf/flatten-before.jpg", after: "/previews/pdf/flatten-after.jpg" },
   "markdown-to-pdf": { before: "/previews/pdf/md-before.jpg", after: "/previews/pdf/md-after.jpg" },
   "pdf-to-markdown": { before: "/previews/pdf/pdf2md-before.jpg", after: "/previews/pdf/pdf2md-after.jpg" },
+  "markdown-integrity-check": { before: "/previews/pdf/integrity-before.jpg", after: "/previews/pdf/integrity-after.jpg" },
+  "word-to-pdf": { before: "/previews/pdf/word-before.jpg", after: "/previews/pdf/word-after.jpg" },
 };
 
 const category = getCategoryBySlug(CATEGORY_SLUG);
 
 export const metadata: Metadata = category
   ? {
+      robots: categoryRobots("pdf-tools"),
       title: "Free PDF Tools - Merge, Split, Compress & More | MultiTool",
       description: category.seoDescription,
       alternates: {

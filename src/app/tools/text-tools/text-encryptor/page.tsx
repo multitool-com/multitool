@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import TextEncryptorClient from "./TextEncryptorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("text-encryptor"),
   title: "Text Encryptor - AES-256 Encrypt & Decrypt | MultiTool",
   description: "Encrypt any text with AES-256-GCM using a passphrase, and decrypt it back. Military-grade cryptography, 100% in your browser.",
   keywords: ["text encryptor", "encrypt text", "aes encryption", "decrypt text", "cipher online", "criptografar texto"],

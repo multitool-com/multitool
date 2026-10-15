@@ -219,6 +219,59 @@ export default function AboutPage() {
             BROWSE TOOLS →
           </Link>
         </section>
+        <section>
+          <h2 className="font-display text-2xl font-semibold mt-8 mb-3">
+            How the content is made
+          </h2>
+          <p className="mb-3">
+            MultiTool is run as an independent editorial project. Every tool is
+            built and tested by hand, and every page is written around the tool
+            it documents: what the result means, which numbers it uses, and
+            where it stops being reliable. The{" "}
+            <Link href="/guides" className="text-accent-deep underline underline-offset-2">
+              guides
+            </Link>{" "}
+            follow the same rule — they answer the question behind the tool with
+            concrete figures instead of filler.
+          </p>
+          <p>
+            The engineering and testing standards are documented in{" "}
+            <Link href="/how-we-build" className="text-accent-deep underline underline-offset-2">
+              how we build
+            </Link>
+            , including how we decide which pages deserve to appear in search
+            engines. It also explains what we refuse to do: no scraped content,
+            no pages generated automatically to chase keywords, no hidden text.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="font-display text-2xl font-semibold mt-8 mb-3">
+            Mistakes are treated as bugs
+          </h2>
+          <p>
+            Numbers, formulas and explanations can be wrong, and when they are,
+            we want to know. Reports sent through the{" "}
+            <Link href="/contact" className="text-accent-deep underline underline-offset-2">
+              contact page
+            </Link>{" "}
+            are read, the page is corrected, and the review date on that page
+            moves to the day of the fix. Being corrected in public is part of how
+            a reference site earns its place.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="font-display text-2xl font-semibold mt-8 mb-3">
+            How MultiTool is funded
+          </h2>
+          <p>
+            The site is free and stays free: it is supported by advertising.
+            There are no accounts, no subscriptions and no paid tier, and your
+            files are never sold or shared — most tools never send anything at
+            all, because they run entirely inside your browser.
+          </p>
+        </section>
       </div>
     </div>
   );

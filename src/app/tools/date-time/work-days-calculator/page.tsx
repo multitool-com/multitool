@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import WorkDaysCalculatorClient from "./WorkDaysCalculatorClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("work-days-calculator"),
   title: "Work Days Calculator - Business Days Between Dates | MultiTool",
   description: "Count business days (Monday-Friday) between two dates, excluding weekends and your own holidays. Free and precise.",
   keywords: ["work days calculator", "business days calculator", "working days between dates", "business days count", "dias uteis"],

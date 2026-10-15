@@ -1215,7 +1215,7 @@ export const categories: Category[] = [
     shortName: "PDF",
     description: "Merge, split, convert and protect PDFs.",
     seoDescription:
-      "Free PDF tools: merge, split, compress, unlock, convert images to PDF, protect with password, rotate and sign — plus PDF to Markdown and Markdown to PDF conversion. All in your browser, no upload.",
+      "Free PDF tools: merge, split, compress, unlock, protect, rotate and sign — plus Word to PDF, PDF to Markdown, Markdown to PDF and image conversion. All in your browser, no upload.",
     tools: [
       {
         slug: "pdf-merge",
@@ -1484,6 +1484,33 @@ export const categories: Category[] = [
           "extract text from pdf",
           "pdf to md online",
           "pdf text extractor",
+        ],
+        status: "ready",
+      },
+      {
+        slug: "word-to-pdf",
+        name: "Word to PDF",
+        description: "Convert .docx and legacy .doc files to clean PDF — headings, lists, tables, images and page numbers, all in your browser.",
+        keywords: [
+          "word to pdf",
+          "docx to pdf",
+          "doc to pdf",
+          "convert word to pdf",
+          "word to pdf converter",
+          "docx to pdf online",
+        ],
+        status: "ready",
+      },
+      {
+        slug: "markdown-integrity-check",
+        name: "Markdown Integrity Check",
+        description: "Compare the original PDF with an edited Markdown file: see exactly which sentences, numbers, headings and figures went missing. Free, private, no upload.",
+        keywords: [
+          "compare pdf and markdown",
+          "markdown integrity check",
+          "pdf markdown diff",
+          "check markdown missing text",
+          "verify pdf conversion",
         ],
         status: "ready",
       },

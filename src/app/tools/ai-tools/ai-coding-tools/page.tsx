@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import AiCodingToolsClient from "./AiCodingToolsClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("ai-coding-tools"),
   title: "AI Coding Tools Comparison - Copilot, Cursor, Windsurf | MultiTool",
   description:
     "Compare the best AI coding assistants: GitHub Copilot, Cursor, Windsurf, Claude Code, Cline, Continue.dev and more. Filter by price, free plan, IDE and agent mode.",

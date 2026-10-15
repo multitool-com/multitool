@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import SqlFormatterClient from "./SqlFormatterClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("sql-formatter"),
   title: "SQL Formatter - Beautify SQL Queries Online | MultiTool",
   description:
     "Format SQL queries online with proper indentation and keyword casing. Supports MySQL, PostgreSQL, SQLite, T-SQL and more. Free, private, no upload.",

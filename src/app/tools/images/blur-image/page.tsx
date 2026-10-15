@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import ToolLayout from "@/components/ToolLayout";
 import BlurClient from "./BlurClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("blur-image"),
   title: "Blur or Pixelate Image Parts Online - Hide Faces & Data | MultiTool",
   description:
     "Blur or pixelate parts of an image: drag a rectangle over faces, license plates, IDs, prices or messages and hide them before sharing. Free, private, no upload.",

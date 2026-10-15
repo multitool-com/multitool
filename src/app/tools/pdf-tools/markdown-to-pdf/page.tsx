@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ToolLayout from "@/components/ToolLayout";
 import MarkdownPdfClient from "./MarkdownPdfClient";
+import { toolRobots } from "@/lib/indexing";
 
 export const metadata: Metadata = {
+  robots: toolRobots("markdown-to-pdf"),
   title: "Markdown to PDF Converter Online - Clean & Selectable | MultiTool",
   description:
     "Convert Markdown to PDF with real selectable text: headings, lists, bold, code and links rendered on clean A4 pages. Free, private, no upload.",
@@ -112,6 +114,7 @@ export default function MarkdownToPdfPage() {
       ]}
       relatedTools={[
         { name: "PDF to Markdown", href: "/tools/pdf-tools/pdf-to-markdown" },
+        { name: "Word to PDF", href: "/tools/pdf-tools/word-to-pdf" },
         { name: "Markdown to HTML", href: "/tools/developer-tools/markdown-to-html" },
         { name: "PDF Metadata Editor", href: "/tools/pdf-tools/pdf-metadata" },
         { name: "PDF Compress", href: "/tools/pdf-tools/pdf-compress" },
