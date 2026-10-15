@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Random Number Generator - No Repeats, Sorted | MultiTool"
+      title="Random Number Generator"
       description="Generate random numbers in any range, with options for unique values, sorting and up to 1000 numbers at once. Free."
-      categoryName="generators_NAME"
+      categoryName="Generators & Fun"
       categorySlug="generators"
       toolSlug="random-number-generator"
       howItWorks={

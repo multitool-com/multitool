@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Countdown Timer - Live Days, Hours, Minutes, Seconds | MultiTool"
+      title="Countdown Timer"
       description="Count down to any event: days, hours, minutes and seconds, updating live. Perfect for launches, trips and deadlines."
-      categoryName="date-time_NAME"
+      categoryName="Date & Time"
       categorySlug="date-time"
       toolSlug="countdown-timer"
       howItWorks={

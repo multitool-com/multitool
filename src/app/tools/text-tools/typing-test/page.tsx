@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Typing Test - WPM Speed Test Free | MultiTool"
+      title="Typing Test (WPM)"
       description="Measure your typing speed in WPM and accuracy with 15, 30 or 60 second tests. Live feedback on every keystroke."
-      categoryName="text-tools_NAME"
+      categoryName="Text Tools"
       categorySlug="text-tools"
       toolSlug="typing-test"
       howItWorks={

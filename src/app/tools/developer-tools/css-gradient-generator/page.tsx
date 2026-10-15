@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_CSS Gradient Generator - Linear & Radial | MultiTool"
+      title="CSS Gradient Generator"
       description="DESC"
-      categoryName="developer-tools_NAME"
+      categoryName="Developer Tools"
       categorySlug="developer-tools"
       toolSlug="css-gradient-generator"
       howItWorks={

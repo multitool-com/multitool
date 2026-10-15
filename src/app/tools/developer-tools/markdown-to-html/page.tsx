@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Markdown to HTML Converter - Instant Live Preview | MultiTool"
+      title="Markdown to HTML"
       description="DESC"
-      categoryName="developer-tools_NAME"
+      categoryName="Developer Tools"
       categorySlug="developer-tools"
       toolSlug="markdown-to-html"
       howItWorks={

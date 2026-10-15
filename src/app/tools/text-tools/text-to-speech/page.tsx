@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Text to Speech - Read Aloud Online Free | MultiTool"
+      title="Text to Speech"
       description="DESC"
-      categoryName="text-tools_NAME"
+      categoryName="Text Tools"
       categorySlug="text-tools"
       toolSlug="text-to-speech"
       howItWorks={

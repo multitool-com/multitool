@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Ideal Weight Calculator - 4 Classic Formulas | MultiTool"
+      title="Ideal Weight Calculator"
       description="Find your ideal body weight with the Devine, Robinson, Miller and Hamwi formulas, plus your healthy BMI range."
-      categoryName="health_NAME"
+      categoryName="Health & Fitness"
       categorySlug="health"
       toolSlug="ideal-weight"
       howItWorks={

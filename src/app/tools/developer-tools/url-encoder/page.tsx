@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_URL Encoder / Decoder - Percent-Encoding | MultiTool"
+      title="URL Encoder / Decoder"
       description="Percent-encode and decode URLs: encode whole URLs or just query parameters, with automatic handling of special characters."
-      categoryName="developer-tools_NAME"
+      categoryName="Developer Tools"
       categorySlug="developer-tools"
       toolSlug="url-encoder"
       howItWorks={

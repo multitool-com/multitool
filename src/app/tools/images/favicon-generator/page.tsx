@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Favicon Generator - Text, Emoji or Image | MultiTool"
+      title="Favicon Generator"
       description="DESC"
-      categoryName="images_NAME"
+      categoryName="Image Tools"
       categorySlug="images"
       toolSlug="favicon-generator"
       howItWorks={

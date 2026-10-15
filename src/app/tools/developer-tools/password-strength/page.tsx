@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Password Strength Checker - Test Passwords | MultiTool"
+      title="Password Strength Checker"
       description="Check how strong your password is: score from very weak to strong, entropy estimate and 6 security checks. 100% local."
-      categoryName="developer-tools_NAME"
+      categoryName="Developer Tools"
       categorySlug="developer-tools"
       toolSlug="password-strength"
       howItWorks={

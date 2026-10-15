@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Fancy Text Generator - Cool Fonts & Styles Online | MultiTool"
+      title="Fancy Text Generator"
       description="Convert your text into fancy unicode styles: bold, italic, cursive, monospace, upside down and more. Copy with one click for bios and messages. Free."
-      categoryName="text-tools_NAME"
+      categoryName="Text Tools"
       categorySlug="text-tools"
       toolSlug="fancy-text-generator"
       howItWorks={

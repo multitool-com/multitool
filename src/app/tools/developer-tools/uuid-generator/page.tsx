@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_UUID Generator - v4 Random UUIDs | MultiTool"
+      title="UUID Generator"
       description="Generate 1 to 100 cryptographically secure random UUIDs (v4) at once, in upper or lower case. Free developer tool."
-      categoryName="developer-tools_NAME"
+      categoryName="Developer Tools"
       categorySlug="developer-tools"
       toolSlug="uuid-generator"
       howItWorks={

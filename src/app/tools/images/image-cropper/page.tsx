@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Image Cropper - Crop Photos Online | MultiTool"
+      title="Image Cropper"
       description="Crop any image online with free, 1:1, 4:3, 16:9 and other preset ratios. Drag to position, zoom, then download as PNG. 100% private."
-      categoryName="images_NAME"
+      categoryName="Image Tools"
       categorySlug="images"
       toolSlug="image-cropper"
       howItWorks={

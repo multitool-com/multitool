@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Text Encryptor - AES-256 Encrypt & Decrypt | MultiTool"
+      title="Text Encryptor"
       description="Encrypt any text with AES-256-GCM using a passphrase, and decrypt it back. Military-grade cryptography, 100% in your browser."
-      categoryName="text-tools_NAME"
+      categoryName="Text Tools"
       categorySlug="text-tools"
       toolSlug="text-encryptor"
       howItWorks={

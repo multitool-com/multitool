@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Dice Roller - d4, d6, d8, d10, d12, d20 | MultiTool"
+      title="Dice Roller"
       description="Roll up to 10 dice of any type — d4, d6, d8, d10, d12, d20 — with realistic animation, totals and full history."
-      categoryName="generators_NAME"
+      categoryName="Generators & Fun"
       categorySlug="generators"
       toolSlug="dice-roller"
       howItWorks={

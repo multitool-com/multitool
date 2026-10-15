@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Calorie / BMR Calculator - Daily Calories | MultiTool"
+      title="Calorie / BMR Calculator"
       description="Calculate your BMR (Mifflin-St Jeor) and daily calorie target for weight loss, maintenance or gain. Free and private."
-      categoryName="health_NAME"
+      categoryName="Health & Fitness"
       categorySlug="health"
       toolSlug="calorie-calculator"
       howItWorks={

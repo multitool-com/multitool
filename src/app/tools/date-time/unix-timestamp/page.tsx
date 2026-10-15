@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Unix Timestamp Converter - Epoch to Date & Back | MultiTool"
+      title="Unix Timestamp Converter"
       description="Convert Unix timestamps (seconds or milliseconds) to human-readable dates and vice versa, in local time or UTC. Live clock included."
-      categoryName="date-time_NAME"
+      categoryName="Date & Time"
       categorySlug="date-time"
       toolSlug="unix-timestamp"
       howItWorks={

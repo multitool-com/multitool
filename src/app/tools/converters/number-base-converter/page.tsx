@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Number Base Converter - Binary, Octal, Decimal, Hex | MultiTool"
+      title="Number Base Converter"
       description="Convert numbers between binary, octal, decimal and hexadecimal instantly, with support for any base from 2 to 36."
-      categoryName="converters_NAME"
+      categoryName="Converters"
       categorySlug="converters"
       toolSlug="number-base-converter"
       howItWorks={

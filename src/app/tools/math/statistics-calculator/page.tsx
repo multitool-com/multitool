@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Statistics Calculator - Mean, Median, Mode Online | MultiTool"
+      title="Statistics Calculator"
       description="Free statistics calculator. Compute mean, median, mode, range, variance and standard deviation from any list of numbers. Instant results."
-      categoryName="math_NAME"
+      categoryName="Math & Education"
       categorySlug="math"
       toolSlug="statistics-calculator"
       howItWorks={

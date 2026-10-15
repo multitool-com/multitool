@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Random Word Generator - Random Words Online | MultiTool"
+      title="Random Word Generator"
       description="Generate random words instantly for writing prompts, games, passwords and inspiration. Choose how many words you need. Free, no sign-up."
-      categoryName="generators_NAME"
+      categoryName="Generators & Fun"
       categorySlug="generators"
       toolSlug="random-word-generator"
       howItWorks={

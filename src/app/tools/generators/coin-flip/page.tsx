@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Coin Flip & Magic 8-Ball - Flip a Coin Online | MultiTool"
+      title="Coin Flip & Magic 8-Ball"
       description="Flip a virtual coin, get a Yes/No answer or ask the Magic 8-Ball. Instant decisions with sounds, history and fair randomness. Free, no download."
-      categoryName="generators_NAME"
+      categoryName="Generators & Fun"
       categorySlug="generators"
       toolSlug="coin-flip"
       howItWorks={

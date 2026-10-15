@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Pregnancy Due Date Calculator - from LMP | MultiTool"
+      title="Pregnancy Due Date Calculator"
       description="Estimate your due date, current pregnancy week and trimester from the first day of your last period. Free, private, no sign-up."
-      categoryName="health_NAME"
+      categoryName="Health & Fitness"
       categorySlug="health"
       toolSlug="pregnancy-due-date"
       howItWorks={

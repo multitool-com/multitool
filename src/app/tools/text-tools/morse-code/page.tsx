@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Morse Code Translator - Text to Morse Code Online | MultiTool"
+      title="Morse Code Translator"
       description="Translate text to Morse code and back, with sound playback. Learn the classic alphabet and encode messages instantly. Free, no download."
-      categoryName="text-tools_NAME"
+      categoryName="Text Tools"
       categorySlug="text-tools"
       toolSlug="morse-code"
       howItWorks={

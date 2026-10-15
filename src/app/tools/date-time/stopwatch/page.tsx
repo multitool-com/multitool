@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Stopwatch, Timer & Pomodoro - Online Time Tools | MultiTool"
+      title="Stopwatch, Timer & Pomodoro"
       description="Free online stopwatch with laps, countdown timer and Pomodoro timer. Precise, with sound alerts. Works on any device, no download."
-      categoryName="date-time_NAME"
+      categoryName="Date & Time"
       categorySlug="date-time"
       toolSlug="stopwatch"
       howItWorks={

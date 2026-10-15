@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Cron Generator - 5-Field Cron Expressions | MultiTool"
+      title="Cron Generator"
       description="Build cron expressions visually with presets and dropdowns, plus a human-readable description. Compatible with Linux, AWS and GitHub Actions."
-      categoryName="developer-tools_NAME"
+      categoryName="Developer Tools"
       categorySlug="developer-tools"
       toolSlug="cron-generator"
       howItWorks={

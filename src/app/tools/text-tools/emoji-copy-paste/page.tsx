@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Emoji Copy-Paste - Emojis for Social Media | MultiTool"
+      title="Emoji Copy-Paste"
       description="Find and copy emojis instantly: smileys, hearts, animals, food, symbols and more. Search by name and copy with one click. Free, no sign-up."
-      categoryName="text-tools_NAME"
+      categoryName="Text Tools"
       categorySlug="text-tools"
       toolSlug="emoji-copy-paste"
       howItWorks={

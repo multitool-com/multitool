@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Salary / Hourly Wage Calculator - Annual to Hourly | MultiTool"
+      title="Salary / Hourly Wage Calculator"
       description="Convert annual salary to hourly, weekly and monthly pay — or work out the annual value of an hourly rate. Free, no sign-up."
-      categoryName="finance_NAME"
+      categoryName="Finance"
       categorySlug="finance"
       toolSlug="salary-calculator"
       howItWorks={

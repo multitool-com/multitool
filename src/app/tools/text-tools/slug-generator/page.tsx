@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Slug Generator - URL-Friendly Text | MultiTool"
+      title="Slug Generator"
       description="Convert any title into a clean URL slug: lowercase, accents removed, spaces replaced. Perfect for blog posts and SEO."
-      categoryName="text-tools_NAME"
+      categoryName="Text Tools"
       categorySlug="text-tools"
       toolSlug="slug-generator"
       howItWorks={

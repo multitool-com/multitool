@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Love Calculator - Test Love Compatibility Online | MultiTool"
+      title="Love Calculator"
       description="Free love calculator. Enter two names and discover your love compatibility percentage. Fun, instant and viral — try it with your crush!"
-      categoryName="generators_NAME"
+      categoryName="Generators & Fun"
       categorySlug="generators"
       toolSlug="love-calculator"
       howItWorks={

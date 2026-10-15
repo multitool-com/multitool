@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Lorem Ipsum Generator - Words, Paragraphs | MultiTool"
+      title="Lorem Ipsum Generator"
       description="Generate Lorem Ipsum placeholder text with the exact number of words and paragraphs you need. Free, instant, copy-ready."
-      categoryName="text-tools_NAME"
+      categoryName="Text Tools"
       categorySlug="text-tools"
       toolSlug="lorem-ipsum-generator"
       howItWorks={

@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Fake Data Generator - Test Data for Developers | MultiTool"
+      title="Fake Data Generator"
       description="Generate realistic fake data: names, emails, phones, addresses, companies, dates, UUIDs and SSNs. Export as CSV or copy."
-      categoryName="developer-tools_NAME"
+      categoryName="Developer Tools"
       categorySlug="developer-tools"
       toolSlug="fake-data-generator"
       howItWorks={

@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Time Zone Converter - World Clock | MultiTool"
+      title="Time Zone Converter"
       description="Convert times between 17 world time zones with automatic daylight saving handling. Perfect for meetings across countries."
-      categoryName="converters_NAME"
+      categoryName="Converters"
       categorySlug="converters"
       toolSlug="timezone-converter"
       howItWorks={

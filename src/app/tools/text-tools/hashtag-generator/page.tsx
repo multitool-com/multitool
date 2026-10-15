@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Hashtag Generator - Free Hashtags for Social Media | MultiTool"
+      title="Hashtag Generator"
       description="Generate 3-30 relevant hashtags from any topic: phrase tags, per-word tags, bigrams and trending variants. One click to copy all."
-      categoryName="text-tools_NAME"
+      categoryName="Text Tools"
       categorySlug="text-tools"
       toolSlug="hashtag-generator"
       howItWorks={

@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Hash Generator - SHA-1, SHA-256, SHA-384, SHA-512 | MultiTool"
+      title="Hash Generator"
       description="Generate cryptographic hashes of any text: SHA-1, SHA-256, SHA-384 and SHA-512. Instant, local, free."
-      categoryName="developer-tools_NAME"
+      categoryName="Developer Tools"
       categorySlug="developer-tools"
       toolSlug="hash-generator"
       howItWorks={

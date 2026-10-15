@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Fuel Economy Calculator - km/L, MPG & Trip Cost | MultiTool"
+      title="Fuel Economy Calculator"
       description="DESC"
-      categoryName="finance_NAME"
+      categoryName="Finance"
       categorySlug="finance"
       toolSlug="fuel-economy-calculator"
       howItWorks={

@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_GPA Calculator - 4.0 Scale, Any Credits | MultiTool"
+      title="GPA Calculator"
       description="Calculate your GPA on the 4.0 scale: add courses with letter grades and credit hours, get instant weighted GPA and total credits."
-      categoryName="math_NAME"
+      categoryName="Math & Education"
       categorySlug="math"
       toolSlug="gpa-calculator"
       howItWorks={

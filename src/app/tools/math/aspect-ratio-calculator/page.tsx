@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Aspect Ratio Calculator - 16:9, 4:3 & More | MultiTool"
+      title="Aspect Ratio Calculator"
       description="DESC"
-      categoryName="math_NAME"
+      categoryName="Math & Education"
       categorySlug="math"
       toolSlug="aspect-ratio-calculator"
       howItWorks={

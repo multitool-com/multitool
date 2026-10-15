@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Keyword Density Checker - SEO Keyword Frequency | MultiTool"
+      title="Keyword Density Checker"
       description="Check how often a keyword appears in your text as a percentage of all words, with a top-words frequency table. Free SEO tool."
-      categoryName="text-tools_NAME"
+      categoryName="Text Tools"
       categorySlug="text-tools"
       toolSlug="keyword-density"
       howItWorks={

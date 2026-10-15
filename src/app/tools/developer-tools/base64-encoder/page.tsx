@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Base64 Encoder / Decoder - Text to Base64 | MultiTool"
+      title="Base64 Encoder / Decoder - Text to Base64"
       description="Encode text to Base64 and decode Base64 back to text instantly, with full UTF-8 support for emoji and accents. Free developer tool."
-      categoryName="developer-tools_NAME"
+      categoryName="Developer Tools"
       categorySlug="developer-tools"
       toolSlug="base64-encoder"
       howItWorks={

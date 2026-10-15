@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Ratio Calculator - Simplify & Solve for X | MultiTool"
+      title="Ratio Calculator"
       description="Simplify any ratio (12:8 to 3:2) or solve for the missing value in a proportion a:b = c:x. Free and instant."
-      categoryName="math_NAME"
+      categoryName="Math & Education"
       categorySlug="math"
       toolSlug="ratio-calculator"
       howItWorks={

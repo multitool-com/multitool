@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Geometry Calculator - Area & Perimeter | MultiTool"
+      title="Geometry Calculator"
       description="Calculate the area and perimeter of squares, rectangles, triangles, circles and trapezoids in seconds. Free and precise."
-      categoryName="math_NAME"
+      categoryName="Math & Education"
       categorySlug="math"
       toolSlug="geometry-calculator"
       howItWorks={

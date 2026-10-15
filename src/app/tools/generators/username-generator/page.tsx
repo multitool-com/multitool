@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Username Generator - Cool Usernames Online | MultiTool"
+      title="Username Generator"
       description="Generate cool, unique usernames for games, social media and more. Mix styles, leet variations and copy with one click. Free, no sign-up."
-      categoryName="generators_NAME"
+      categoryName="Generators & Fun"
       categorySlug="generators"
       toolSlug="username-generator"
       howItWorks={

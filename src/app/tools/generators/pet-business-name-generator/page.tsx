@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Pet & Business Name Generator - Creative Ideas | MultiTool"
+      title="Pet & Business Name Generator"
       description="DESC"
-      categoryName="generators_NAME"
+      categoryName="Generators & Fun"
       categorySlug="generators"
       toolSlug="pet-business-name-generator"
       howItWorks={

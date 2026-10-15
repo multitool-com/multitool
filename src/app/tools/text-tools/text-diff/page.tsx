@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Text Diff Checker - Compare Texts Side by Side | MultiTool"
+      title="Text Diff Checker"
       description="Compare two texts and see exactly what changed: added lines in green, removed lines in red. Side-by-side or unified view."
-      categoryName="text-tools_NAME"
+      categoryName="Text Tools"
       categorySlug="text-tools"
       toolSlug="text-diff"
       howItWorks={

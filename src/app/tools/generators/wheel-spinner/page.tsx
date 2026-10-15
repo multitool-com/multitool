@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Wheel Spinner - Random Picker | MultiTool"
+      title="Wheel Spinner"
       description="Spin the wheel to pick a random winner from your list. Add options, spin with animation, and get a fair result every time."
-      categoryName="generators_NAME"
+      categoryName="Generators & Fun"
       categorySlug="generators"
       toolSlug="wheel-spinner"
       howItWorks={

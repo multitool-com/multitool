@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Date Calculator - Days Between Dates & Add Days | MultiTool"
+      title="Date Calculator"
       description="Count the exact number of days between two dates, or add and subtract days from any date. Free, instant, precise."
-      categoryName="date-time_NAME"
+      categoryName="Date & Time"
       categorySlug="date-time"
       toolSlug="date-calculator"
       howItWorks={

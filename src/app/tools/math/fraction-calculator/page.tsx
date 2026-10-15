@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Fraction Calculator - Add, Subtract, Multiply, Divide | MultiTool"
+      title="Fraction Calculator"
       description="Add, subtract, multiply and divide fractions with instant simplification and step-by-step results, including mixed numbers."
-      categoryName="math_NAME"
+      categoryName="Math & Education"
       categorySlug="math"
       toolSlug="fraction-calculator"
       howItWorks={

@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_PDF Repair - Fix Corrupted PDF Files Online | MultiTool"
+      title="PDF Repair"
       description="Rebuild corrupted or broken PDF files: the tool re-creates a clean, valid PDF structure page by page. Free, private, in your browser."
-      categoryName="pdf-tools_NAME"
+      categoryName="PDF Tools"
       categorySlug="pdf-tools"
       toolSlug="pdf-repair"
       howItWorks={

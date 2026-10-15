@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Mortgage Calculator - Monthly Payment Estimator | MultiTool"
+      title="Mortgage Calculator"
       description="Free mortgage calculator. Estimate your monthly payment, total interest and total cost for any home price, down payment, rate and term."
-      categoryName="finance_NAME"
+      categoryName="Finance"
       categorySlug="finance"
       toolSlug="mortgage-calculator"
       howItWorks={

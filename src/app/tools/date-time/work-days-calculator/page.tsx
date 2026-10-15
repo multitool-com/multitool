@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Work Days Calculator - Business Days Between Dates | MultiTool"
+      title="Work Days Calculator"
       description="Count business days (Monday-Friday) between two dates, excluding weekends and your own holidays. Free and precise."
-      categoryName="date-time_NAME"
+      categoryName="Date & Time"
       categorySlug="date-time"
       toolSlug="work-days-calculator"
       howItWorks={

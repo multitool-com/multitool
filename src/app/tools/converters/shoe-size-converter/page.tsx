@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Shoe Size Converter - US, UK, EU & CM | MultiTool"
+      title="Shoe Size Converter"
       description="DESC"
-      categoryName="converters_NAME"
+      categoryName="Converters"
       categorySlug="converters"
       toolSlug="shoe-size-converter"
       howItWorks={

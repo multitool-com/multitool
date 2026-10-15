@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Meta Tag Generator - SEO Title & Description | MultiTool"
+      title="Meta Tag Generator"
       description="DESC"
-      categoryName="developer-tools_NAME"
+      categoryName="Developer Tools"
       categorySlug="developer-tools"
       toolSlug="meta-tag-generator"
       howItWorks={

@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Text Case Converter - Upper, Lower, Title, camelCase & More | MultiTool"
+      title="Text Case Converter"
       description="Convert text between 10 cases: UPPERCASE, lowercase, Title Case, sentence case, camelCase, PascalCase, snake_case, kebab-case and more."
-      categoryName="text-tools_NAME"
+      categoryName="Text Tools"
       categorySlug="text-tools"
       toolSlug="text-case-converter"
       howItWorks={

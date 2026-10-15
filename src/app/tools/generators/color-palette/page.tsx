@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Color Palette Generator - HEX to Palette | MultiTool"
+      title="Color Palette / HEX-RGB"
       description="Generate beautiful color palettes from any base color: monochromatic, complementary, analogous, triadic and tetradic. Copy hex codes."
-      categoryName="generators_NAME"
+      categoryName="Generators & Fun"
       categorySlug="generators"
       toolSlug="color-palette"
       howItWorks={

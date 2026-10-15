@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_PX to REM Converter - CSS Units | MultiTool"
+      title="PX to REM Converter"
       description="Convert pixels to rem and rem to pixels with any root font size (default 16px). Includes a quick reference table for common sizes."
-      categoryName="developer-tools_NAME"
+      categoryName="Developer Tools"
       categorySlug="developer-tools"
       toolSlug="px-to-rem"
       howItWorks={

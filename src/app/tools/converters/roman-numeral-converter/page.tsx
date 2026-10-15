@@ -29,9 +29,9 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ToolLayout
-      title="H1_Roman Numeral Converter - Arabic to Roman & Back | MultiTool"
+      title="Roman Numeral Converter"
       description="Convert numbers between Arabic and Roman numerals (1-3999) instantly, with validation of canonical form."
-      categoryName="converters_NAME"
+      categoryName="Converters"
       categorySlug="converters"
       toolSlug="roman-numeral-converter"
       howItWorks={
