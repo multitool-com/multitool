@@ -1,0 +1,1672 @@
+PROMPT MASTER MULTITOOL
+
+
+GitHub
+
+user
+multitool.com@gmail.com
+senha: Dan@20342211
+
+
+login e senha wordpress
+webmaster
+@T00l#piloT
+
+
+
+
+
+
+
+
+
+
+
+
+
+antes de continuarmos, preciso que você crie um resumo/prompt de todo o projeto. O objetivo é que, da mesma forma que aconteceu agora, que no chat anterior o limite da conversa foi atingido e eu não pude continuar, tive que abrir este chat atual e tivemos que fazer um raio x do projeto e perdemos tempo até que você entendesse o ponto de onde parei para podermos dar sequencia. 
+Desta forma, crie uma espécie de "prompt master" como se você de você para você mesmo, de forma que se esta conversa atingir o seu limite, que eu possa utilizar esse prompt para que você dê sequência caso eu precise abrir outro chat. Como pra mim não faz diferença da forma que você vai criar, pois nao vou ler, apenas guardar, seja bem técnico e específico sobre toda a estrutura, finalidade, layouts, e tudo que envove este projeto para que você mesmo entenda, então escreva como se você estivesse falando para o próximo chat o que ele deve fazer e de onde deve continuar. à partir da criação deste prompt, que eu vou guardar em um bloco de notas, posteriormente só teremos que atualizar ele com o progresso a partir do ponto onde ele foi criado, assim, não será necessário criar ele inteiro novamente, apenas atualizações posteriores. 
+Outra coisa, para que eu não seja surpreendido com o atingimento do limite da conversa, quero ser informado antes disso acontecer ( quando estiver perto de atingir o limite )
+
+
+
+
+Perfeito! Estratégia inteligente. 👏
+
+Vou criar o **PROMPT MASTER** agora. Guarde em um arquivo `.txt` e, se precisar abrir novo chat, cole isso no início.
+
+---
+
+# 📋 PROMPT MASTER — CHECKPOINT DO PROJETO MULTITOOL
+
+**Copie tudo abaixo e guarde:**
+
+```markdown
+================================================================================
+CONTINUAÇÃO DE PROJETO MULTITOOL - CHECKPOINT OBRIGATÓRIO
+================================================================================
+
+IDENTIDADE DO PROJETO:
+- Nome: MultiTool (multitool.online)
+- Stack: Next.js 14+ (App Router) + TypeScript + TailwindCSS
+- Objetivo: Site de ferramentas online (40 ferramentas totais, 8 categorias)
+- Público: Global (inglês)
+- Monetização: Google AdSense (preparado)
+- Hospedagem: Vercel (GitHub)
+
+ESTRUTURA DE PASTAS CRÍTICA:
+src/
+├── app/
+│   ├── layout.tsx (root layout com SEO global)
+│   ├── globals.css (tokens: bg-paper, bg-deep, text-accent, text-ink, font-display, font-mono)
+│   └── tools/
+│       ├── finance/ (4/5 ready)
+│       ├── health/ (2/5 ready)
+│       ├── math/ (0/5 ready - precisa de 1 para MVP)
+│       ├── converters/ (1/5 ready - Temperature Converter pronto)
+│       ├── date-time/ (0/5 ready - precisa de 1 para MVP: Days Until Date)
+│       ├── text-tools/ (1/5 ready - Word Counter pronto)
+│       ├── developer-tools/ (1/5 ready - JSON Formatter pronto)
+│       └── generators/ (2/5 ready - Password & QR Code)
+├── components/
+│   ├── ToolLayout.tsx (padrão obrigatório: recebe title, description, categoryName, categorySlug, toolSlug, children, howItWorks, faqs[], relatedTools[])
+│   └── ToolPlaceholder.tsx
+└── lib/
+    └── tools.ts (CATÁLOGO CENTRAL - SEMPRE ATUALIZAR status: "ready" | "coming-soon")
+
+PADRÃO VISUAL RIGOROSO (Tailwind):
+- Card container: bg-white border border-ink/10 rounded-xl p-6 shadow-sm
+- Botão ativo: bg-deep text-paper
+- Botão inativo: bg-paper text-ink/60 border border-ink/15 hover:border-accent hover:text-accent
+- Input: border border-ink/15 rounded-lg px-3 py-2.5 font-mono focus:ring-2 focus:ring-accent
+- Visor principal: bg-deep rounded-lg + valor em text-accent text-5xl font-mono
+- Card resultado normal: bg-paper border border-ink/10
+- Card resultado highlight: bg-accent/10 border-accent/30 + text-accent
+- Slider: accent-accent cursor-pointer
+- Fonte títulos: font-display
+- Fonte dados/labels: font-mono text-xs tracking-widest
+
+PADRÃO DE ARQUITETURA (OBRIGATÓRIO):
+1. page.tsx (Server Component):
+   - export const metadata: Metadata (title, description, keywords, alternates.canonical, openGraph, twitter)
+   - Default export com <ToolLayout> envolvendo <NomeClient />
+   - Props ToolLayout: title, description, categoryName, categorySlug, toolSlug, howItWorks (JSX), faqs (array 6 itens), relatedTools (array 4 itens)
+
+2. NomeClient.tsx (Client Component):
+   - "use client" no topo
+   - useState para inputs
+   - useMemo para cálculos derivados
+   - Validação: retornar null/early return se input inválido
+   - Formatação numérica: toLocaleString ou funções específicas
+   - Sub-componente StatBlock para estatísticas (highlight boolean)
+
+3. tools.ts:
+   - Localizar ferramenta por slug
+   - Alterar status: "ready"
+   - Salvar
+
+ESTADO ATUAL EXATO (11/40 READY):
+✅ READY:
+1. finance/percentage-calculator (sem Client - lógica no page.tsx, mas funciona)
+2. finance/loan-calculator (LoanCalculatorClient.tsx)
+3. finance/discount-calculator (DiscountCalculatorClient.tsx)
+4. finance/tip-calculator (TipCalculatorClient.tsx - modelo de referência perfeito)
+5. health/bmi-calculator (BMICalculatorClient.tsx)
+6. health/age-calculator (AgeCalculatorClient.tsx)
+7. generators/password-generator (PasswordGeneratorClient.tsx)
+8. generators/qr-code-generator (QRCodeGeneratorClient.tsx)
+9. text-tools/word-counter (WordCounterClient.tsx - recém criado)
+10. converters/temperature-converter (TemperatureConverterClient.tsx - recém criado)
+11. developer-tools/json-formatter (JsonFormatterClient.tsx - recém criado)
+
+⏳ COMING-SOON (faltando 29):
+- finance/salary-calculator
+- health/pregnancy-due-date, calorie-calculator, ideal-weight
+- math/ (todas 5: fraction, gpa, percentage-change, ratio, geometry)
+- converters/ (4: unit, timezone, number-base, roman-numeral)
+- date-time/ (todas 5: date-calculator, countdown-timer, work-days, unix-timestamp, days-until-date)
+- text-tools/ (4: text-case-converter, lorem-ipsum, text-diff, slug-generator)
+- developer-tools/ (4: base64-encoder, url-encoder, uuid-generator, hash-generator)
+- generators/ (3: random-number, color-palette, dice-roller)
+
+ROADMAP ATUAL (MVP PENDENTE):
+Faltam 2 ferramentas para completar o MVP de lançamento (cobertura de todas as 8 categorias):
+
+1. ⏳ NEXT: date-time/days-until-date (Volume: 400K/mês - Simples)
+   - Slug: days-until-date
+   - Categoria: date-time
+   - Funcionalidade: Calcular dias restantes até uma data futura específica
+   - Padrão: Similar ao Word Counter (input date, cálculo instantâneo)
+
+2. ⏳ DEPOIS: math/percentage-change (Volume: 120K/mês - Simples)
+   - Slug: percentage-change
+   - Categoria: math
+   - Funcionalidade: Calcular aumento/diminuição percentual entre dois números
+
+COMANDO ÚTIL DO USUÁRIO:
+- Para limpar cache TS: Ctrl+Shift+P → "TypeScript: Restart TS Server"
+- Servidor: npm run dev (porta 3000)
+
+REGRAS DE INTERAÇÃO COM O USUÁRIO:
+- SEMPRE uma instrução por vez (não multiplicar opções)
+- SEMPRE passo a passo detalhado (onde clicar, qual caminho)
+- SEMPRE aguardar confirmação ("ok", "deu certo", "terminei") antes do próximo passo
+- NUNCA gerar 2 versões para escolher (ser direto na melhor solução)
+- Alertar quando estiver próximo do limite de contexto (aproximadamente a cada 3 ferramentas concluídas ou quando a conversa ficar muito longa)
+
+ARQUIVOS LIXO APAGADOS:
+- src/app/tools/finance/percentage-calculator/oldpage.tsx (já removido)
+
+ÚLTIMA AÇÃO REALIZADA ANTES DESTE CHECKPOINT:
+- Finalização da ferramenta 11/40: developer-tools/json-formatter
+- Status: Testada e funcionando perfeitamente (validação, beautify, minify, copy, download)
+- tools.ts atualizado com status: "ready"
+
+PRÓXIMA AÇÃO IMEDIATA A SER REALIZADA:
+Criar date-time/days-until-date seguindo o padrão:
+1. Atualizar page.tsx (SEO completo, 6 FAQs, 4 Related Tools)
+2. Criar DaysUntilDateClient.tsx (input tipo date, cálculo diff em dias, horas, minutos)
+3. Atualizar tools.ts (status: "ready")
+4. Testar no navegador
+
+ESTRATÉGIA DO USUÁRIO:
+- Focar nas ferramentas MAIS BUSCADAS primeiro (SEO/tráfego)
+- Lançar quando tiver 13 ferramentas (5 categorias já tinham, + 3 novas = 8 categorias cobertas)
+- Manter padrão visual consistente com as ferramentas já existentes (Tip Calculator é o modelo de referência perfeito)
+
+================================================================================
+INSTRUÇÃO PARA NOVA INSTÂNCIA:
+Continue exatamente daqui. Não faça raio-x novamente, use este checkpoint.
+A próxima ferramenta é days-until-date na categoria date-time.
+Aguarde o usuário confirmar "sim" para começar o Passo 1 de 4.
+================================================================================
+```
+
+---
+
+# ⚠️ ALERTA DE LIMITE DE CONTEXTO
+
+**Aviso importante:** Não tenho como ver em tempo real a contagem exata de tokens restantes, mas vou adotar esta estratégia:
+
+**A cada 2 ferramentas concluídas** (ou seja, quando terminarmos a próxima e a seguinte), eu vou te avisar: *"Estamos chegando no limite. Vamos fazer um novo checkpoint antes de continuar?"*
+
+Ou, se você notar que estou demorando muito para responder, ou se as respostas parecerem "perder o fio da meada", **pare imediatamente** e cole o prompt master acima em um novo chat.
+
+---
+
+**Guarde esse prompt em um arquivo `.txt` agora.**
+
+Quando quiser continuar (Days Until Date), é só me dar um **"sim"** que começamos o Passo 1. 🚀
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
+prompt alternativo
+--------------------------------------------------------------------------------------
+
+Perfeito! Vou criar o **Prompt Master** agora. Guarde em um bloco de notas.
+
+---
+
+# 📋 PROMPT MASTER — MULTITOOL PROJECT
+
+````markdown
+# 🚀 PROMPT DE CONTINUIDADE — PROJETO MULTITOOL
+
+## 🎯 OBJETIVO DO PROJETO
+Criar um site global de ferramentas online gratuitas (multitool.online),
+com 40 ferramentas distribuídas em 8 categorias (5 por categoria).
+O site é todo em INGLÊS (público global), hospedado na VERCEL,
+monetizado pelo GOOGLE ADSENSE, e feito em NEXT.JS 14+ com App Router.
+
+---
+
+## 📦 TECH STACK
+- Framework: Next.js 14+ (App Router)
+- Language: TypeScript
+- Styling: Tailwind CSS
+- Hosting: Vercel (via GitHub)
+- Monetization: Google AdSense
+- SEO: Next.js Metadata API + JSON-LD Schema.org
+
+---
+
+## 🗂️ ESTRUTURA COMPLETA DO PROJETO
+
+```
+src/
+├── app/
+│   ├── globals.css
+│   ├── icon.svg
+│   ├── layout.tsx              ← Layout raiz (header, footer, fontes)
+│   ├── loading.tsx
+│   ├── manifest.ts
+│   ├── not-found.tsx
+│   ├── page.tsx                ← Home page
+│   ├── robots.ts
+│   ├── sitemap.ts
+│   ├── about/page.tsx
+│   ├── contact/page.tsx
+│   ├── cookies/page.tsx
+│   ├── disclaimer/page.tsx
+│   ├── privacy/page.tsx
+│   ├── search/page.tsx
+│   ├── terms/page.tsx
+│   └── tools/
+│       ├── converters/
+│       │   ├── page.tsx                        ← Listagem da categoria
+│       │   ├── number-base-converter/page.tsx
+│       │   ├── roman-numeral-converter/page.tsx
+│       │   ├── temperature-converter/
+│       │   │   ├── page.tsx                    ← ✅ CRIADO (PRONTO)
+│       │   │   └── TemperatureConverterClient.tsx ← ✅ CRIADO (PRONTO)
+│       │   ├── timezone-converter/page.tsx
+│       │   └── unit-converter/page.tsx
+│       ├── date-time/
+│       │   ├── page.tsx
+│       │   ├── countdown-timer/page.tsx
+│       │   ├── date-calculator/page.tsx
+│       │   ├── days-until-date/page.tsx        ← ⏳ PRÓXIMA A FAZER
+│       │   ├── unix-timestamp/page.tsx
+│       │   └── work-days-calculator/page.tsx
+│       ├── developer-tools/
+│       │   ├── page.tsx
+│       │   ├── base64-encoder/page.tsx
+│       │   ├── hash-generator/page.tsx
+│       │   ├── json-formatter/
+│       │   │   ├── page.tsx                    ← ✅ CRIADO (PRONTO)
+│       │   │   └── JsonFormatterClient.tsx     ← ✅ CRIADO (PRONTO)
+│       │   ├── url-encoder/page.tsx
+│       │   └── uuid-generator/page.tsx
+│       ├── finance/
+│       │   ├── page.tsx
+│       │   ├── discount-calculator/
+│       │   │   ├── DiscountCalculatorClient.tsx ← ✅ (PRONTO, não mexer)
+│       │   │   └── page.tsx                     ← ✅ (PRONTO, não mexer)
+│       │   ├── loan-calculator/
+│       │   │   ├── LoanCalculatorClient.tsx     ← ✅ (PRONTO, não mexer)
+│       │   │   └── page.tsx                     ← ✅ (PRONTO, não mexer)
+│       │   ├── percentage-calculator/
+│       │   │   ├── page.tsx                     ← ✅ (PRONTO, lógica inline, não mexer)
+│       │   │   └── oldpage.tsx                  ← 🗑️ DELETADO (foi apagado)
+│       │   ├── salary-calculator/page.tsx       ← ⏳ SOON
+│       │   └── tip-calculator/
+│       │       ├── TipCalculatorClient.tsx      ← ✅ (PRONTO, não mexer)
+│       │       └── page.tsx                     ← ✅ (PRONTO, não mexer)
+│       ├── generators/
+│       │   ├── page.tsx
+│       │   ├── color-palette/page.tsx
+│       │   ├── dice-roller/page.tsx
+│       │   ├── password-generator/
+│       │   │   ├── PasswordGeneratorClient.tsx  ← ✅ (PRONTO)
+│       │   │   └── page.tsx
+│       │   ├── qr-code-generator/
+│       │   │   ├── QRCodeGeneratorClient.tsx    ← ✅ (PRONTO)
+│       │   │   └── page.tsx
+│       │   └── random-number-generator/page.tsx
+│       ├── health/
+│       │   ├── page.tsx
+│       │   ├── age-calculator/
+│       │   │   ├── AgeCalculatorClient.tsx      ← ✅ (PRONTO)
+│       │   │   └── page.tsx
+│       │   ├── bmi-calculator/
+│       │   │   ├── BMICalculatorClient.tsx      ← ✅ (PRONTO)
+│       │   │   └── page.tsx
+│       │   ├── calorie-calculator/page.tsx
+│       │   ├── ideal-weight/page.tsx
+│       │   └── pregnancy-due-date/page.tsx
+│       ├── math/
+│       │   ├── page.tsx
+│       │   ├── fraction-calculator/page.tsx
+│       │   ├── geometry-calculator/page.tsx
+│       │   ├── gpa-calculator/page.tsx
+│       │   ├── percentage-change/page.tsx
+│       │   └── ratio-calculator/page.tsx
+│       └── text-tools/
+│           ├── page.tsx
+│           ├── lorem-ipsum-generator/page.tsx
+│           ├── slug-generator/page.tsx
+│           ├── text-case-converter/page.tsx
+│           ├── text-diff/page.tsx
+│           └── word-counter/
+│               ├── page.tsx                     ← ✅ CRIADO (PRONTO)
+│               └── WordCounterClient.tsx        ← ✅ CRIADO (PRONTO)
+├── components/
+│   ├── ToolLayout.tsx                           ← Layout padrão de todas as tools
+│   └── ToolPlaceholder.tsx
+└── lib/
+    └── tools.ts                                 ← Catálogo central (STATUS)
+```
+
+---
+
+## 🎨 DESIGN SYSTEM (TAILWIND TOKENS)
+
+### Cores:
+- `bg-paper` → fundo claro (bege/off-white)
+- `bg-deep` → azul-marinho escuro (visor principal, header/footer)
+- `text-accent` → laranja (destaque, resultados, links)
+- `text-ink` → preto/cinza escuro (texto principal)
+- `text-paper` → texto claro sobre fundo escuro
+
+### Fontes:
+- `font-display` → títulos (h1, h2, h3)
+- `font-mono` → labels, valores, botões, breadcrumbs, inputs
+
+### Classes padrão por componente:
+
+| Elemento | Classes |
+|---|---|
+| Card container | `bg-white border border-ink/10 rounded-xl p-6 shadow-sm` |
+| Botão pill ATIVO | `bg-deep text-paper` |
+| Botão pill INATIVO | `bg-paper text-ink/60 border border-ink/15 hover:border-accent hover:text-accent` |
+| Input | `border border-ink/15 rounded-lg px-3 py-2.5 font-mono text-lg focus:outline-none focus:ring-2 focus:ring-accent` |
+| Visor principal | `bg-deep rounded-lg px-5 py-4` com valor em `text-accent text-5xl font-mono` |
+| StatBlock normal | `bg-paper border border-ink/10` |
+| StatBlock highlight | `bg-accent/10 border-accent/30` + `text-accent` |
+| Slider | `accent-accent cursor-pointer` |
+| Info box | `bg-paper border border-ink/10 rounded-lg px-4 py-3` |
+| Botão de ação principal | `bg-deep text-paper font-mono text-xs tracking-widest px-6 py-3 rounded-lg hover:bg-accent transition-colors` |
+
+---
+
+## 📐 ARQUITETURA DE CADA FERRAMENTA
+
+Cada ferramenta segue o padrão de 2 arquivos:
+
+### 1. `page.tsx` (Server Component)
+Responsabilidades:
+- Exporta `metadata` completa (title, description, keywords, canonical, OG, Twitter)
+- Renderiza `<ToolLayout>` com todas as props
+- Renderiza o `<ClientComponent>` como children
+
+Props do ToolLayout:
+```tsx
+title: string              // Ex: "Word Counter"
+description: string        // Descrição curta
+categoryName: string       // Ex: "Text Tools"
+categorySlug: string       // Ex: "text-tools"
+toolSlug: string           // Ex: "word-counter"
+children: React.ReactNode  // O ClientComponent
+howItWorks?: React.ReactNode // JSX longo educativo (SEO + AdSense)
+faqs?: FAQ[]               // Array com 6 perguntas { question, answer }
+relatedTools?: RelatedTool[] // Array com 4 ferramentas { name, href }
+```
+
+### 2. `[Nome]Client.tsx` (Client Component)
+Responsabilidades:
+- `"use client"` no topo
+- Toda a lógica interativa (useState, useMemo)
+- UI completa com inputs, botões, visor, breakdown
+- Sub-componente `StatBlock` para cards de resultado
+- Validação: retorna null quando input inválido
+- Multi-moeda quando aplicável (USD/EUR/GBP/BRL)
+- Formatação: `toLocaleString()` com 2-4 casas decimais
+
+### Padrão do `howItWorks`:
+- Contém 3-6 seções com `<h2>` e `<p>`/`<ul>`
+- Inclui fórmulas, exemplos práticos, referências
+- SEMPRE termina com seção "Your privacy" (bom para AdSense)
+- Usa classes: `bg-paper border border-ink/10 rounded-lg p-4 my-3` para blocos de código/fórmula
+
+### Padrão das FAQs:
+- Array de 6 objetos `{ question: string, answer: string }`
+- Respondem dúvidas comuns do usuário
+- Renderizadas com `<details>/<summary>` pelo ToolLayout
+- Geram schema JSON-LD FAQPage (SEO)
+
+### Padrão dos Related Tools:
+- Array de 4 objetos `{ name: string, href: string }`
+- hrefs são relativos: `/tools/[category]/[tool]`
+- SEMPRE apontam para ferramentas da MESMA categoria
+
+---
+
+## 📊 STATUS COMPLETO DAS 40 FERRAMENTAS
+
+### ✅ FERRAMENTAS PRONTAS (11/40 = 27,5%)
+
+| # | Categoria | Ferramenta | Slug | Obs |
+|---|---|---|---|---|
+| 1 | Finance | Percentage Calculator | percentage-calculator | Lógica inline no page.tsx |
+| 2 | Finance | Loan / EMI Calculator | loan-calculator | Tem Client separado |
+| 3 | Finance | Discount Calculator | discount-calculator | Tem Client separado |
+| 4 | Finance | Tip Calculator | tip-calculator | Tem Client separado |
+| 5 | Health | BMI Calculator | bmi-calculator | Tem Client separado |
+| 6 | Health | Age Calculator | age-calculator | Tem Client separado |
+| 7 | Generators | Password Generator | password-generator | Tem Client separado |
+| 8 | Generators | QR Code Generator | qr-code-generator | Tem Client separado |
+| 9 | Text Tools | Word Counter | word-counter | ✅ RECÉM CRIADO |
+| 10 | Converters | Temperature Converter | temperature-converter | ✅ RECÉM CRIADO |
+| 11 | Developer Tools | JSON Formatter | json-formatter | ✅ RECÉM CRIADO |
+
+### ⏳ FERRAMENTAS PENDENTES (29/40)
+
+**Finance (1 pendente):**
+- salary-calculator
+
+**Health (3 pendentes):**
+- pregnancy-due-date
+- calorie-calculator
+- ideal-weight
+
+**Math (5 pendentes):**
+- fraction-calculator
+- gpa-calculator
+- percentage-change
+- ratio-calculator
+- geometry-calculator
+
+**Converters (4 pendentes):**
+- unit-converter
+- timezone-converter
+- number-base-converter
+- roman-numeral-converter
+
+**Date & Time (5 pendentes):**
+- days-until-date ← PRÓXIMA
+- date-calculator
+- countdown-timer
+- work-days-calculator
+- unix-timestamp
+
+**Text Tools (4 pendentes):**
+- text-case-converter
+- lorem-ipsum-generator
+- text-diff
+- slug-generator
+
+**Developer Tools (4 pendentes):**
+- base64-encoder
+- url-encoder
+- uuid-generator
+- hash-generator
+
+**Generators (3 pendentes):**
+- random-number-generator
+- color-palette
+- dice-roller
+
+### CATEGORIAS COM COBERTURA:
+
+| Categoria | Prontas | Total | % |
+|---|---|---|---|
+| Finance | 4 | 5 | 80% |
+| Health | 2 | 5 | 40% |
+| Generators | 2 | 5 | 40% |
+| Text Tools | 1 | 5 | 20% |
+| Converters | 1 | 5 | 20% |
+| Developer Tools | 1 | 5 | 20% |
+| Date & Time | 0 | 5 | 0% |
+| Math | 0 | 5 | 0% |
+
+---
+
+## 🎯 ESTRATÉGIA MVP — 5 FERRAMENTAS TOP POR VOLUME DE BUSCA
+
+A ordem definida (por volume de busca mensal global no Google):
+
+| # | Ferramenta | Categoria | Buscas/mês | Status |
+|---|---|---|---|---|
+| 1 | Word Counter | Text Tools | 2.500.000 | ✅ FEITO |
+| 2 | Temperature Converter | Converters | 800.000 | ✅ FEITO |
+| 3 | JSON Formatter | Developer | 500.000 | ✅ FEITO |
+| 4 | Days Until Date | Date & Time | 400.000 | ⏳ PRÓXIMA |
+| 5 | Percentage Change | Math | 120.000 | ⏳ DEPOIS |
+
+---
+
+## 📍 ONDE ESTAMOS AGORA
+
+✅ Terminei o PASSO 3 (tools.ts) da JSON Formatter.
+⏳ Falta o PASSO 4 (teste) da JSON Formatter.
+
+**Se o teste da JSON Formatter já foi feito e aprovado:**
+→ O próximo passo é começar a **DAYS UNTIL DATE** (ferramenta #4 do MVP).
+Seguir o mesmo padrão de 4 passos:
+1. Atualizar page.tsx
+2. Criar DaysUntilDateClient.tsx
+3. Marcar "ready" no tools.ts
+4. Testar no navegador
+
+**Se o teste da JSON Formatter AINDA NÃO foi feito:**
+→ Fazer o PASSO 4 (teste) da JSON Formatter primeiro.
+
+---
+
+## ⚠️ NOTAS IMPORTANTES
+
+1. oldpage.tsx em percentage-calculator FOI DELETADO.
+2. Percentage Calculator NÃO tem Client separado — a lógica está inline no page.tsx. NÃO MEXER, está funcionando.
+3. O usuário é INICIANTE — guiar passo a passo, um arquivo por vez, com caminhos completos.
+4. NUNCA gerar 2 opções (A ou B) — sempre resposta única e direta.
+5. NÃO enviar muitas instruções de uma vez — uma pergunta/instrução por mensagem.
+6. O site é INGLÊS — todas as ferramentas, FAQs, howItWorks e textos são em inglês.
+7. Multi-moeda (USD/EUR/GBP/BRL) é usada em ferramentas de finance (não em todas).
+8. Cada ferramenta tem EXATAMENTE 6 FAQs e 4 Related Tools.
+9. O ToolLayout já injeta 3 schemas JSON-LD (Breadcrumb, SoftwareApplication, FAQPage).
+10. O domínio é multitool.online — canonicals devem usar https://multitool.online/...
+11. O site tem 7 páginas institucionais (about, contact, cookies, disclaimer, privacy, terms, search).
+12. Footer do site: 8 categorias + links institucionais + copyright "2026 MultiTool".
+````
+
+---
+
+# ✅ Instruções de uso
+
+### Para salvar:
+1. Copie TODO o texto acima (de ````markdown` até ````)
+2. Abra o Bloco de Notas
+3. Cole
+4. Salve como **`prompt-multitool.md`** ou **`prompt-multitool.txt`**
+
+### Para usar em novo chat:
+1. Abra o novo chat
+2. Cole o prompt inteiro na primeira mensagem
+3. Eu vou entender 100% do projeto e continuar de onde paramos
+
+### Para atualizar (após cada ferramenta concluída):
+Só me envie uma mensagem tipo:
+
+> "Atualize o prompt: [Nome da Ferramenta] foi concluída. Marque como ✅ FEITO na tabela MVP e atualize o status no tools.ts"
+
+E eu atualizo apenas a parte necessária.
+
+---
+
+## ⚠️ LEMBRETE SOBRE O LIMITE DA CONVERSA
+
+Quando estivermos próximos do limite da conversa, eu vou te avisar com esta mensagem:
+
+> 🚨 **ALERTA:** Estamos próximos ao limite desta conversa. Salve o prompt master agora e abra um novo chat com ele para continuar.
+
+Fique atento a esse aviso. 🟢
+
+
+
+
+------------------------------------------------------------------
+
+PROMPT MASTER V2 - MULTITOOL PROJECT
+
+
+# 🚀 PROMPT DE CONTINUIDADE — PROJETO MULTITOOL (v2)
+
+## 🎯 OBJETIVO DO PROJETO
+Criar um site global de ferramentas online gratuitas (multitoolbox.online),
+com 40 ferramentas distribuídas em 8 categorias (5 por categoria).
+O site é todo em INGLÊS (público global), hospedado na VERCEL,
+monetizado pelo GOOGLE ADSENSE, e feito em NEXT.JS 14+ com App Router.
+
+---
+
+## 📦 TECH STACK
+- Framework: Next.js 14+ (App Router)
+- Language: TypeScript
+- Styling: Tailwind CSS
+- Hosting: Vercel (via GitHub)
+- Monetization: Google AdSense
+- SEO: Next.js Metadata API + JSON-LD Schema.org
+
+---
+
+## 🌐 DOMÍNIO E CONTAS
+
+| Item | Valor |
+|---|---|
+| Domínio | multitoolbox.online (comprado na Hostinger) |
+| Renovação Hostinger | R$ 197,99/ano (2º ano em diante) |
+| GitHub | conta: multitool-com (email: multitool.com@gmail.com) |
+| Vercel | conta: multitoolcom-6711 (email: multitool.com@gmail.com) |
+| Git local | instalado (versão 2.55.0.windows.3) |
+| Projeto local | C:\multitool |
+
+Nota: o `SITE_CONFIG` no `tools.ts` ainda está com `multitool.online`.
+Precisa atualizar para `multitoolbox.online` em algum momento.
+
+---
+
+## 🗂️ ESTRUTURA COMPLETA DO PROJETO
+
+```
+src/
+├── app/
+│   ├── globals.css
+│   ├── icon.svg
+│   ├── layout.tsx
+│   ├── loading.tsx
+│   ├── manifest.ts
+│   ├── not-found.tsx
+│   ├── page.tsx
+│   ├── robots.ts
+│   ├── sitemap.ts
+│   ├── about/page.tsx
+│   ├── contact/page.tsx
+│   ├── cookies/page.tsx
+│   ├── disclaimer/page.tsx
+│   ├── privacy/page.tsx
+│   ├── search/page.tsx
+│   ├── terms/page.tsx
+│   └── tools/
+│       ├── converters/ (page + 5 tools)
+│       ├── date-time/ (page + 5 tools)
+│       ├── developer-tools/ (page + 5 tools)
+│       ├── finance/ (page + 5 tools)
+│       ├── generators/ (page + 5 tools)
+│       ├── health/ (page + 5 tools)
+│       ├── math/ (page + 5 tools)
+│       └── text-tools/ (page + 5 tools)
+├── components/
+│   ├── ToolLayout.tsx
+│   └── ToolPlaceholder.tsx
+└── lib/
+    └── tools.ts
+```
+
+---
+
+## 🎨 DESIGN SYSTEM (TAILWIND TOKENS)
+
+### Cores:
+- `bg-paper` → fundo claro (bege/off-white)
+- `bg-deep` → azul-marinho escuro (visor, header, footer)
+- `text-accent` → laranja (destaque, resultados)
+- `text-ink` → preto/cinza escuro (texto)
+- `text-paper` → texto claro sobre fundo escuro
+
+### Fontes:
+- `font-display` → títulos
+- `font-mono` → labels, valores, botões
+
+### Componentes-chave:
+
+| Elemento | Classes |
+|---|---|
+| Card container | `bg-white border border-ink/10 rounded-xl p-6 shadow-sm` |
+| Botão pill ATIVO | `bg-deep text-paper` |
+| Botão pill INATIVO | `bg-paper text-ink/60 border border-ink/15 hover:border-accent hover:text-accent` |
+| Input | `border border-ink/15 rounded-lg px-3 py-2.5 font-mono text-lg focus:ring-2 focus:ring-accent` |
+| Visor | `bg-deep rounded-lg` + valor em `text-accent text-5xl font-mono` |
+| StatBlock normal | `bg-paper border border-ink/10` |
+| StatBlock highlight | `bg-accent/10 border-accent/30 text-accent` |
+| Info box | `bg-paper border border-ink/10 rounded-lg px-4 py-3` |
+| Botão ação | `bg-deep text-paper font-mono text-xs tracking-widest px-6 py-3 rounded-lg hover:bg-accent` |
+
+---
+
+## 📐 ARQUITETURA DE CADA FERRAMENTA
+
+### 1. `page.tsx` (Server)
+- Exporta `metadata` completa (title, description, keywords, canonical, OG, Twitter)
+- Renderiza `<ToolLayout>` com props: title, description, categoryName, categorySlug, toolSlug
+- Passa `howItWorks` (JSX educativo), `faqs` (6 itens), `relatedTools` (4 itens)
+- Renderiza `<[Nome]Client>` como children
+
+### 2. `[Nome]Client.tsx` (Client)
+- `"use client"` no topo
+- useState + useMemo
+- Sub-componente `StatBlock`
+- Multi-moeda quando aplicável (USD/EUR/GBP/BRL)
+- Validação: retorna null quando inválido
+- Formatação: `toLocaleString()` 2-4 decimais
+
+### Padrão obrigatório:
+- 6 FAQs sempre
+- 4 Related Tools (da mesma categoria)
+- Seção final "Your privacy" no howItWorks
+- Todos textos em INGLÊS
+
+---
+
+## 📊 STATUS ATUAL DAS 40 FERRAMENTAS
+
+### ✅ PRONTAS (11/40 = 27,5%)
+
+| # | Categoria | Ferramenta | Slug |
+|---|---|---|---|
+| 1 | Finance | Percentage Calculator | percentage-calculator (lógica inline, não mexer) |
+| 2 | Finance | Loan Calculator | loan-calculator |
+| 3 | Finance | Discount Calculator | discount-calculator |
+| 4 | Finance | Tip Calculator | tip-calculator |
+| 5 | Health | BMI Calculator | bmi-calculator |
+| 6 | Health | Age Calculator | age-calculator |
+| 7 | Generators | Password Generator | password-generator |
+| 8 | Generators | QR Code Generator | qr-code-generator |
+| 9 | Text Tools | Word Counter | word-counter |
+| 10 | Converters | Temperature Converter | temperature-converter |
+| 11 | Developer Tools | JSON Formatter | json-formatter |
+
+### ⏳ ESTRATÉGIA MVP (5 TOP)
+
+| # | Ferramenta | Categoria | Buscas/mês | Status |
+|---|---|---|---|---|
+| 1 | Word Counter | Text Tools | 2.500.000 | ✅ FEITO |
+| 2 | Temperature Converter | Converters | 800.000 | ✅ FEITO |
+| 3 | JSON Formatter | Developer | 500.000 | ✅ FEITO |
+| 4 | Days Until Date | Date & Time | 400.000 | ⏳ PENDENTE (page.tsx pronto, falta Client) |
+| 5 | Percentage Change | Math | 120.000 | ⏳ PENDENTE |
+
+### Cobertura por categoria:
+- Finance: 4/5 (80%)
+- Health: 2/5 (40%)
+- Generators: 2/5 (40%)
+- Text Tools: 1/5 (20%)
+- Converters: 1/5 (20%)
+- Developer Tools: 1/5 (20%)
+- Date & Time: 0/5 (0%) ← MVP #4 vai aqui
+- Math: 0/5 (0%) ← MVP #5 vai aqui
+
+---
+
+## 📍 ONDE PARAMOS (ponto atual)
+
+### Ferramentas:
+- ⚠️ Days Until Date: PASSO 1 (page.tsx) foi FEITO, mas PARAMOS antes do PASSO 2 (Client).
+- Não continuar as ferramentas até finalizar o deploy.
+
+### Deploy (em andamento):
+
+**FASE 1 — Git local:**
+- ✅ `.gitignore` já existe
+- ✅ `git init` executado (repositório criado em C:\multitool\.git)
+- ⏳ Configurar user.name e user.email do Git (PRÓXIMO PASSO)
+- ⏳ Fazer o primeiro commit
+
+**FASE 2 — GitHub:**
+- ⏳ Criar repositório novo no GitHub (conta: multitool-com)
+- ⏳ Fazer push do código
+
+**FASE 3 — Vercel:**
+- ⏳ Conectar Vercel (conta: multitoolcom-6711) ao repositório GitHub
+- ⏳ Deploy inicial em multitoolbox.vercel.app
+- ⏳ Conectar domínio multitoolbox.online (comprado na Hostinger)
+- ⏳ Configurar DNS na Hostinger apontando para Vercel
+
+---
+
+## ⚠️ REGRAS IMPORTANTES DE COMUNICAÇÃO
+
+1. **UMA pergunta/instrução por mensagem** (usuário é iniciante).
+2. **NUNCA gerar 2 opções (A ou B) para escolher** — sempre resposta única.
+3. **Sempre mostrar o caminho completo** de pastas/arquivos.
+4. **Sempre confirmar antes de comandos importantes.**
+5. **Guiar clique a clique** quando envolver interface (VS Code, GitHub, Vercel).
+6. **Avisar quando estivermos próximos do limite da conversa.**
+7. **oldpage.tsx em percentage-calculator FOI DELETADO** (não recriar).
+8. **Percentage Calculator NÃO tem Client** — lógica inline no page.tsx (funciona, não mexer).
+9. **Todas as ferramentas devem ter 6 FAQs + 4 Related Tools da mesma categoria.**
+10. **Textos sempre em INGLÊS.**
+
+---
+
+## 📝 NOTAS DO USUÁRIO
+
+- Usuário é INICIANTE em programação/deploy.
+- Prefere passo a passo detalhado.
+- Não gosta de receber muitas instruções de uma vez.
+- Quer ser avisado antes de atingir limite da conversa.
+- Nome do usuário no GitHub: multitool-com.
+- Email do projeto: multitool.com@gmail.com.
+- Nomeclatura dos Clients segue PascalCase: WordCounterClient, TemperatureConverterClient, JsonFormatterClient, etc.
+
+---
+
+## 🎯 PRÓXIMA AÇÃO AO RETOMAR
+
+1. Terminar o deploy (Git → GitHub → Vercel → Domínio)
+2. Depois retomar Days Until Date (criar `DaysUntilDateClient.tsx`, marcar ready no tools.ts, testar)
+3. Depois seguir para Percentage Change (5ª ferramenta do MVP)
+4. Depois lançar oficialmente e começar a alimentar com mais ferramentas
+
+
+
+
+---------------------------------------------------------
+
+PROMPT MASTER V3 12/08/2026
+
+# 🚀 PROMPT DE CONTINUIDADE — PROJETO MULTITOOL (v3)
+
+## 🎯 OBJETIVO DO PROJETO
+Site global de ferramentas online gratuitas (multitoolbox.online),
+com 40 ferramentas em 8 categorias (5 por categoria).
+Site em INGLÊS (público global), hospedado na VERCEL,
+monetizado por AdSense, feito em Next.js 14+ (App Router) + TypeScript + TailwindCSS.
+
+---
+
+## 🌐 DOMÍNIO E CONTAS
+
+| Item | Valor |
+|---|---|
+| Site LIVE | https://multitoolbox.online |
+| Registrar | Hostinger (renovação R$ 197,99/ano em 12/08/2027) |
+| Renovação automática | DESLIGADA |
+| Email do projeto | multitool.com@gmail.com |
+| GitHub | multitool-com/multitool (público) |
+| Vercel | conta multitoolcom-6711, projeto "multitool" (plano Hobby) |
+| URL Vercel backup | multitool-mu.vercel.app |
+| Deploy automático | ✅ Ativo (git push → deploy) |
+| SSL | ✅ Automático via Vercel |
+| Projeto local | C:\multitool |
+| Git config local | user.name=multitool-com / user.email=multitool.com@gmail.com |
+
+---
+
+## 🔄 FLUXO DE DESENVOLVIMENTO (padrão diário)
+
+1. Trabalhar localmente no VS Code
+2. Rodar `npm run dev` → testar em `http://localhost:3000`
+3. Fazer alterações, verificar hot reload
+4. Testar TUDO antes de enviar
+5. Quando aprovado, no terminal:
+   ```
+   git add .
+   git commit -m "descrição da mudança"
+   git push
+   ```
+6. Vercel detecta e publica em ~2 min
+7. Confirmar em https://multitoolbox.online
+
+**GitHub e Vercel:** não precisa mexer manualmente no dia-a-dia.
+
+---
+
+## 📦 TECH STACK
+- Next.js 14+ (App Router)
+- TypeScript
+- Tailwind CSS
+- Hospedagem: Vercel
+- Monetização: Google AdSense (a configurar)
+- SEO: Next.js Metadata API + JSON-LD Schema.org
+
+---
+
+## 🗂️ ESTRUTURA DO PROJETO
+
+```
+src/
+├── app/
+│   ├── globals.css, icon.svg, layout.tsx, loading.tsx
+│   ├── manifest.ts, not-found.tsx, page.tsx, robots.ts, sitemap.ts
+│   ├── about/page.tsx           ✅ Feita
+│   ├── contact/page.tsx         ✅ Feita
+│   ├── cookies/page.tsx         ✅ Feita
+│   ├── disclaimer/page.tsx      ✅ Feita
+│   ├── privacy/page.tsx         ✅ Feita
+│   ├── search/page.tsx          ✅ Feita
+│   ├── terms/page.tsx           ✅ Feita
+│   └── tools/[8 categorias com 5 ferramentas cada]
+├── components/
+│   ├── ToolLayout.tsx           ← Layout padrão (com JSON-LD)
+│   └── ToolPlaceholder.tsx
+└── lib/
+    └── tools.ts                 ← Catálogo central
+```
+
+**Favicon:** ✅ Ativo (`src/app/icon.svg`)
+**Páginas institucionais:** ✅ Todas feitas (about, contact, cookies, disclaimer, privacy, search, terms)
+
+---
+
+## 🎨 DESIGN SYSTEM
+
+### Cores Tailwind:
+- `bg-paper` → fundo claro
+- `bg-deep` → azul-marinho escuro
+- `text-accent` → laranja (destaque)
+- `text-ink` → preto/cinza escuro
+- `text-paper` → texto claro
+
+### Fontes:
+- `font-display` → títulos
+- `font-mono` → labels, valores, botões
+
+### Componentes principais:
+
+| Elemento | Classes |
+|---|---|
+| Card container | `bg-white border border-ink/10 rounded-xl p-6 shadow-sm` |
+| Botão pill ATIVO | `bg-deep text-paper` |
+| Botão pill INATIVO | `bg-paper text-ink/60 border border-ink/15 hover:border-accent hover:text-accent` |
+| Input | `border border-ink/15 rounded-lg px-3 py-2.5 font-mono focus:ring-2 focus:ring-accent` |
+| Visor principal | `bg-deep rounded-lg` + `text-accent text-5xl font-mono` |
+| StatBlock normal | `bg-paper border border-ink/10` |
+| StatBlock highlight | `bg-accent/10 border-accent/30 text-accent` |
+| Info box | `bg-paper border border-ink/10 rounded-lg px-4 py-3` |
+| Botão ação | `bg-deep text-paper font-mono text-xs tracking-widest px-6 py-3 rounded-lg hover:bg-accent` |
+
+---
+
+## 📐 PADRÃO OBRIGATÓRIO DE CADA FERRAMENTA
+
+### 2 arquivos por ferramenta:
+
+**1. `page.tsx` (Server Component):**
+- `metadata` completa (title, description, keywords, canonical=multitoolbox.online, OG, Twitter)
+- `<ToolLayout>` com props: title, description, categoryName, categorySlug, toolSlug
+- Prop `howItWorks`: JSX educativo com fórmulas, exemplos, sempre finalizando com seção "Your privacy"
+- Prop `faqs`: array com **EXATAMENTE 6** perguntas
+- Prop `relatedTools`: array com **EXATAMENTE 4** ferramentas da mesma categoria
+- Renderiza `<[Nome]Client>` como children
+
+**2. `[Nome]Client.tsx` (Client Component):**
+- `"use client"` no topo
+- `useState` + `useMemo`
+- Sub-componente `StatBlock` para cards de resultado
+- Multi-moeda (USD/EUR/GBP/BRL) quando aplicável
+- Validação (retorna null quando inválido)
+- Formatação `toLocaleString()` 2-4 decimais
+
+### Textos SEMPRE em INGLÊS
+
+---
+
+## 🔄 PROCESSO DE 4 PASSOS POR FERRAMENTA (comprovado)
+
+**PASSO 1 — Criar/atualizar page.tsx**
+- Guiar caminho completo até o arquivo
+- Usuário apaga tudo (Ctrl+A / Delete)
+- Cola código completo fornecido
+- Salva com Ctrl+S
+- Avisar que aparecerá erro vermelho no import do Client (normal)
+
+**PASSO 2 — Criar [Nome]Client.tsx**
+- Guiar como criar arquivo novo na mesma pasta
+- Cola código completo fornecido
+- Salva com Ctrl+S
+- Se erro persistir: Ctrl+Shift+P → "TypeScript: Restart TS Server"
+
+**PASSO 3 — Marcar "ready" no tools.ts**
+- Abrir src/lib/tools.ts
+- Ctrl+F → buscar slug da ferramenta
+- Trocar `status: "coming-soon"` por `status: "ready"`
+- Salvar
+
+**PASSO 4 — Testar no navegador**
+- Confirmar `npm run dev` rodando
+- Acessar http://localhost:3000/tools/[categoria]/[slug]
+- Roteiro de testes A-J com casos específicos
+- Confirmar badge READY na categoria
+
+**Ao final:** git add . / commit / push para publicar em produção.
+
+---
+
+## 📊 STATUS ATUAL: 11/40 FERRAMENTAS PRONTAS (27,5%)
+
+### ✅ PRONTAS
+
+| # | Categoria | Ferramenta | Slug |
+|---|---|---|---|
+| 1 | Finance | Percentage Calculator | percentage-calculator (lógica inline, NÃO MEXER) |
+| 2 | Finance | Loan Calculator | loan-calculator |
+| 3 | Finance | Discount Calculator | discount-calculator |
+| 4 | Finance | Tip Calculator | tip-calculator |
+| 5 | Health | BMI Calculator | bmi-calculator |
+| 6 | Health | Age Calculator | age-calculator |
+| 7 | Generators | Password Generator | password-generator |
+| 8 | Generators | QR Code Generator | qr-code-generator |
+| 9 | Text Tools | Word Counter | word-counter |
+| 10 | Converters | Temperature Converter | temperature-converter |
+| 11 | Developer Tools | JSON Formatter | json-formatter |
+
+### 📈 COBERTURA POR CATEGORIA
+- Finance: 4/5 (80%)
+- Health: 2/5 (40%)
+- Generators: 2/5 (40%)
+- Text Tools: 1/5 (20%)
+- Converters: 1/5 (20%)
+- Developer Tools: 1/5 (20%)
+- Date & Time: 0/5 (0%)
+- Math: 0/5 (0%)
+
+### 🎯 ESTRATÉGIA MVP (5 ferramentas mais buscadas do mundo)
+
+| # | Ferramenta | Categoria | Buscas/mês | Status |
+|---|---|---|---|---|
+| 1 | Word Counter | Text Tools | 2.500.000 | ✅ FEITO |
+| 2 | Temperature Converter | Converters | 800.000 | ✅ FEITO |
+| 3 | JSON Formatter | Developer | 500.000 | ✅ FEITO |
+| 4 | Days Until Date | Date & Time | 400.000 | ⏳ page.tsx feito, falta Client |
+| 5 | Percentage Change | Math | 120.000 | ⏳ Pendente |
+
+---
+
+## 📍 ONDE PARAMOS
+
+### ✅ Últimas conquistas:
+1. Site publicado com sucesso em https://multitoolbox.online
+2. DNS configurado corretamente
+3. SSL funcionando
+4. SITE_CONFIG atualizado no tools.ts
+5. Substituição em massa "multitool.online" → "multitoolbox.online" (79 ocorrências em 40 arquivos)
+6. Commit e push feitos
+
+### 🎯 Próximas ações (ordem definida pelo usuário):
+
+1. ✅ Verificar email Hostinger (feito)
+2. ✅ Atualizar SITE_CONFIG (feito)
+3. ⏳ **Google Search Console** — cadastrar domínio para indexação
+4. ⏳ **Continuar ferramentas** — usuário tem IDEIAS NOVAS para acrescentar
+5. ⏳ **Google AdSense** — solicitar aprovação (depois de mais ferramentas)
+6. ⏳ **Google Analytics** — instalar para medir tráfego
+7. ✅ Favicon (já ativo)
+8. ✅ Páginas institucionais (já feitas)
+
+---
+
+## ⚠️ REGRAS OBRIGATÓRIAS DE COMUNICAÇÃO
+
+1. **UMA instrução por mensagem** (usuário é iniciante)
+2. **NUNCA gerar 2 opções A/B** — sempre resposta única
+3. **Sempre mostrar caminho completo** de pastas/arquivos
+4. **Guiar clique a clique** em interfaces (VS Code, GitHub, Vercel, Hostinger)
+5. **Avisar quando próximo do limite da conversa**
+6. **NÃO mandar campo por campo** em formulários — mandar bloco completo (usuário pediu)
+7. **percentage-calculator NÃO tem Client** — lógica inline, funciona, NÃO MEXER
+8. **oldpage.tsx** em percentage-calculator FOI DELETADO
+9. **Todas ferramentas devem ter EXATAMENTE 6 FAQs + 4 Related Tools da mesma categoria**
+10. **Textos sempre em INGLÊS**
+11. **Canonicals sempre com https://multitoolbox.online**
+
+---
+
+## 📝 NOTAS DO USUÁRIO
+
+- Iniciante em programação/deploy
+- Prefere passo a passo detalhado
+- Não gosta muitas instruções simultâneas
+- Não gosta de opções A/B (quer sempre resposta única)
+- Não quer mandar formulário campo por campo
+- Quer ser avisado antes de atingir limite da conversa
+- Usa Windows
+- Nome do GitHub: multitool-com
+- Email do projeto: multitool.com@gmail.com
+- ClassName dos Clients em PascalCase: WordCounterClient, TemperatureConverterClient, JsonFormatterClient
+
+
+
+----------------------------------------------------------------------------------------
+
+# 🚀 PROMPT DE CONTINUIDADE — MULTITOOL (v4)
+
+## OBJETIVO
+Site global de tools gratuitas em INGLÊS: https://multitoolbox.online
+40 tools em 8 categorias + NOVA 9ª categoria AI Tools (5 tools).
+Next.js 14+ App Router + TypeScript + Tailwind. Vercel + GitHub. AdSense depois.
+
+## CONTAS / LIVE
+- Site: https://multitoolbox.online
+- Registrar: Hostinger (renovação AUTO DESLIGADA, expira 12/08/2027, ~R$197,99)
+- GitHub: multitool-com/multitool (público)
+- Vercel: multitoolcom-6711 / projeto multitool / backup multitool-mu.vercel.app
+- Email: multitool.com@gmail.com
+- Local: C:\multitool
+- Git: user.name=multitool-com / user.email=multitool.com@gmail.com
+- Deploy: git add . && git commit -m "..." && git push → Vercel publica sozinha
+- Analytics ID: G-M03VJPSYZZ (já no layout.tsx via @next/third-parties/google)
+- Search Console: propriedade de DOMÍNIO verificada via TXT DNS
+  TXT: google-site-verification=bmPXHsHy6C5LgUU38FFAS05LSiCamLz-AKj6_5aY9AY
+  NÃO REMOVER esse TXT na Hostinger
+- Sitemap enviado: https://multitoolbox.online/sitemap.xml e /post-sitemap.xml
+- Pacote instalado: @next/third-parties
+
+## DESIGN SYSTEM
+- Cores: bg-paper, bg-deep, text-accent, text-ink, text-paper
+- Fontes: font-display (títulos), font-mono (labels/valores/botões)
+- Card: bg-white border border-ink/10 rounded-xl p-6 shadow-sm
+- Pill ativo: bg-deep text-paper
+- Pill inativo: bg-paper text-ink/60 border border-ink/15 hover:border-accent hover:text-accent
+- Input: border border-ink/15 rounded-lg px-3 py-2.5 font-mono focus:ring-2 focus:ring-accent
+- Visor: bg-deep + text-accent text-5xl font-mono
+- StatBlock highlight: bg-accent/10 border-accent/30 text-accent
+- Botão ação: bg-deep text-paper font-mono text-xs tracking-widest px-6 py-3 rounded-lg hover:bg-accent
+
+## PADRÃO DE CADA TOOL (obrigatório)
+- page.tsx (Server): metadata completa + ToolLayout
+- [Nome]Client.tsx ("use client")
+- 6 FAQs + 4 Related Tools da MESMA categoria
+- howItWorks em inglês, termina com "Your privacy"
+- Canonical: https://multitoolbox.online/tools/[cat]/[slug]
+- Textos SEMPRE em inglês
+
+## PROCESSO 4 PASSOS
+1. page.tsx
+2. Client.tsx
+3. tools.ts status ready
+4. Testar localhost:3000 → git add/commit/push
+
+## TOOLS PRONTAS (11/40)
+Finance: percentage-calculator (INLINE, NÃO MEXER), loan, discount, tip
+Health: bmi, age
+Generators: password, qr-code
+Text: word-counter
+Converters: temperature-converter
+Developer: json-formatter
+
+## NOVA CATEGORIA (decisão confirmada)
+slug: ai-tools | name: AI Tools | shortName: AI
+5 tools (todas coming-soon até implementar):
+1. prompt-generator ← COMEÇAR AQUI (pedido do usuário)
+2. token-counter
+3. ai-cost-calculator
+4. ai-coding-tools
+5. free-ai-tools-directory
+
+Prompt Generator: 100% client-side, SEM API de IA.
+Categorias de prompt: Marketing, Coding, Writing, Design, Education, Business.
+Inputs: tipo, tópico, audiência, tom, detalhes extras. Output copiável.
+
+## ONDE PARAMOS
+Site no ar + Search Console + Analytics OK.
+Usuário confirmou AI Tools e pediu começar pela Prompt Generator.
+PRÓXIMO: adicionar categoria em src/lib/tools.ts → criar pasta/página da categoria → criar a tool.
+
+## REGRAS DE COMUNICAÇÃO
+- 1 instrução por mensagem
+- NUNCA opções A/B
+- Caminho completo de pastas
+- Não campo-a-campo em formulários (bloco completo)
+- Usuário iniciante, Windows
+- Avisar perto do limite do chat
+- percentage-calculator NÃO MEXER
+- 6 FAQs + 4 related sempre
+
+
+
+-----------------------------------------------------------------------
+
+🚀 PROMPT DE CONTINUIDADE — MULTITOOL (v5)
+Data deste snapshot: 13/08/2026
+
+Cole este arquivo no início de um chat novo. O usuário é iniciante. Siga as regras à risca.
+
+🎯 OBJETIVO DO PROJETO
+Site global de ferramentas online gratuitas: https://multitoolbox.online
+
+Público em INGLÊS
+Next.js 14+ App Router + TypeScript + TailwindCSS
+Hospedado na Vercel (deploy automático no git push)
+Domínio na Hostinger (só DNS/domínio — NÃO hospeda o site)
+Monetização futura: Google AdSense (ainda não solicitar)
+Tudo que der para ser 100% client-side (privacidade = argumento de venda)
+Não precisa mexer em GitHub/Vercel/Hostinger no dia-a-dia. Fluxo: VS Code local → testar localhost → git add/commit/push → Vercel publica em ~2 min.
+
+🌐 DOMÍNIO E CONTAS
+Item	Valor
+Site LIVE	https://multitoolbox.online
+Registrar	Hostinger (renovação AUTO DESLIGADA, expira 12/08/2027, ~R$ 197,99/ano)
+Email do projeto	multitool.com@gmail.com
+GitHub	multitool-com/multitool (público)
+Vercel	conta multitoolcom-6711, projeto "multitool", plano Hobby
+URL Vercel backup	https://multitool-mu.vercel.app
+Deploy	git add . && git commit -m "..." && git push → Vercel sozinha
+SSL	Automático via Vercel
+Projeto local	C:\multitool (Windows)
+Git local	user.name=multitool-com / user.email=multitool.com@gmail.com
+Analytics	G-M03VJPSYZZ (já no layout.tsx via @next/third-parties/google)
+Search Console	propriedade de DOMÍNIO verificada via TXT DNS
+TXT Search Console	google-site-verification=bmPXHsHy6C5LgUU38FFAS05LSiCamLz-AKj6_5aY9AY — NÃO REMOVER na Hostinger
+Sitemap	https://multitoolbox.online/sitemap.xml
+Pacote extra	@next/third-parties
+📦 TECH STACK
+Next.js 14+ (App Router)
+TypeScript
+Tailwind CSS
+SEO: Metadata API + JSON-LD (ToolLayout)
+PWA manifest existe, mas install prompt DESLIGADO (display: "browser" em src/app/manifest.ts)
+🗂️ ESTRUTURA RELEVANTE
+text
+
+src/
+├── app/
+│   ├── layout.tsx          ← usa <SiteHeader />
+│   ├── page.tsx            ← home (hero com /hero.jpg + 7 atalhos desktop)
+│   ├── manifest.ts         ← display: "browser"
+│   ├── tools/[categoria]/page.tsx
+│   └── tools/[categoria]/[slug]/page.tsx + [Nome]Client.tsx
+├── components/
+│   ├── SiteHeader.tsx      ← "use client" — menu hamburger que FECHA ao navegar
+│   ├── ToolLayout.tsx      ← layout padrão + JSON-LD + FAQs + related
+│   └── ToolPlaceholder.tsx ← só para coming-soon que ainda são placeholder
+└── lib/
+    └── tools.ts            ← CATÁLOGO CENTRAL (sempre substituir o arquivo INTEIRO)
+public/
+└── hero.jpg                ← fundo do hero (Terra + circuito + HUD)
+Favicon: src/app/icon.svg (ativo)
+Páginas institucionais: about, contact, cookies, disclaimer, privacy, search, terms — ✅ feitas
+
+🎨 DESIGN SYSTEM
+Cores Tailwind:
+
+bg-paper fundo claro
+bg-deep azul-petróleo / header / visor
+text-accent laranja
+text-ink texto escuro
+text-paper texto claro
+Fontes:
+
+font-display títulos
+font-mono labels, valores, botões
+Elemento	Classes
+Card	bg-white border border-ink/10 rounded-xl p-6 shadow-sm
+Pill ATIVO	bg-deep text-paper
+Pill INATIVO	bg-paper text-ink/60 border border-ink/15 hover:border-accent hover:text-accent
+Input	border border-ink/15 rounded-lg px-3 py-2.5 font-mono focus:ring-2 focus:ring-accent
+Visor	bg-deep rounded-lg + text-accent text-5xl font-mono
+StatBlock normal	bg-paper border border-ink/10
+StatBlock highlight	bg-accent/10 border-accent/30 text-accent
+Info box	bg-paper border border-ink/10 rounded-lg px-4 py-3
+Botão ação	bg-deep text-paper font-mono text-xs tracking-widest px-6 py-3 rounded-lg hover:bg-accent
+Réguas laranja (repeating-linear-gradient) foram REMOVIDAS do header e do hero. Não recolocar.
+
+📐 PADRÃO OBRIGATÓRIO DE CADA FERRAMENTA
+2 arquivos por tool
+1. page.tsx (Server Component)
+
+metadata completa (title, description, keywords, canonical https://multitoolbox.online/..., OG, Twitter)
+<ToolLayout> com: title, description, categoryName, categorySlug, toolSlug
+howItWorks: JSX educativo em INGLÊS, fórmulas/exemplos, sempre termina com seção "Your privacy"
+faqs: EXATAMENTE 6
+relatedTools: EXATAMENTE 4 da MESMA categoria
+Children: <[Nome]Client />
+2. [Nome]Client.tsx ("use client")
+
+PascalCase: UnitConverterClient, VatCalculatorClient, etc.
+useState + useMemo
+Subcomponente StatBlock quando houver cards de resultado
+Multi-moeda USD/EUR/GBP/BRL quando for dinheiro
+Validação: null / visor — quando inválido
+toLocaleString() 2–4 decimais
+Textos da UI em INGLÊS
+Canonical sempre: https://multitoolbox.online/tools/[cat]/[slug]
+
+🔄 PROCESSO EM LOTE (VIGENTE — NÃO voltar ao 4-passos lento)
+O usuário é iniciante, Windows, cola no VS Code. Ele não quer inserção cirúrgica (já duplicou Currency e quebrou o tools.ts). Ele pede arquivo completo.
+
+Por ferramenta (1 mensagem do assistente)
+Criar pasta C:\multitool\src\app\tools\[categoria]\[slug]\ se não existir.
+Entregar os 2 arquivos completos na mesma mensagem:
+page.tsx
+[Nome]Client.tsx
+Entregar o src/lib/tools.ts INTEIRO na mesma mensagem (ou imediatamente depois, se a mensagem estourar), já com status: "ready" da tool nova e sem perder as ready anteriores.
+Usuário cola, salva, testa no localhost:3000.
+Se OK: um git add . / commit / push.
+Regras do lote
+NUNCA mandar “troque só esta linha” no tools.ts. Sempre o arquivo completo.
+NUNCA gerar 10 tools numa mensagem só (erro de cola + limite de chat).
+Ritmo: 1 tool por mensagem (page + Client + tools.ts).
+Se a pasta da tool já tiver ToolPlaceholder, substituir o page.tsx inteiro.
+Avisar quando o chat estiver perto do limite.
+Sem opções A/B — um caminho só.
+Uma instrução clara por bloco (pasta → page → Client → tools.ts → teste).
+Não campo-a-campo em formulários externos.
+ClassName dos Clients em PascalCase.
+Git (Windows, C:\multitool)
+text
+
+git add .
+git commit -m "descrição em inglês da mudança"
+git push
+Vercel publica sozinha. Confirmar em https://multitoolbox.online
+
+⚠️ REGRAS OBRIGATÓRIAS DE COMUNICAÇÃO
+Uma instrução por bloco (usuário iniciante).
+NUNCA opções A/B.
+Sempre caminho completo de pastas (C:\multitool\src\...).
+Guiar clique a clique quando for interface (VS Code).
+Avisar perto do limite da conversa.
+percentage-calculator NÃO TEM Client — lógica inline, funciona, NÃO MEXER.
+oldpage.tsx do percentage-calculator já foi deletado.
+Sempre 6 FAQs + 4 related da mesma categoria.
+Textos das tools em INGLÊS.
+Canonicals com https://multitoolbox.online.
+tools.ts = arquivo inteiro, sempre.
+SiteHeader é Client Component — menu mobile fecha com usePathname().
+Não reativar PWA install (display deve permanecer "browser").
+Não remover o TXT do Search Console na Hostinger.
+🏠 HOME / HEADER / MOBILE (estado atual)
+Hero (src/app/page.tsx)
+
+Fundo: /hero.jpg (public/) + overlay bg-deep/50
+7 atalhos flutuantes só desktop (hidden lg:block): Percentage Calculator, Word Counter, Password Generator, AI Prompt Generator, JSON Formatter, Token Counter, Temperature Converter
+Sem faixa de régua laranja embaixo
+Header (src/components/SiteHeader.tsx)
+
+Desktop: todas as categorias via categories.map (shortName)
+Mobile: botão 3 traços; painel com busca + lista; fecha sozinho ao clicar numa categoria (usePathname + setOpen(false))
+Sem régua laranja
+layout.tsx importa <SiteHeader />. Footer dinâmico: slice(0,5) CATEGORIES + slice(5) MORE TOOLS.
+
+PWA: manifest.ts com display: "browser" para o Chrome/Samsung não perguntar “Deseja instalar MultiTool.online?”.
+
+📊 STATUS DAS FERRAMENTAS — 23 READY
+✅ READY (no ar ou acabaram de ser feitas nesta sessão)
+#	Categoria	Ferramenta	Slug
+1	Finance	Percentage Calculator	percentage-calculator (INLINE, NÃO MEXER)
+2	Finance	Loan / EMI Calculator	loan-calculator
+3	Finance	Discount Calculator	discount-calculator
+4	Finance	Tip Calculator	tip-calculator
+5	Finance	Compound Interest Calculator	compound-interest
+6	Finance	VAT / Sales Tax Calculator	vat-calculator
+7	Health	BMI Calculator	bmi-calculator
+8	Health	Age Calculator	age-calculator
+9	Math	Percentage Increase / Decrease	percentage-change
+10	Converters	Unit Converter	unit-converter
+11	Converters	Temperature Converter	temperature-converter
+12	Converters	Currency Converter	currency-converter
+13	Date & Time	Days Until Date	days-until-date
+14	Text	Word & Character Counter	word-counter
+15	Developer	JSON Formatter	json-formatter
+16	Developer	Regex Tester	regex-tester
+17	Generators	Password Generator	password-generator
+18	Generators	QR Code Generator	qr-code-generator
+19	AI Tools	AI Prompt Generator	prompt-generator
+20	AI Tools	AI Token Counter	token-counter
+21	AI Tools	AI API Cost Calculator	ai-cost-calculator
+22	AI Tools	AI Coding Tools Comparison	ai-coding-tools
+23	AI Tools	Free AI Tools Directory	free-ai-directory
+📈 COBERTURA
+Finance: 6 ready + salary coming-soon
+Health: 2/5
+Math: 1/5
+Converters: 3 ready + timezone, number-base, roman coming-soon
+Date & Time: 1/5 (days-until ready)
+Text: 1/5
+Developer: 2 ready + base64, url, uuid, hash coming-soon
+Generators: 2/5
+AI Tools: 5/5 completa
+⏳ COMING-SOON (já no tools.ts; várias pastas ainda são ToolPlaceholder)
+Finance: salary-calculator
+Health: pregnancy-due-date, calorie-calculator, ideal-weight
+Math: fraction-calculator, gpa-calculator, ratio-calculator, geometry-calculator
+Converters: timezone-converter, number-base-converter, roman-numeral-converter
+Date & Time: date-calculator, countdown-timer, work-days-calculator, unix-timestamp
+Text: text-case-converter, lorem-ipsum-generator, text-diff, slug-generator
+Developer: base64-encoder, url-encoder, uuid-generator, hash-generator
+Generators: random-number-generator, color-palette, dice-roller
+
+Se a pasta já existe com placeholder, substituir page.tsx inteiro + criar Client.
+
+📈 ANALYTICS (1º dia no ar — 13/08/2026)
+Países: Brasil (3), EUA (2), Índia (1), Irã (1)
+Páginas mais vistas: Home, AI Tools, Token Counter, Prompt Generator
+Conclusão: AI puxa clique. Por isso a fila prioriza AI + converters + finance de busca alta.
+🎯 FILA DE IMPLEMENTAÇÃO (o que falta da pesquisa)
+Já feitos desta fila: Unit Converter, Days Until, Percentage Change, Currency, Compound Interest, VAT, Regex Tester.
+
+Próximos (ordem):
+
+JWT decoder (Developer) — só decode, sem verificar assinatura
+CSV ⇄ JSON (Developer)
+Image compressor / resizer — nova categoria images (Canvas, 100% local; Vercel Hobby aguenta)
+JPG / PNG / WebP converter (Images)
+Image to Base64 (Developer)
+LLM model comparison (AI Tools — 6ª tool da categoria)
+System prompt builder (AI Tools)
+Scientific calculator (Math)
+Readability (Flesch) (Text)
+Keyword density (Text)
+Typing test / WPM (Text ou Generators)
+Password strength meter (Generators)
+px → rem (Converters)
+Cron expression generator (Developer)
+Color contrast WCAG (Generators / Dev)
+Depois: esvaziar os coming-soon do catálogo (timezone, case converter, Base64, UUID, hash, BMR, etc.)
+Não fazer agora (foge do DNA client-side / Hobby)
+PDF → Word de qualidade
+Background remover com modelo pesado
+Grammar / plagiarism / translate (API)
+Speedtest / WHOIS (rede pesada ou API)
+Chatbot com API de IA no servidor
+YouTube downloaders (ToS)
+Currency Converter já busca taxas em https://api.frankfurter.app/latest?from=USD com fallback estático. O amount do usuário não vai na request.
+
+🧠 DECISÕES CONFIRMADAS
+Categoria AI Tools: slug ai-tools. Tools: prompt-generator, token-counter, ai-cost-calculator, ai-coding-tools, free-ai-directory (slug não é free-ai-tools-directory).
+Prompt Generator: 100% client, sem API de IA. Categorias: Marketing, Coding, Writing, Design, Education, Business.
+Home lista categorias pelo array categories do tools.ts (não lista hardcoded).
+Header mostra todas as categorias (não slice de 5).
+Hero com imagem + overlay; atalhos só no lg+.
+Menu mobile fecha ao navegar.
+Sem prompt de instalar PWA.
+Hostinger = domínio/DNS. Vercel = app. Não misturar.
+Usuário prefere arquivo completo a recorte, especialmente tools.ts.
+📝 NOTAS DO USUÁRIO
+Iniciante em programação/deploy
+Windows + VS Code
+Não gosta de opções A/B
+Não gosta de muitas instruções simultâneas, mas aceitou lote = page + Client + tools.ts na mesma feature
+Quer aviso antes do limite do chat
+GitHub: multitool-com
+Email: multitool.com@gmail.com
+📍 ONDE PARAMOS (13/08/2026)
+Site no ar, Analytics e Search Console OK.
+AI Tools 5/5 no ar.
+Unit, Days Until, Percentage Change, Currency, Compound Interest, VAT, Regex Tester implementados.
+Último pedido do usuário: Regex Tester feito e testado; pediu próxima e em seguida pediu este prompt master v5.
+PRÓXIMA TOOL: JWT Decoder
+Pasta: C:\multitool\src\app\tools\developer-tools\jwt-decoder
+Arquivos: page.tsx + JwtDecoderClient.tsx
+Depois: tools.ts inteiro com jwt-decoder status ready.
+Ao publicar:
+
+text
+
+git add .
+git commit -m "Add JWT decoder"
+git push
+
+🧾 CHECKLIST AO CRIAR UMA TOOL
+ page.tsx com metadata + ToolLayout + 6 FAQs + 4 related + Your privacy
+ Client.tsx com design system
+ tools.ts completo com a nova tool ready e todas as ready antigas intactas
+ Testar localhost (visor, inválido, badge READY, 6 FAQs)
+ git add / commit / push
+ Confirmar URL em multitoolbox.online
+
+
+
+--------------------------------------------------------------
+
+🚀 PROMPT DE CONTINUIDADE — MULTITOOL (v6)
+Data deste snapshot: 13/08/2026
+
+Cole este arquivo no início de um chat novo. É a fonte da verdade. O usuário é iniciante. Siga à risca.
+
+NÃO apague nem recrie do zero tools que já estão READY. Sempre parta deste catálogo. Se for mandar tools.ts, mande o arquivo INTEIRO incluindo todas as ready abaixo (incluindo giveaway-picker).
+
+🎯 OBJETIVO
+Site global de tools gratuitas em INGLÊS: https://multitoolbox.online
+Next.js 14+ App Router + TypeScript + Tailwind. Vercel (app) + Hostinger (só domínio/DNS).
+Tudo que der: 100% client-side (privacidade). AdSense depois.
+
+🌐 CONTAS / LIVE
+Item	Valor
+Site	https://multitoolbox.online
+Hostinger	domínio, renovação AUTO OFF, expira 12/08/2027 ~R$197,99
+Email	multitool.com@gmail.com
+GitHub	multitool-com/multitool (público)
+Vercel	multitoolcom-6711 / projeto multitool / Hobby / backup multitool-mu.vercel.app
+Local	C:\multitool (Windows, VS Code)
+Git	user.name=multitool-com / user.email=multitool.com@gmail.com
+Deploy	git add . && git commit -m "..." && git push
+Analytics	G-M03VJPSYZZ em layout.tsx (@next/third-parties/google)
+Search Console	domínio verificado. TXT: google-site-verification=bmPXHsHy6C5LgUU38FFAS05LSiCamLz-AKj6_5aY9AY — NÃO REMOVER
+PWA	src/app/manifest.ts com display: "browser" (sem “instalar app”)
+📦 ESTRUTURA
+text
+
+src/app/layout.tsx              → <SiteHeader />
+src/app/page.tsx                → hero /hero.jpg + 7 atalhos desktop
+src/app/manifest.ts             → display: "browser"
+src/components/SiteHeader.tsx   → hamburger; fecha ao navegar (usePathname)
+src/components/ToolLayout.tsx
+src/lib/tools.ts                → catálogo; SEMPRE substituir INTEIRO
+public/hero.jpg
+src/app/tools/[cat]/[slug]/page.tsx + [Nome]Client.tsx
+Institucionais OK: about, contact, cookies, disclaimer, privacy, search, terms.
+Favicon: src/app/icon.svg.
+
+🎨 DESIGN SYSTEM
+Cores: bg-paper, bg-deep, text-accent, text-ink, text-paper
+Fontes: font-display, font-mono
+
+Card: bg-white border border-ink/10 rounded-xl p-6 shadow-sm
+Pill ativo: bg-deep text-paper
+Pill inativo: bg-paper text-ink/60 border border-ink/15 hover:border-accent hover:text-accent
+Input: border border-ink/15 rounded-lg px-3 py-2.5 font-mono focus:ring-2 focus:ring-accent
+Visor: bg-deep + text-accent text-5xl font-mono
+StatBlock highlight: bg-accent/10 border-accent/30 text-accent
+Botão ação: bg-deep text-paper font-mono text-xs tracking-widest px-6 py-3 rounded-lg hover:bg-accent
+
+Réguas laranja do header/hero: REMOVIDAS. Não recolocar.
+
+📐 PADRÃO DE CADA TOOL
+page.tsx (Server): metadata + ToolLayout
+[Nome]Client.tsx ("use client"), PascalCase
+6 FAQs + 4 related da MESMA categoria
+howItWorks em inglês, termina com Your privacy
+Canonical: https://multitoolbox.online/tools/[cat]/[slug]
+UI em inglês
+Multi-moeda USD/EUR/GBP/BRL quando for dinheiro
+Visor — se inválido
+Exceção SEO (só Giveaway Picker): bloco visível em português + 3 FAQs em PT + keywords PT no metadata. Sem texto escondido. Google não traduz sozinho para ranquear “sorteador instagram”.
+
+percentage-calculator: INLINE, NÃO MEXER. Sem Client.
+
+🔄 PROCESSO EM LOTE (VIGENTE)
+Usuário iniciante. Já quebrou tools.ts com insert cirúrgico (Currency duplicou).
+
+1 tool = 1 ciclo:
+
+Pasta C:\multitool\src\app\tools\[cat]\[slug]\
+Na mesma feature: page.tsx completo + [Nome]Client.tsx completo
+tools.ts INTEIRO (nunca “cole só este bloco”), com a nova ready e todas as ready antigas
+Testar localhost
+git add . && git commit -m "..." && git push
+Não gerar 10 tools numa mensagem.
+Placeholder existente: substituir page.tsx inteiro.
+Sem A/B. Caminho de pasta completo. Avisar limite de chat.
+Clients em PascalCase.
+🏠 HOME / HEADER
+Hero: /hero.jpg + bg-deep/50. 7 chips só lg+: Percentage, Word Counter, Password, Prompt Generator, JSON, Token Counter, Temperature.
+Header: todas as categorias. Mobile 3 traços; fecha ao clicar.
+Footer: categories.slice(0,5) + slice(5).
+✅ 24 TOOLS READY — NÃO APAGAR / NÃO RECRIAR DO ZERO
+#	Cat	Nome	Slug
+1	Finance	Percentage Calculator	percentage-calculator NÃO MEXER
+2	Finance	Loan / EMI	loan-calculator
+3	Finance	Discount	discount-calculator
+4	Finance	Tip	tip-calculator
+5	Finance	Compound Interest	compound-interest
+6	Finance	VAT / Sales Tax	vat-calculator
+7	Health	BMI	bmi-calculator
+8	Health	Age	age-calculator
+9	Math	Percentage Increase/Decrease	percentage-change
+10	Converters	Unit Converter	unit-converter
+11	Converters	Temperature	temperature-converter
+12	Converters	Currency Converter	currency-converter
+13	Date & Time	Days Until Date	days-until-date
+14	Text	Word Counter	word-counter
+15	Developer	JSON Formatter	json-formatter
+16	Developer	Regex Tester	regex-tester
+17	Generators	Password Generator	password-generator
+18	Generators	QR Code Generator	qr-code-generator
+19	Generators	Giveaway Picker / Sorteador	giveaway-picker
+20	AI	Prompt Generator	prompt-generator
+21	AI	Token Counter	token-counter
+22	AI	API Cost Calculator	ai-cost-calculator
+23	AI	Coding Tools Comparison	ai-coding-tools
+24	AI	Free AI Directory	free-ai-directory
+Giveaway Picker (obrigatório no tools.ts)
+text
+
+slug: "giveaway-picker"
+name: "Giveaway Picker / Sorteador"
+path: src/app/tools/generators/giveaway-picker/
+  page.tsx + GiveawayPickerClient.tsx
+LIVE: https://multitoolbox.online/tools/generators/giveaway-picker
+status: "ready"
+Funciona: cola lista ou upload .txt/.csv, exclui host, N ganhadores, shuffle com crypto.getRandomValues, remove duplicados. Não puxa seguidores do Instagram (API não permite). SEO PT visível na page.
+
+Currency: fetch https://api.frankfurter.app/latest?from=USD + fallback; amount não vai na request.
+
+⏳ COMING-SOON (já no tools.ts; várias pastas ainda são ToolPlaceholder)
+Finance: salary-calculator
+Health: pregnancy-due-date, calorie-calculator, ideal-weight
+Math: fraction-calculator, gpa-calculator, ratio-calculator, geometry-calculator
+Converters: timezone-converter, number-base-converter, roman-numeral-converter
+Date: date-calculator, countdown-timer, work-days-calculator, unix-timestamp
+Text: text-case-converter, lorem-ipsum-generator, text-diff, slug-generator
+Dev: base64-encoder, url-encoder, uuid-generator, hash-generator
+Generators: random-number-generator, color-palette, dice-roller
+AI Tools: 5/5 feita. Generators agora tem 3 ready (password, qr, giveaway).
+
+🎯 FILA (depois do sorteador)
+JWT decoder (jwt-decoder) — só decode
+CSV ⇄ JSON
+Nova categoria images: compressor/resizer (Canvas)
+JPG/PNG/WebP converter
+Image to Base64
+LLM model comparison (6ª AI)
+System prompt builder
+Scientific calculator
+Readability (Flesch)
+Keyword density
+Typing test / WPM
+Password strength
+px → rem
+Cron generator
+Color contrast WCAG
+Depois: esvaziar coming-soon
+Extra viável (ainda não na fila)
+Formatadores SQL/XML/YAML, minifiers, meta/robots/sitemap, pomodoro, invoice print, inflação, pace/sono, roleta, PDF merge/split (pdf-lib), RAG chunk, templates commit/README.
+
+Não fazer
+PDF→Word, remover fundo IA, grammar/plagiarism/translate, chatbot com API, detector de IA, Whisper, speedtest, WHOIS/DNS/SSL, DA/backlinks, encurtador, hospedar arquivo, downloader YouTube, vídeo pesado.
+
+📈 ANALYTICS (1º dia)
+BR, US, IN, IR. Mais vistas: Home, AI Tools, Token Counter, Prompt Generator.
+
+⚠️ REGRAS
+Sem A/B.
+tools.ts sempre completo — incluir giveaway-picker.
+Não recriar tools READY.
+percentage-calculator não mexer.
+Não religar PWA install.
+Não remover TXT Search Console.
+Textos das tools em EN, exceto a seção PT do Giveaway Picker.
+6 FAQs + 4 related.
+Avisar limite de chat.
+📍 ONDE PARAMOS (13/08/2026)
+Giveaway Picker publicado e no ar.
+24 READY.
+
+Próxima tool: JWT Decoder
+C:\multitool\src\app\tools\developer-tools\jwt-decoder
+page.tsx + JwtDecoderClient.tsx + tools.ts inteiro (24 ready + jwt ready).
+
+text
+
+git add .
+git commit -m "Add JWT decoder"
+git push
+🧾 CHECKLIST DE NOVA TOOL
+ page + Client no padrão
+ tools.ts completo com histórico READY intacto + giveaway-picker
+ localhost OK
+ push + confirmar URL live
+
+
+
+
